@@ -1,14 +1,24 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import './Navbar.css'
-import { Button } from './Button';
 
-function Navbar() {
+function Navbar({ topRef, bottomRef }) {
   const [click, setClick] = useState(false);
   const [button, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+
+  const scrollToTop = () => {
+	if (topRef && topRef.current) {
+    	topRef.current.scrollIntoView({ behavior: "smooth" });
+	}
+  };
+  const scrollToBottom = () => {
+	if (bottomRef && bottomRef.current) {
+    	bottomRef.current.scrollIntoView({ behavior: "smooth" });
+	}
+  };
   
   const showButton = () => {
 	if (window.innerWidth <= 960) {
@@ -17,11 +27,12 @@ function Navbar() {
 		setButton(true);
 	}
 	};
-	useEffect(() => {
-		showButton();
-	}, []);
 
+  useEffect(() => {
+	showButton();
 	window.addEventListener('resize', showButton);
+	return () => window.removeEventListener('resize', showButton);
+  }, []);
 
   return (
 	<>
@@ -29,28 +40,60 @@ function Navbar() {
 		<div className="navbar-container">
 			<Link to="/" className="navbar-logo" onClick=
 			{closeMobileMenu}>
+				<div style={{ display: 'flex', gap: '20px' }}>
 				<i
 				 className="fa-brands fa-spotify fa-beat"
-				 style={{ color: 'rgb(0, 187, 255)', fontSize: 48 }}
+				 style={{ color: 'rgba(0, 217, 255, 0.8)', fontSize: 48 }}
 				></i>
 				Brian Chu
+				</div>
 			</Link>
 			<div className="menu-icon" onClick={handleClick}>
 				<i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
 			</div>
 			<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 				<li className="nav-item">
-					<Link to="/" className="nav-links" onClick={closeMobileMenu}>
+					<Link 
+						to="/" 
+						className="nav-links" 
+						onClick={() => {
+							closeMobileMenu();
+							scrollToTop();
+						}}
+						>
 						Home
 					</Link>
 				</li>
 				<li className="nav-item">
-					<Link to="/Spotify" className="nav-links" onClick={closeMobileMenu}>
+					<Link 
+						to="/Interests" 
+						className="nav-links" 
+						onClick={closeMobileMenu}
+						>
+						Interests
+					</Link>
+				</li>
+				<li className="nav-item">
+					<Link 
+						to="/Spotify" 
+						className="nav-links" 
+						onClick={closeMobileMenu}
+						>
 						Spotify
 					</Link>
 				</li>
+				<li className="nav-item">
+					{<Link 
+						className="nav-links-outline" 
+						onClick={() => {
+							closeMobileMenu();
+							scrollToBottom();
+						}}
+						>
+						Links
+					</Link> || button}
+				</li>
 			</ul>
-			{button && <Button buttonStyle='btn--outline'>SPOTIFY</Button>}
 		</div>
 	  </nav>
 	</>
