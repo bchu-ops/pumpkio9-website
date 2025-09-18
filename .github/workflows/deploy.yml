@@ -36,7 +36,8 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}  # Provided automatically
           publish_dir: ./frontend/build
+          publish_branch: gh-pages        # Explicitly push to gh-pages branch
           # Optional:
-          user_name: "Brian Chu"
-          user_email: "brian.chu1030@gmail.com"
-          commit_message: "Auto deploy via GitHub Actions"
+          # user_name: "Brian Chu"
+          # user_email: "brian.chu1030@gmail.com"
+          # commit_message: "Auto deploy via GitHub Actions"
