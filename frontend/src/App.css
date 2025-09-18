@@ -9,7 +9,7 @@
 .services,
 .products,
 .sign-up {
-  min-height: calc(100vh - [footer height] - [navbar height]);
+  min-height: calc(100vh - 60px - 80px);
   /* Replace [footer height] and [navbar height] with actual pixel values if needed */
   display: flex;
   /*height: 90vh;*/
