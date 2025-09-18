@@ -7,38 +7,30 @@ function Footer() {
 	<div className='footer-container'>
 		<section className='footer-troll'>
 			<p className='footer-troll-heading'>
-			Watchu lookin for
+			Hi there! You found the secret section!
 			</p>
 			<p className='footer-troll-text'>
-			yoyo
+			Check out these dope videos of one of my recent favorite cartoons and a stargazing video!
+			</p>
 			<div className="videos-container">
 				<div className="video-box">
-					<video controls>
-					<source src="/shortvids/fatnailong.mp4" type="video/mp4" />
-					</video>
+					<video src="/shortvids/fatnailong.mp4" autoPlay muted loop/>
 				</div>
 				<div className="video-box">
-					<video controls>
-					<source src="/shortvids/pokednailong.mp4" type="video/mp4" />
-					</video>
+					<video src="/shortvids/pokednailong.mp4" autoPlay muted loop />
 				</div>
 				<div className="video-box">
-					<video controls>
-					<source src="shortvids/sadnailong.mp4" type="video/mp4" />
-					</video>
+					<video src="/shortvids/sadnailong.mp4" autoPlay muted loop />
 				</div>
 				<div className="video-box">
-					<video src="videos/video-1.mp4" autoPlay loop muted />
+					<video src="/videos/video-1.mp4" autoPlay loop muted />
 				</div>
 			</div>
-
-
-			</p>
 		</section>
 
-		<div class='footer-links'>
+		<div className='footer-links'>
         <div className='footer-link-wrapper'>
-          <div class='footer-link-items'>
+          <div className='footer-link-items'>
             <h2>Social Media</h2>
             <a 
 			target='_blank'
@@ -59,7 +51,7 @@ function Footer() {
 			href="https://devpost.com/brian-chu1030"
 			>Devpost</a>
           </div>
-          <div class='footer-link-items'>
+          <div className='footer-link-items'>
             <h2>Resume</h2>
             <a 
 			href='/resume/Brian_Chu_Resume_ChemE.pdf'
@@ -80,7 +72,7 @@ function Footer() {
 		<section className="social-media">
 			<div className="social-media-wrap">
 				<div className="footer-logo">
-					<Link className="social-logo" style={{ display: 'flex', gap: '12px' }}>
+					<Link to="/" className="social-logo" style={{ display: 'flex', gap: '12px' }}>
 						Brian <i
 						className="fa-brands fa-spotify fa-beat"
 						style={{ color: 'rgba(0, 217, 255, 0.8)', fontSize: 48 }}

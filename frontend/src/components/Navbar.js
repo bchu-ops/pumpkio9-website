@@ -1,26 +1,65 @@
-import React, {useEffect, useState} from 'react'
-import {Link} from 'react-router-dom'
+import React, {useEffect, useState, useRef} from 'react'
+import {Link, useNavigate} from 'react-router-dom'
 import './Navbar.css'
 
 function Navbar({ topRef, bottomRef }) {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+	const [click, setClick] = useState(false);
+	const [button, setButton] = useState(true);
+	const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // track which dropdown is open
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+	const handleClick = () => setClick(!click);
+	const closeMobileMenu = () => setClick(false);
+	const navbarRef = useRef(null); // detect clicks outside
+	const navigate = useNavigate(); 
+	
 
-  const scrollToTop = () => {
-	if (topRef && topRef.current) {
-    	topRef.current.scrollIntoView({ behavior: "smooth" });
-	}
-  };
-  const scrollToBottom = () => {
-	if (bottomRef && bottomRef.current) {
-    	bottomRef.current.scrollIntoView({ behavior: "smooth" });
-	}
-  };
-  
-  const showButton = () => {
+	// dual-behavior function for dropdown button
+	const handleDropdownButtonClick = (index) => {
+		if (openDropdownIndex === index) {
+			// Dropdown is already open → navigate & close dropdown menu
+			navigate('/Projects');
+			setOpenDropdownIndex(null);
+		} else {
+			// Dropdown is closed → open it
+			setOpenDropdownIndex(index);
+		}
+	};
+
+	// Handle links that scroll to top or bottom
+	const scrollToTop = () => {
+		if (topRef && topRef.current) {
+			topRef.current.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+	const scrollToBottom = () => {
+		if (bottomRef && bottomRef.current) {
+			bottomRef.current.scrollIntoView({ behavior: "smooth" });
+		}
+	};
+
+	// List of dropdown menus and their items
+	const menuData = [
+		{
+			label: "Products",
+			items: [
+				{ name: "Product 1", path: "/Project1" },
+				{ name: "Product 2", path: "/Project2" },
+				{ name: "Product 3", path: "/Project3" }
+			],
+		}
+		/*,	// if want to add another dropdown menu, uncomment this
+		{
+			label: "Products",
+			items: [
+				{ name: "Product 1", path: "/Project1" },
+				{ name: "Product 2", path: "/Project2" },
+				{ name: "Product 3", path: "/Project3" }
+			],
+		}*/
+	];
+
+
+	const showButton = () => {
 	if (window.innerWidth <= 960) {
 		setButton(false);
 	} else {
@@ -28,20 +67,35 @@ function Navbar({ topRef, bottomRef }) {
 	}
 	};
 
-  useEffect(() => {
+	useEffect(() => {
 	showButton();
 	window.addEventListener('resize', showButton);
 	return () => window.removeEventListener('resize', showButton);
-  }, []);
+	}, []);
+
+	useEffect(() => {
+	const handleClickOutside = (event) => {
+		if (navbarRef.current && !navbarRef.current.contains(event.target)) {
+		setOpenDropdownIndex(null); // close any open dropdown
+		}
+	};
+
+	document.addEventListener("mousedown", handleClickOutside);
+
+	return () => {
+		document.removeEventListener("mousedown", handleClickOutside);
+	};
+}, []);
 
   return (
 	<>
-	  <nav className="navbar">
+	  <nav className="navbar" ref={navbarRef}>
 		<div className="navbar-container">
 			<Link to="/" className="navbar-logo" onClick=
 			{closeMobileMenu}>
 				<div style={{ display: 'flex', gap: '20px' }}>
 				<i
+				 to="/"
 				 className="fa-brands fa-spotify fa-beat"
 				 style={{ color: 'rgba(0, 217, 255, 0.8)', fontSize: 48 }}
 				></i>
@@ -73,15 +127,32 @@ function Navbar({ topRef, bottomRef }) {
 						Interests
 					</Link>
 				</li>
-				<li className="nav-item">
-					<Link 
-						to="/Spotify" 
-						className="nav-links" 
-						onClick={closeMobileMenu}
-						>
-						Spotify
-					</Link>
-				</li>
+				{/* ===== INSERT DROPDOWNS HERE ===== */}
+				{menuData.map((menuGroup, index) => (
+					<li key={index} className="nav-item menu-item">
+					<button
+						className="nav-links dropdown-toggle"
+						onClick={() => handleDropdownButtonClick(index)}
+					>
+						{menuGroup.label} ▾
+					</button>
+					{openDropdownIndex === index && (
+						<ul className="dropdown">
+						{menuGroup.items.map((item, index) => (
+							<li key={index}>
+							<Link
+								to={item.path}
+								className="dropdown-item"
+								onClick={[closeMobileMenu]}
+							>
+								{item.name}
+							</Link>
+							</li>
+						))}
+						</ul>
+					)}
+					</li>
+				))}
 				<li className="nav-item">
 					{<Link 
 						className="nav-links-outline" 

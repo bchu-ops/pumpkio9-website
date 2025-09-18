@@ -7,7 +7,7 @@
   font-size: 1.2rem;
   position: sticky;
   top: 0;
-  z-index: 999;
+  z-index: 11;
 }
 
 .navbar-container {
@@ -27,6 +27,8 @@
   font-size: 2rem;
   display: flex;
   align-items: center;
+  flex-wrap: nowrap; /* default is nowrap */
+  white-space: nowrap; /* prevents logo text wrapping */
 }
 
 .fa-typo3 {
@@ -35,19 +37,60 @@
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
+  display: flex;
+  /* grid-template-columns: repeat(4, auto); */
   grid-gap: 10px;
+  flex-wrap: nowrap;
   list-style: none;
   text-align: center;
   width: 60vw;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 2rem;
 }
 
 .nav-item {
   height: 80px;
 }
+
+/* .menuData{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  list-style: none;
+  background-color: rgb(47, 47, 47);
+  font-family: montserrat;
+  border: 1px solid white;
+} */
+.dropdown {
+  position: relative;
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  max-height: 2500px;    /* won’t grow taller than this */
+  overflow-y: auto;     /* adds scroll if needed */
+  /* background-color: rgb(145, 186, 214); */
+  border-radius: 2px 2px 4px 4px;
+  width: 100%;
+  box-shadow: 0px 8px 16px red;
+  /* box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+}
+.dropdown-item{
+  display: inline-flex;       /* shrink to text width */
+  align-items: center;         /* vertically centers text */
+  justify-content: center;     /* horizontally centers text */
+  background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+  /* background-color: rgb(145, 186, 214); */
+  color: white;
+  height: 50px; 
+  line-height: 1.5;     /* spacing between lines */
+  font-size: 1.2rem;
+}
+
+.dropdown-item:hover {
+  border-bottom: 4px solid #fff;
+  transition: all 0.2s ease-out;
+}
+
 
 .nav-links {
   color: #fff;
