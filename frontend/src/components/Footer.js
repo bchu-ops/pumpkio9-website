@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import { publicFile } from '../App';
 
 function Footer() {
   return (
@@ -14,16 +15,16 @@ function Footer() {
 			</p>
 			<div className="videos-container">
 				<div className="video-box">
-					<video src="/shortvids/fatnailong.mp4" autoPlay muted loop/>
+					<video src={publicFile("funvids/fatnailong.mp4")} autoPlay muted loop/>
 				</div>
 				<div className="video-box">
-					<video src="/shortvids/pokednailong.mp4" autoPlay muted loop />
+					<video src={publicFile("funvids/pokednailong.mp4")} autoPlay muted loop />
 				</div>
 				<div className="video-box">
-					<video src="/shortvids/sadnailong.mp4" autoPlay muted loop />
+					<video src={publicFile("funvids/sadnailong.mp4")} autoPlay muted loop />
 				</div>
 				<div className="video-box">
-					<video src="/videos/video-1.mp4" autoPlay loop muted />
+					<video src={publicFile("videos/video-1.mp4")} autoPlay loop muted />
 				</div>
 			</div>
 		</section>
@@ -53,16 +54,42 @@ function Footer() {
           </div>
           <div className='footer-link-items'>
             <h2>Resume</h2>
-            <a 
-			href='/resume/Brian_Chu_Resume_ChemE.pdf'
-			target='_blank'
-			rel='noopener noreferrer'
-			>Chemical Engineering</a>
-            <a 
-			href='/resume/Brian_Chu_Resume_SWE.pdf'
-			target='_blank'
-			rel='noopener noreferrer'
-			>Software Engineering</a>
+			<div className="inline-resume-link">
+				<a
+					href={publicFile('resume/Brian_Chu_Resume_ChemE.pdf')}
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Chemical Engineering
+				</a>
+
+				<a
+					href="https://drive.google.com/file/d/17y7opjqSFR-MGRQPJTZT45WsDDOCA6m2/view?usp=drive_link"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="Chemical Engineering Google Drive"
+					className='inline-icon'
+				>
+					<i className="fa-brands fa-google-drive" />
+				</a>
+			</div>
+			<div className="inline-resume-link">
+				<a 
+				href={publicFile('/resume/Brian_Chu_Resume_SWE.pdf')}
+				target='_blank'
+				rel='noopener noreferrer'>
+					Software Engineering
+				</a>
+				<a
+					href='https://drive.google.com/file/d/1B4tz8pdqUOZWq3NuQMWyqcWMbig-3W4f/view?usp=drive_link'
+					target='_blank'
+					rel='noopener noreferrer'
+					aria-label='Chemical Engineering Google Drive'
+					className='inline-icon'
+				>
+				<i className='fa-brands fa-google-drive' />
+				</a>
+			</div>
           </div>
         </div>
 		</div>

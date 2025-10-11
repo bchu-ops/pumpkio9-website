@@ -10,15 +10,16 @@ import Product1 from './components/pages/Project1';
 import Product2 from './components/pages/Project2';
 import Product3 from './components/pages/Project3';
 import Projects from './components/pages/Projects';
+import NotFound from "./components/pages/NotFound";
 
 
 function App() {
   const topRef = useRef(null);
   const bottomRef = useRef(null);
-
+  
   return (
     <>
-      <Router>
+      <Router basename="/pumpkio9-website">
         <div className="app-container">
           <div ref={topRef} /> {/* Attach ref at the top */}
           <Navbar topRef={topRef} bottomRef={bottomRef}/>
@@ -31,6 +32,7 @@ function App() {
               <Route path="/Project1" element={<Product1 />} />
               <Route path="/Project2" element={<Product2 />} />
               <Route path="/Project3" element={<Product3 />} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
             <div ref={bottomRef} />
           </div>
@@ -41,5 +43,6 @@ function App() {
       
   );
 }
-
+// export const PUBLIC = process.env.PUBLIC_URL;
+export const publicFile = (path) => `${process.env.PUBLIC_URL}/${path}`;
 export default App;
