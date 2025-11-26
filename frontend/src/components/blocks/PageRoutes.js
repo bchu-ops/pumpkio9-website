@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 // Map each type to require.context
 const moduleContexts = {
   papers: require.context('../../components/pages/papers', false, /\.js$/),
-  projects: require.context('../../components/pages/projects', false, /\.js$/),
+  //projects: require.context('../../components/pages/projects', false, /\.js$/),
 };
 
 export default function PageRoutes() {
