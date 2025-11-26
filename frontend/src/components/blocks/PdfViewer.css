@@ -1,0 +1,78 @@
+.pdf-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  background-color: #ffffff;
+}
+
+.pdf-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  /* background: rgba(240, 240, 240, 0.9); */
+  background: rgba(60, 60, 60, 1);
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+}
+
+.pdf-toolbar button {
+  background: rgba(60, 60, 60, 1);
+  color: white;
+  /* border: 1px solid #ccc;
+  border-radius: 4px; */
+  cursor: pointer;
+  font-size: 16px;
+  padding: 3px 8px;
+  transition: all 0.15s ease-in-out;
+}
+
+.pdf-toolbar button:hover {
+  background: rgba(60, 70, 90, 1);
+  border-color: #bbb;
+}
+
+.pdf-page-indicator {
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  color: #333;
+  margin: 0 10px;
+}
+
+.pdf-container {
+  border: 1px solid rgba(200, 200, 200, 0.6);
+  box-shadow: 0 0 80px rgba(100, 150, 255, 0.4); /* glowing edge */
+  padding: 15px;
+  border-radius: 8px;
+  background-color: white;
+  overflow-y: auto;
+  max-height: 80vh;
+  width: 80%;
+  transition: box-shadow 0.3s ease;
+}
+
+.pdf-container:hover {
+  box-shadow: 0 0 18px rgba(100, 150, 255, 0.6);
+}
+
+.pdf-page {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.pdf-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* ensures pages are centered vertically in their container */
+}
+
+
+.pdf-error {
+  color: red;
+  text-align: center;
+}

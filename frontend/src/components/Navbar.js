@@ -42,9 +42,9 @@ function Navbar({ topRef, bottomRef }) {
 		{
 			label: "Products",
 			items: [
-				{ name: "Product 1", path: "/Project1" },
-				{ name: "Product 2", path: "/Project2" },
-				{ name: "Product 3", path: "/Project3" }
+				{ name: "Product 1", path: "/Product1" },
+				{ name: "Product 2", path: "/Product2" },
+				{ name: "Product 3", path: "/Product3" }
 			],
 		}
 		/*,	// if want to add another dropdown menu, uncomment this

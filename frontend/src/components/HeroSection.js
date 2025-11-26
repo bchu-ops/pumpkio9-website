@@ -1,6 +1,6 @@
 // import React, {useState, useEffect, useRef} from 'react'
 import '../App.css'
-import { Button } from './Button'
+import { Button } from './blocks/Button'
 import './HeroSection.css'
 import {useNavigate } from 'react-router-dom'
 import { publicFile } from '../App';

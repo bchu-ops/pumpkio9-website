@@ -1,5 +1,16 @@
 Hi
 
+Notes
+	- USE website/pumpkio9-website/ AS public when accessing files
+    	- EX:
+        	```
+        	{
+        		import { publicFile } from '../App';
+        		{publicFile("images/profile.jpg")}
+        	}	
+        	```
+
+
 Docs
 	- general documented info
 
@@ -19,29 +30,39 @@ Frontend
 		-->	App.js
 				- general hierachy and routes
 
+		Components
 			HeroSection.js
-				- background video
+  				- background video
 
-			Navbar.js
-				- navigation bar at the top/referencing
+  			Navbar.js
+  				- navigation bar at the top/referencing
 
-			Footer.js
-				- bottom portion with extra links and resume
+			Cards.js
+				- cards section of frontpage
 
-			Button.js
-				- describes requirements for a button (in/out-site links that change with condition)
+  			Footer.js
+  				- bottom portion with extra links and resume
 
-			Card.js
-				- describes requirements for a card (linkable with cover)
+			Blocks
+	  			Button.js
+    				- describes requirements for a button (in/out-site links that change with condition)
 
-			Pages
-				- various sub-sites
-				-->	Home.js
-						- homepage
-					Interests.js
-						- personal interests
-					Spotify.js
-						- spotify program to read my last 5-10 songs played
+    			CardItem.js
+    				- describes requirements for a card (linkable with cover)
+
+				PdfViewer.js
+                	- describes functionality of viewing in-page PDF with example
+
+  			Pages
+  				- various sub-sites
+  				Papers
+  					- pages for displaying papers/presentations
+  				-->	Home.js
+  						- homepage
+  					Interests.js
+  						- personal interests
+  					Spotify.js
+  						- spotify program to read my last 5-10 songs played
 
 
 
