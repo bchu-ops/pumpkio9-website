@@ -93,6 +93,12 @@ h1 {
   transform: scale(1.1);
 }
 
+.cards__item__link:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(56, 125, 255, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
 .cards__item__info {
   padding: 20px 30px 30px;
 }
@@ -119,4 +125,131 @@ h1 {
   .cards__item {
     margin-bottom: 2rem;
   }
+}
+
+/* View Toggle Dropdown */
+.cards__view-toggle {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.cards__view-select {
+  padding: 4px 8px;
+  border: 1px solid rgba(55, 53, 47, 0.16);
+  border-radius: 4px;
+  background: #fff;
+  color: rgb(55, 53, 47);
+  font-size: 13px;
+  font-weight: 400;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.1s ease;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, sans-serif;
+}
+
+.cards__view-select:hover {
+  background: rgba(55, 53, 47, 0.06);
+  color: rgb(55, 53, 47);
+}
+
+/* List View — Notion Style */
+.cards__wrapper--list {
+  margin: 12px 0 24px;
+  width: 100%;
+}
+
+.cards__items--list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.cards__item--list {
+  flex: none;
+  margin: 0;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+.cards__item__link--list {
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 10px;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  width: 100%;
+  background: transparent;
+  transition: background 0.1s ease;
+}
+
+.cards__item__link--list:hover {
+  background: rgba(55, 53, 47, 0.04);
+}
+
+.cards__item__pic-wrap--list {
+  position: relative;
+  width: 40px;
+  min-width: 40px;
+  height: 40px;
+  padding-top: 0;
+  overflow: hidden;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.cards__item__pic-wrap--list::after {
+  display: none;
+}
+
+.cards__item__pic-wrap--list .cards__item__img {
+  transition: none;
+}
+
+.cards__item__pic-wrap--list .cards__item__img:hover {
+  transform: none;
+}
+
+.cards__item__info--list {
+  padding: 0 0 0 12px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+.cards__item__label--list {
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(55, 53, 47, 0.65);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cards__item__title--list {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(55, 53, 47);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 20px;
+  flex-shrink: 0;
+}
+
+.cards__item__info--list .cards__item__text {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgb(55, 53, 47);
+  font-weight: 400;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
