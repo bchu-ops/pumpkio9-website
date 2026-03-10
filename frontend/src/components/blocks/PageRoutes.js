@@ -1,21 +1,20 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-
-const NotionPage = React.lazy(() => import('./NotionPage'));
+import NotionPage from './NotionPage';
 
 // Map each type to require.context for local JS pages
 const moduleContexts = {
-  papers: require.context('../../components/pages/papers', false, /\.js$/),
-  //projects: require.context('../../components/pages/projects', false, /\.js$/),
+  experiences: require.context('../pages/experiences', false, /\.js$/),
+  projects: require.context('../pages/projects', false, /\.js$/),
+  papers: require.context('../pages/papers', false, /\.js$/),
 };
 
-// Types that support Notion-rendered pages
-const notionTypes = ['experiences', 'projects', 'papers'];
+const VALID_TYPES = ['experiences', 'projects', 'papers'];
 
 export default function PageRoutes() {
   const { type, id } = useParams();
 
-  // Try local JS page first
+  // Check for local JS page override first
   const context = moduleContexts[type];
   if (context) {
     const key = `./${id.toLowerCase()}.js`;
@@ -31,13 +30,9 @@ export default function PageRoutes() {
     }
   }
 
-  // Fall back to Notion-rendered page
-  if (notionTypes.includes(type)) {
-    return (
-      <React.Suspense fallback={<h1>Loading...</h1>}>
-        <NotionPage />
-      </React.Suspense>
-    );
+  // Fall through to Notion-rendered page for valid types
+  if (VALID_TYPES.includes(type)) {
+    return <NotionPage />;
   }
 
   return <h1>Page Not Found</h1>;

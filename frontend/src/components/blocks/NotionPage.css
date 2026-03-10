@@ -1,5 +1,5 @@
 .notion-page-wrapper {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
@@ -96,4 +96,49 @@
 
 @keyframes notion-spin {
   to { transform: rotate(360deg); }
+}
+
+/* PDF viewer height when embedded in Notion page */
+.notion-page-wrapper .chrome-pdf-viewer {
+  height: 70vh;
+}
+
+/* Shorter height when PDFs are side-by-side */
+.notion-pdf-row .chrome-pdf-viewer {
+  height: 60vh;
+}
+
+/* PDF label */
+.notion-pdf-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(55, 53, 47, 0.65);
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Side-by-side PDF layout: presentation (left) + paper (right) */
+.notion-pdf-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.notion-pdf-row > * {
+  flex: 1;
+  min-width: 0;
+}
+
+/* When only one PDF or narrow screen, stack vertically */
+@media (max-width: 900px) {
+  .notion-pdf-row {
+    flex-direction: column;
+  }
+}
+
+/* Fallback for react-notion-x direct rendering (non-grouped) */
+.notion-page-wrapper .notion-asset-wrapper-pdf {
+  width: 100%;
+  margin-bottom: 16px;
 }

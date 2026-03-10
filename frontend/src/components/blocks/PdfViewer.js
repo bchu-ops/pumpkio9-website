@@ -18,10 +18,11 @@ export default function PdfViewer({ fileUrl }) {
   const [pageInput, setPageInput] = useState('1');
   const [loadedCount, setLoadedCount] = useState(PAGES_PER_BATCH);
   const [isLoadingMore, setIsLoadingMore] = useState(false);
-  const baseScaleRef = useRef(0);
+  const [baseScale, setBaseScale] = useState(0);
   const containerRef = useRef(null);
   const pagesRef = useRef(null);
   const pageRefs = useRef([]);
+  const renderIdRef = useRef(0);
 
   const resolvedUrl = fileUrl.startsWith('http')
     ? fileUrl
@@ -32,7 +33,7 @@ export default function PdfViewer({ fileUrl }) {
     setError(null);
     setPdfDoc(null);
     setPages([]);
-    baseScaleRef.current = 0;
+    setBaseScale(0);
 
     const loadPdf = async () => {
       try {
@@ -41,6 +42,7 @@ export default function PdfViewer({ fileUrl }) {
         setTotalPages(pdf.numPages);
         setCurrentPage(1);
         setPageInput('1');
+        setLoadedCount(PAGES_PER_BATCH);
       } catch (err) {
         console.error('Failed to load PDF:', err);
         setError(err.message || 'Unknown error loading PDF');
@@ -50,41 +52,56 @@ export default function PdfViewer({ fileUrl }) {
     loadPdf();
   }, [resolvedUrl]);
 
-  // Reset loaded count when pdf/scale/rotation changes
+  // Compute base scale when PDF loads or rotation changes
   useEffect(() => {
-    setLoadedCount(PAGES_PER_BATCH);
-  }, [pdfDoc, scale, rotation]);
+    if (!pdfDoc) return;
+    let cancelled = false;
+    const computeBase = async () => {
+      const page = await pdfDoc.getPage(1);
+      const viewport = page.getViewport({ scale: 1, rotation });
+      const containerWidth = (containerRef.current?.clientWidth || 800) - 80;
+      if (!cancelled) setBaseScale(containerWidth / viewport.width);
+    };
+    computeBase();
+    return () => { cancelled = true; };
+  }, [pdfDoc, rotation]);
 
   // Render pages up to loadedCount
   useEffect(() => {
-    if (!pdfDoc) return;
+    if (!pdfDoc || !baseScale) return;
 
+    const id = ++renderIdRef.current;
     const renderPages = async () => {
       const pagesToRender = Math.min(loadedCount, pdfDoc.numPages);
-      const containerWidth = (containerRef.current?.clientWidth || 800) - 80;
+      const dpr = window.devicePixelRatio || 1;
       const newPages = [];
 
       for (let i = 1; i <= pagesToRender; i++) {
+        if (renderIdRef.current !== id) return;
         const page = await pdfDoc.getPage(i);
-        const viewport = page.getViewport({ scale: 1, rotation });
-
-        const finalBaseScale = baseScaleRef.current || (baseScaleRef.current = containerWidth / viewport.width);
-        const finalViewport = page.getViewport({ scale: finalBaseScale * scale, rotation });
+        const cssScale = baseScale * scale;
+        const renderScale = cssScale * dpr;
+        const renderViewport = page.getViewport({ scale: renderScale, rotation });
+        const cssViewport = page.getViewport({ scale: cssScale, rotation });
 
         const canvas = document.createElement('canvas');
-        canvas.width = finalViewport.width;
-        canvas.height = finalViewport.height;
+        canvas.width = renderViewport.width;
+        canvas.height = renderViewport.height;
+        canvas.style.width = `${cssViewport.width}px`;
+        canvas.style.height = `${cssViewport.height}px`;
         const ctx = canvas.getContext('2d');
-        await page.render({ canvasContext: ctx, viewport: finalViewport }).promise;
+        await page.render({ canvasContext: ctx, viewport: renderViewport }).promise;
         newPages.push(canvas);
       }
 
-      setPages(newPages);
-      setIsLoadingMore(false);
+      if (renderIdRef.current === id) {
+        setPages(newPages);
+        setIsLoadingMore(false);
+      }
     };
 
     renderPages();
-  }, [pdfDoc, scale, rotation, loadedCount]);
+  }, [pdfDoc, baseScale, scale, rotation, loadedCount]);
 
   // Track current page on scroll + load more when near bottom
   const handleScroll = useCallback(() => {
@@ -114,25 +131,10 @@ export default function PdfViewer({ fileUrl }) {
     }
   }, [currentPage, isLoadingMore, loadedCount, totalPages]);
 
-  const handleZoomIn = () => {
-    baseScaleRef.current = 0;
-    setScale(prev => Math.min(prev + 0.25, 5));
-  };
-
-  const handleZoomOut = () => {
-    baseScaleRef.current = 0;
-    setScale(prev => Math.max(prev - 0.25, 0.25));
-  };
-
-  const handleFitPage = () => {
-    baseScaleRef.current = 0;
-    setScale(1);
-  };
-
-  const handleRotate = () => {
-    baseScaleRef.current = 0;
-    setRotation(prev => (prev + 90) % 360);
-  };
+  const handleZoomIn = () => setScale(prev => Math.min(prev + 0.25, 5));
+  const handleZoomOut = () => setScale(prev => Math.max(prev - 0.25, 0.25));
+  const handleFitPage = () => setScale(1);
+  const handleRotate = () => setRotation(prev => (prev + 90) % 360);
 
   const handlePageInput = (e) => {
     const val = e.target.value;
@@ -176,6 +178,7 @@ export default function PdfViewer({ fileUrl }) {
   };
 
   const handlePrint = () => {
+    if (!resolvedUrl.startsWith('/') && !resolvedUrl.startsWith('https://')) return;
     const printWindow = window.open(resolvedUrl, '_blank');
     if (printWindow) {
       printWindow.addEventListener('load', () => printWindow.print());
@@ -183,8 +186,45 @@ export default function PdfViewer({ fileUrl }) {
   };
 
   const handleFullscreen = () => {
-    containerRef.current?.requestFullscreen?.();
+    const fullscreenEl = document.fullscreenElement || document.webkitFullscreenElement;
+    if (fullscreenEl) {
+      if (document.exitFullscreen) {
+        document.exitFullscreen();
+      } else if (document.webkitExitFullscreen) {
+        document.webkitExitFullscreen();
+      }
+      return;
+    }
+    const el = containerRef.current;
+    if (!el) return;
+    if (el.requestFullscreen) {
+      el.requestFullscreen();
+    } else if (el.webkitRequestFullscreen) {
+      el.webkitRequestFullscreen();
+    }
   };
+
+  // Recompute baseScale when entering/exiting fullscreen so PDF fits the new window size
+  useEffect(() => {
+    const onFullscreenChange = () => {
+      if (!pdfDoc) return;
+      const computeBase = async () => {
+        const page = await pdfDoc.getPage(1);
+        const viewport = page.getViewport({ scale: 1, rotation });
+        const containerWidth = (containerRef.current?.clientWidth || 800) - 80;
+        setBaseScale(containerWidth / viewport.width);
+        setScale(1);
+      };
+      // Small delay to let the browser finish layout after fullscreen toggle
+      setTimeout(computeBase, 50);
+    };
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
+    return () => {
+      document.removeEventListener('fullscreenchange', onFullscreenChange);
+      document.removeEventListener('webkitfullscreenchange', onFullscreenChange);
+    };
+  }, [pdfDoc, rotation]);
 
   return (
     <div className="chrome-pdf-viewer" ref={containerRef}>
@@ -277,7 +317,7 @@ export default function PdfViewer({ fileUrl }) {
       {error && (
         <div className="chrome-pdf-error">
           <p>Failed to load PDF</p>
-          <p className="chrome-pdf-error-detail">{error}</p>
+          <p className="chrome-pdf-error-detail">The document could not be displayed.</p>
         </div>
       )}
 
@@ -290,23 +330,30 @@ export default function PdfViewer({ fileUrl }) {
 
       {/* Pages */}
       <div className="chrome-pdf-pages" ref={pagesRef} onScroll={handleScroll}>
-        {pages.map((canvas, i) => (
-          <div
-            key={i}
-            className="chrome-pdf-page"
-            ref={el => { pageRefs.current[i] = el; }}
-          >
+        <div className="chrome-pdf-pages-inner">
+          {pages.map((canvas, i) => (
             <div
-              className="chrome-pdf-page-canvas"
-              ref={el => { if (el && !el.hasChildNodes()) el.appendChild(canvas); }}
-            />
-          </div>
-        ))}
-        {isLoadingMore && (
-          <div className="chrome-pdf-loading-more">
-            <div className="chrome-pdf-spinner" />
-          </div>
-        )}
+              key={i}
+              className="chrome-pdf-page"
+              ref={el => { pageRefs.current[i] = el; }}
+            >
+              <div
+                className="chrome-pdf-page-canvas"
+                ref={el => {
+                  if (el) {
+                    while (el.firstChild) el.removeChild(el.firstChild);
+                    el.appendChild(canvas);
+                  }
+                }}
+              />
+            </div>
+          ))}
+          {isLoadingMore && (
+            <div className="chrome-pdf-loading-more">
+              <div className="chrome-pdf-spinner" />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

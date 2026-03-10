@@ -129,10 +129,15 @@
   flex: 1;
   overflow: auto;
   padding: 16px;
+}
+
+/* Inner wrapper centers pages when they fit, scrolls when zoomed */
+.chrome-pdf-pages-inner {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  min-width: fit-content;
 }
 
 /* Custom scrollbar to match Chrome */
@@ -220,6 +225,11 @@
 
 /* Fullscreen adjustments */
 .chrome-pdf-viewer:fullscreen {
+  height: 100vh;
+  border-radius: 0;
+}
+
+.chrome-pdf-viewer:-webkit-full-screen {
   height: 100vh;
   border-radius: 0;
 }

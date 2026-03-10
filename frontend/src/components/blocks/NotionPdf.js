@@ -5,7 +5,6 @@ import PdfViewer from './PdfViewer';
  * Custom Pdf component for react-notion-x.
  * The sync script rewrites Notion attachment sources to local paths
  * (e.g. "projects/papers/LPCVD.pdf" or "projects/presentations/LPCVD.pdf").
- * If the source is still an attachment URL (not yet synced), extract the filename.
  */
 export default function NotionPdf({ file }) {
   if (!file) {
@@ -20,5 +19,14 @@ export default function NotionPdf({ file }) {
     localUrl = `projects/papers/${filename}`;
   }
 
-  return <PdfViewer fileUrl={localUrl} />;
+  // Determine label from path
+  const isPaper = localUrl.includes('/papers/');
+  const label = isPaper ? 'Paper' : 'Presentation';
+
+  return (
+    <div className="notion-pdf-labeled">
+      <div className="notion-pdf-label">{label}</div>
+      <PdfViewer fileUrl={localUrl} />
+    </div>
+  );
 }

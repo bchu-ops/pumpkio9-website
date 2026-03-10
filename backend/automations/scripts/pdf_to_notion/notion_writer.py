@@ -1,10 +1,15 @@
 """Write parsed resume entries to Notion databases (additive only)."""
 
+import logging
 from datetime import date
 
 from notion_client import Client
 
 from .models import ExperienceEntry, NotionConfig, PaperEntry, ProjectEntry
+
+logger = logging.getLogger(__name__)
+
+NOTION_RICH_TEXT_LIMIT = 2000
 
 
 def _format_date(d: date | None) -> str | None:
@@ -25,7 +30,7 @@ def _title_prop(text: str) -> dict:
 
 
 def _rich_text_prop(text: str) -> dict:
-    return {"rich_text": [{"text": {"content": text[:2000]}}]}
+    return {"rich_text": [{"text": {"content": text[:NOTION_RICH_TEXT_LIMIT]}}]}
 
 
 def _url_prop(url: str) -> dict:
@@ -70,7 +75,7 @@ def _make_paragraph_block(text: str) -> dict:
         "object": "block",
         "type": "paragraph",
         "paragraph": {
-            "rich_text": [{"type": "text", "text": {"content": text[:2000]}}]
+            "rich_text": [{"type": "text", "text": {"content": text[:NOTION_RICH_TEXT_LIMIT]}}]
         },
     }
 
@@ -84,7 +89,7 @@ def _make_bold_paragraph(text: str) -> dict:
             "rich_text": [
                 {
                     "type": "text",
-                    "text": {"content": text[:2000]},
+                    "text": {"content": text[:NOTION_RICH_TEXT_LIMIT]},
                     "annotations": {"bold": True},
                 }
             ]
@@ -184,11 +189,12 @@ def sync_experiences(
 ) -> None:
     db_id = config.experiences_db_id
     existing = _query_existing_titles(notion, db_id, "Role")
-    print(f"\n-- Experiences: {len(entries)} parsed, {len(existing)} already in DB --")
+    logger.info("Experiences: %d parsed, %d already in DB", len(entries), len(existing))
 
+    failures = []
     for entry in entries:
         if entry.company.lower() in existing:
-            print(f"  [skip] {entry.company}")
+            logger.debug("skip: %s", entry.company)
             continue
         try:
             props = {
@@ -202,9 +208,12 @@ def sync_experiences(
                 properties=props,
                 children=_experience_body(entry),
             )
-            print(f"  [added] {entry.company}")
+            logger.info("added: %s", entry.company)
         except Exception as exc:
-            print(f"  [error] {entry.company}: {exc}")
+            logger.error("failed: %s: %s", entry.company, exc)
+            failures.append(entry.company)
+    if failures:
+        raise RuntimeError(f"Failed to sync {len(failures)} experiences: {failures}")
 
 
 def sync_projects(
@@ -212,11 +221,12 @@ def sync_projects(
 ) -> None:
     db_id = config.projects_db_id
     existing = _query_existing_titles(notion, db_id, "Project name")
-    print(f"\n-- Projects: {len(entries)} parsed, {len(existing)} already in DB --")
+    logger.info("Projects: %d parsed, %d already in DB", len(entries), len(existing))
 
+    failures = []
     for entry in entries:
         if entry.name.lower() in existing:
-            print(f"  [skip] {entry.name}")
+            logger.debug("skip: %s", entry.name)
             continue
         try:
             props = {
@@ -233,9 +243,12 @@ def sync_projects(
                 properties=props,
                 children=_project_body(entry),
             )
-            print(f"  [added] {entry.name}")
+            logger.info("added: %s", entry.name)
         except Exception as exc:
-            print(f"  [error] {entry.name}: {exc}")
+            logger.error("failed: %s: %s", entry.name, exc)
+            failures.append(entry.name)
+    if failures:
+        raise RuntimeError(f"Failed to sync {len(failures)} projects: {failures}")
 
 
 def sync_papers(
@@ -243,11 +256,12 @@ def sync_papers(
 ) -> None:
     db_id = config.papers_db_id
     existing = _query_existing_titles(notion, db_id, "Title")
-    print(f"\n-- Papers: {len(entries)} parsed, {len(existing)} already in DB --")
+    logger.info("Papers: %d parsed, %d already in DB", len(entries), len(existing))
 
+    failures = []
     for entry in entries:
         if entry.title.lower() in existing:
-            print(f"  [skip] {entry.title}")
+            logger.debug("skip: %s", entry.title)
             continue
         try:
             props = {
@@ -262,6 +276,9 @@ def sync_papers(
                 properties=props,
                 children=_paper_body(entry),
             )
-            print(f"  [added] {entry.title}")
+            logger.info("added: %s", entry.title)
         except Exception as exc:
-            print(f"  [error] {entry.title}: {exc}")
+            logger.error("failed: %s: %s", entry.title, exc)
+            failures.append(entry.title)
+    if failures:
+        raise RuntimeError(f"Failed to sync {len(failures)} papers: {failures}")

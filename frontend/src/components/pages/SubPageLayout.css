@@ -1,0 +1,213 @@
+.subpage {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif;
+  color: rgb(55, 53, 47);
+}
+
+/* Breadcrumb */
+.subpage-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 1.5rem;
+  font-size: 14px;
+  color: rgba(55, 53, 47, 0.5);
+}
+
+.subpage-breadcrumb a {
+  color: rgba(55, 53, 47, 0.65);
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.subpage-breadcrumb a:hover {
+  color: rgb(55, 53, 47);
+}
+
+.subpage-breadcrumb-sep {
+  color: rgba(55, 53, 47, 0.3);
+}
+
+.subpage-breadcrumb span:last-child {
+  color: rgb(55, 53, 47);
+}
+
+/* Cover image */
+.subpage-cover {
+  width: 100%;
+  height: 280px;
+  border-radius: 3px;
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+  box-shadow:
+    rgba(15, 15, 15, 0.1) 0 0 0 1px,
+    rgba(15, 15, 15, 0.1) 0 2px 4px;
+}
+
+.subpage-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Title */
+.subpage-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: rgb(55, 53, 47);
+  margin-bottom: 0.75rem;
+  line-height: 1.2;
+}
+
+/* Metadata */
+.subpage-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 12px 0;
+  margin-bottom: 1.5rem;
+  border-top: 1px solid rgba(55, 53, 47, 0.09);
+  border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+  font-size: 14px;
+}
+
+.subpage-meta-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  line-height: 1.5;
+}
+
+.subpage-meta-label {
+  flex-shrink: 0;
+  width: 100px;
+  color: rgba(55, 53, 47, 0.5);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.subpage-meta-item a {
+  color: #2383e2;
+  text-decoration: none;
+}
+
+.subpage-meta-item a:hover {
+  text-decoration: underline;
+}
+
+/* Notion content area */
+.subpage-content {
+  min-height: 200px;
+}
+
+.subpage-content .notion-page {
+  padding: 0;
+}
+
+/* Side-by-side PDF blocks within subpage */
+.subpage-content .notion-asset-wrapper-pdf {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(50% - 8px);
+  margin-right: 8px;
+}
+
+.subpage-content .notion-asset-wrapper-pdf:nth-of-type(2n) {
+  margin-right: 0;
+  margin-left: 8px;
+}
+
+/* PDF viewer height */
+.subpage-content .chrome-pdf-viewer {
+  height: 70vh;
+}
+
+/* Error state */
+.subpage-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  color: rgb(55, 53, 47);
+}
+
+.subpage-error h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.subpage-error p {
+  color: rgba(55, 53, 47, 0.5);
+  margin-bottom: 1rem;
+}
+
+.subpage-back {
+  color: #2383e2;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.subpage-back:hover {
+  text-decoration: underline;
+}
+
+/* Loading */
+.subpage-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+}
+
+.subpage-spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid rgba(55, 53, 47, 0.1);
+  border-top-color: rgba(55, 53, 47, 0.4);
+  border-radius: 50%;
+  animation: subpage-spin 0.6s linear infinite;
+}
+
+@keyframes subpage-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .subpage {
+    padding: 1.5rem 1rem 3rem;
+  }
+
+  .subpage-cover {
+    height: 180px;
+  }
+
+  .subpage-title {
+    font-size: 1.75rem;
+  }
+
+  .subpage-meta-item {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .subpage-meta-label {
+    width: auto;
+  }
+
+  .subpage-content .notion-asset-wrapper-pdf {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .subpage-content .notion-asset-wrapper-pdf:nth-of-type(2n) {
+    margin-left: 0;
+    margin-top: 16px;
+  }
+}

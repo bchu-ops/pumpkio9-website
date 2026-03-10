@@ -48,6 +48,5 @@ function App() {
       
   );
 }
-// export const PUBLIC = process.env.PUBLIC_URL;
 export const publicFile = (path) => `${process.env.PUBLIC_URL}/${path}`;
 export default App;

@@ -34,6 +34,11 @@ SECTION_HEADERS = {
 }
 
 BULLET_RE = re.compile(r"^[\u25cf\u2022\u00b7\u25aa\u25a0\-]\s*")
+_CONT_STARTERS = re.compile(
+    r"^(and|or|with|for|using|to|by|in|on|at|the|a|an|"
+    r"Network|Hugging|Regression|including|improving|enabling|replacing)"
+    r"\b", re.IGNORECASE
+)
 ROLE_RE = re.compile(
     r"^(AI\s+Engineer|ML\s+Operations\s+Engineer|Software\s+Engineer"
     r"|Process\s+Engineer|Thermal\s+Process\s+Engineer"
@@ -48,8 +53,10 @@ ROLE_RE = re.compile(
 def extract_text(pdf_path: str | Path) -> str:
     """Extract all text from a PDF file."""
     doc = pymupdf.open(str(pdf_path))
-    pages = [page.get_text() for page in doc]
-    doc.close()
+    try:
+        pages = [page.get_text() for page in doc]
+    finally:
+        doc.close()
     return "\n".join(pages)
 
 
@@ -60,7 +67,9 @@ def _clean_line(line: str) -> str:
 
 
 def _parse_date(month_str: str, year_str: str) -> date:
-    month = MONTH_MAP[month_str[:3].lower()]
+    month = MONTH_MAP.get(month_str[:3].lower())
+    if month is None:
+        raise ValueError(f"Unknown month abbreviation: {month_str!r}")
     return date(int(year_str), month, 1)
 
 
@@ -153,11 +162,6 @@ def parse_resume(text: str) -> tuple[
         # Bullet continuation — wrapped line from a multi-line bullet
         # Only treat as a new entry title if it's short AND doesn't look like
         # a sentence fragment (e.g. starts with a common continuation word)
-        _CONT_STARTERS = re.compile(
-            r"^(and|or|with|for|using|to|by|in|on|at|the|a|an|"
-            r"Network|Hugging|Regression|including|improving|enabling|replacing)"
-            r"\b", re.IGNORECASE
-        )
         is_likely_title = (
             len(line) < 55
             and line[0].isupper()

@@ -12,10 +12,10 @@ const VIEW_OPTIONS = [
 
 const SECTION_COLUMNS = {
   experiences: [
-    { key: 'title', label: 'Name' },
-    { key: 'position', label: 'Position', render: v => Array.isArray(v) ? v.join(', ') : v },
-    { key: 'team', label: 'Team' },
-    { key: 'duration', label: 'Duration', render: v => {
+    { key: 'title', label: 'Name', width: '28%' },
+    { key: 'position', label: 'Position', width: '28%', render: v => Array.isArray(v) ? v.join(', ') : v },
+    { key: 'team', label: 'Team', width: '20%' },
+    { key: 'duration', label: 'Duration', width: '24%', render: v => {
       if (!v) return '';
       if (typeof v === 'object') {
         const { start, end } = v;
@@ -26,16 +26,35 @@ const SECTION_COLUMNS = {
     }},
   ],
   projects: [
-    { key: 'title', label: 'Name' },
-    { key: 'description', label: 'Description' },
-    { key: 'tools', label: 'Tools' },
+    { key: 'title', label: 'Name', width: '25%' },
+    { key: 'description', label: 'Description', width: '45%' },
+    { key: 'tools', label: 'Tools', width: '30%' },
   ],
   papers: [
-    { key: 'title', label: 'Name' },
-    { key: 'description', label: 'Description' },
-    { key: 'tools', label: 'Tools' },
+    { key: 'title', label: 'Name', width: '25%' },
+    { key: 'description', label: 'Description', width: '45%' },
+    { key: 'tools', label: 'Tools', width: '30%' },
   ],
 };
+
+function getStartDate(item) {
+  const d = item.duration || item.date;
+  if (!d) return '';
+  if (typeof d === 'string') return d;
+  return d.start || '';
+}
+
+function sortByDate(items) {
+  return [...items].sort((a, b) => {
+    const da = getStartDate(a);
+    const db = getStartDate(b);
+    // "Present" or empty sorts to top (most recent)
+    if (!da && !db) return 0;
+    if (!da) return 1;
+    if (!db) return -1;
+    return db.localeCompare(da);
+  });
+}
 
 function NotionCards() {
   const [viewModes, setViewModes] = useState({
@@ -69,6 +88,12 @@ function NotionCards() {
           return;
         }
         const data = await resp.json();
+        // Sort each section by most recent date
+        for (const key of ['experiences', 'projects', 'papers']) {
+          if (Array.isArray(data[key])) {
+            data[key] = sortByDate(data[key]);
+          }
+        }
         setCollections(data);
       } catch (err) {
         console.error('Failed to load Notion collections:', err);
@@ -186,6 +211,11 @@ function NotionCards() {
         {viewMode === 'table' && (
           <div className="notion-table-view">
             <table className="notion-table">
+              <colgroup>
+                {(SECTION_COLUMNS[sectionKey] || []).map(col => (
+                  <col key={col.key} style={{ width: col.width }} />
+                ))}
+              </colgroup>
               <thead>
                 <tr>
                   {(SECTION_COLUMNS[sectionKey] || []).map(col => (
