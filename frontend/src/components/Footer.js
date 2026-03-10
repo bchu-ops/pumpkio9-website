@@ -81,10 +81,10 @@ function Footer() {
 					Software Engineering
 				</a>
 				<a
-					href='https://drive.google.com/file/d/1B4tz8pdqUOZWq3NuQMWyqcWMbig-3W4f/view?usp=drive_link'
+					href='https://drive.google.com/file/d/1G3uOWQ6U8UICHS_Ng2xGDAOmzK-TPLam/view?usp=drive_link'
 					target='_blank'
 					rel='noopener noreferrer'
-					aria-label='Chemical Engineering Google Drive'
+					aria-label='Software Engineering Google Drive'
 					className='inline-icon'
 				>
 				<i className='fa-brands fa-google-drive' />
