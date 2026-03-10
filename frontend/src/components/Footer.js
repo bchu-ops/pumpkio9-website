@@ -81,7 +81,7 @@ function Footer() {
 					Software Engineering
 				</a>
 				<a
-					href='https://drive.google.com/file/d/1G3uOWQ6U8UICHS_Ng2xGDAOmzK-TPLam/view?usp=drive_link'
+					href='https://drive.google.com/file/d/1bFJjHJB2f5vD2WLjwflx9rQjTyEXVfpF/view?usp=drive_link'
 					target='_blank'
 					rel='noopener noreferrer'
 					aria-label='Software Engineering Google Drive'
