@@ -1,78 +1,236 @@
-.pdf-wrapper {
+/* Chrome PDF Viewer */
+.chrome-pdf-viewer {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  margin: 2rem auto;
-  background-color: #ffffff;
-}
-
-.pdf-toolbar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  /* background: rgba(240, 240, 240, 0.9); */
-  background: rgba(60, 60, 60, 1);
-  border-radius: 6px;
-  padding: 6px 10px;
-  margin-bottom: 10px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(5px);
-}
-
-.pdf-toolbar button {
-  background: rgba(60, 60, 60, 1);
-  color: white;
-  /* border: 1px solid #ccc;
-  border-radius: 4px; */
-  cursor: pointer;
-  font-size: 16px;
-  padding: 3px 8px;
-  transition: all 0.15s ease-in-out;
-}
-
-.pdf-toolbar button:hover {
-  background: rgba(60, 70, 90, 1);
-  border-color: #bbb;
-}
-
-.pdf-page-indicator {
-  font-family: system-ui, sans-serif;
-  font-size: 14px;
-  color: #333;
-  margin: 0 10px;
-}
-
-.pdf-container {
-  border: 1px solid rgba(200, 200, 200, 0.6);
-  box-shadow: 0 0 80px rgba(100, 150, 255, 0.4); /* glowing edge */
-  padding: 15px;
+  width: 100%;
+  height: 85vh;
+  background: #525659;
   border-radius: 8px;
-  background-color: white;
-  overflow-y: auto;
-  max-height: 80vh;
-  width: 80%;
-  transition: box-shadow 0.3s ease;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
 }
 
-.pdf-container:hover {
-  box-shadow: 0 0 18px rgba(100, 150, 255, 0.6);
-}
-
-.pdf-page {
+/* Toolbar — matches Chrome's dark toolbar */
+.chrome-pdf-toolbar {
   display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
+  align-items: center;
+  justify-content: space-between;
+  height: 40px;
+  min-height: 40px;
+  background: #323639;
+  padding: 0 8px;
+  gap: 4px;
+  z-index: 10;
+  user-select: none;
 }
 
-.pdf-pages {
+.chrome-pdf-toolbar__left,
+.chrome-pdf-toolbar__center,
+.chrome-pdf-toolbar__right {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.chrome-pdf-toolbar__center {
+  gap: 4px;
+}
+
+/* Toolbar buttons */
+.chrome-pdf-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 4px;
+  background: transparent;
+  color: #e8eaed;
+  cursor: pointer;
+  padding: 0;
+  transition: background 0.15s;
+}
+
+.chrome-pdf-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chrome-pdf-btn:active {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.chrome-pdf-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.chrome-pdf-btn:disabled:hover {
+  background: transparent;
+}
+
+/* Page navigation input */
+.chrome-pdf-page-nav {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin: 0 4px;
+}
+
+.chrome-pdf-page-input {
+  width: 36px;
+  height: 24px;
+  background: #1f2124;
+  border: 1px solid #5f6368;
+  border-radius: 4px;
+  color: #e8eaed;
+  text-align: center;
+  font-size: 12px;
+  font-family: inherit;
+  padding: 0;
+  outline: none;
+}
+
+.chrome-pdf-page-input:focus {
+  border-color: #8ab4f8;
+}
+
+.chrome-pdf-page-total {
+  color: #9aa0a6;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* Zoom level display */
+.chrome-pdf-zoom-level {
+  color: #e8eaed;
+  font-size: 12px;
+  min-width: 40px;
+  text-align: center;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.chrome-pdf-zoom-level:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Separator between button groups */
+.chrome-pdf-separator {
+  width: 1px;
+  height: 20px;
+  background: #5f6368;
+  margin: 0 4px;
+}
+
+/* Page area — dark gray background like Chrome */
+.chrome-pdf-pages {
+  flex: 1;
+  overflow: auto;
+  padding: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* ensures pages are centered vertically in their container */
+  align-items: center;
+  gap: 8px;
 }
 
+/* Custom scrollbar to match Chrome */
+.chrome-pdf-pages::-webkit-scrollbar {
+  width: 10px;
+}
 
-.pdf-error {
-  color: red;
-  text-align: center;
+.chrome-pdf-pages::-webkit-scrollbar-track {
+  background: #3b3e42;
+}
+
+.chrome-pdf-pages::-webkit-scrollbar-thumb {
+  background: #6b6e73;
+  border-radius: 5px;
+  border: 2px solid #3b3e42;
+}
+
+.chrome-pdf-pages::-webkit-scrollbar-thumb:hover {
+  background: #8b8e93;
+}
+
+/* Individual page */
+.chrome-pdf-page {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+  background: white;
+  line-height: 0;
+}
+
+.chrome-pdf-page-canvas {
+  display: flex;
+  justify-content: center;
+}
+
+.chrome-pdf-page-canvas canvas {
+  display: block;
+}
+
+/* Loading spinner */
+.chrome-pdf-loading {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.chrome-pdf-spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid rgba(255, 255, 255, 0.15);
+  border-top-color: #8ab4f8;
+  border-radius: 50%;
+  animation: chrome-pdf-spin 0.8s linear infinite;
+}
+
+@keyframes chrome-pdf-spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Loading more pages indicator */
+.chrome-pdf-loading-more {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Error state */
+.chrome-pdf-error {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #e8eaed;
+}
+
+.chrome-pdf-error p:first-child {
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.chrome-pdf-error-detail {
+  font-size: 13px;
+  color: #9aa0a6;
+}
+
+/* Fullscreen adjustments */
+.chrome-pdf-viewer:fullscreen {
+  height: 100vh;
+  border-radius: 0;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .chrome-pdf-toolbar__center {
+    display: none;
+  }
+
+  .chrome-pdf-toolbar {
+    justify-content: space-between;
+  }
 }

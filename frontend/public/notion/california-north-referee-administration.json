@@ -1,0 +1,1779 @@
+{
+  "block": {
+    "31f181ec-d4f6-81c1-859c-f894f93c3bc6": {
+      "value": {
+        "id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "version": 59,
+        "type": "page",
+        "properties": {
+          "<>_<": [
+            [
+              "Professional Referee"
+            ]
+          ],
+          "MKuJ": [
+            [
+              "Officiating"
+            ]
+          ],
+          "TumX": [
+            [
+              "Team coordination, Decision-making"
+            ]
+          ],
+          "]Bpy": [
+            [
+              "San Francisco Bay Area, CA"
+            ]
+          ],
+          "z^Hp": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "daterange",
+                    "end_date": "2022-06-01",
+                    "start_date": "2018-08-01"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "{?gk": [
+            [
+              "cnra.png",
+              [
+                [
+                  "a",
+                  "attachment:85cf4f30-1eff-434d-80c9-9bcec073b5ed:cnra.png"
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "California North Referee Administration"
+            ]
+          ]
+        },
+        "content": [
+          "7ceaba4b-ab3b-40f5-93df-6fba3e2713f6",
+          "e62ea15e-4787-4409-9c83-e4fdea701efa",
+          "99082ca4-b88c-4509-9ca1-472a30f9f28f",
+          "60dd15b9-5ffe-4a1b-a046-0088a2868199",
+          "348f8c20-c817-48af-8637-d1a449874c56"
+        ],
+        "format": {
+          "page_icon": "\ud83d\udcbc"
+        },
+        "created_time": 1773145354356,
+        "last_edited_time": 1773150985293,
+        "parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "parent_table": "collection",
+        "alive": true,
+        "file_ids": [
+          "85cf4f30-1eff-434d-80c9-9bcec073b5ed"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "MmH7W0LepwWLcQED9cV0_g,\"start\",\"end\"",
+            "n": {
+              "MmH7W0LepwWLcQED9cV0_g,\"start\",\"end\"": {
+                "s": {
+                  "x": "MmH7W0LepwWLcQED9cV0_g",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "cGz5ODvxkC4C",
+                        21
+                      ],
+                      "o": "start",
+                      "l": 3,
+                      "c": "Cal"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GFTP-s3vyi3Y",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -7
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GFTP-s3vyi3Y",
+                        8
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        7
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "cGz5ODvxkC4C",
+                        24
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        8
+                      ],
+                      "l": 1,
+                      "c": "f"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GFTP-s3vyi3Y",
+                        9
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        8
+                      ],
+                      "l": 1,
+                      "c": "o"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "cGz5ODvxkC4C",
+                        25
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        9
+                      ],
+                      "l": 1,
+                      "c": "r"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GFTP-s3vyi3Y",
+                        10
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        9
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "cGz5ODvxkC4C",
+                        26
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        10
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GFTP-s3vyi3Y",
+                        11
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        10
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "cGz5ODvxkC4C",
+                        27
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        11
+                      ],
+                      "l": 6,
+                      "c": " North"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GFTP-s3vyi3Y",
+                        12
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        11
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GFTP-s3vyi3Y",
+                        13
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        12
+                      ],
+                      "l": 8,
+                      "c": " Referee"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "cGz5ODvxkC4C",
+                        33
+                      ],
+                      "o": [
+                        "GFTP-s3vyi3Y",
+                        20
+                      ],
+                      "l": 15,
+                      "c": " Administration"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "6a83e54d-6563-4444-b5f5-e9177926917a": {
+      "value": {
+        "id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "version": 54,
+        "type": "collection_view",
+        "properties": {
+          "title": [
+            [
+              "Experiences"
+            ]
+          ]
+        },
+        "view_ids": [
+          "3862349e-44dc-44b8-b417-f974f3a8df02",
+          "31f181ec-d4f6-8062-9db6-000c6fb2d6a5"
+        ],
+        "collection_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "format": {
+          "collection_pointer": {
+            "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "hide_inline_collection_name": false
+        },
+        "created_time": 1773144036619,
+        "last_edited_time": 1773154266130,
+        "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"",
+            "n": {
+              "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"": {
+                "s": {
+                  "x": "OZyOaVE3XMQgzJTpySddVg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "HMWLQ18-Xb_r",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 11,
+                      "c": "Experiences"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
+      "value": {
+        "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "version": 275,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Brian\u2019s Portfolio"
+            ]
+          ]
+        },
+        "content": [
+          "861b745c-0cdb-4d4b-8b87-70ebe849da9d",
+          "6d6ab2a2-c8d8-4e4a-ade5-acfc7ce7f20b",
+          "fef0f191-c193-465f-bca6-44e5cab932a7",
+          "6a83e54d-6563-4444-b5f5-e9177926917a",
+          "e3d04709-fc3e-44ba-8e8b-d38f4b38884e",
+          "d29488e8-e56e-4aea-aadb-46cb3b9c4b22",
+          "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+          "6854cd5a-ed72-4cbd-b8de-48cc52166116",
+          "3ea3adf4-6275-46e5-8c8f-90c5994480ba",
+          "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+          "0748870d-7024-4eee-ac3d-e00d98e4dd08",
+          "2fdec1f2-b38c-4a02-bdd6-257fc1243b15",
+          "79cac193-c76d-4c60-8b75-8c2b2a68b76e",
+          "f40de7a1-fdfb-42df-be05-27e2ab126f62",
+          "d214cede-f8b1-45f3-9834-92ccf6da9b21",
+          "8441a1c4-71b4-4bdd-bb1b-e8b44a900136",
+          "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
+          "38678f4a-7abe-4554-8535-f1cf9d495854",
+          "d1c070a3-4073-415b-b012-b2013b9f84aa",
+          "796e82c2-bd04-4db9-a28e-118eecee1fc2",
+          "b18a50c8-0812-4cb2-a9ae-bd8bd9c52d69",
+          "734e9d55-bcea-4ca4-8282-85e4f87c1551",
+          "5624b648-3139-47b8-bdcf-63002991b542",
+          "f94c96dc-7bbd-4503-9d50-5c2ecb5b056b",
+          "edc5721b-e656-41d8-8309-3cfb19d0157b",
+          "e6559921-92aa-4785-b679-5e385d5d1f96",
+          "cdbee9d0-3b67-461e-bcf2-cd724d7b9d9b",
+          "330c4ccd-e7b8-47ca-81be-3ebb93a94063",
+          "9da9c9ed-1c09-4d08-99a5-8be8fc463111",
+          "9e2dbffd-eb9d-4078-a54c-935f19792ff3",
+          "82734aee-b7df-46e4-ae01-8bccfd3a836e",
+          "16aa2e9c-b2bb-4280-9922-ed6b1fb0d2b9",
+          "733a3432-ddbe-473a-977b-5810f959ca5f",
+          "f15d54a9-c59d-4b33-8d2f-b92fd5dd2580",
+          "31f181ec-d4f6-80e1-968c-f53cb804d75b"
+        ],
+        "format": {
+          "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
+          "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
+          "page_cover_position": 0.8909,
+          "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1773152043547
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+            "parent_table": "space"
+          }
+        ],
+        "created_time": 1773143151480,
+        "last_edited_time": 1773160702634,
+        "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "parent_table": "space",
+        "alive": true,
+        "file_ids": [
+          "309d92fa-9e28-481b-94ea-7db16ae6ed22",
+          "43763043-51d8-40de-af0e-07fbe47b8c9e",
+          "37a2bdff-e54d-4514-811a-0cedf450d601",
+          "e3258caa-35df-4e27-836c-cfbc063959cf",
+          "b478773e-0567-44d2-8f19-b22b707786af"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
+            "n": {
+              "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"": {
+                "s": {
+                  "x": "_wIDyDrI9jEsMA8IfUUeGA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        10
+                      ],
+                      "o": "start",
+                      "l": 5,
+                      "c": "Brian"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        16
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": 3,
+                      "c": "\u2019s "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        15
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Portfolio"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "7ceaba4b-ab3b-40f5-93df-6fba3e2713f6": {
+      "value": {
+        "id": "7ceaba4b-ab3b-40f5-93df-6fba3e2713f6",
+        "version": 9,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Competitive soccer officiating across Northern California at various competitive levels."
+            ]
+          ]
+        },
+        "created_time": 1773148428498,
+        "last_edited_time": 1773148448413,
+        "parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "K1k-DmtIh9gwdaP62f7-tQ,\"start\",\"end\"",
+            "n": {
+              "K1k-DmtIh9gwdaP62f7-tQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "K1k-DmtIh9gwdaP62f7-tQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Mqa_Ftz2IFMG",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 1,
+                      "c": "C"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Mqa_Ftz2IFMG",
+                        2
+                      ],
+                      "o": [
+                        "Mqa_Ftz2IFMG",
+                        1
+                      ],
+                      "l": -49
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Mqa_Ftz2IFMG",
+                        51
+                      ],
+                      "o": [
+                        "Mqa_Ftz2IFMG",
+                        50
+                      ],
+                      "l": 56,
+                      "c": "ompetitive soccer officiating across Northern California"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Mqa_Ftz2IFMG",
+                        107
+                      ],
+                      "o": [
+                        "Mqa_Ftz2IFMG",
+                        106
+                      ],
+                      "l": -45
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Mqa_Ftz2IFMG",
+                        152
+                      ],
+                      "o": [
+                        "Mqa_Ftz2IFMG",
+                        151
+                      ],
+                      "l": 31,
+                      "c": " at various competitive levels."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "e62ea15e-4787-4409-9c83-e4fdea701efa": {
+      "value": {
+        "id": "e62ea15e-4787-4409-9c83-e4fdea701efa",
+        "version": 4,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "[August 2018 \u2192 June 2022]: Officiating",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ]
+        },
+        "created_time": 1773148428500,
+        "last_edited_time": 1773148428500,
+        "parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "Rr0I8LSmducrJMyOojEkJA,\"start\",\"end\"",
+            "n": {
+              "Rr0I8LSmducrJMyOojEkJA,\"start\",\"end\"": {
+                "s": {
+                  "x": "Rr0I8LSmducrJMyOojEkJA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vH3XnS_QBtck",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 38,
+                      "c": "[August 2018 \u2192 June 2022]: Officiating",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "Rr0I8LSmducrJMyOojEkJA",
+                          "l": "",
+                          "i": [
+                            "vH3XnS_QBtck",
+                            39
+                          ],
+                          "s": {
+                            "i": [
+                              "vH3XnS_QBtck",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "e",
+                      "b": []
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "99082ca4-b88c-4509-9ca1-472a30f9f28f": {
+      "value": {
+        "id": "99082ca4-b88c-4509-9ca1-472a30f9f28f",
+        "version": 14,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Languages / Tools Used:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " Team coordination, Decision-making"
+            ]
+          ]
+        },
+        "created_time": 1773148428500,
+        "last_edited_time": 1773148778676,
+        "parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "A2VeDdOzS4iV3utB_YXv9w,\"start\",\"end\"",
+            "n": {
+              "A2VeDdOzS4iV3utB_YXv9w,\"start\",\"end\"": {
+                "s": {
+                  "x": "A2VeDdOzS4iV3utB_YXv9w",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "3iFvhDuU7Izl",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 23,
+                      "c": "Languages / Tools Used:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "A2VeDdOzS4iV3utB_YXv9w",
+                          "l": "",
+                          "i": [
+                            "XoLh9ShPNyow",
+                            78
+                          ],
+                          "s": {
+                            "i": [
+                              "3iFvhDuU7Izl",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "3iFvhDuU7Izl",
+                              24
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "3iFvhDuU7Izl",
+                        24
+                      ],
+                      "o": [
+                        "3iFvhDuU7Izl",
+                        23
+                      ],
+                      "l": 35,
+                      "c": " Team coordination, Decision-making",
+                      "b": []
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "3iFvhDuU7Izl",
+                        59
+                      ],
+                      "o": [
+                        "3iFvhDuU7Izl",
+                        58
+                      ],
+                      "l": -19
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "60dd15b9-5ffe-4a1b-a046-0088a2868199": {
+      "value": {
+        "id": "60dd15b9-5ffe-4a1b-a046-0088a2868199",
+        "version": 9,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Location:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " San Francisco Bay Area, CA"
+            ]
+          ]
+        },
+        "created_time": 1773148428500,
+        "last_edited_time": 1773148778676,
+        "parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "3-9L8t4VdOATmorXkA333g,\"start\",\"end\"",
+            "n": {
+              "3-9L8t4VdOATmorXkA333g,\"start\",\"end\"": {
+                "s": {
+                  "x": "3-9L8t4VdOATmorXkA333g",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "71HAkMAWd_dE",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Location:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3-9L8t4VdOATmorXkA333g",
+                          "l": "",
+                          "i": [
+                            "HSJpqwW1Twf8",
+                            37
+                          ],
+                          "s": {
+                            "i": [
+                              "71HAkMAWd_dE",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "71HAkMAWd_dE",
+                              10
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "71HAkMAWd_dE",
+                        10
+                      ],
+                      "o": [
+                        "71HAkMAWd_dE",
+                        9
+                      ],
+                      "l": 27,
+                      "c": " San Francisco Bay Area, CA",
+                      "b": []
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "348f8c20-c817-48af-8637-d1a449874c56": {
+      "value": {
+        "id": "348f8c20-c817-48af-8637-d1a449874c56",
+        "version": 10,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Officiating 80+ matches in trained teams of 3 referees in high-pressure environments!"
+            ]
+          ]
+        },
+        "created_time": 1773145889486,
+        "last_edited_time": 1773148448413,
+        "parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "-qCYgRSSdlsZUNKNj8sCrA,\"start\",\"end\"",
+            "n": {
+              "-qCYgRSSdlsZUNKNj8sCrA,\"start\",\"end\"": {
+                "s": {
+                  "x": "-qCYgRSSdlsZUNKNj8sCrA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        96
+                      ],
+                      "o": "start",
+                      "l": 5,
+                      "c": "Offic"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        2
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        1
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        101
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        2
+                      ],
+                      "l": 2,
+                      "c": "at"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        3
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        2
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        5
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        4
+                      ],
+                      "l": 4,
+                      "c": "ing "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        103
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        8
+                      ],
+                      "l": 3,
+                      "c": "80+"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        9
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        8
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        11
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        10
+                      ],
+                      "l": 3,
+                      "c": " ma"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        106
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        13
+                      ],
+                      "l": 3,
+                      "c": "tch"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        14
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        13
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        15
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        14
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        109
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        15
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        16
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        15
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        17
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        16
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        18
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        17
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        110
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        18
+                      ],
+                      "l": 2,
+                      "c": "n "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        19
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        18
+                      ],
+                      "l": -6
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        25
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        24
+                      ],
+                      "l": 1,
+                      "c": "t"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        112
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        25
+                      ],
+                      "l": 1,
+                      "c": "r"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        26
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        25
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        27
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        26
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        113
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        27
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        28
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        27
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        114
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        28
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        29
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        28
+                      ],
+                      "l": 2,
+                      "c": "d "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        115
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        30
+                      ],
+                      "l": 1,
+                      "c": "t"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        31
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        30
+                      ],
+                      "l": -11
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        42
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        41
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        116
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        42
+                      ],
+                      "l": 2,
+                      "c": "am"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        43
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        42
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        45
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        44
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        118
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        45
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        46
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        45
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        47
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        46
+                      ],
+                      "l": 1,
+                      "c": "o"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        119
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        47
+                      ],
+                      "l": 11,
+                      "c": "f 3 referee"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        48
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        47
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        49
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        48
+                      ],
+                      "l": 9,
+                      "c": "s in high"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        130
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        57
+                      ],
+                      "l": 1,
+                      "c": "-"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        58
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        57
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        59
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        58
+                      ],
+                      "l": 20,
+                      "c": "pressure environment"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KOi688Q6NuNE",
+                        131
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        78
+                      ],
+                      "l": 2,
+                      "c": "s!"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2dO8vaFqRM5",
+                        79
+                      ],
+                      "o": [
+                        "v2dO8vaFqRM5",
+                        78
+                      ],
+                      "l": -17
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    }
+  },
+  "collection": {
+    "bb34e8bb-b8b4-491c-88c2-97b3bf575377": {
+      "value": {
+        "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "version": 70,
+        "name": [
+          [
+            "Work"
+          ]
+        ],
+        "schema": {
+          "<>_<": {
+            "name": "Position",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "25a59960-f293-4cb1-9b01-bc031befff88",
+                "color": "blue",
+                "value": "AI Engineer"
+              },
+              {
+                "id": "e267d15e-8183-46f3-b2c3-fb49fff63414",
+                "color": "blue",
+                "value": "ML Operations Engineer"
+              },
+              {
+                "id": "24e92934-340e-44e5-b2c2-83a44b65d102",
+                "color": "blue",
+                "value": "Software Engineer Intern"
+              },
+              {
+                "id": "d5e72db6-d3da-40a2-be5c-27209d027ffc",
+                "color": "blue",
+                "value": "Thermal Process Engineer"
+              },
+              {
+                "id": "db23cd19-01e1-44cf-8c68-c433cc61c38f",
+                "color": "blue",
+                "value": "Presenter and Lab Team Member"
+              },
+              {
+                "id": "984549d1-2191-4ad3-ac07-be10a40ec092",
+                "color": "blue",
+                "value": "Battery Research Intern"
+              },
+              {
+                "id": "0cd49b46-4747-4149-add7-e5d0406f33b5",
+                "color": "blue",
+                "value": "Professional Referee"
+              },
+              {
+                "id": "9ab160fb-973c-4b65-b6ea-143290c3fa30",
+                "color": "purple",
+                "value": "Process Engineer"
+              }
+            ]
+          },
+          "MKuJ": {
+            "name": "Team",
+            "type": "text"
+          },
+          "z^Hp": {
+            "name": "Duration",
+            "type": "date"
+          },
+          "{?gk": {
+            "name": "Image",
+            "type": "file"
+          },
+          "title": {
+            "name": "Role",
+            "type": "title"
+          }
+        },
+        "format": {
+          "property_visibility": [
+            {
+              "property": "z^Hp",
+              "visibility": "show"
+            },
+            {
+              "property": "{?gk",
+              "visibility": "show"
+            },
+            {
+              "property": "<>_<",
+              "visibility": "show"
+            },
+            {
+              "property": "MKuJ",
+              "visibility": "hide_if_empty"
+            }
+          ],
+          "ai_suggested_properties": [
+            {
+              "name": "Location",
+              "type": "text"
+            },
+            {
+              "name": "Website",
+              "type": "url"
+            },
+            {
+              "name": "Skills",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "dj}G",
+                  "color": "pink",
+                  "value": "Communication"
+                },
+                {
+                  "id": "~]WZ",
+                  "color": "orange",
+                  "value": "Teamwork"
+                },
+                {
+                  "id": "J|?A",
+                  "color": "red",
+                  "value": "Problem Solving"
+                },
+                {
+                  "id": "wlmd",
+                  "color": "default",
+                  "value": "Leadership"
+                }
+              ]
+            },
+            {
+              "name": "Status",
+              "type": "status"
+            }
+          ]
+        },
+        "parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "parent_table": "block",
+        "alive": true,
+        "migrated": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "deleted_schema": {
+          "TumX": {
+            "name": "Tools",
+            "type": "text"
+          },
+          "]Bpy": {
+            "name": "Location",
+            "type": "text"
+          }
+        },
+        "created_time": 1773144036619,
+        "last_edited_time": 1773156802906,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "last_edited_by_table": "bot",
+        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4"
+      },
+      "role": "reader"
+    }
+  },
+  "collection_view": {
+    "3862349e-44dc-44b8-b417-f974f3a8df02": {
+      "value": {
+        "id": "3862349e-44dc-44b8-b417-f974f3a8df02",
+        "version": 79,
+        "type": "gallery",
+        "name": "Gallery",
+        "format": {
+          "card_layout": {
+            "mode": "compact"
+          },
+          "gallery_cover": {
+            "type": "property",
+            "property": "{?gk"
+          },
+          "collection_pointer": {
+            "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "gallery_properties": [
+            {
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "visible": true,
+              "property": "<>_<"
+            },
+            {
+              "visible": false,
+              "property": "z^Hp"
+            },
+            {
+              "visible": false,
+              "property": "{?gk"
+            },
+            {
+              "visible": false,
+              "property": "MKuJ"
+            }
+          ],
+          "collection_peek_mode": "full_page",
+          "subitem_filter_scope": "parents"
+        },
+        "parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "parent_table": "block",
+        "alive": true,
+        "page_sort": [
+          "31f181ec-d4f6-8049-b7d4-de62b00f4635",
+          "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+          "31f181ec-d4f6-819a-b300-f71d6329a121",
+          "31f181ec-d4f6-81b3-80fe-da3e76304597",
+          "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
+          "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
+          "31f181ec-d4f6-81c1-859c-f894f93c3bc6"
+        ],
+        "query2": {
+          "calendar_by": "z^Hp"
+        },
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144036622,
+        "last_edited_time": 1773153862680,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-8062-9db6-000c6fb2d6a5": {
+      "value": {
+        "id": "31f181ec-d4f6-8062-9db6-000c6fb2d6a5",
+        "version": 21,
+        "type": "table",
+        "name": "Table",
+        "format": {
+          "table_wrap": true,
+          "table_properties": [
+            {
+              "wrap": true,
+              "width": 280,
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "z^Hp"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": false,
+              "property": "{?gk"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "<>_<"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "MKuJ"
+            }
+          ],
+          "collection_pointer": {
+            "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "subitem_filter_scope": "parents_and_subitems",
+          "table_frozen_column_index": -1,
+          "table_subitem_toggle_column": "title"
+        },
+        "parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773153868898,
+        "last_edited_time": 1773153977340,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  }
+}

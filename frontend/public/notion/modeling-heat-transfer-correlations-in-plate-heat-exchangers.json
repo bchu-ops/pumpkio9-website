@@ -1,0 +1,1293 @@
+{
+  "block": {
+    "31f181ec-d4f6-81c1-bb93-f3ed2fa85542": {
+      "value": {
+        "id": "31f181ec-d4f6-81c1-bb93-f3ed2fa85542",
+        "version": 62,
+        "type": "page",
+        "properties": {
+          ";Vrk": [
+            [
+              "heatexchanger.png",
+              [
+                [
+                  "a",
+                  "attachment:d93ce2b7-30e6-4d17-a914-5f166a980577:heatexchanger.png"
+                ]
+              ]
+            ]
+          ],
+          "RdL@": [
+            [
+              "Paper & Presentation \u2014 Analysis of heat transfer correlations in plate heat exchanger systems"
+            ]
+          ],
+          "VGrU": [
+            [
+              "Heat Transfer Analysis, Plate Heat Exchangers, Correlation Modeling"
+            ]
+          ],
+          "t<U{": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "daterange",
+                    "end_date": "2023-06-01",
+                    "start_date": "2023-01-01"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "Modeling Heat Transfer Correlations in Plate Heat Exchangers"
+            ]
+          ]
+        },
+        "content": [
+          "ca29c391-c2cd-45fd-b3c6-a882c479542b",
+          "a2c0f507-f9c7-49a3-9671-e0e2d14ed6b1",
+          "31f181ec-d4f6-80ee-9db3-f75ea603f496",
+          "31f181ec-d4f6-80d1-918d-fdd3d7181312",
+          "31f181ec-d4f6-80fd-8124-f612bd3f3053",
+          "31f181ec-d4f6-8055-8156-ef4072b6e544"
+        ],
+        "format": {
+          "page_icon": "\ud83d\udcdd"
+        },
+        "created_time": 1773145367973,
+        "last_edited_time": 1773159851664,
+        "parent_id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+        "parent_table": "collection",
+        "alive": true,
+        "file_ids": [
+          "3b9d83cc-d173-4046-98d7-07fe218ea6b6",
+          "d93ce2b7-30e6-4d17-a914-5f166a980577"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "X65W080zNG8VwK5ZuInw0A,\"start\",\"end\"",
+            "n": {
+              "X65W080zNG8VwK5ZuInw0A,\"start\",\"end\"": {
+                "s": {
+                  "x": "X65W080zNG8VwK5ZuInw0A",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-dx8YM0QZMgf",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 60,
+                      "c": "Modeling Heat Transfer Correlations in Plate Heat Exchangers"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "d4e6cf70-95e7-48ec-9e58-a61d45029917": {
+      "value": {
+        "id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "version": 20,
+        "type": "collection_view",
+        "properties": {
+          "title": [
+            [
+              "Papers & Publications"
+            ]
+          ]
+        },
+        "view_ids": [
+          "aeb3c1a5-80e2-4245-8d00-3c5b242a7f07",
+          "31f181ec-d4f6-8013-8623-000c64736336"
+        ],
+        "collection_id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+        "format": {
+          "collection_pointer": {
+            "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          }
+        },
+        "created_time": 1773144040391,
+        "last_edited_time": 1773154768598,
+        "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "tM2c0wv3IOBvWc0wrE8jZA,\"start\",\"end\"",
+            "n": {
+              "tM2c0wv3IOBvWc0wrE8jZA,\"start\",\"end\"": {
+                "s": {
+                  "x": "tM2c0wv3IOBvWc0wrE8jZA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "5R2Yvj0gRee7",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 21,
+                      "c": "Papers & Publications"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
+      "value": {
+        "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "version": 275,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Brian\u2019s Portfolio"
+            ]
+          ]
+        },
+        "content": [
+          "861b745c-0cdb-4d4b-8b87-70ebe849da9d",
+          "6d6ab2a2-c8d8-4e4a-ade5-acfc7ce7f20b",
+          "fef0f191-c193-465f-bca6-44e5cab932a7",
+          "6a83e54d-6563-4444-b5f5-e9177926917a",
+          "e3d04709-fc3e-44ba-8e8b-d38f4b38884e",
+          "d29488e8-e56e-4aea-aadb-46cb3b9c4b22",
+          "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+          "6854cd5a-ed72-4cbd-b8de-48cc52166116",
+          "3ea3adf4-6275-46e5-8c8f-90c5994480ba",
+          "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+          "0748870d-7024-4eee-ac3d-e00d98e4dd08",
+          "2fdec1f2-b38c-4a02-bdd6-257fc1243b15",
+          "79cac193-c76d-4c60-8b75-8c2b2a68b76e",
+          "f40de7a1-fdfb-42df-be05-27e2ab126f62",
+          "d214cede-f8b1-45f3-9834-92ccf6da9b21",
+          "8441a1c4-71b4-4bdd-bb1b-e8b44a900136",
+          "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
+          "38678f4a-7abe-4554-8535-f1cf9d495854",
+          "d1c070a3-4073-415b-b012-b2013b9f84aa",
+          "796e82c2-bd04-4db9-a28e-118eecee1fc2",
+          "b18a50c8-0812-4cb2-a9ae-bd8bd9c52d69",
+          "734e9d55-bcea-4ca4-8282-85e4f87c1551",
+          "5624b648-3139-47b8-bdcf-63002991b542",
+          "f94c96dc-7bbd-4503-9d50-5c2ecb5b056b",
+          "edc5721b-e656-41d8-8309-3cfb19d0157b",
+          "e6559921-92aa-4785-b679-5e385d5d1f96",
+          "cdbee9d0-3b67-461e-bcf2-cd724d7b9d9b",
+          "330c4ccd-e7b8-47ca-81be-3ebb93a94063",
+          "9da9c9ed-1c09-4d08-99a5-8be8fc463111",
+          "9e2dbffd-eb9d-4078-a54c-935f19792ff3",
+          "82734aee-b7df-46e4-ae01-8bccfd3a836e",
+          "16aa2e9c-b2bb-4280-9922-ed6b1fb0d2b9",
+          "733a3432-ddbe-473a-977b-5810f959ca5f",
+          "f15d54a9-c59d-4b33-8d2f-b92fd5dd2580",
+          "31f181ec-d4f6-80e1-968c-f53cb804d75b"
+        ],
+        "format": {
+          "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
+          "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
+          "page_cover_position": 0.8909,
+          "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1773152043547
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+            "parent_table": "space"
+          }
+        ],
+        "created_time": 1773143151480,
+        "last_edited_time": 1773160702634,
+        "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "parent_table": "space",
+        "alive": true,
+        "file_ids": [
+          "309d92fa-9e28-481b-94ea-7db16ae6ed22",
+          "43763043-51d8-40de-af0e-07fbe47b8c9e",
+          "37a2bdff-e54d-4514-811a-0cedf450d601",
+          "e3258caa-35df-4e27-836c-cfbc063959cf",
+          "b478773e-0567-44d2-8f19-b22b707786af"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
+            "n": {
+              "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"": {
+                "s": {
+                  "x": "_wIDyDrI9jEsMA8IfUUeGA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        10
+                      ],
+                      "o": "start",
+                      "l": 5,
+                      "c": "Brian"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        16
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": 3,
+                      "c": "\u2019s "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        15
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Portfolio"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "ca29c391-c2cd-45fd-b3c6-a882c479542b": {
+      "value": {
+        "id": "ca29c391-c2cd-45fd-b3c6-a882c479542b",
+        "version": 9,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Research paper and presentation on modeling and analyzing heat transfer correlations in plate heat exchanger systems, including empirical correlation modeling and experimental validation."
+            ]
+          ]
+        },
+        "created_time": 1773147900020,
+        "last_edited_time": 1773148147967,
+        "parent_id": "31f181ec-d4f6-81c1-bb93-f3ed2fa85542",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "agVEyLQkqZDaFF_Nr04ncQ,\"start\",\"end\"",
+            "n": {
+              "agVEyLQkqZDaFF_Nr04ncQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "agVEyLQkqZDaFF_Nr04ncQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        164
+                      ],
+                      "o": "start",
+                      "l": 10,
+                      "c": "Research p"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        2
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        1
+                      ],
+                      "l": 25,
+                      "c": "aper and presentation on "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        174
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        26
+                      ],
+                      "l": 3,
+                      "c": "mod"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        27
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        26
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        29
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        28
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        177
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        29
+                      ],
+                      "l": 8,
+                      "c": "ling and"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        30
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        29
+                      ],
+                      "l": 6,
+                      "c": " analy"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        185
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        35
+                      ],
+                      "l": 1,
+                      "c": "z"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        36
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        35
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        37
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        36
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        186
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        37
+                      ],
+                      "l": 2,
+                      "c": "ng"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        38
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        37
+                      ],
+                      "l": -4
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        42
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        41
+                      ],
+                      "l": 15,
+                      "c": " heat transfer "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        188
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        56
+                      ],
+                      "l": 2,
+                      "c": "co"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        57
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        56
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        59
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        58
+                      ],
+                      "l": 1,
+                      "c": "r"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        60
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        59
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        62
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        61
+                      ],
+                      "l": 1,
+                      "c": "r"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        190
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        62
+                      ],
+                      "l": 2,
+                      "c": "el"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        63
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        62
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        64
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        63
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        192
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        64
+                      ],
+                      "l": 3,
+                      "c": "tio"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        65
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        64
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        195
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        65
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        66
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        65
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        68
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        67
+                      ],
+                      "l": 24,
+                      "c": " in plate heat exchanger"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ea3vohBnNKYr",
+                        196
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        91
+                      ],
+                      "l": 7,
+                      "c": " system"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-2j13mxCJ-gE",
+                        92
+                      ],
+                      "o": [
+                        "-2j13mxCJ-gE",
+                        91
+                      ],
+                      "l": 72,
+                      "c": "s, including empirical correlation modeling and experimental validation."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "a2c0f507-f9c7-49a3-9671-e0e2d14ed6b1": {
+      "value": {
+        "id": "a2c0f507-f9c7-49a3-9671-e0e2d14ed6b1",
+        "version": 4,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Tools / Methods:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " Heat Transfer Analysis, Plate Heat Exchangers, Correlation Modeling"
+            ]
+          ]
+        },
+        "created_time": 1773148808876,
+        "last_edited_time": 1773148808876,
+        "parent_id": "31f181ec-d4f6-81c1-bb93-f3ed2fa85542",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "V7BDYx-zbTtI8MWJhmX52w,\"start\",\"end\"",
+            "n": {
+              "V7BDYx-zbTtI8MWJhmX52w,\"start\",\"end\"": {
+                "s": {
+                  "x": "V7BDYx-zbTtI8MWJhmX52w",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "n2DFftu2JXgV",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 16,
+                      "c": "Tools / Methods:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "V7BDYx-zbTtI8MWJhmX52w",
+                          "l": "",
+                          "i": [
+                            "n2DFftu2JXgV",
+                            85
+                          ],
+                          "s": {
+                            "i": [
+                              "n2DFftu2JXgV",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "n2DFftu2JXgV",
+                              17
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "n2DFftu2JXgV",
+                        17
+                      ],
+                      "o": [
+                        "n2DFftu2JXgV",
+                        16
+                      ],
+                      "l": 68,
+                      "c": " Heat Transfer Analysis, Plate Heat Exchangers, Correlation Modeling",
+                      "b": []
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80ee-9db3-f75ea603f496": {
+      "value": {
+        "id": "31f181ec-d4f6-80ee-9db3-f75ea603f496",
+        "version": 3,
+        "type": "text",
+        "created_time": 1773153342560,
+        "last_edited_time": 1773153342562,
+        "parent_id": "31f181ec-d4f6-81c1-bb93-f3ed2fa85542",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "R-exrkXJHSTJwvbJquTy2g,\"start\",\"end\"",
+            "n": {
+              "R-exrkXJHSTJwvbJquTy2g,\"start\",\"end\"": {
+                "s": {
+                  "x": "R-exrkXJHSTJwvbJquTy2g",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80d1-918d-fdd3d7181312": {
+      "value": {
+        "id": "31f181ec-d4f6-80d1-918d-fdd3d7181312",
+        "version": 11,
+        "type": "pdf",
+        "properties": {
+          "size": [
+            [
+              "1.3 MiB"
+            ]
+          ],
+          "title": [
+            [
+              "HeatExchanger.pdf"
+            ]
+          ],
+          "source": [
+            [
+              "/projects/presentations/HeatExchanger.pdf"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 446,
+          "block_height": 320,
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_preserve_scale": false
+        },
+        "created_time": 1773153344318,
+        "last_edited_time": 1773153351024,
+        "parent_id": "31f181ec-d4f6-81c1-bb93-f3ed2fa85542",
+        "parent_table": "block",
+        "alive": true,
+        "file_ids": [
+          "696df004-51af-4002-83a8-6c707dc41b40"
+        ],
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "SL_uoQvadhTHeQyx3Ij3Hw,\"start\",\"end\"",
+            "n": {
+              "SL_uoQvadhTHeQyx3Ij3Hw,\"start\",\"end\"": {
+                "s": {
+                  "x": "SL_uoQvadhTHeQyx3Ij3Hw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 17,
+                      "c": "HeatExchanger.pdf"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80fd-8124-f612bd3f3053": {
+      "value": {
+        "id": "31f181ec-d4f6-80fd-8124-f612bd3f3053",
+        "version": 3,
+        "type": "text",
+        "created_time": 1773153351689,
+        "last_edited_time": 1773153351691,
+        "parent_id": "31f181ec-d4f6-81c1-bb93-f3ed2fa85542",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "_mphXztyrWYg7VSaPBJ04w,\"start\",\"end\"",
+            "n": {
+              "_mphXztyrWYg7VSaPBJ04w,\"start\",\"end\"": {
+                "s": {
+                  "x": "_mphXztyrWYg7VSaPBJ04w",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-8055-8156-ef4072b6e544": {
+      "value": {
+        "id": "31f181ec-d4f6-8055-8156-ef4072b6e544",
+        "version": 11,
+        "type": "pdf",
+        "properties": {
+          "size": [
+            [
+              "881.8 KiB"
+            ]
+          ],
+          "title": [
+            [
+              "HeatExchanger.pdf"
+            ]
+          ],
+          "source": [
+            [
+              "/projects/papers/HeatExchanger.pdf"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 446,
+          "block_height": 320,
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_preserve_scale": false
+        },
+        "created_time": 1773153353753,
+        "last_edited_time": 1773153359235,
+        "parent_id": "31f181ec-d4f6-81c1-bb93-f3ed2fa85542",
+        "parent_table": "block",
+        "alive": true,
+        "file_ids": [
+          "eddd7fd1-f20b-4ce1-84ff-61437d5e55ca"
+        ],
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "HgUkWl6Nu0MU_LsJjTp8GA,\"start\",\"end\"",
+            "n": {
+              "HgUkWl6Nu0MU_LsJjTp8GA,\"start\",\"end\"": {
+                "s": {
+                  "x": "HgUkWl6Nu0MU_LsJjTp8GA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 17,
+                      "c": "HeatExchanger.pdf"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    }
+  },
+  "collection": {
+    "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099": {
+      "value": {
+        "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+        "version": 17,
+        "name": [
+          [
+            "Papers & Publications"
+          ]
+        ],
+        "schema": {
+          ";Vrk": {
+            "name": "Image",
+            "type": "file"
+          },
+          "RdL@": {
+            "name": "Description",
+            "type": "text"
+          },
+          "VGrU": {
+            "name": "Tools",
+            "type": "text"
+          },
+          "title": {
+            "name": "Title",
+            "type": "title"
+          }
+        },
+        "format": {
+          "property_visibility": [
+            {
+              "property": "t<U{",
+              "visibility": "show"
+            },
+            {
+              "property": "RdL@",
+              "visibility": "show"
+            },
+            {
+              "property": ";Vrk",
+              "visibility": "show"
+            },
+            {
+              "property": "VGrU",
+              "visibility": "hide_if_empty"
+            }
+          ],
+          "ai_suggested_properties": [
+            {
+              "name": "Authors",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "thUq",
+                  "color": "gray",
+                  "value": "Author 1"
+                },
+                {
+                  "id": "nCLz",
+                  "color": "yellow",
+                  "value": "Author 2"
+                },
+                {
+                  "id": "WVbx",
+                  "color": "red",
+                  "value": "Author 3"
+                }
+              ]
+            },
+            {
+              "name": "Journal",
+              "type": "text"
+            },
+            {
+              "name": "DOI",
+              "type": "url"
+            },
+            {
+              "name": "Status",
+              "type": "status"
+            }
+          ]
+        },
+        "parent_id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "parent_table": "block",
+        "alive": true,
+        "migrated": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "deleted_schema": {
+          "t<U{": {
+            "name": "Date",
+            "type": "date"
+          }
+        },
+        "created_time": 1773144040391,
+        "last_edited_time": 1773154035783,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  },
+  "collection_view": {
+    "aeb3c1a5-80e2-4245-8d00-3c5b242a7f07": {
+      "value": {
+        "id": "aeb3c1a5-80e2-4245-8d00-3c5b242a7f07",
+        "version": 23,
+        "type": "gallery",
+        "name": "Gallery",
+        "format": {
+          "card_layout": {
+            "mode": "list"
+          },
+          "description": "",
+          "gallery_cover": {
+            "type": "property",
+            "property": ";Vrk"
+          },
+          "collection_pointer": {
+            "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "gallery_properties": [
+            {
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "visible": true,
+              "property": "RdL@"
+            },
+            {
+              "visible": false,
+              "property": "t<U{"
+            },
+            {
+              "visible": false,
+              "property": ";Vrk"
+            },
+            {
+              "visible": false,
+              "property": "VGrU"
+            }
+          ],
+          "collection_peek_mode": "full_page",
+          "subitem_filter_scope": "parents"
+        },
+        "parent_id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "parent_table": "block",
+        "alive": true,
+        "query2": {
+          "sort": [
+            {
+              "property": "t<U{",
+              "direction": "descending"
+            }
+          ]
+        },
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144040393,
+        "last_edited_time": 1773154768598,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-8013-8623-000c64736336": {
+      "value": {
+        "id": "31f181ec-d4f6-8013-8623-000c64736336",
+        "version": 13,
+        "type": "table",
+        "name": "Table",
+        "format": {
+          "table_wrap": false,
+          "table_properties": [
+            {
+              "wrap": true,
+              "width": 280,
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "RdL@"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": false,
+              "property": ";Vrk"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "VGrU"
+            }
+          ],
+          "collection_pointer": {
+            "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "subitem_filter_scope": "parents_and_subitems",
+          "table_frozen_column_index": -1,
+          "table_subitem_toggle_column": "title"
+        },
+        "parent_id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773154008581,
+        "last_edited_time": 1773154047936,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  }
+}

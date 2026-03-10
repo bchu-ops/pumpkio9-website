@@ -1,0 +1,2193 @@
+{
+  "block": {
+    "31f181ec-d4f6-81b3-80fe-da3e76304597": {
+      "value": {
+        "id": "31f181ec-d4f6-81b3-80fe-da3e76304597",
+        "version": 57,
+        "type": "page",
+        "properties": {
+          "<>_<": [
+            [
+              "Thermal Process Engineer"
+            ]
+          ],
+          "MKuJ": [
+            [
+              "Chemical Engineering"
+            ]
+          ],
+          "TumX": [
+            [
+              "Aspen Plus, COMSOL, P&ID"
+            ]
+          ],
+          "]Bpy": [
+            [
+              "La Jolla, CA"
+            ]
+          ],
+          "z^Hp": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "daterange",
+                    "end_date": "2023-06-01",
+                    "start_date": "2023-01-01"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "{?gk": [
+            [
+              "ucsdjacobs.png",
+              [
+                [
+                  "a",
+                  "attachment:c16b79c7-88d2-48e2-9ab9-bce68ddc3510:ucsdjacobs.png"
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "Jacobs School of Engineering, UCSD"
+            ]
+          ]
+        },
+        "content": [
+          "c0e5e54b-ff10-45e8-8ca5-4c96f0a1df29",
+          "b8ebce4b-169a-49d3-8bb7-195c49df4847",
+          "a746615b-cf69-42f9-aa1d-c9b13693f726",
+          "1432681b-2fe4-4a7c-97b9-69c3be1f3000",
+          "1bbb066f-4fb0-4381-b62c-884a3d9238d4"
+        ],
+        "format": {
+          "page_icon": "\ud83d\udcbc"
+        },
+        "created_time": 1773145354356,
+        "last_edited_time": 1773150978081,
+        "parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "parent_table": "collection",
+        "alive": true,
+        "file_ids": [
+          "c16b79c7-88d2-48e2-9ab9-bce68ddc3510"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "GGVmnmMaJd6wEBPfmRoWsQ,\"start\",\"end\"",
+            "n": {
+              "GGVmnmMaJd6wEBPfmRoWsQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "GGVmnmMaJd6wEBPfmRoWsQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "zNY7ltA0TJcZ",
+                        25
+                      ],
+                      "o": "start",
+                      "l": 1,
+                      "c": "J"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "1o7_eq-UuJuz",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -5
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "1o7_eq-UuJuz",
+                        6
+                      ],
+                      "o": [
+                        "1o7_eq-UuJuz",
+                        5
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "zNY7ltA0TJcZ",
+                        26
+                      ],
+                      "o": [
+                        "1o7_eq-UuJuz",
+                        6
+                      ],
+                      "l": 10,
+                      "c": "cobs Schoo"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "1o7_eq-UuJuz",
+                        7
+                      ],
+                      "o": [
+                        "1o7_eq-UuJuz",
+                        6
+                      ],
+                      "l": 2,
+                      "c": "l "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "1o7_eq-UuJuz",
+                        9
+                      ],
+                      "o": [
+                        "1o7_eq-UuJuz",
+                        8
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "1o7_eq-UuJuz",
+                        11
+                      ],
+                      "o": [
+                        "1o7_eq-UuJuz",
+                        10
+                      ],
+                      "l": 1,
+                      "c": "o"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "zNY7ltA0TJcZ",
+                        36
+                      ],
+                      "o": [
+                        "1o7_eq-UuJuz",
+                        11
+                      ],
+                      "l": 1,
+                      "c": "f"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "1o7_eq-UuJuz",
+                        12
+                      ],
+                      "o": [
+                        "1o7_eq-UuJuz",
+                        11
+                      ],
+                      "l": -4
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "1o7_eq-UuJuz",
+                        16
+                      ],
+                      "o": [
+                        "1o7_eq-UuJuz",
+                        15
+                      ],
+                      "l": 9,
+                      "c": " Engineer"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "zNY7ltA0TJcZ",
+                        37
+                      ],
+                      "o": [
+                        "1o7_eq-UuJuz",
+                        24
+                      ],
+                      "l": 9,
+                      "c": "ing, UCSD"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "6a83e54d-6563-4444-b5f5-e9177926917a": {
+      "value": {
+        "id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "version": 54,
+        "type": "collection_view",
+        "properties": {
+          "title": [
+            [
+              "Experiences"
+            ]
+          ]
+        },
+        "view_ids": [
+          "3862349e-44dc-44b8-b417-f974f3a8df02",
+          "31f181ec-d4f6-8062-9db6-000c6fb2d6a5"
+        ],
+        "collection_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "format": {
+          "collection_pointer": {
+            "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "hide_inline_collection_name": false
+        },
+        "created_time": 1773144036619,
+        "last_edited_time": 1773154266130,
+        "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"",
+            "n": {
+              "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"": {
+                "s": {
+                  "x": "OZyOaVE3XMQgzJTpySddVg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "HMWLQ18-Xb_r",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 11,
+                      "c": "Experiences"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
+      "value": {
+        "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "version": 275,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Brian\u2019s Portfolio"
+            ]
+          ]
+        },
+        "content": [
+          "861b745c-0cdb-4d4b-8b87-70ebe849da9d",
+          "6d6ab2a2-c8d8-4e4a-ade5-acfc7ce7f20b",
+          "fef0f191-c193-465f-bca6-44e5cab932a7",
+          "6a83e54d-6563-4444-b5f5-e9177926917a",
+          "e3d04709-fc3e-44ba-8e8b-d38f4b38884e",
+          "d29488e8-e56e-4aea-aadb-46cb3b9c4b22",
+          "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+          "6854cd5a-ed72-4cbd-b8de-48cc52166116",
+          "3ea3adf4-6275-46e5-8c8f-90c5994480ba",
+          "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+          "0748870d-7024-4eee-ac3d-e00d98e4dd08",
+          "2fdec1f2-b38c-4a02-bdd6-257fc1243b15",
+          "79cac193-c76d-4c60-8b75-8c2b2a68b76e",
+          "f40de7a1-fdfb-42df-be05-27e2ab126f62",
+          "d214cede-f8b1-45f3-9834-92ccf6da9b21",
+          "8441a1c4-71b4-4bdd-bb1b-e8b44a900136",
+          "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
+          "38678f4a-7abe-4554-8535-f1cf9d495854",
+          "d1c070a3-4073-415b-b012-b2013b9f84aa",
+          "796e82c2-bd04-4db9-a28e-118eecee1fc2",
+          "b18a50c8-0812-4cb2-a9ae-bd8bd9c52d69",
+          "734e9d55-bcea-4ca4-8282-85e4f87c1551",
+          "5624b648-3139-47b8-bdcf-63002991b542",
+          "f94c96dc-7bbd-4503-9d50-5c2ecb5b056b",
+          "edc5721b-e656-41d8-8309-3cfb19d0157b",
+          "e6559921-92aa-4785-b679-5e385d5d1f96",
+          "cdbee9d0-3b67-461e-bcf2-cd724d7b9d9b",
+          "330c4ccd-e7b8-47ca-81be-3ebb93a94063",
+          "9da9c9ed-1c09-4d08-99a5-8be8fc463111",
+          "9e2dbffd-eb9d-4078-a54c-935f19792ff3",
+          "82734aee-b7df-46e4-ae01-8bccfd3a836e",
+          "16aa2e9c-b2bb-4280-9922-ed6b1fb0d2b9",
+          "733a3432-ddbe-473a-977b-5810f959ca5f",
+          "f15d54a9-c59d-4b33-8d2f-b92fd5dd2580",
+          "31f181ec-d4f6-80e1-968c-f53cb804d75b"
+        ],
+        "format": {
+          "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
+          "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
+          "page_cover_position": 0.8909,
+          "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1773152043547
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+            "parent_table": "space"
+          }
+        ],
+        "created_time": 1773143151480,
+        "last_edited_time": 1773160702634,
+        "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "parent_table": "space",
+        "alive": true,
+        "file_ids": [
+          "309d92fa-9e28-481b-94ea-7db16ae6ed22",
+          "43763043-51d8-40de-af0e-07fbe47b8c9e",
+          "37a2bdff-e54d-4514-811a-0cedf450d601",
+          "e3258caa-35df-4e27-836c-cfbc063959cf",
+          "b478773e-0567-44d2-8f19-b22b707786af"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
+            "n": {
+              "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"": {
+                "s": {
+                  "x": "_wIDyDrI9jEsMA8IfUUeGA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        10
+                      ],
+                      "o": "start",
+                      "l": 5,
+                      "c": "Brian"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        16
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": 3,
+                      "c": "\u2019s "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        15
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Portfolio"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "c0e5e54b-ff10-45e8-8ca5-4c96f0a1df29": {
+      "value": {
+        "id": "c0e5e54b-ff10-45e8-8ca5-4c96f0a1df29",
+        "version": 9,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "One of the top engineering schools in the nation, known for groundbreaking research across chemical, mechanical, and bioengineering."
+            ]
+          ]
+        },
+        "created_time": 1773148412747,
+        "last_edited_time": 1773148442740,
+        "parent_id": "31f181ec-d4f6-81b3-80fe-da3e76304597",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "kdtERbS-XxC1oraMZFrElw,\"start\",\"end\"",
+            "n": {
+              "kdtERbS-XxC1oraMZFrElw,\"start\",\"end\"": {
+                "s": {
+                  "x": "kdtERbS-XxC1oraMZFrElw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "q2GkW19C_LV_",
+                        184
+                      ],
+                      "o": "start",
+                      "l": 1,
+                      "c": "O"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "aoa97GKAvJsC",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -40
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "aoa97GKAvJsC",
+                        41
+                      ],
+                      "o": [
+                        "aoa97GKAvJsC",
+                        40
+                      ],
+                      "l": 130,
+                      "c": "ne of the top engineering schools in the nation, known for groundbreaking research across chemical, mechanical, and bioengineering"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "aoa97GKAvJsC",
+                        171
+                      ],
+                      "o": [
+                        "aoa97GKAvJsC",
+                        170
+                      ],
+                      "l": -12
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "aoa97GKAvJsC",
+                        183
+                      ],
+                      "o": [
+                        "aoa97GKAvJsC",
+                        182
+                      ],
+                      "l": 1,
+                      "c": "."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "b8ebce4b-169a-49d3-8bb7-195c49df4847": {
+      "value": {
+        "id": "b8ebce4b-169a-49d3-8bb7-195c49df4847",
+        "version": 4,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "[January 2023 \u2192 June 2023]: Chemical Engineering",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ]
+        },
+        "created_time": 1773148412749,
+        "last_edited_time": 1773148412749,
+        "parent_id": "31f181ec-d4f6-81b3-80fe-da3e76304597",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "tNesU4SEM6hwYcc-mVXHXw,\"start\",\"end\"",
+            "n": {
+              "tNesU4SEM6hwYcc-mVXHXw,\"start\",\"end\"": {
+                "s": {
+                  "x": "tNesU4SEM6hwYcc-mVXHXw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "ThrJT_EBHFwV",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 48,
+                      "c": "[January 2023 \u2192 June 2023]: Chemical Engineering",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "tNesU4SEM6hwYcc-mVXHXw",
+                          "l": "",
+                          "i": [
+                            "ThrJT_EBHFwV",
+                            49
+                          ],
+                          "s": {
+                            "i": [
+                              "ThrJT_EBHFwV",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "e",
+                      "b": []
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "a746615b-cf69-42f9-aa1d-c9b13693f726": {
+      "value": {
+        "id": "a746615b-cf69-42f9-aa1d-c9b13693f726",
+        "version": 14,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Languages / Tools Used:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " Aspen Plus, COMSOL, P&ID"
+            ]
+          ]
+        },
+        "created_time": 1773148412749,
+        "last_edited_time": 1773148774690,
+        "parent_id": "31f181ec-d4f6-81b3-80fe-da3e76304597",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "lZyxSb4CIbJzPNaBZ_G-hQ,\"start\",\"end\"",
+            "n": {
+              "lZyxSb4CIbJzPNaBZ_G-hQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "lZyxSb4CIbJzPNaBZ_G-hQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "w2AOSzzcbnCg",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 23,
+                      "c": "Languages / Tools Used:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "lZyxSb4CIbJzPNaBZ_G-hQ",
+                          "l": "",
+                          "i": [
+                            "W_wUag5zuYH8",
+                            63
+                          ],
+                          "s": {
+                            "i": [
+                              "w2AOSzzcbnCg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "w2AOSzzcbnCg",
+                              24
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "w2AOSzzcbnCg",
+                        24
+                      ],
+                      "o": [
+                        "w2AOSzzcbnCg",
+                        23
+                      ],
+                      "l": 25,
+                      "c": " Aspen Plus, COMSOL, P&ID",
+                      "b": []
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "w2AOSzzcbnCg",
+                        49
+                      ],
+                      "o": [
+                        "w2AOSzzcbnCg",
+                        48
+                      ],
+                      "l": -14
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "1432681b-2fe4-4a7c-97b9-69c3be1f3000": {
+      "value": {
+        "id": "1432681b-2fe4-4a7c-97b9-69c3be1f3000",
+        "version": 9,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Location:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " La Jolla, CA"
+            ]
+          ]
+        },
+        "created_time": 1773148412749,
+        "last_edited_time": 1773148774690,
+        "parent_id": "31f181ec-d4f6-81b3-80fe-da3e76304597",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "PGq-uNge2uJr31jPMH3tuA,\"start\",\"end\"",
+            "n": {
+              "PGq-uNge2uJr31jPMH3tuA,\"start\",\"end\"": {
+                "s": {
+                  "x": "PGq-uNge2uJr31jPMH3tuA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "WpFBhZrS2Roj",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Location:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "PGq-uNge2uJr31jPMH3tuA",
+                          "l": "",
+                          "i": [
+                            "zj5X3TAQIM72",
+                            23
+                          ],
+                          "s": {
+                            "i": [
+                              "WpFBhZrS2Roj",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "WpFBhZrS2Roj",
+                              10
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "WpFBhZrS2Roj",
+                        10
+                      ],
+                      "o": [
+                        "WpFBhZrS2Roj",
+                        9
+                      ],
+                      "l": 13,
+                      "c": " La Jolla, CA",
+                      "b": []
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "1bbb066f-4fb0-4381-b62c-884a3d9238d4": {
+      "value": {
+        "id": "1bbb066f-4fb0-4381-b62c-884a3d9238d4",
+        "version": 10,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Designing and simulating industrial-scale dimethylamine reactors and heat exchanger systems!"
+            ]
+          ]
+        },
+        "created_time": 1773145878904,
+        "last_edited_time": 1773148442741,
+        "parent_id": "31f181ec-d4f6-81b3-80fe-da3e76304597",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "o0Hs7lKmX1dUY3EqxW0IrQ,\"start\",\"end\"",
+            "n": {
+              "o0Hs7lKmX1dUY3EqxW0IrQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "o0Hs7lKmX1dUY3EqxW0IrQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        169
+                      ],
+                      "o": "start",
+                      "l": 1,
+                      "c": "D"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -9
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        10
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        9
+                      ],
+                      "l": 5,
+                      "c": "esign"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        15
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        14
+                      ],
+                      "l": -32
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        47
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        46
+                      ],
+                      "l": 5,
+                      "c": "ing a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        170
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        51
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        52
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        51
+                      ],
+                      "l": -7
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        59
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        58
+                      ],
+                      "l": 2,
+                      "c": "d "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        171
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        60
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        61
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        60
+                      ],
+                      "l": -3
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        64
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        63
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        172
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        64
+                      ],
+                      "l": 3,
+                      "c": "mul"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        65
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        64
+                      ],
+                      "l": -3
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        68
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        67
+                      ],
+                      "l": 3,
+                      "c": "ati"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        71
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        70
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        72
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        71
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        175
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        72
+                      ],
+                      "l": 1,
+                      "c": "g"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        73
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        72
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        176
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        73
+                      ],
+                      "l": 4,
+                      "c": "indu"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        74
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        73
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        180
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        74
+                      ],
+                      "l": 1,
+                      "c": "t"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        75
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        74
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        76
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        75
+                      ],
+                      "l": 2,
+                      "c": "ri"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        181
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        77
+                      ],
+                      "l": 3,
+                      "c": "al-"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        78
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        77
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        80
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        79
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        81
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        80
+                      ],
+                      "l": -5
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        86
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        85
+                      ],
+                      "l": 1,
+                      "c": "c"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        184
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        86
+                      ],
+                      "l": 2,
+                      "c": "al"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        87
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        86
+                      ],
+                      "l": -11
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        98
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        97
+                      ],
+                      "l": 2,
+                      "c": "e "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        100
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        99
+                      ],
+                      "l": -9
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        109
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        108
+                      ],
+                      "l": 1,
+                      "c": "d"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        186
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        109
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        110
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        109
+                      ],
+                      "l": -7
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        117
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        116
+                      ],
+                      "l": 2,
+                      "c": "me"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        119
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        118
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        120
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        119
+                      ],
+                      "l": 1,
+                      "c": "t"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        187
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        120
+                      ],
+                      "l": 3,
+                      "c": "hyl"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        121
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        120
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        190
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        121
+                      ],
+                      "l": 1,
+                      "c": "m"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        122
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        121
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        123
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        122
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        124
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        123
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        125
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        124
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        191
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        125
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        126
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        125
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        127
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        126
+                      ],
+                      "l": -4
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        131
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        130
+                      ],
+                      "l": 1,
+                      "c": "r"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        192
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        131
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        132
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        131
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        193
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        132
+                      ],
+                      "l": 5,
+                      "c": "ctors"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        133
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        132
+                      ],
+                      "l": -8
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        141
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        140
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        198
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        141
+                      ],
+                      "l": 2,
+                      "c": "an"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        142
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        141
+                      ],
+                      "l": 1,
+                      "c": "d"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        200
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        142
+                      ],
+                      "l": 2,
+                      "c": " h"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        143
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        142
+                      ],
+                      "l": -4
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        147
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        146
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        148
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        147
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        150
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        149
+                      ],
+                      "l": 2,
+                      "c": "at"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        152
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        151
+                      ],
+                      "l": -3
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        155
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        154
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        202
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        155
+                      ],
+                      "l": 5,
+                      "c": "excha"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        156
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        155
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        157
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        156
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        207
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        157
+                      ],
+                      "l": 3,
+                      "c": "ger"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        158
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        157
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        210
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        158
+                      ],
+                      "l": 2,
+                      "c": "sy"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        159
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        158
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        160
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        159
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        212
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        160
+                      ],
+                      "l": 1,
+                      "c": "t"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        161
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        160
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        162
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        161
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        213
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        162
+                      ],
+                      "l": 1,
+                      "c": "m"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        163
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        162
+                      ],
+                      "l": -5
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VjuLlq2f6_UV",
+                        168
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        167
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vAeEZArw6NI0",
+                        214
+                      ],
+                      "o": [
+                        "VjuLlq2f6_UV",
+                        168
+                      ],
+                      "l": 1,
+                      "c": "!"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    }
+  },
+  "collection": {
+    "bb34e8bb-b8b4-491c-88c2-97b3bf575377": {
+      "value": {
+        "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "version": 70,
+        "name": [
+          [
+            "Work"
+          ]
+        ],
+        "schema": {
+          "<>_<": {
+            "name": "Position",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "25a59960-f293-4cb1-9b01-bc031befff88",
+                "color": "blue",
+                "value": "AI Engineer"
+              },
+              {
+                "id": "e267d15e-8183-46f3-b2c3-fb49fff63414",
+                "color": "blue",
+                "value": "ML Operations Engineer"
+              },
+              {
+                "id": "24e92934-340e-44e5-b2c2-83a44b65d102",
+                "color": "blue",
+                "value": "Software Engineer Intern"
+              },
+              {
+                "id": "d5e72db6-d3da-40a2-be5c-27209d027ffc",
+                "color": "blue",
+                "value": "Thermal Process Engineer"
+              },
+              {
+                "id": "db23cd19-01e1-44cf-8c68-c433cc61c38f",
+                "color": "blue",
+                "value": "Presenter and Lab Team Member"
+              },
+              {
+                "id": "984549d1-2191-4ad3-ac07-be10a40ec092",
+                "color": "blue",
+                "value": "Battery Research Intern"
+              },
+              {
+                "id": "0cd49b46-4747-4149-add7-e5d0406f33b5",
+                "color": "blue",
+                "value": "Professional Referee"
+              },
+              {
+                "id": "9ab160fb-973c-4b65-b6ea-143290c3fa30",
+                "color": "purple",
+                "value": "Process Engineer"
+              }
+            ]
+          },
+          "MKuJ": {
+            "name": "Team",
+            "type": "text"
+          },
+          "z^Hp": {
+            "name": "Duration",
+            "type": "date"
+          },
+          "{?gk": {
+            "name": "Image",
+            "type": "file"
+          },
+          "title": {
+            "name": "Role",
+            "type": "title"
+          }
+        },
+        "format": {
+          "property_visibility": [
+            {
+              "property": "z^Hp",
+              "visibility": "show"
+            },
+            {
+              "property": "{?gk",
+              "visibility": "show"
+            },
+            {
+              "property": "<>_<",
+              "visibility": "show"
+            },
+            {
+              "property": "MKuJ",
+              "visibility": "hide_if_empty"
+            }
+          ],
+          "ai_suggested_properties": [
+            {
+              "name": "Location",
+              "type": "text"
+            },
+            {
+              "name": "Website",
+              "type": "url"
+            },
+            {
+              "name": "Skills",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "dj}G",
+                  "color": "pink",
+                  "value": "Communication"
+                },
+                {
+                  "id": "~]WZ",
+                  "color": "orange",
+                  "value": "Teamwork"
+                },
+                {
+                  "id": "J|?A",
+                  "color": "red",
+                  "value": "Problem Solving"
+                },
+                {
+                  "id": "wlmd",
+                  "color": "default",
+                  "value": "Leadership"
+                }
+              ]
+            },
+            {
+              "name": "Status",
+              "type": "status"
+            }
+          ]
+        },
+        "parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "parent_table": "block",
+        "alive": true,
+        "migrated": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "deleted_schema": {
+          "TumX": {
+            "name": "Tools",
+            "type": "text"
+          },
+          "]Bpy": {
+            "name": "Location",
+            "type": "text"
+          }
+        },
+        "created_time": 1773144036619,
+        "last_edited_time": 1773156802906,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "last_edited_by_table": "bot",
+        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4"
+      },
+      "role": "reader"
+    }
+  },
+  "collection_view": {
+    "3862349e-44dc-44b8-b417-f974f3a8df02": {
+      "value": {
+        "id": "3862349e-44dc-44b8-b417-f974f3a8df02",
+        "version": 79,
+        "type": "gallery",
+        "name": "Gallery",
+        "format": {
+          "card_layout": {
+            "mode": "compact"
+          },
+          "gallery_cover": {
+            "type": "property",
+            "property": "{?gk"
+          },
+          "collection_pointer": {
+            "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "gallery_properties": [
+            {
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "visible": true,
+              "property": "<>_<"
+            },
+            {
+              "visible": false,
+              "property": "z^Hp"
+            },
+            {
+              "visible": false,
+              "property": "{?gk"
+            },
+            {
+              "visible": false,
+              "property": "MKuJ"
+            }
+          ],
+          "collection_peek_mode": "full_page",
+          "subitem_filter_scope": "parents"
+        },
+        "parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "parent_table": "block",
+        "alive": true,
+        "page_sort": [
+          "31f181ec-d4f6-8049-b7d4-de62b00f4635",
+          "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+          "31f181ec-d4f6-819a-b300-f71d6329a121",
+          "31f181ec-d4f6-81b3-80fe-da3e76304597",
+          "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
+          "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
+          "31f181ec-d4f6-81c1-859c-f894f93c3bc6"
+        ],
+        "query2": {
+          "calendar_by": "z^Hp"
+        },
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144036622,
+        "last_edited_time": 1773153862680,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-8062-9db6-000c6fb2d6a5": {
+      "value": {
+        "id": "31f181ec-d4f6-8062-9db6-000c6fb2d6a5",
+        "version": 21,
+        "type": "table",
+        "name": "Table",
+        "format": {
+          "table_wrap": true,
+          "table_properties": [
+            {
+              "wrap": true,
+              "width": 280,
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "z^Hp"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": false,
+              "property": "{?gk"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "<>_<"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "MKuJ"
+            }
+          ],
+          "collection_pointer": {
+            "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "subitem_filter_scope": "parents_and_subitems",
+          "table_frozen_column_index": -1,
+          "table_subitem_toggle_column": "title"
+        },
+        "parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773153868898,
+        "last_edited_time": 1773153977340,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  }
+}

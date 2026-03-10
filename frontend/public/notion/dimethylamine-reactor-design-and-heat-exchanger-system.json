@@ -1,0 +1,1277 @@
+{
+  "block": {
+    "31f181ec-d4f6-81b4-aa61-c7a89a6aa781": {
+      "value": {
+        "id": "31f181ec-d4f6-81b4-aa61-c7a89a6aa781",
+        "version": 229,
+        "type": "page",
+        "properties": {
+          ";Vrk": [
+            [
+              "dimeth.png",
+              [
+                [
+                  "a",
+                  "attachment:bc808ab9-36a1-4aad-92e0-e0a3bb06927d:dimeth.png"
+                ]
+              ]
+            ]
+          ],
+          "RdL@": [
+            [
+              "Paper & Presentation \u2014 Industrial-scale dimethylamine production via reactor and heat exchanger simulation"
+            ]
+          ],
+          "VGrU": [
+            [
+              "Aspen Plus, Distillation Columns, Condensors, Evaporators, Heaters, Turbines"
+            ]
+          ],
+          "t<U{": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "daterange",
+                    "end_date": "2023-06-01",
+                    "start_date": "2023-01-01"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "Dimethylamine Reactor Design and Heat Exchanger System"
+            ]
+          ]
+        },
+        "content": [
+          "c4d82a78-2fc0-4aa2-807c-2c8bfa94552e",
+          "114a0bcc-7fc9-41e3-a70a-234823bcf224",
+          "70908de0-7ded-4282-96ad-61a0d9ff22ca",
+          "31f181ec-d4f6-808d-9f40-ee1bc46172e6",
+          "31f181ec-d4f6-8070-8874-dcf2996d08e3",
+          "31f181ec-d4f6-800c-814f-fa16c3a119ce"
+        ],
+        "format": {
+          "page_icon": "\ud83d\udcdd"
+        },
+        "created_time": 1773149945155,
+        "last_edited_time": 1773153120161,
+        "parent_id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+        "parent_table": "collection",
+        "alive": true,
+        "file_ids": [
+          "bc808ab9-36a1-4aad-92e0-e0a3bb06927d"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "MsumYIEcW6RwHhoIFicYUQ,\"start\",\"end\"",
+            "n": {
+              "MsumYIEcW6RwHhoIFicYUQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "MsumYIEcW6RwHhoIFicYUQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "S2kOySqLpFpJ",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 54,
+                      "c": "Dimethylamine Reactor Design and Heat Exchanger System"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "d4e6cf70-95e7-48ec-9e58-a61d45029917": {
+      "value": {
+        "id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "version": 20,
+        "type": "collection_view",
+        "properties": {
+          "title": [
+            [
+              "Papers & Publications"
+            ]
+          ]
+        },
+        "view_ids": [
+          "aeb3c1a5-80e2-4245-8d00-3c5b242a7f07",
+          "31f181ec-d4f6-8013-8623-000c64736336"
+        ],
+        "collection_id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+        "format": {
+          "collection_pointer": {
+            "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          }
+        },
+        "created_time": 1773144040391,
+        "last_edited_time": 1773154768598,
+        "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "tM2c0wv3IOBvWc0wrE8jZA,\"start\",\"end\"",
+            "n": {
+              "tM2c0wv3IOBvWc0wrE8jZA,\"start\",\"end\"": {
+                "s": {
+                  "x": "tM2c0wv3IOBvWc0wrE8jZA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "5R2Yvj0gRee7",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 21,
+                      "c": "Papers & Publications"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
+      "value": {
+        "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "version": 275,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Brian\u2019s Portfolio"
+            ]
+          ]
+        },
+        "content": [
+          "861b745c-0cdb-4d4b-8b87-70ebe849da9d",
+          "6d6ab2a2-c8d8-4e4a-ade5-acfc7ce7f20b",
+          "fef0f191-c193-465f-bca6-44e5cab932a7",
+          "6a83e54d-6563-4444-b5f5-e9177926917a",
+          "e3d04709-fc3e-44ba-8e8b-d38f4b38884e",
+          "d29488e8-e56e-4aea-aadb-46cb3b9c4b22",
+          "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+          "6854cd5a-ed72-4cbd-b8de-48cc52166116",
+          "3ea3adf4-6275-46e5-8c8f-90c5994480ba",
+          "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+          "0748870d-7024-4eee-ac3d-e00d98e4dd08",
+          "2fdec1f2-b38c-4a02-bdd6-257fc1243b15",
+          "79cac193-c76d-4c60-8b75-8c2b2a68b76e",
+          "f40de7a1-fdfb-42df-be05-27e2ab126f62",
+          "d214cede-f8b1-45f3-9834-92ccf6da9b21",
+          "8441a1c4-71b4-4bdd-bb1b-e8b44a900136",
+          "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
+          "38678f4a-7abe-4554-8535-f1cf9d495854",
+          "d1c070a3-4073-415b-b012-b2013b9f84aa",
+          "796e82c2-bd04-4db9-a28e-118eecee1fc2",
+          "b18a50c8-0812-4cb2-a9ae-bd8bd9c52d69",
+          "734e9d55-bcea-4ca4-8282-85e4f87c1551",
+          "5624b648-3139-47b8-bdcf-63002991b542",
+          "f94c96dc-7bbd-4503-9d50-5c2ecb5b056b",
+          "edc5721b-e656-41d8-8309-3cfb19d0157b",
+          "e6559921-92aa-4785-b679-5e385d5d1f96",
+          "cdbee9d0-3b67-461e-bcf2-cd724d7b9d9b",
+          "330c4ccd-e7b8-47ca-81be-3ebb93a94063",
+          "9da9c9ed-1c09-4d08-99a5-8be8fc463111",
+          "9e2dbffd-eb9d-4078-a54c-935f19792ff3",
+          "82734aee-b7df-46e4-ae01-8bccfd3a836e",
+          "16aa2e9c-b2bb-4280-9922-ed6b1fb0d2b9",
+          "733a3432-ddbe-473a-977b-5810f959ca5f",
+          "f15d54a9-c59d-4b33-8d2f-b92fd5dd2580",
+          "31f181ec-d4f6-80e1-968c-f53cb804d75b"
+        ],
+        "format": {
+          "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
+          "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
+          "page_cover_position": 0.8909,
+          "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1773152043547
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+            "parent_table": "space"
+          }
+        ],
+        "created_time": 1773143151480,
+        "last_edited_time": 1773160702634,
+        "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "parent_table": "space",
+        "alive": true,
+        "file_ids": [
+          "309d92fa-9e28-481b-94ea-7db16ae6ed22",
+          "43763043-51d8-40de-af0e-07fbe47b8c9e",
+          "37a2bdff-e54d-4514-811a-0cedf450d601",
+          "e3258caa-35df-4e27-836c-cfbc063959cf",
+          "b478773e-0567-44d2-8f19-b22b707786af"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
+            "n": {
+              "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"": {
+                "s": {
+                  "x": "_wIDyDrI9jEsMA8IfUUeGA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        10
+                      ],
+                      "o": "start",
+                      "l": 5,
+                      "c": "Brian"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        16
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": 3,
+                      "c": "\u2019s "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        15
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Portfolio"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "c4d82a78-2fc0-4aa2-807c-2c8bfa94552e": {
+      "value": {
+        "id": "c4d82a78-2fc0-4aa2-807c-2c8bfa94552e",
+        "version": 3,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Research paper and presentation on the design and simulation of an industrial-scale dimethylamine reactor and heat exchanger system, achieving 30% higher energy efficiency and 95% conversion of methanol."
+            ]
+          ]
+        },
+        "created_time": 1773149945215,
+        "last_edited_time": 1773149945215,
+        "parent_id": "31f181ec-d4f6-81b4-aa61-c7a89a6aa781",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "F-Dqjpq2YiuiV6qmfGwiqw,\"start\",\"end\"",
+            "n": {
+              "F-Dqjpq2YiuiV6qmfGwiqw,\"start\",\"end\"": {
+                "s": {
+                  "x": "F-Dqjpq2YiuiV6qmfGwiqw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "CGghw0FBp8eP",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 203,
+                      "c": "Research paper and presentation on the design and simulation of an industrial-scale dimethylamine reactor and heat exchanger system, achieving 30% higher energy efficiency and 95% conversion of methanol."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "114a0bcc-7fc9-41e3-a70a-234823bcf224": {
+      "value": {
+        "id": "114a0bcc-7fc9-41e3-a70a-234823bcf224",
+        "version": 4,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Tools / Methods:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " Aspen Plus, COMSOL, Reactor Design, Heat Exchanger, P&ID"
+            ]
+          ]
+        },
+        "created_time": 1773149945216,
+        "last_edited_time": 1773149945216,
+        "parent_id": "31f181ec-d4f6-81b4-aa61-c7a89a6aa781",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "EQeqLmasB36S7XYKiWx-lQ,\"start\",\"end\"",
+            "n": {
+              "EQeqLmasB36S7XYKiWx-lQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "EQeqLmasB36S7XYKiWx-lQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "auhfSgNi89Ig",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 16,
+                      "c": "Tools / Methods:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "EQeqLmasB36S7XYKiWx-lQ",
+                          "l": "",
+                          "i": [
+                            "auhfSgNi89Ig",
+                            74
+                          ],
+                          "s": {
+                            "i": [
+                              "auhfSgNi89Ig",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "auhfSgNi89Ig",
+                              17
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "auhfSgNi89Ig",
+                        17
+                      ],
+                      "o": [
+                        "auhfSgNi89Ig",
+                        16
+                      ],
+                      "l": 57,
+                      "c": " Aspen Plus, COMSOL, Reactor Design, Heat Exchanger, P&ID",
+                      "b": []
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "70908de0-7ded-4282-96ad-61a0d9ff22ca": {
+      "value": {
+        "id": "70908de0-7ded-4282-96ad-61a0d9ff22ca",
+        "version": 34,
+        "type": "sub_sub_header",
+        "properties": {
+          "title": [
+            [
+              "Presentation"
+            ]
+          ]
+        },
+        "format": {
+          "toggleable": false
+        },
+        "created_time": 1773152923336,
+        "last_edited_time": 1773153104264,
+        "parent_id": "31f181ec-d4f6-81b4-aa61-c7a89a6aa781",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "vXXNIvMhL4oItK9qZ1mgsg,\"start\",[\"KeBV5LHOlawW\",14]",
+            "n": {
+              "vXXNIvMhL4oItK9qZ1mgsg,\"start\",[\"KeBV5LHOlawW\",14]": {
+                "s": {
+                  "x": "vXXNIvMhL4oItK9qZ1mgsg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "MDLxOYU18izs",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 12,
+                      "c": "Presentation"
+                    },
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        14
+                      ],
+                      "o": [
+                        "MDLxOYU18izs",
+                        12
+                      ]
+                    }
+                  ],
+                  "l": "L"
+                },
+                "c": [
+                  "27UfFpNsQNFd1kVR9H3PfQ,[\"KeBV5LHOlawW\",21],\"end\""
+                ]
+              },
+              "27UfFpNsQNFd1kVR9H3PfQ,[\"KeBV5LHOlawW\",21],\"end\"": {
+                "s": {
+                  "x": "27UfFpNsQNFd1kVR9H3PfQ",
+                  "i": [
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        21
+                      ],
+                      "o": "start"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": "l"
+                },
+                "c": [
+                  "vXXNIvMhL4oItK9qZ1mgsg,[\"KeBV5LHOlawW\",14],\"end\""
+                ]
+              },
+              "vXXNIvMhL4oItK9qZ1mgsg,[\"KeBV5LHOlawW\",14],\"end\"": {
+                "s": {
+                  "x": "vXXNIvMhL4oItK9qZ1mgsg",
+                  "i": [
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        14
+                      ],
+                      "o": [
+                        "MDLxOYU18izs",
+                        12
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        13
+                      ],
+                      "o": [
+                        "MDLxOYU18izs",
+                        12
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        15
+                      ],
+                      "o": [
+                        "KeBV5LHOlawW",
+                        13
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": "l"
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-808d-9f40-ee1bc46172e6": {
+      "value": {
+        "id": "31f181ec-d4f6-808d-9f40-ee1bc46172e6",
+        "version": 11,
+        "type": "pdf",
+        "properties": {
+          "size": [
+            [
+              "839.7 KiB"
+            ]
+          ],
+          "title": [
+            [
+              "dimethylamine.pdf"
+            ]
+          ],
+          "source": [
+            [
+              "/projects/presentations/dimethylamine.pdf"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 446,
+          "block_height": 320,
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_preserve_scale": false
+        },
+        "created_time": 1773153110796,
+        "last_edited_time": 1773153118198,
+        "parent_id": "31f181ec-d4f6-81b4-aa61-c7a89a6aa781",
+        "parent_table": "block",
+        "alive": true,
+        "file_ids": [
+          "0cd01625-85a2-489e-9b2b-e36856865085"
+        ],
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "Muk8dUklCU0UPAEeefKzkA,\"start\",\"end\"",
+            "n": {
+              "Muk8dUklCU0UPAEeefKzkA,\"start\",\"end\"": {
+                "s": {
+                  "x": "Muk8dUklCU0UPAEeefKzkA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 17,
+                      "c": "dimethylamine.pdf"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-8070-8874-dcf2996d08e3": {
+      "value": {
+        "id": "31f181ec-d4f6-8070-8874-dcf2996d08e3",
+        "version": 15,
+        "type": "sub_sub_header",
+        "properties": {
+          "title": [
+            [
+              "Paper"
+            ]
+          ]
+        },
+        "created_time": 1773153102445,
+        "last_edited_time": 1773153158656,
+        "parent_id": "31f181ec-d4f6-81b4-aa61-c7a89a6aa781",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "XvkxRULAZe-l9zNFXHoWbQ,\"start\",\"end\"",
+            "n": {
+              "XvkxRULAZe-l9zNFXHoWbQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "XvkxRULAZe-l9zNFXHoWbQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": [
+                  "3_yWIlmSF90KqeL7qUv_Rg,[\"KeBV5LHOlawW\",21],\"end\""
+                ]
+              },
+              "3_yWIlmSF90KqeL7qUv_Rg,[\"KeBV5LHOlawW\",21],\"end\"": {
+                "s": {
+                  "x": "3_yWIlmSF90KqeL7qUv_Rg",
+                  "i": [
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        21
+                      ],
+                      "o": "start"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": "l"
+                },
+                "c": [
+                  "1V0g-AboPoSWoWcXwA-lfw,[\"KeBV5LHOlawW\",21],\"end\""
+                ]
+              },
+              "1V0g-AboPoSWoWcXwA-lfw,[\"KeBV5LHOlawW\",21],\"end\"": {
+                "s": {
+                  "x": "1V0g-AboPoSWoWcXwA-lfw",
+                  "i": [
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        21
+                      ],
+                      "o": "start"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": "l"
+                },
+                "c": [
+                  "8Z1DIIeGLMzrHOAQJR_FYQ,[\"KeBV5LHOlawW\",21],\"end\""
+                ]
+              },
+              "8Z1DIIeGLMzrHOAQJR_FYQ,[\"KeBV5LHOlawW\",21],\"end\"": {
+                "s": {
+                  "x": "8Z1DIIeGLMzrHOAQJR_FYQ",
+                  "i": [
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        21
+                      ],
+                      "o": "start"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": "l"
+                },
+                "c": [
+                  "3njCgMgP44s3JzXtzG1Peg,[\"KeBV5LHOlawW\",76],[\"KeBV5LHOlawW\",38]"
+                ]
+              },
+              "3njCgMgP44s3JzXtzG1Peg,[\"KeBV5LHOlawW\",76],[\"KeBV5LHOlawW\",38]": {
+                "s": {
+                  "x": "3njCgMgP44s3JzXtzG1Peg",
+                  "i": [
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        76
+                      ],
+                      "o": "start"
+                    },
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        38
+                      ],
+                      "o": "start"
+                    }
+                  ],
+                  "l": "T"
+                },
+                "c": [
+                  "3njCgMgP44s3JzXtzG1Peg,[\"KeBV5LHOlawW\",38],\"end\""
+                ]
+              },
+              "3njCgMgP44s3JzXtzG1Peg,[\"KeBV5LHOlawW\",38],\"end\"": {
+                "s": {
+                  "x": "3njCgMgP44s3JzXtzG1Peg",
+                  "i": [
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        38
+                      ],
+                      "o": "start"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -17
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        39
+                      ],
+                      "o": [
+                        "KeBV5LHOlawW",
+                        17
+                      ],
+                      "l": -17
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": "l"
+                },
+                "c": [
+                  "BpD_WIArXPzIusFIywZAgw,[\"KeBV5LHOlawW\",47],[\"KeBV5LHOlawW\",26]"
+                ]
+              },
+              "BpD_WIArXPzIusFIywZAgw,[\"KeBV5LHOlawW\",47],[\"KeBV5LHOlawW\",26]": {
+                "s": {
+                  "x": "BpD_WIArXPzIusFIywZAgw",
+                  "i": [
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        47
+                      ],
+                      "o": "start"
+                    },
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        26
+                      ],
+                      "o": "start"
+                    }
+                  ],
+                  "l": "T"
+                },
+                "c": [
+                  "BpD_WIArXPzIusFIywZAgw,[\"KeBV5LHOlawW\",26],\"end\""
+                ]
+              },
+              "BpD_WIArXPzIusFIywZAgw,[\"KeBV5LHOlawW\",26],\"end\"": {
+                "s": {
+                  "x": "BpD_WIArXPzIusFIywZAgw",
+                  "i": [
+                    {
+                      "t": "p",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        26
+                      ],
+                      "o": "start"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        48
+                      ],
+                      "o": [
+                        "KeBV5LHOlawW",
+                        26
+                      ],
+                      "l": -7
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6VfmvuqVDQgJ",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -4
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        55
+                      ],
+                      "o": [
+                        "6VfmvuqVDQgJ",
+                        4
+                      ],
+                      "l": 4,
+                      "c": "Pape"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6VfmvuqVDQgJ",
+                        5
+                      ],
+                      "o": [
+                        "6VfmvuqVDQgJ",
+                        4
+                      ],
+                      "l": 1,
+                      "c": "r"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": "l"
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-800c-814f-fa16c3a119ce": {
+      "value": {
+        "id": "31f181ec-d4f6-800c-814f-fa16c3a119ce",
+        "version": 11,
+        "type": "pdf",
+        "properties": {
+          "size": [
+            [
+              "2.1 MiB"
+            ]
+          ],
+          "title": [
+            [
+              "dimethylamine.pdf"
+            ]
+          ],
+          "source": [
+            [
+              "/projects/papers/dimethylamine.pdf"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 446,
+          "block_height": 320,
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_preserve_scale": false
+        },
+        "created_time": 1773153122202,
+        "last_edited_time": 1773153128945,
+        "parent_id": "31f181ec-d4f6-81b4-aa61-c7a89a6aa781",
+        "parent_table": "block",
+        "alive": true,
+        "file_ids": [
+          "7ca396a1-324a-49e6-896d-bd153947a207"
+        ],
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "_wClOVjl9TYdjQtQ8GBKMw,\"start\",\"end\"",
+            "n": {
+              "_wClOVjl9TYdjQtQ8GBKMw,\"start\",\"end\"": {
+                "s": {
+                  "x": "_wClOVjl9TYdjQtQ8GBKMw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 17,
+                      "c": "dimethylamine.pdf"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    }
+  },
+  "collection": {
+    "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099": {
+      "value": {
+        "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+        "version": 17,
+        "name": [
+          [
+            "Papers & Publications"
+          ]
+        ],
+        "schema": {
+          ";Vrk": {
+            "name": "Image",
+            "type": "file"
+          },
+          "RdL@": {
+            "name": "Description",
+            "type": "text"
+          },
+          "VGrU": {
+            "name": "Tools",
+            "type": "text"
+          },
+          "title": {
+            "name": "Title",
+            "type": "title"
+          }
+        },
+        "format": {
+          "property_visibility": [
+            {
+              "property": "t<U{",
+              "visibility": "show"
+            },
+            {
+              "property": "RdL@",
+              "visibility": "show"
+            },
+            {
+              "property": ";Vrk",
+              "visibility": "show"
+            },
+            {
+              "property": "VGrU",
+              "visibility": "hide_if_empty"
+            }
+          ],
+          "ai_suggested_properties": [
+            {
+              "name": "Authors",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "thUq",
+                  "color": "gray",
+                  "value": "Author 1"
+                },
+                {
+                  "id": "nCLz",
+                  "color": "yellow",
+                  "value": "Author 2"
+                },
+                {
+                  "id": "WVbx",
+                  "color": "red",
+                  "value": "Author 3"
+                }
+              ]
+            },
+            {
+              "name": "Journal",
+              "type": "text"
+            },
+            {
+              "name": "DOI",
+              "type": "url"
+            },
+            {
+              "name": "Status",
+              "type": "status"
+            }
+          ]
+        },
+        "parent_id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "parent_table": "block",
+        "alive": true,
+        "migrated": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "deleted_schema": {
+          "t<U{": {
+            "name": "Date",
+            "type": "date"
+          }
+        },
+        "created_time": 1773144040391,
+        "last_edited_time": 1773154035783,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  },
+  "collection_view": {
+    "aeb3c1a5-80e2-4245-8d00-3c5b242a7f07": {
+      "value": {
+        "id": "aeb3c1a5-80e2-4245-8d00-3c5b242a7f07",
+        "version": 23,
+        "type": "gallery",
+        "name": "Gallery",
+        "format": {
+          "card_layout": {
+            "mode": "list"
+          },
+          "description": "",
+          "gallery_cover": {
+            "type": "property",
+            "property": ";Vrk"
+          },
+          "collection_pointer": {
+            "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "gallery_properties": [
+            {
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "visible": true,
+              "property": "RdL@"
+            },
+            {
+              "visible": false,
+              "property": "t<U{"
+            },
+            {
+              "visible": false,
+              "property": ";Vrk"
+            },
+            {
+              "visible": false,
+              "property": "VGrU"
+            }
+          ],
+          "collection_peek_mode": "full_page",
+          "subitem_filter_scope": "parents"
+        },
+        "parent_id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "parent_table": "block",
+        "alive": true,
+        "query2": {
+          "sort": [
+            {
+              "property": "t<U{",
+              "direction": "descending"
+            }
+          ]
+        },
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144040393,
+        "last_edited_time": 1773154768598,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-8013-8623-000c64736336": {
+      "value": {
+        "id": "31f181ec-d4f6-8013-8623-000c64736336",
+        "version": 13,
+        "type": "table",
+        "name": "Table",
+        "format": {
+          "table_wrap": false,
+          "table_properties": [
+            {
+              "wrap": true,
+              "width": 280,
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "RdL@"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": false,
+              "property": ";Vrk"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "VGrU"
+            }
+          ],
+          "collection_pointer": {
+            "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "subitem_filter_scope": "parents_and_subitems",
+          "table_frozen_column_index": -1,
+          "table_subitem_toggle_column": "title"
+        },
+        "parent_id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773154008581,
+        "last_edited_time": 1773154047936,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  }
+}

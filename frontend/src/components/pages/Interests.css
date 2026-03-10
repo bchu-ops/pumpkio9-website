@@ -1,0 +1,97 @@
+.interests-page {
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    "Apple Color Emoji", Arial, sans-serif;
+  color: rgb(55, 53, 47);
+}
+
+.interests-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.interests-subtitle {
+  text-align: center;
+  color: rgba(55, 53, 47, 0.65);
+  font-size: 16px;
+  margin-bottom: 2.5rem;
+}
+
+.interests-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.interest-card {
+  border-radius: 3px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow:
+    rgba(15, 15, 15, 0.1) 0 0 0 1px,
+    rgba(15, 15, 15, 0.1) 0 2px 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.interest-card:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    rgba(15, 15, 15, 0.1) 0 0 0 1px,
+    rgba(15, 15, 15, 0.15) 0 6px 16px;
+}
+
+.interest-card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.interest-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.interest-card:hover .interest-card-image img {
+  transform: scale(1.05);
+}
+
+.interest-card-body {
+  padding: 12px 14px 16px;
+}
+
+.interest-card-title {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: rgb(55, 53, 47);
+}
+
+.interest-card-text {
+  font-size: 13px;
+  color: rgba(55, 53, 47, 0.65);
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .interests-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .interests-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interests-page {
+    padding: 2rem 1rem;
+  }
+}

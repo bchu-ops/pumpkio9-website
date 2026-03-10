@@ -26,7 +26,7 @@ function Cards() {
 			{/* Text Content */}
 			<div className="cards-wrapper">
 				<p className="text-lg md:text-xl text-gray-700 mb-2">
-					I’m a <span className="font-semibold">(full-stack / front-end)</span> Software Engineer!
+					I’m a <span className="font-semibold">(full-stack / ML)</span> Software Engineer!
 					I’m passionate about exploring uncharted spaces to change the world through bold ideas and action. 😎
 				</p>
 				<p className="text-lg md:text-xl text-gray-700 mb-2">

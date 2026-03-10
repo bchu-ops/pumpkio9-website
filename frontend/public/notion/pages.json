@@ -1,0 +1,97 @@
+{
+  "stealth-startup": {
+    "id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+    "title": "Stealth Startup",
+    "section": "experiences"
+  },
+  "vulcan-engineering-solutions": {
+    "id": "31f181ec-d4f6-819a-b300-f71d6329a121",
+    "title": "Vulcan Engineering Solutions",
+    "section": "experiences"
+  },
+  "jacobs-school-of-engineering-ucsd": {
+    "id": "31f181ec-d4f6-81b3-80fe-da3e76304597",
+    "title": "Jacobs School of Engineering, UCSD",
+    "section": "experiences"
+  },
+  "chemical-engineering-lab-ucsd": {
+    "id": "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
+    "title": "Chemical Engineering Lab, UCSD",
+    "section": "experiences"
+  },
+  "uc-san-diego": {
+    "id": "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
+    "title": "UC San Diego",
+    "section": "experiences"
+  },
+  "california-north-referee-administration": {
+    "id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+    "title": "California North Referee Administration",
+    "section": "experiences"
+  },
+  "providences-enterprise-system": {
+    "id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+    "title": "Providences Enterprise System",
+    "section": "projects"
+  },
+  "polygon-map-generator-mit-iquhack": {
+    "id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+    "title": "Polygon Map Generator (MIT iQuHack)",
+    "section": "projects"
+  },
+  "hearts-cards-game": {
+    "id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+    "title": "Hearts Cards Game",
+    "section": "projects"
+  },
+  "f1-ai-racing-speed-demon": {
+    "id": "31f181ec-d4f6-811b-8187-c3c28e765692",
+    "title": "F1 AI Racing \u2014 Speed Demon",
+    "section": "projects"
+  },
+  "knowledge-graph-neural-network-nlp-drug-drug-interactions": {
+    "id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
+    "title": "Knowledge Graph Neural Network \u2014 NLP Drug-Drug Interactions",
+    "section": "projects"
+  },
+  "personal-website": {
+    "id": "31f181ec-d4f6-8199-93e3-d3190b20f412",
+    "title": "Personal Website",
+    "section": "projects"
+  },
+  "dimethylamine-reactor-design-and-heat-exchanger-system": {
+    "id": "31f181ec-d4f6-81b4-aa61-c7a89a6aa781",
+    "title": "Dimethylamine Reactor Design and Heat Exchanger System",
+    "section": "papers"
+  },
+  "photocatalytic-degradation-of-methylene-blue-by-uv-light-and-tio2": {
+    "id": "31f181ec-d4f6-8103-858f-e1c70076645c",
+    "title": "Photocatalytic Degradation of Methylene Blue by UV Light and TiO2",
+    "section": "papers"
+  },
+  "membrane-separation-process-using-reverse-osmosis": {
+    "id": "31f181ec-d4f6-8115-9146-e54ff90378f3",
+    "title": "Membrane Separation Process Using Reverse Osmosis",
+    "section": "papers"
+  },
+  "ideal-extrusions-for-liposome-nanoparticle-synthesis": {
+    "id": "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0",
+    "title": "Ideal Extrusions for Liposome Nanoparticle Synthesis",
+    "section": "papers"
+  },
+  "low-pressure-chemical-vapor-deposition-lpcvd-system": {
+    "id": "31f181ec-d4f6-81a2-9b8b-d950aaf6803d",
+    "title": "Low Pressure Chemical Vapor Deposition (LPCVD) System",
+    "section": "papers"
+  },
+  "controller-tuning-to-adjust-ph-in-a-cstr": {
+    "id": "31f181ec-d4f6-81c1-8a22-d889f010e815",
+    "title": "Controller Tuning to Adjust pH in a CSTR",
+    "section": "papers"
+  },
+  "modeling-heat-transfer-correlations-in-plate-heat-exchangers": {
+    "id": "31f181ec-d4f6-81c1-bb93-f3ed2fa85542",
+    "title": "Modeling Heat Transfer Correlations in Plate Heat Exchangers",
+    "section": "papers"
+  }
+}

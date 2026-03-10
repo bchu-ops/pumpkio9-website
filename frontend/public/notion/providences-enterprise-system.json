@@ -1,0 +1,1332 @@
+{
+  "block": {
+    "31f181ec-d4f6-810c-9216-d58c6faf43d5": {
+      "value": {
+        "id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "version": 33,
+        "type": "page",
+        "properties": {
+          "LEI=": [
+            [
+              "providence.png",
+              [
+                [
+                  "a",
+                  "attachment:e7c5ee70-05d7-45e5-ab2a-4f31d9bfc95b:providence.png"
+                ]
+              ]
+            ]
+          ],
+          "Z_|q": [
+            [
+              "MySQL, HTML, CSS, Design Patterns"
+            ]
+          ],
+          "eNYj": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "daterange",
+                    "end_date": "2024-03-31",
+                    "start_date": "2024-03-01"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "n:yL": [
+            [
+              "Client-server system with MySQL, design patterns, and dynamic game states \u2014 March 2024"
+            ]
+          ],
+          "title": [
+            [
+              "Providences Enterprise System"
+            ]
+          ]
+        },
+        "content": [
+          "281c50a7-27d3-47ad-8759-bb84630cc910",
+          "7fc11631-c172-472b-8bcf-b3b4f7a0b298"
+        ],
+        "format": {
+          "page_icon": "\ud83d\udee0\ufe0f"
+        },
+        "created_time": 1773145918381,
+        "last_edited_time": 1773151004686,
+        "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
+        "parent_table": "collection",
+        "alive": true,
+        "file_ids": [
+          "e7c5ee70-05d7-45e5-ab2a-4f31d9bfc95b"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "KN35vWEjbBZDUfyO-elOFg,\"start\",\"end\"",
+            "n": {
+              "KN35vWEjbBZDUfyO-elOFg,\"start\",\"end\"": {
+                "s": {
+                  "x": "KN35vWEjbBZDUfyO-elOFg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "ZXZXE5II0bP5",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 29,
+                      "c": "Providences Enterprise System"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "3d09c63d-e3c2-46ce-a68f-223d409eb532": {
+      "value": {
+        "id": "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+        "version": 25,
+        "type": "collection_view",
+        "properties": {
+          "title": [
+            [
+              "Projects"
+            ]
+          ]
+        },
+        "view_ids": [
+          "993b7af0-b276-4af7-8064-711f396f531f",
+          "31f181ec-d4f6-80c8-b941-000ca8305822"
+        ],
+        "collection_id": "18a165b6-70e3-4321-9940-52fee01938e2",
+        "format": {
+          "collection_pointer": {
+            "id": "18a165b6-70e3-4321-9940-52fee01938e2",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          }
+        },
+        "created_time": 1773144038215,
+        "last_edited_time": 1773154732253,
+        "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "WGxPoJUtKCS6HDznNQbe4w,\"start\",\"end\"",
+            "n": {
+              "WGxPoJUtKCS6HDznNQbe4w,\"start\",\"end\"": {
+                "s": {
+                  "x": "WGxPoJUtKCS6HDznNQbe4w",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "dRpYGY0nr7Ko",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 8,
+                      "c": "Projects"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
+      "value": {
+        "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "version": 275,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Brian\u2019s Portfolio"
+            ]
+          ]
+        },
+        "content": [
+          "861b745c-0cdb-4d4b-8b87-70ebe849da9d",
+          "6d6ab2a2-c8d8-4e4a-ade5-acfc7ce7f20b",
+          "fef0f191-c193-465f-bca6-44e5cab932a7",
+          "6a83e54d-6563-4444-b5f5-e9177926917a",
+          "e3d04709-fc3e-44ba-8e8b-d38f4b38884e",
+          "d29488e8-e56e-4aea-aadb-46cb3b9c4b22",
+          "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+          "6854cd5a-ed72-4cbd-b8de-48cc52166116",
+          "3ea3adf4-6275-46e5-8c8f-90c5994480ba",
+          "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+          "0748870d-7024-4eee-ac3d-e00d98e4dd08",
+          "2fdec1f2-b38c-4a02-bdd6-257fc1243b15",
+          "79cac193-c76d-4c60-8b75-8c2b2a68b76e",
+          "f40de7a1-fdfb-42df-be05-27e2ab126f62",
+          "d214cede-f8b1-45f3-9834-92ccf6da9b21",
+          "8441a1c4-71b4-4bdd-bb1b-e8b44a900136",
+          "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
+          "38678f4a-7abe-4554-8535-f1cf9d495854",
+          "d1c070a3-4073-415b-b012-b2013b9f84aa",
+          "796e82c2-bd04-4db9-a28e-118eecee1fc2",
+          "b18a50c8-0812-4cb2-a9ae-bd8bd9c52d69",
+          "734e9d55-bcea-4ca4-8282-85e4f87c1551",
+          "5624b648-3139-47b8-bdcf-63002991b542",
+          "f94c96dc-7bbd-4503-9d50-5c2ecb5b056b",
+          "edc5721b-e656-41d8-8309-3cfb19d0157b",
+          "e6559921-92aa-4785-b679-5e385d5d1f96",
+          "cdbee9d0-3b67-461e-bcf2-cd724d7b9d9b",
+          "330c4ccd-e7b8-47ca-81be-3ebb93a94063",
+          "9da9c9ed-1c09-4d08-99a5-8be8fc463111",
+          "9e2dbffd-eb9d-4078-a54c-935f19792ff3",
+          "82734aee-b7df-46e4-ae01-8bccfd3a836e",
+          "16aa2e9c-b2bb-4280-9922-ed6b1fb0d2b9",
+          "733a3432-ddbe-473a-977b-5810f959ca5f",
+          "f15d54a9-c59d-4b33-8d2f-b92fd5dd2580",
+          "31f181ec-d4f6-80e1-968c-f53cb804d75b"
+        ],
+        "format": {
+          "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
+          "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
+          "page_cover_position": 0.8909,
+          "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1773152043547
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+            "parent_table": "space"
+          }
+        ],
+        "created_time": 1773143151480,
+        "last_edited_time": 1773160702634,
+        "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "parent_table": "space",
+        "alive": true,
+        "file_ids": [
+          "309d92fa-9e28-481b-94ea-7db16ae6ed22",
+          "43763043-51d8-40de-af0e-07fbe47b8c9e",
+          "37a2bdff-e54d-4514-811a-0cedf450d601",
+          "e3258caa-35df-4e27-836c-cfbc063959cf",
+          "b478773e-0567-44d2-8f19-b22b707786af"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
+            "n": {
+              "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"": {
+                "s": {
+                  "x": "_wIDyDrI9jEsMA8IfUUeGA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        10
+                      ],
+                      "o": "start",
+                      "l": 5,
+                      "c": "Brian"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        16
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": 3,
+                      "c": "\u2019s "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        15
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Portfolio"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "281c50a7-27d3-47ad-8759-bb84630cc910": {
+      "value": {
+        "id": "281c50a7-27d3-47ad-8759-bb84630cc910",
+        "version": 4,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Enterprise system for managing province-capital data with dynamic game state modification using MySQL and creational design patterns."
+            ]
+          ]
+        },
+        "created_time": 1773147881138,
+        "last_edited_time": 1773147881138,
+        "parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "UMzUdEfZ7xUnpy4g1nWa7A,\"start\",\"end\"",
+            "n": {
+              "UMzUdEfZ7xUnpy4g1nWa7A,\"start\",\"end\"": {
+                "s": {
+                  "x": "UMzUdEfZ7xUnpy4g1nWa7A",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "D_TkYRY2EsjW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 133,
+                      "c": "Enterprise system for managing province-capital data with dynamic game state modification using MySQL and creational design patterns."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "7fc11631-c172-472b-8bcf-b3b4f7a0b298": {
+      "value": {
+        "id": "7fc11631-c172-472b-8bcf-b3b4f7a0b298",
+        "version": 9,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Languages / Tools Used:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " MySQL, HTML, CSS, Abstract Factory, Builder, Prototype"
+            ]
+          ]
+        },
+        "created_time": 1773145918399,
+        "last_edited_time": 1773148796656,
+        "parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "XfFSXtOleBDaf9PDqstcFw,\"start\",\"end\"",
+            "n": {
+              "XfFSXtOleBDaf9PDqstcFw,\"start\",\"end\"": {
+                "s": {
+                  "x": "XfFSXtOleBDaf9PDqstcFw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        60
+                      ],
+                      "o": "start",
+                      "l": 7,
+                      "c": "Languag",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "XfFSXtOleBDaf9PDqstcFw",
+                          "l": "",
+                          "i": [
+                            "8mfishXxdMr3",
+                            119
+                          ],
+                          "s": {
+                            "i": [
+                              "8mfishXxdMr3",
+                              60
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "8mfishXxdMr3",
+                              76
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        2
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        1
+                      ],
+                      "l": 2,
+                      "c": "es"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        4
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        3
+                      ],
+                      "l": -5
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        9
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        8
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        67
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        9
+                      ],
+                      "l": 1,
+                      "c": "/"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        10
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        9
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        11
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        10
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        68
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        11
+                      ],
+                      "l": 4,
+                      "c": "Tool"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        12
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        11
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        13
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        12
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        72
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        13
+                      ],
+                      "l": 3,
+                      "c": " Us"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        14
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        13
+                      ],
+                      "l": -6
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        20
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        19
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        21
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        20
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        22
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        21
+                      ],
+                      "l": 1,
+                      "c": "d"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        75
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        22
+                      ],
+                      "l": 1,
+                      "c": ":"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        76
+                      ],
+                      "o": [
+                        "8mfishXxdMr3",
+                        75
+                      ],
+                      "l": 2,
+                      "c": " M",
+                      "b": []
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        23
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        22
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        24
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        23
+                      ],
+                      "l": 1,
+                      "c": "y"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        78
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        24
+                      ],
+                      "l": 4,
+                      "c": "SQL,"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        25
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        24
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        82
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        25
+                      ],
+                      "l": 10,
+                      "c": "HTML, CSS,"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        26
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        25
+                      ],
+                      "l": -5
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        31
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        30
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        92
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        31
+                      ],
+                      "l": 3,
+                      "c": "Abs"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        32
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        31
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        34
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        33
+                      ],
+                      "l": 1,
+                      "c": "t"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        35
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        34
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        36
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        35
+                      ],
+                      "l": 1,
+                      "c": "r"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        95
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        36
+                      ],
+                      "l": 5,
+                      "c": "act F"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        37
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        36
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        38
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        37
+                      ],
+                      "l": 2,
+                      "c": "ac"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        100
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        39
+                      ],
+                      "l": 5,
+                      "c": "tory,"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        40
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        39
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        41
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        40
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        105
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        41
+                      ],
+                      "l": 1,
+                      "c": "B"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        42
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        41
+                      ],
+                      "l": 1,
+                      "c": "u"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        43
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        42
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        44
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        43
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        106
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        44
+                      ],
+                      "l": 1,
+                      "c": "l"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        45
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        44
+                      ],
+                      "l": -10
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        55
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        54
+                      ],
+                      "l": 1,
+                      "c": "d"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        107
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        55
+                      ],
+                      "l": 3,
+                      "c": "er,"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        56
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        55
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8mfishXxdMr3",
+                        110
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        56
+                      ],
+                      "l": 9,
+                      "c": "Prototype"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "481iejtawVAt",
+                        57
+                      ],
+                      "o": [
+                        "481iejtawVAt",
+                        56
+                      ],
+                      "l": -3
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    }
+  },
+  "collection": {
+    "18a165b6-70e3-4321-9940-52fee01938e2": {
+      "value": {
+        "id": "18a165b6-70e3-4321-9940-52fee01938e2",
+        "version": 17,
+        "name": [
+          [
+            "Projects"
+          ]
+        ],
+        "schema": {
+          "?rG}": {
+            "name": "Link",
+            "type": "url"
+          },
+          "LEI=": {
+            "name": "Image",
+            "type": "file"
+          },
+          "Z_|q": {
+            "name": "Tools",
+            "type": "text"
+          },
+          "eNYj": {
+            "name": "Date",
+            "type": "date"
+          },
+          "n:yL": {
+            "name": "Description",
+            "type": "text"
+          },
+          "title": {
+            "name": "Project name",
+            "type": "title"
+          }
+        },
+        "format": {
+          "property_visibility": [
+            {
+              "property": "eNYj",
+              "visibility": "show"
+            },
+            {
+              "property": "n:yL",
+              "visibility": "show"
+            },
+            {
+              "property": "LEI=",
+              "visibility": "show"
+            },
+            {
+              "property": "Z_|q",
+              "visibility": "show"
+            },
+            {
+              "property": "?rG}",
+              "visibility": "hide_if_empty"
+            }
+          ],
+          "ai_suggested_properties": [
+            {
+              "name": "Project Status",
+              "type": "status"
+            },
+            {
+              "name": "Budget",
+              "type": "number"
+            },
+            {
+              "name": "Team Members",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "vEad",
+                  "color": "brown",
+                  "value": "Developer"
+                },
+                {
+                  "id": "Aw[t",
+                  "color": "red",
+                  "value": "Designer"
+                },
+                {
+                  "id": "IqqB",
+                  "color": "blue",
+                  "value": "Project Manager"
+                },
+                {
+                  "id": "VrhV",
+                  "color": "pink",
+                  "value": "QA Tester"
+                }
+              ]
+            },
+            {
+              "name": "Client Email",
+              "type": "email"
+            }
+          ],
+          "collection_page_properties": [
+            {
+              "visible": false,
+              "property": "eNYj"
+            },
+            {
+              "visible": false,
+              "property": "n:yL"
+            },
+            {
+              "visible": false,
+              "property": "LEI="
+            },
+            {
+              "visible": false,
+              "property": "Z_|q"
+            },
+            {
+              "visible": false,
+              "property": "?rG}"
+            }
+          ]
+        },
+        "parent_id": "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+        "parent_table": "block",
+        "alive": true,
+        "migrated": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144038215,
+        "last_edited_time": 1773150552032,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  },
+  "collection_view": {
+    "993b7af0-b276-4af7-8064-711f396f531f": {
+      "value": {
+        "id": "993b7af0-b276-4af7-8064-711f396f531f",
+        "version": 55,
+        "type": "gallery",
+        "name": "Gallery",
+        "format": {
+          "description": "",
+          "gallery_cover": {
+            "type": "property",
+            "property": "LEI="
+          },
+          "collection_pointer": {
+            "id": "18a165b6-70e3-4321-9940-52fee01938e2",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "gallery_properties": [
+            {
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "visible": true,
+              "property": "Z_|q"
+            },
+            {
+              "visible": false,
+              "property": "eNYj"
+            },
+            {
+              "visible": false,
+              "property": "n:yL"
+            },
+            {
+              "visible": false,
+              "property": "LEI="
+            }
+          ],
+          "timeline_preference": {
+            "zoomLevel": "month",
+            "centerTimestamp": 1773151473337
+          },
+          "collection_peek_mode": "full_page",
+          "subitem_filter_scope": "parents",
+          "inline_collection_first_load_limit": {
+            "type": "load_limit",
+            "limit": 25
+          }
+        },
+        "parent_id": "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+        "parent_table": "block",
+        "alive": true,
+        "query2": {
+          "sort": [
+            {
+              "property": "eNYj",
+              "direction": "descending"
+            }
+          ],
+          "timeline_by": "eNYj"
+        },
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144038216,
+        "last_edited_time": 1773154732253,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80c8-b941-000ca8305822": {
+      "value": {
+        "id": "31f181ec-d4f6-80c8-b941-000ca8305822",
+        "version": 7,
+        "type": "table",
+        "format": {
+          "table_wrap": false,
+          "table_properties": [
+            {
+              "wrap": false,
+              "width": 280,
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "eNYj"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "n:yL"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": false,
+              "property": "LEI="
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "?rG}"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "Z_|q"
+            }
+          ],
+          "collection_pointer": {
+            "id": "18a165b6-70e3-4321-9940-52fee01938e2",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "subitem_filter_scope": "parents_and_subitems",
+          "table_frozen_column_index": -1,
+          "table_subitem_toggle_column": "title"
+        },
+        "parent_id": "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773153798314,
+        "last_edited_time": 1773154068649,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  }
+}

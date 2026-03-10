@@ -1,0 +1,962 @@
+{
+  "block": {
+    "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0": {
+      "value": {
+        "id": "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0",
+        "version": 62,
+        "type": "page",
+        "properties": {
+          ";Vrk": [
+            [
+              "liposome.png",
+              [
+                [
+                  "a",
+                  "attachment:9e26afaa-3128-48ce-bec3-e1c8cbdd0e37:liposome.png"
+                ]
+              ]
+            ]
+          ],
+          "RdL@": [
+            [
+              "Paper & Presentation \u2014 Optimizing extrusion count for uniform liposome nanoparticle synthesis"
+            ]
+          ],
+          "VGrU": [
+            [
+              "Liposome Synthesis, Extrusion, Nanoparticle Characterization, DLS"
+            ]
+          ],
+          "t<U{": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "daterange",
+                    "end_date": "2023-06-01",
+                    "start_date": "2023-01-01"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "Ideal Extrusions for Liposome Nanoparticle Synthesis"
+            ]
+          ]
+        },
+        "content": [
+          "1222ce26-5002-489b-93ff-8a4f7dcb472b",
+          "20982f63-6588-4ce7-93c8-ce1c536fb37b",
+          "31f181ec-d4f6-8007-9848-ed552ff0f34c",
+          "31f181ec-d4f6-808f-a3a3-d2d2d48dad63",
+          "31f181ec-d4f6-808d-b9d6-e2303dee881f",
+          "31f181ec-d4f6-809d-854a-e21586ce0b1b"
+        ],
+        "format": {
+          "page_icon": "\ud83d\udcdd"
+        },
+        "created_time": 1773145367973,
+        "last_edited_time": 1773159796390,
+        "parent_id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+        "parent_table": "collection",
+        "alive": true,
+        "file_ids": [
+          "c3f61ea4-aae7-4310-ace5-4d18f42d6111",
+          "9e26afaa-3128-48ce-bec3-e1c8cbdd0e37"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "5GjadAwf38fz29dEEtT-Fw,\"start\",\"end\"",
+            "n": {
+              "5GjadAwf38fz29dEEtT-Fw,\"start\",\"end\"": {
+                "s": {
+                  "x": "5GjadAwf38fz29dEEtT-Fw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "cT7vdSg4KehF",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 52,
+                      "c": "Ideal Extrusions for Liposome Nanoparticle Synthesis"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "d4e6cf70-95e7-48ec-9e58-a61d45029917": {
+      "value": {
+        "id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "version": 20,
+        "type": "collection_view",
+        "properties": {
+          "title": [
+            [
+              "Papers & Publications"
+            ]
+          ]
+        },
+        "view_ids": [
+          "aeb3c1a5-80e2-4245-8d00-3c5b242a7f07",
+          "31f181ec-d4f6-8013-8623-000c64736336"
+        ],
+        "collection_id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+        "format": {
+          "collection_pointer": {
+            "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          }
+        },
+        "created_time": 1773144040391,
+        "last_edited_time": 1773154768598,
+        "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "tM2c0wv3IOBvWc0wrE8jZA,\"start\",\"end\"",
+            "n": {
+              "tM2c0wv3IOBvWc0wrE8jZA,\"start\",\"end\"": {
+                "s": {
+                  "x": "tM2c0wv3IOBvWc0wrE8jZA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "5R2Yvj0gRee7",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 21,
+                      "c": "Papers & Publications"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
+      "value": {
+        "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "version": 275,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Brian\u2019s Portfolio"
+            ]
+          ]
+        },
+        "content": [
+          "861b745c-0cdb-4d4b-8b87-70ebe849da9d",
+          "6d6ab2a2-c8d8-4e4a-ade5-acfc7ce7f20b",
+          "fef0f191-c193-465f-bca6-44e5cab932a7",
+          "6a83e54d-6563-4444-b5f5-e9177926917a",
+          "e3d04709-fc3e-44ba-8e8b-d38f4b38884e",
+          "d29488e8-e56e-4aea-aadb-46cb3b9c4b22",
+          "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+          "6854cd5a-ed72-4cbd-b8de-48cc52166116",
+          "3ea3adf4-6275-46e5-8c8f-90c5994480ba",
+          "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+          "0748870d-7024-4eee-ac3d-e00d98e4dd08",
+          "2fdec1f2-b38c-4a02-bdd6-257fc1243b15",
+          "79cac193-c76d-4c60-8b75-8c2b2a68b76e",
+          "f40de7a1-fdfb-42df-be05-27e2ab126f62",
+          "d214cede-f8b1-45f3-9834-92ccf6da9b21",
+          "8441a1c4-71b4-4bdd-bb1b-e8b44a900136",
+          "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
+          "38678f4a-7abe-4554-8535-f1cf9d495854",
+          "d1c070a3-4073-415b-b012-b2013b9f84aa",
+          "796e82c2-bd04-4db9-a28e-118eecee1fc2",
+          "b18a50c8-0812-4cb2-a9ae-bd8bd9c52d69",
+          "734e9d55-bcea-4ca4-8282-85e4f87c1551",
+          "5624b648-3139-47b8-bdcf-63002991b542",
+          "f94c96dc-7bbd-4503-9d50-5c2ecb5b056b",
+          "edc5721b-e656-41d8-8309-3cfb19d0157b",
+          "e6559921-92aa-4785-b679-5e385d5d1f96",
+          "cdbee9d0-3b67-461e-bcf2-cd724d7b9d9b",
+          "330c4ccd-e7b8-47ca-81be-3ebb93a94063",
+          "9da9c9ed-1c09-4d08-99a5-8be8fc463111",
+          "9e2dbffd-eb9d-4078-a54c-935f19792ff3",
+          "82734aee-b7df-46e4-ae01-8bccfd3a836e",
+          "16aa2e9c-b2bb-4280-9922-ed6b1fb0d2b9",
+          "733a3432-ddbe-473a-977b-5810f959ca5f",
+          "f15d54a9-c59d-4b33-8d2f-b92fd5dd2580",
+          "31f181ec-d4f6-80e1-968c-f53cb804d75b"
+        ],
+        "format": {
+          "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
+          "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
+          "page_cover_position": 0.8909,
+          "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
+        },
+        "permissions": [
+          {
+            "role": "editor",
+            "type": "user_permission",
+            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+          },
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1773152043547
+          },
+          {
+            "role": {
+              "read_content": true,
+              "insert_content": true,
+              "update_content": true
+            },
+            "type": "bot_permission",
+            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+            "parent_table": "space"
+          }
+        ],
+        "created_time": 1773143151480,
+        "last_edited_time": 1773160702634,
+        "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "parent_table": "space",
+        "alive": true,
+        "file_ids": [
+          "309d92fa-9e28-481b-94ea-7db16ae6ed22",
+          "43763043-51d8-40de-af0e-07fbe47b8c9e",
+          "37a2bdff-e54d-4514-811a-0cedf450d601",
+          "e3258caa-35df-4e27-836c-cfbc063959cf",
+          "b478773e-0567-44d2-8f19-b22b707786af"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
+            "n": {
+              "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"": {
+                "s": {
+                  "x": "_wIDyDrI9jEsMA8IfUUeGA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        10
+                      ],
+                      "o": "start",
+                      "l": 5,
+                      "c": "Brian"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        16
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": 3,
+                      "c": "\u2019s "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        15
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Portfolio"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "1222ce26-5002-489b-93ff-8a4f7dcb472b": {
+      "value": {
+        "id": "1222ce26-5002-489b-93ff-8a4f7dcb472b",
+        "version": 9,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Research paper and presentation investigating the relationship between extrusion count and particle size uniformity in liposome nanoparticle fabrication, with dynamic light scattering analysis."
+            ]
+          ]
+        },
+        "created_time": 1773147911034,
+        "last_edited_time": 1773148150871,
+        "parent_id": "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "BYY82wxRw8pe8JIBHWSCSA,\"start\",\"end\"",
+            "n": {
+              "BYY82wxRw8pe8JIBHWSCSA,\"start\",\"end\"": {
+                "s": {
+                  "x": "BYY82wxRw8pe8JIBHWSCSA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VGHAszv4HXPw",
+                        185
+                      ],
+                      "o": "start",
+                      "l": 10,
+                      "c": "Research p"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vSWpF3wyVXTn",
+                        1
+                      ],
+                      "o": "start",
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vSWpF3wyVXTn",
+                        2
+                      ],
+                      "o": [
+                        "vSWpF3wyVXTn",
+                        1
+                      ],
+                      "l": 183,
+                      "c": "aper and presentation investigating the relationship between extrusion count and particle size uniformity in liposome nanoparticle fabrication, with dynamic light scattering analysis."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "20982f63-6588-4ce7-93c8-ce1c536fb37b": {
+      "value": {
+        "id": "20982f63-6588-4ce7-93c8-ce1c536fb37b",
+        "version": 4,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Tools / Methods:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " Liposome Synthesis, Extrusion, Nanoparticle Characterization, DLS"
+            ]
+          ]
+        },
+        "created_time": 1773148815144,
+        "last_edited_time": 1773148815144,
+        "parent_id": "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "Xej_oZnukh9WqDYzRGvczg,\"start\",\"end\"",
+            "n": {
+              "Xej_oZnukh9WqDYzRGvczg,\"start\",\"end\"": {
+                "s": {
+                  "x": "Xej_oZnukh9WqDYzRGvczg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jMebq5b4Z9fY",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 16,
+                      "c": "Tools / Methods:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "Xej_oZnukh9WqDYzRGvczg",
+                          "l": "",
+                          "i": [
+                            "jMebq5b4Z9fY",
+                            83
+                          ],
+                          "s": {
+                            "i": [
+                              "jMebq5b4Z9fY",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "jMebq5b4Z9fY",
+                              17
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jMebq5b4Z9fY",
+                        17
+                      ],
+                      "o": [
+                        "jMebq5b4Z9fY",
+                        16
+                      ],
+                      "l": 66,
+                      "c": " Liposome Synthesis, Extrusion, Nanoparticle Characterization, DLS",
+                      "b": []
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-8007-9848-ed552ff0f34c": {
+      "value": {
+        "id": "31f181ec-d4f6-8007-9848-ed552ff0f34c",
+        "version": 3,
+        "type": "text",
+        "created_time": 1773153261775,
+        "last_edited_time": 1773153261776,
+        "parent_id": "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "8bIFZQZXnkOt9eEmp9bDfA,\"start\",\"end\"",
+            "n": {
+              "8bIFZQZXnkOt9eEmp9bDfA,\"start\",\"end\"": {
+                "s": {
+                  "x": "8bIFZQZXnkOt9eEmp9bDfA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-808f-a3a3-d2d2d48dad63": {
+      "value": {
+        "id": "31f181ec-d4f6-808f-a3a3-d2d2d48dad63",
+        "version": 11,
+        "type": "pdf",
+        "properties": {
+          "size": [
+            [
+              "1.8 MiB"
+            ]
+          ],
+          "title": [
+            [
+              "Liposome.pdf"
+            ]
+          ],
+          "source": [
+            [
+              "/projects/presentations/Liposome.pdf"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 446,
+          "block_height": 320,
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_preserve_scale": false
+        },
+        "created_time": 1773153264452,
+        "last_edited_time": 1773153269689,
+        "parent_id": "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0",
+        "parent_table": "block",
+        "alive": true,
+        "file_ids": [
+          "4d251a0a-dc4a-4ff8-a586-fbc75166165b"
+        ],
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "XiwgFGkYOcwCH31sRcQw5w,\"start\",\"end\"",
+            "n": {
+              "XiwgFGkYOcwCH31sRcQw5w,\"start\",\"end\"": {
+                "s": {
+                  "x": "XiwgFGkYOcwCH31sRcQw5w",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 12,
+                      "c": "Liposome.pdf"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-808d-b9d6-e2303dee881f": {
+      "value": {
+        "id": "31f181ec-d4f6-808d-b9d6-e2303dee881f",
+        "version": 3,
+        "type": "text",
+        "created_time": 1773153251704,
+        "last_edited_time": 1773153251705,
+        "parent_id": "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "M3oqa70tVZrlQP-Uynjx1A,\"start\",\"end\"",
+            "n": {
+              "M3oqa70tVZrlQP-Uynjx1A,\"start\",\"end\"": {
+                "s": {
+                  "x": "M3oqa70tVZrlQP-Uynjx1A",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-809d-854a-e21586ce0b1b": {
+      "value": {
+        "id": "31f181ec-d4f6-809d-854a-e21586ce0b1b",
+        "version": 11,
+        "type": "pdf",
+        "properties": {
+          "size": [
+            [
+              "720.6 KiB"
+            ]
+          ],
+          "title": [
+            [
+              "Liposome.pdf"
+            ]
+          ],
+          "source": [
+            [
+              "/projects/papers/Liposome.pdf"
+            ]
+          ]
+        },
+        "format": {
+          "block_width": 446,
+          "block_height": 320,
+          "block_full_width": false,
+          "block_page_width": false,
+          "block_preserve_scale": false
+        },
+        "created_time": 1773153253993,
+        "last_edited_time": 1773153262508,
+        "parent_id": "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0",
+        "parent_table": "block",
+        "alive": true,
+        "file_ids": [
+          "391310ab-42a1-48a9-be63-1729ceab0bfc"
+        ],
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "TI1NIBYsbUYaIa_xG_9IDA,\"start\",\"end\"",
+            "n": {
+              "TI1NIBYsbUYaIa_xG_9IDA,\"start\",\"end\"": {
+                "s": {
+                  "x": "TI1NIBYsbUYaIa_xG_9IDA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 12,
+                      "c": "Liposome.pdf"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    }
+  },
+  "collection": {
+    "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099": {
+      "value": {
+        "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+        "version": 17,
+        "name": [
+          [
+            "Papers & Publications"
+          ]
+        ],
+        "schema": {
+          ";Vrk": {
+            "name": "Image",
+            "type": "file"
+          },
+          "RdL@": {
+            "name": "Description",
+            "type": "text"
+          },
+          "VGrU": {
+            "name": "Tools",
+            "type": "text"
+          },
+          "title": {
+            "name": "Title",
+            "type": "title"
+          }
+        },
+        "format": {
+          "property_visibility": [
+            {
+              "property": "t<U{",
+              "visibility": "show"
+            },
+            {
+              "property": "RdL@",
+              "visibility": "show"
+            },
+            {
+              "property": ";Vrk",
+              "visibility": "show"
+            },
+            {
+              "property": "VGrU",
+              "visibility": "hide_if_empty"
+            }
+          ],
+          "ai_suggested_properties": [
+            {
+              "name": "Authors",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "thUq",
+                  "color": "gray",
+                  "value": "Author 1"
+                },
+                {
+                  "id": "nCLz",
+                  "color": "yellow",
+                  "value": "Author 2"
+                },
+                {
+                  "id": "WVbx",
+                  "color": "red",
+                  "value": "Author 3"
+                }
+              ]
+            },
+            {
+              "name": "Journal",
+              "type": "text"
+            },
+            {
+              "name": "DOI",
+              "type": "url"
+            },
+            {
+              "name": "Status",
+              "type": "status"
+            }
+          ]
+        },
+        "parent_id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "parent_table": "block",
+        "alive": true,
+        "migrated": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "deleted_schema": {
+          "t<U{": {
+            "name": "Date",
+            "type": "date"
+          }
+        },
+        "created_time": 1773144040391,
+        "last_edited_time": 1773154035783,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  },
+  "collection_view": {
+    "aeb3c1a5-80e2-4245-8d00-3c5b242a7f07": {
+      "value": {
+        "id": "aeb3c1a5-80e2-4245-8d00-3c5b242a7f07",
+        "version": 23,
+        "type": "gallery",
+        "name": "Gallery",
+        "format": {
+          "card_layout": {
+            "mode": "list"
+          },
+          "description": "",
+          "gallery_cover": {
+            "type": "property",
+            "property": ";Vrk"
+          },
+          "collection_pointer": {
+            "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "gallery_properties": [
+            {
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "visible": true,
+              "property": "RdL@"
+            },
+            {
+              "visible": false,
+              "property": "t<U{"
+            },
+            {
+              "visible": false,
+              "property": ";Vrk"
+            },
+            {
+              "visible": false,
+              "property": "VGrU"
+            }
+          ],
+          "collection_peek_mode": "full_page",
+          "subitem_filter_scope": "parents"
+        },
+        "parent_id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "parent_table": "block",
+        "alive": true,
+        "query2": {
+          "sort": [
+            {
+              "property": "t<U{",
+              "direction": "descending"
+            }
+          ]
+        },
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144040393,
+        "last_edited_time": 1773154768598,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-8013-8623-000c64736336": {
+      "value": {
+        "id": "31f181ec-d4f6-8013-8623-000c64736336",
+        "version": 13,
+        "type": "table",
+        "name": "Table",
+        "format": {
+          "table_wrap": false,
+          "table_properties": [
+            {
+              "wrap": true,
+              "width": 280,
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "RdL@"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": false,
+              "property": ";Vrk"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "VGrU"
+            }
+          ],
+          "collection_pointer": {
+            "id": "97d28eb0-2f9a-4eb6-bf8e-68ab693f2099",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "subitem_filter_scope": "parents_and_subitems",
+          "table_frozen_column_index": -1,
+          "table_subitem_toggle_column": "title"
+        },
+        "parent_id": "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773154008581,
+        "last_edited_time": 1773154047936,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  }
+}

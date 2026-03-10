@@ -1,0 +1,256 @@
+{
+  "experiences": [
+    {
+      "id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+      "title": "Stealth Startup",
+      "slug": "stealth-startup",
+      "section": "experiences",
+      "position": [
+        "AI Engineer"
+      ],
+      "team": "AI Engineering",
+      "duration": {
+        "start": "2024-06-01",
+        "end": "Present"
+      },
+      "image": "machining.png"
+    },
+    {
+      "id": "31f181ec-d4f6-819a-b300-f71d6329a121",
+      "title": "Vulcan Engineering Solutions",
+      "slug": "vulcan-engineering-solutions",
+      "section": "experiences",
+      "position": [
+        "ML Operations Engineer",
+        "Software Engineer Intern"
+      ],
+      "team": "Engineering",
+      "duration": {
+        "start": "2025-01-01",
+        "end": "Present"
+      },
+      "image": "vulcan.png"
+    },
+    {
+      "id": "31f181ec-d4f6-81b3-80fe-da3e76304597",
+      "title": "Jacobs School of Engineering, UCSD",
+      "slug": "jacobs-school-of-engineering-ucsd",
+      "section": "experiences",
+      "position": [
+        "Thermal Process Engineer"
+      ],
+      "team": "Chemical Engineering",
+      "duration": {
+        "start": "2023-01-01",
+        "end": "2023-06-01"
+      },
+      "image": "ucsdjacobs.png"
+    },
+    {
+      "id": "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
+      "title": "Chemical Engineering Lab, UCSD",
+      "slug": "chemical-engineering-lab-ucsd",
+      "section": "experiences",
+      "position": [
+        "Presenter and Lab Team Member"
+      ],
+      "team": "Nanoengineering Dept",
+      "duration": {
+        "start": "2023-01-01",
+        "end": "2023-06-01"
+      },
+      "image": "ucsd.png"
+    },
+    {
+      "id": "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
+      "title": "UC San Diego",
+      "slug": "uc-san-diego",
+      "section": "experiences",
+      "position": [
+        "Battery Research Intern"
+      ],
+      "team": "Battery Camp",
+      "duration": {
+        "start": "2022-06-01",
+        "end": "2022-08-01"
+      },
+      "image": "ucsdspec.png"
+    },
+    {
+      "id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+      "title": "California North Referee Administration",
+      "slug": "california-north-referee-administration",
+      "section": "experiences",
+      "position": [
+        "Professional Referee"
+      ],
+      "team": "Officiating",
+      "duration": {
+        "start": "2018-08-01",
+        "end": "2022-06-01"
+      },
+      "image": "cnra.png"
+    }
+  ],
+  "projects": [
+    {
+      "id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+      "title": "Providences Enterprise System",
+      "slug": "providences-enterprise-system",
+      "section": "projects",
+      "link": "",
+      "image": "providence.png",
+      "tools": "MySQL, HTML, CSS, Design Patterns",
+      "date": {
+        "start": "2024-03-01",
+        "end": "2024-03-31"
+      },
+      "description": "Client-server system with MySQL, design patterns, and dynamic game states \u2014 March 2024"
+    },
+    {
+      "id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+      "title": "Polygon Map Generator (MIT iQuHack)",
+      "slug": "polygon-map-generator-mit-iquhack",
+      "section": "projects",
+      "link": "",
+      "image": "mit.png",
+      "tools": "MySQL, HTML, CSS, Design Patterns",
+      "date": {
+        "start": "2024-01-01",
+        "end": "2024-01-31"
+      },
+      "description": "Client-server system with MySQL, creational design patterns, and UI/UX \u2014 January 2024"
+    },
+    {
+      "id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+      "title": "Hearts Cards Game",
+      "slug": "hearts-cards-game",
+      "section": "projects",
+      "link": "",
+      "image": "cards.png",
+      "tools": "Java, Spring Boot, Multithreading, RMI, Servlets",
+      "date": {
+        "start": "2023-05-01",
+        "end": "2023-05-31"
+      },
+      "description": "Online card game with Java Spring Boot, multithreading, and AI strategies \u2014 May 2023"
+    },
+    {
+      "id": "31f181ec-d4f6-811b-8187-c3c28e765692",
+      "title": "F1 AI Racing \u2014 Speed Demon",
+      "slug": "f1-ai-racing-speed-demon",
+      "section": "projects",
+      "link": "https://github.com/bchu-ops/speeddemon",
+      "image": "f1.png",
+      "tools": "Python, OpenTelemetry, AWS EC2, LangChain, GraphRAG, PySpark, MCP",
+      "date": {
+        "start": "2025-09-01",
+        "end": ""
+      },
+      "description": "Real-time telemetry with LangChain, GraphRAG, and FSAE go-kart chassis design"
+    },
+    {
+      "id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
+      "title": "Knowledge Graph Neural Network \u2014 NLP Drug-Drug Interactions",
+      "slug": "knowledge-graph-neural-network-nlp-drug-drug-interactions",
+      "section": "projects",
+      "link": "",
+      "image": "kg.png",
+      "tools": "Python, TensorFlow, Neo4j, spaCy, Hugging Face, scikit-learn",
+      "date": {
+        "start": "2025-05-01",
+        "end": "2025-08-01"
+      },
+      "description": "Knowledge Graph Neural Network predicting combined drug effects with 82% accuracy using TensorFlow and Neo4j"
+    },
+    {
+      "id": "31f181ec-d4f6-8199-93e3-d3190b20f412",
+      "title": "Personal Website",
+      "slug": "personal-website",
+      "section": "projects",
+      "link": "https://bchu-ops.github.io/pumpkio9-website/",
+      "image": "icon.png",
+      "tools": "React, JavaScript, CSS, Notion API, Spotify API, Google Maps API",
+      "date": {
+        "start": "2025-07-01",
+        "end": ""
+      },
+      "description": "React-based interactive website with animated graphics, responsive design, and dynamic data-driven components"
+    }
+  ],
+  "papers": [
+    {
+      "id": "31f181ec-d4f6-81b4-aa61-c7a89a6aa781",
+      "title": "Dimethylamine Reactor Design and Heat Exchanger System",
+      "slug": "dimethylamine-reactor-design-and-heat-exchanger-system",
+      "section": "papers",
+      "image": "dimeth.png",
+      "description": "Paper & Presentation \u2014 Industrial-scale dimethylamine production via reactor and heat exchanger simulation",
+      "tools": "Aspen Plus, Distillation Columns, Condensors, Evaporators, Heaters, Turbines"
+    },
+    {
+      "id": "31f181ec-d4f6-8103-858f-e1c70076645c",
+      "title": "Photocatalytic Degradation of Methylene Blue by UV Light and TiO2",
+      "slug": "photocatalytic-degradation-of-methylene-blue-by-uv-light-and-tio2",
+      "section": "papers",
+      "image": "uvphoto.png",
+      "description": "Paper & Presentation \u2014 Photocatalytic degradation using UV light and TiO2 catalyst",
+      "tools": "UV Photocatalysis, TiO2 Catalyst, Spectrophotometry, Methylene Blue"
+    },
+    {
+      "id": "31f181ec-d4f6-8115-9146-e54ff90378f3",
+      "title": "Membrane Separation Process Using Reverse Osmosis",
+      "slug": "membrane-separation-process-using-reverse-osmosis",
+      "section": "papers",
+      "image": "reverseosmosis.png",
+      "description": "Paper & Presentation \u2014 Membrane separation effectiveness using reverse osmosis techniques",
+      "tools": "Reverse Osmosis, Membrane Separation, Water Treatment"
+    },
+    {
+      "id": "31f181ec-d4f6-8189-a0a5-ff0d8c4eebc0",
+      "title": "Ideal Extrusions for Liposome Nanoparticle Synthesis",
+      "slug": "ideal-extrusions-for-liposome-nanoparticle-synthesis",
+      "section": "papers",
+      "image": "liposome.png",
+      "description": "Paper & Presentation \u2014 Optimizing extrusion count for uniform liposome nanoparticle synthesis",
+      "tools": "Liposome Synthesis, Extrusion, Nanoparticle Characterization, DLS"
+    },
+    {
+      "id": "31f181ec-d4f6-81a2-9b8b-d950aaf6803d",
+      "title": "Low Pressure Chemical Vapor Deposition (LPCVD) System",
+      "slug": "low-pressure-chemical-vapor-deposition-lpcvd-system",
+      "section": "papers",
+      "image": "lpcvd.png",
+      "description": "Paper & Presentation \u2014 LPCVD system design and thin film deposition processes",
+      "tools": "LPCVD Reactor, Thin Film Deposition, Vacuum Systems"
+    },
+    {
+      "id": "31f181ec-d4f6-81c1-8a22-d889f010e815",
+      "title": "Controller Tuning to Adjust pH in a CSTR",
+      "slug": "controller-tuning-to-adjust-ph-in-a-cstr",
+      "section": "papers",
+      "image": "phcontrol.png",
+      "description": "Paper & Presentation \u2014 Controller tuning for pH adjustment in a Continuous Stirred Tank Reactor",
+      "tools": "PID Control, CSTR, pH Measurement, Controller Tuning"
+    },
+    {
+      "id": "31f181ec-d4f6-81c1-bb93-f3ed2fa85542",
+      "title": "Modeling Heat Transfer Correlations in Plate Heat Exchangers",
+      "slug": "modeling-heat-transfer-correlations-in-plate-heat-exchangers",
+      "section": "papers",
+      "image": "heatexchanger.png",
+      "description": "Paper & Presentation \u2014 Analysis of heat transfer correlations in plate heat exchanger systems",
+      "tools": "Heat Transfer Analysis, Plate Heat Exchangers, Correlation Modeling"
+    }
+  ],
+  "resume": [
+    {
+      "title": "Chemical Engineering Resume (PDF)",
+      "url": "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
+    },
+    {
+      "title": "Software Engineering Resume (PDF)",
+      "url": "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+    }
+  ]
+}

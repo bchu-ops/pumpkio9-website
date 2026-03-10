@@ -1,13 +1,15 @@
 import React from 'react';
 import '../../App.css';
 import HeroSection from '../HeroSection';
-import Cards from '../Cards';
+import ProfileIntro from '../ProfileIntro';
+import NotionCards from '../NotionCards';
 
 function Home() {
   return (
 	<>
 	  <HeroSection />
-	  <Cards />
+	  <ProfileIntro />
+	  <NotionCards />
 	</>
   );
 }
