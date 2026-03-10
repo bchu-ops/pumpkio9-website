@@ -75,7 +75,7 @@ function Footer() {
 			</div>
 			<div className="inline-resume-link">
 				<a 
-				href={publicFile('/resume/Brian_Chu_Resume_SWE.pdf')}
+				href={publicFile('/resume/Brian_Chu_Resume.pdf')}
 				target='_blank'
 				rel='noopener noreferrer'>
 					Software Engineering
