@@ -1,0 +1,28 @@
+.notion-page-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.notion-page-wrapper .notion-page {
+  padding: 0;
+}
+
+.notion-page-error,
+.notion-page-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 40vh;
+  color: rgb(55, 53, 47);
+}
+
+.notion-page-error h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.notion-page-error p {
+  color: rgba(55, 53, 47, 0.5);
+}
