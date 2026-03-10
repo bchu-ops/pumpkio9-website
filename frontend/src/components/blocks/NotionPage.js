@@ -8,8 +8,6 @@ function NotionPage() {
   const { type, id } = useParams();
   const [recordMap, setRecordMap] = useState(null);
   const [error, setError] = useState(null);
-  const [pageInfo, setPageInfo] = useState(null);
-
   useEffect(() => {
     async function loadPage() {
       try {
@@ -28,11 +26,14 @@ function NotionPage() {
           return;
         }
 
-        setPageInfo(info);
-
         // Load the page's recordMap
-        const data = await import(`../../data/notion/${id}.json`);
-        setRecordMap(data.default || data);
+        const resp = await fetch(`${process.env.PUBLIC_URL}/notion/${id}.json`);
+        if (!resp.ok) {
+          setError('Failed to load page');
+          return;
+        }
+        const data = await resp.json();
+        setRecordMap(data);
       } catch (err) {
         console.error('Failed to load Notion page:', err);
         setError('Failed to load page');

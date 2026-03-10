@@ -30,7 +30,7 @@ load_dotenv()
 
 NOTION_PAGE_ID = os.getenv("NOTION_PAGE_ID", "").replace("-", "")
 NOTION_API_URL = "https://www.notion.so/api/v3"
-OUTPUT_DIR = Path(__file__).resolve().parent.parent.parent / "frontend" / "src" / "data" / "notion"
+OUTPUT_DIR = Path(__file__).resolve().parent.parent.parent / "frontend" / "public" / "notion"
 
 
 def format_uuid(raw_id: str) -> str:
@@ -165,8 +165,13 @@ def main():
             except httpx.HTTPStatusError as e:
                 print(f"    Failed: {e.response.status_code}")
 
-        # Save manifest
+        # Save manifest to public (runtime fetch) and src/data (static import)
         with open(OUTPUT_DIR / "pages.json", "w") as f:
+            json.dump(manifest, f, indent=2)
+
+        src_data_dir = OUTPUT_DIR.parent.parent / "src" / "data" / "notion"
+        src_data_dir.mkdir(parents=True, exist_ok=True)
+        with open(src_data_dir / "pages.json", "w") as f:
             json.dump(manifest, f, indent=2)
 
         print(f"\nSaved {len(manifest)} subpages to {OUTPUT_DIR}")
