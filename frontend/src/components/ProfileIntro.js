@@ -15,6 +15,7 @@ function ProfileIntro() {
             src={publicFile("images/profile.jpg")}
             alt="Profile"
             className="w-full max-w-[350px] h-auto object-cover rounded-lg shadow-lg transition-transform duration-300 hover:scale-105"
+            loading="lazy"
           />
         </div>
 

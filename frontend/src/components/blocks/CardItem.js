@@ -13,6 +13,7 @@ function CardItem(props) {
 					src={props.src}
 					alt='cardImage'
 					className='cards__item__img'
+					loading='lazy'
 					/>
 				</figure>
 				<div className='cards__item__info cards__item__info--list'>
@@ -33,6 +34,7 @@ function CardItem(props) {
 					src={props.src}
 					alt='cardImage'
 					className='cards__item__img'
+					loading='lazy'
 					/>
 				</figure>
 				<div className='cards__item__info'>

@@ -46,7 +46,7 @@ export default function Interests() {
         {INTERESTS.map((item) => (
           <div key={item.title} className="interest-card">
             <div className="interest-card-image">
-              <img src={publicFile(item.image)} alt={item.title} />
+              <img src={publicFile(item.image)} alt={item.title} loading="lazy" />
             </div>
             <div className="interest-card-body">
               <h3 className="interest-card-title">{item.title}</h3>

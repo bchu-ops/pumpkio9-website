@@ -171,7 +171,7 @@ function NotionCards() {
             {rows.map((row) => (
               <Link key={row.id} to={getPath(sectionKey, row)} className="notion-collection-card">
                 <div className="notion-collection-card-cover">
-                  <img src={getImageSrc(row)} alt={row.title} style={{ objectFit: 'cover' }} />
+                  <img src={getImageSrc(row)} alt={row.title} style={{ objectFit: 'cover' }} loading="lazy" />
                 </div>
                 <div className="notion-collection-card-body">
                   <div className="notion-collection-card-property">{row.title}</div>
