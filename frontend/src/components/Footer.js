@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './Footer.css';
 import { publicFile } from '../App';
+import LazyVideo from './LazyVideo';
 
 function Footer() {
   return (
@@ -15,16 +16,16 @@ function Footer() {
 			</p>
 			<div className="videos-container">
 				<div className="video-box">
-					<video src={publicFile("funvids/fatnailong.mp4")} autoPlay muted loop/>
+					<LazyVideo src={publicFile("funvids/fatnailong.mp4")} autoPlay muted loop playsInline />
 				</div>
 				<div className="video-box">
-					<video src={publicFile("funvids/pokednailong.mp4")} autoPlay muted loop />
+					<LazyVideo src={publicFile("funvids/pokednailong.mp4")} autoPlay muted loop playsInline />
 				</div>
 				<div className="video-box">
-					<video src={publicFile("funvids/sadnailong.mp4")} autoPlay muted loop />
+					<LazyVideo src={publicFile("funvids/sadnailong.mp4")} autoPlay muted loop playsInline />
 				</div>
 				<div className="video-box">
-					<video src={publicFile("videos/video-1.mp4")} autoPlay loop muted />
+					<LazyVideo src={publicFile("videos/video-1.mp4")} autoPlay loop muted playsInline />
 				</div>
 			</div>
 		</section>
