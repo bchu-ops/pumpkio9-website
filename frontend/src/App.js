@@ -1,17 +1,18 @@
-import React, { useRef } from 'react';
+import React, { useRef, Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import PageRoutes from './components/blocks/PageRoutes.js';
-import Home from './components/pages/Home';
-import Spotify from './components/pages/Spotify';
-import Interests from './components/pages/Interests';
-import Product1 from './components/pages/Product1';
-import Product2 from './components/pages/Product2';
-import Product3 from './components/pages/Product3';
-import Projects from './components/pages/Projects';
-import NotFound from "./components/pages/NotFound";
+
+const Home = lazy(() => import('./components/pages/Home'));
+const Spotify = lazy(() => import('./components/pages/Spotify'));
+const Interests = lazy(() => import('./components/pages/Interests'));
+const Product1 = lazy(() => import('./components/pages/Product1'));
+const Product2 = lazy(() => import('./components/pages/Product2'));
+const Product3 = lazy(() => import('./components/pages/Product3'));
+const Projects = lazy(() => import('./components/pages/Projects'));
+const NotFound = lazy(() => import('./components/pages/NotFound'));
 
 
 function App() {
@@ -25,20 +26,22 @@ function App() {
           <div ref={topRef} /> {/* Attach ref at the top */}
           <Navbar topRef={topRef} bottomRef={bottomRef}/>
           <div className="main-content">
-            <Routes>
-              <Route path='/' element={<Home />}/>
-              <Route path='/Interests' element={<Interests />}/>
-              <Route path='/Spotify' element={<Spotify />}/>
-              <Route path="/Projects" element={<Projects />} />
-              <Route path="/Product1" element={<Product1 />} />
-              <Route path="/Product2" element={<Product2 />} />
-              <Route path="/Product3" element={<Product3 />} />
+            <Suspense fallback={<h1>Loading...</h1>}>
+              <Routes>
+                <Route path='/' element={<Home />}/>
+                <Route path='/Interests' element={<Interests />}/>
+                <Route path='/Spotify' element={<Spotify />}/>
+                <Route path="/Projects" element={<Projects />} />
+                <Route path="/Product1" element={<Product1 />} />
+                <Route path="/Product2" element={<Product2 />} />
+                <Route path="/Product3" element={<Product3 />} />
 
-              {/* Dynamic route for all types (papers, projects, tutorials, etc) */}
-              <Route path="/:type/:id" element={<PageRoutes />} />
+                {/* Dynamic route for all types (papers, projects, tutorials, etc) */}
+                <Route path="/:type/:id" element={<PageRoutes />} />
 
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
             <div ref={bottomRef} />
           </div>
           <Footer />
