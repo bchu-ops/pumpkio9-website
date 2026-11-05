@@ -3,7 +3,7 @@
     "31f181ec-d4f6-810c-9216-d58c6faf43d5": {
       "value": {
         "id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
-        "version": 33,
+        "version": 41,
         "type": "page",
         "properties": {
           "LEI=": [
@@ -50,13 +50,27 @@
         },
         "content": [
           "281c50a7-27d3-47ad-8759-bb84630cc910",
+          "e811d5c3-7911-4873-ac9c-a823ab3e37d5",
+          "bd3cc348-d4b5-433c-9b43-1094a4a7b3b4",
+          "7bdaaa81-2ed8-4d9f-addf-8f1dd43744ab",
+          "03c2aa03-c5de-4f26-b9dd-0d9e8beb47d8",
           "7fc11631-c172-472b-8bcf-b3b4f7a0b298"
         ],
         "format": {
-          "page_icon": "\ud83d\udee0\ufe0f"
+          "page_icon": "\ud83d\udee0\ufe0f",
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
         },
         "created_time": 1773145918381,
-        "last_edited_time": 1773151004686,
+        "last_edited_time": 1793867361449,
         "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "parent_table": "collection",
         "alive": true,
@@ -65,6 +79,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "crdt_data": {
           "title": {
             "r": "KN35vWEjbBZDUfyO-elOFg,\"start\",\"end\"",
@@ -169,7 +185,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 275,
+        "version": 316,
         "type": "page",
         "properties": {
           "title": [
@@ -223,30 +239,14 @@
         },
         "permissions": [
           {
-            "role": "editor",
-            "type": "user_permission",
-            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
-          },
-          {
             "role": "reader",
             "type": "public_permission",
             "is_site": true,
             "added_timestamp": 1773152043547
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
-            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-            "parent_table": "space"
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1793911068994,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -259,6 +259,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_data": {
           "title": {
             "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
@@ -368,6 +370,318 @@
                       "o": "start",
                       "l": 133,
                       "c": "Enterprise system for managing province-capital data with dynamic game state modification using MySQL and creational design patterns."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "e811d5c3-7911-4873-ac9c-a823ab3e37d5": {
+      "value": {
+        "id": "e811d5c3-7911-4873-ac9c-a823ab3e37d5",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Implemented a client\u2013server system by loading 500 province\u2013capital pairs from a database"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867361449,
+        "last_edited_time": 1793867361449,
+        "parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "crdt_data": {
+          "title": {
+            "r": "D5rkNkZYe60u4F0USBVFNA,\"start\",\"end\"",
+            "n": {
+              "D5rkNkZYe60u4F0USBVFNA,\"start\",\"end\"": {
+                "s": {
+                  "x": "D5rkNkZYe60u4F0USBVFNA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "k6mVNsSFJaRv",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 88,
+                      "c": "Implemented a client\u2013server system by loading 500 province\u2013capital pairs from a database"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "bd3cc348-d4b5-433c-9b43-1094a4a7b3b4": {
+      "value": {
+        "id": "bd3cc348-d4b5-433c-9b43-1094a4a7b3b4",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Used MySQL queries to parse and modify game states dynamically"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867361449,
+        "last_edited_time": 1793867361449,
+        "parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "crdt_data": {
+          "title": {
+            "r": "9WnF7M-cpC0NPqfQuIb1Zg,\"start\",\"end\"",
+            "n": {
+              "9WnF7M-cpC0NPqfQuIb1Zg,\"start\",\"end\"": {
+                "s": {
+                  "x": "9WnF7M-cpC0NPqfQuIb1Zg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "O4cBRfqpeXoD",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 62,
+                      "c": "Used MySQL queries to parse and modify game states dynamically"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "7bdaaa81-2ed8-4d9f-addf-8f1dd43744ab": {
+      "value": {
+        "id": "7bdaaa81-2ed8-4d9f-addf-8f1dd43744ab",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Applied creational design patterns including Abstract Factory, Builder, and Prototype"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867361449,
+        "last_edited_time": 1793867361449,
+        "parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "crdt_data": {
+          "title": {
+            "r": "DazI9jhX_FEkr_utt-RQFA,\"start\",\"end\"",
+            "n": {
+              "DazI9jhX_FEkr_utt-RQFA,\"start\",\"end\"": {
+                "s": {
+                  "x": "DazI9jhX_FEkr_utt-RQFA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "RSPva6NsaonX",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 85,
+                      "c": "Applied creational design patterns including Abstract Factory, Builder, and Prototype"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "03c2aa03-c5de-4f26-b9dd-0d9e8beb47d8": {
+      "value": {
+        "id": "03c2aa03-c5de-4f26-b9dd-0d9e8beb47d8",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Designed a user-friendly UI/UX interface using HTML and CSS"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867361449,
+        "last_edited_time": 1793867361449,
+        "parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+        "crdt_data": {
+          "title": {
+            "r": "Q9j8ROmx5gD3fPV8ROeuZA,\"start\",\"end\"",
+            "n": {
+              "Q9j8ROmx5gD3fPV8ROeuZA,\"start\",\"end\"": {
+                "s": {
+                  "x": "Q9j8ROmx5gD3fPV8ROeuZA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Bhegx0FE2Oat",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 59,
+                      "c": "Designed a user-friendly UI/UX interface using HTML and CSS"
                     },
                     {
                       "t": "e"

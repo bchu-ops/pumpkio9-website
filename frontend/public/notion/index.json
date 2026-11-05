@@ -3,7 +3,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 275,
+        "version": 316,
         "type": "page",
         "properties": {
           "title": [
@@ -57,30 +57,14 @@
         },
         "permissions": [
           {
-            "role": "editor",
-            "type": "user_permission",
-            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
-          },
-          {
             "role": "reader",
             "type": "public_permission",
             "is_site": true,
             "added_timestamp": 1773152043547
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
-            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-            "parent_table": "space"
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1793911068994,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -93,6 +77,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_data": {
           "title": {
             "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
@@ -507,7 +493,7 @@
     "6a83e54d-6563-4444-b5f5-e9177926917a": {
       "value": {
         "id": "6a83e54d-6563-4444-b5f5-e9177926917a",
-        "version": 54,
+        "version": 74,
         "type": "collection_view",
         "properties": {
           "title": [
@@ -530,12 +516,14 @@
           "hide_inline_collection_name": false
         },
         "created_time": 1773144036619,
-        "last_edited_time": 1773154266130,
+        "last_edited_time": 1793911068994,
         "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"",
@@ -1443,10 +1431,9 @@
     "f40de7a1-fdfb-42df-be05-27e2ab126f62": {
       "value": {
         "id": "f40de7a1-fdfb-42df-be05-27e2ab126f62",
-        "version": 5,
+        "version": 6,
         "type": "callout",
         "content": [
-          "87c3efe9-a24f-464f-bf0d-393a74417242",
           "a6641744-fda8-4d77-8233-7de71c3c87f5"
         ],
         "format": {
@@ -2388,22 +2375,36 @@
     "a6f94cd1-4788-4660-b03a-f1a9cfac1991": {
       "value": {
         "id": "a6f94cd1-4788-4660-b03a-f1a9cfac1991",
-        "version": 89,
+        "version": 110,
         "type": "text",
         "properties": {
           "title": [
             [
-              "Recently completed Masters of Science in Chemical Engineering. From AI and ML to material science and thermal systems, I love to learn. Thanks for visiting, let's connect!"
+              "Currently a Forward Deployed AI Engineer at Scale AI, building AI agents, evals, and MCP tooling for enterprise clients. M.S. in Chemical Engineering from UC San Diego with an FE Chemical. From AI and ML to material science and thermal systems, I love to learn. Thanks for visiting, let's connect!"
             ]
           ]
         },
+        "format": {
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
         "created_time": 1773144023674,
-        "last_edited_time": 1773147198749,
+        "last_edited_time": 1793901950817,
         "parent_id": "6d3cf688-01a1-4f05-bf43-8af5dc69dcbf",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "LSGXB8tlR7BaAes_ORCEHQ,\"start\",\"end\"",
@@ -2418,12 +2419,903 @@
                     {
                       "t": "t",
                       "i": [
+                        "fSBNS3zu6gyl",
+                        216
+                      ],
+                      "o": "start",
+                      "l": 4,
+                      "c": "Curr"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
                         "XJPbvBZ0qdNm",
                         1
                       ],
                       "o": "start",
-                      "l": 80,
-                      "c": "Recently completed Masters of Science in Chemical Engineering. From AI and ML to"
+                      "l": -3
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        4
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        3
+                      ],
+                      "l": 6,
+                      "c": "ently "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        220
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        9
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        221
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        220
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        222
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        221
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        223
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        222
+                      ],
+                      "l": -3
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        226
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        225
+                      ],
+                      "l": 1,
+                      "c": "F"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        10
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        9
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        11
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        10
+                      ],
+                      "l": 1,
+                      "c": "o"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        227
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        11
+                      ],
+                      "l": 8,
+                      "c": "rward De"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        12
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        11
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        13
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        12
+                      ],
+                      "l": 2,
+                      "c": "pl"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        235
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        14
+                      ],
+                      "l": 2,
+                      "c": "oy"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        15
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        14
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        237
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        15
+                      ],
+                      "l": 1,
+                      "c": "d"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "OL2er7J0qt55",
+                        384
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        237
+                      ],
+                      "l": 3,
+                      "c": " AI"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        238
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        237
+                      ],
+                      "l": 11,
+                      "c": " Engineer a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        16
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        15
+                      ],
+                      "l": 1,
+                      "c": "t"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        249
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        16
+                      ],
+                      "l": 5,
+                      "c": " Scal"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        17
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        16
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        254
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        17
+                      ],
+                      "l": 9,
+                      "c": " AI, buil"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        18
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        17
+                      ],
+                      "l": 1,
+                      "c": "d"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        263
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        18
+                      ],
+                      "l": 3,
+                      "c": "ing"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        19
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        18
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        266
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        19
+                      ],
+                      "l": 3,
+                      "c": "AI "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        20
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        19
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        21
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        20
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        269
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        21
+                      ],
+                      "l": 3,
+                      "c": "gen"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        22
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        21
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        23
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        22
+                      ],
+                      "l": 1,
+                      "c": "t"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        272
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        23
+                      ],
+                      "l": 3,
+                      "c": "s, "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        24
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        23
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        275
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        24
+                      ],
+                      "l": 3,
+                      "c": "val"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        25
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        24
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        26
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        25
+                      ],
+                      "l": 1,
+                      "c": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        278
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        26
+                      ],
+                      "l": 5,
+                      "c": ", and"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        27
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        26
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        283
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        27
+                      ],
+                      "l": 5,
+                      "c": "MCP t"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        28
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        27
+                      ],
+                      "l": 1,
+                      "c": "o"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        288
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        28
+                      ],
+                      "l": 6,
+                      "c": "oling "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        29
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        28
+                      ],
+                      "l": 1,
+                      "c": "f"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        294
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        29
+                      ],
+                      "l": 2,
+                      "c": "or"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        30
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        29
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        296
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        30
+                      ],
+                      "l": 11,
+                      "c": "enterprise "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        31
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        30
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        32
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        31
+                      ],
+                      "l": 1,
+                      "c": "c"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        307
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        32
+                      ],
+                      "l": 1,
+                      "c": "l"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        33
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        32
+                      ],
+                      "l": 3,
+                      "c": "ien"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        308
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        35
+                      ],
+                      "l": 17,
+                      "c": "ts. M.S. in Chemi"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        36
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        35
+                      ],
+                      "l": 1,
+                      "c": "c"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        325
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        36
+                      ],
+                      "l": 8,
+                      "c": "al Engin"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        37
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        36
+                      ],
+                      "l": 1,
+                      "c": "e"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        333
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        37
+                      ],
+                      "l": 13,
+                      "c": "ering from UC"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        38
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        37
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        346
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        38
+                      ],
+                      "l": 5,
+                      "c": "San D"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        39
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        38
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        351
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        39
+                      ],
+                      "l": 4,
+                      "c": "ego "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "O_ajJ0Ewc7aO",
+                        377
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        354
+                      ],
+                      "l": 4,
+                      "c": "with"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        355
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        354
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        40
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        39
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        356
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        40
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        357
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        356
+                      ],
+                      "l": 2,
+                      "c": " a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "77KDKC7LzSPT",
+                        387
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        358
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "O_ajJ0Ewc7aO",
+                        381
+                      ],
+                      "o": [
+                        "fSBNS3zu6gyl",
+                        358
+                      ],
+                      "l": 3,
+                      "c": " FE"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        41
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        40
+                      ],
+                      "l": 9,
+                      "c": " Chemical"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        50
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        49
+                      ],
+                      "l": -9
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        359
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        58
+                      ],
+                      "l": -9
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        59
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        58
+                      ],
+                      "l": -3
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fSBNS3zu6gyl",
+                        368
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        61
+                      ],
+                      "l": -9
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XJPbvBZ0qdNm",
+                        62
+                      ],
+                      "o": [
+                        "XJPbvBZ0qdNm",
+                        61
+                      ],
+                      "l": 19,
+                      "c": ". From AI and ML to"
                     },
                     {
                       "t": "t",
@@ -2604,16 +3496,16 @@
     "a6641744-fda8-4d77-8233-7de71c3c87f5": {
       "value": {
         "id": "a6641744-fda8-4d77-8233-7de71c3c87f5",
-        "version": 9,
+        "version": 14,
         "type": "text",
         "properties": {
           "title": [
             [
-              "Chemical Engineering Resume (PDF)",
+              "Brian_Chu_Resume.pdf",
               [
                 [
                   "a",
-                  "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
+                  "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
                 ],
                 [
                   "b"
@@ -2623,7 +3515,7 @@
           ]
         },
         "created_time": 1773150892848,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1773161703718,
         "parent_id": "f40de7a1-fdfb-42df-be05-27e2ab126f62",
         "parent_table": "block",
         "alive": true,
@@ -2643,12 +3535,73 @@
                     {
                       "t": "t",
                       "i": [
+                        "OVQiDrITjJX2",
+                        52
+                      ],
+                      "o": "start",
+                      "l": 2,
+                      "c": "Br",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
                         "R-pjHcHYh_93",
                         27
                       ],
                       "o": "start",
-                      "l": 16,
-                      "c": "Chemical Enginee",
+                      "l": -4,
                       "b": [
                         {
                           "t": "a",
@@ -2689,6 +3642,509 @@
                             "i": [
                               "R-pjHcHYh_93",
                               27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ],
+                      "a": [
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            50
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            51
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            66
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              30
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              38
+                            ],
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "R-pjHcHYh_93",
+                        31
+                      ],
+                      "o": [
+                        "R-pjHcHYh_93",
+                        30
+                      ],
+                      "l": 1,
+                      "c": "i",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            50
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            51
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            66
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              30
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              38
+                            ],
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            68
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              31
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              38
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "R-pjHcHYh_93",
+                        32
+                      ],
+                      "o": [
+                        "R-pjHcHYh_93",
+                        31
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "R-pjHcHYh_93",
+                        33
+                      ],
+                      "o": [
+                        "R-pjHcHYh_93",
+                        32
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "R-pjHcHYh_93",
+                        34
+                      ],
+                      "o": [
+                        "R-pjHcHYh_93",
+                        33
+                      ],
+                      "l": -3
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "R-pjHcHYh_93",
+                        37
+                      ],
+                      "o": [
+                        "R-pjHcHYh_93",
+                        36
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "R-pjHcHYh_93",
+                        38
+                      ],
+                      "o": [
+                        "R-pjHcHYh_93",
+                        37
+                      ],
+                      "l": -5,
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            50
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            51
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
                             ],
                             "a": "b"
                           },
@@ -2800,6 +4256,56 @@
                             "i": [
                               "R-pjHcHYh_93",
                               27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
                             ],
                             "a": "b"
                           },
@@ -2936,6 +4442,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
@@ -2949,8 +4505,7 @@
                         "MrTaxR8V2blo",
                         1
                       ],
-                      "l": 2,
-                      "c": "ri",
+                      "l": -4,
                       "b": [
                         {
                           "t": "a",
@@ -3099,33 +4654,58 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
-                      ]
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "MrTaxR8V2blo",
-                        4
                       ],
-                      "o": [
-                        "MrTaxR8V2blo",
-                        3
-                      ],
-                      "l": -1
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "MrTaxR8V2blo",
-                        5
-                      ],
-                      "o": [
-                        "MrTaxR8V2blo",
-                        4
-                      ],
-                      "l": 1,
-                      "c": "n",
                       "a": [
                         {
                           "t": "a",
@@ -3298,6 +4878,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
@@ -3311,8 +4941,7 @@
                         "MrTaxR8V2blo",
                         5
                       ],
-                      "l": 1,
-                      "c": "g",
+                      "l": -1,
                       "b": [
                         {
                           "t": "a",
@@ -3461,6 +5090,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
@@ -3575,6 +5254,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ],
                       "a": [
@@ -3688,6 +5417,314 @@
                             "i": [
                               "R-pjHcHYh_93",
                               27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            59
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              11
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "OVQiDrITjJX2",
+                        54
+                      ],
+                      "o": [
+                        "MrTaxR8V2blo",
+                        11
+                      ],
+                      "l": 5,
+                      "c": "_Chu_",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "MrTaxR8V2blo",
+                            25
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "MrTaxR8V2blo",
+                            26
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            47
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              11
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            50
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            51
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            59
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              11
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            60
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              54
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
                             ],
                             "a": "b"
                           },
@@ -3711,8 +5748,7 @@
                         "MrTaxR8V2blo",
                         11
                       ],
-                      "l": 13,
-                      "c": " Resume (PDF)",
+                      "l": -1,
                       "b": [
                         {
                           "t": "a",
@@ -3855,6 +5891,735 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ],
+                      "a": [
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "MrTaxR8V2blo",
+                            25
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "MrTaxR8V2blo",
+                            26
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            47
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              11
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            49
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            50
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            51
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            67
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              19
+                            ],
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "MrTaxR8V2blo",
+                        13
+                      ],
+                      "o": [
+                        "MrTaxR8V2blo",
+                        12
+                      ],
+                      "l": 6,
+                      "c": "Resume",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "MrTaxR8V2blo",
+                            25
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "MrTaxR8V2blo",
+                            26
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            47
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              11
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            49
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            50
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            51
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            67
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              19
+                            ],
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            69
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              13
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              19
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "MrTaxR8V2blo",
+                        19
+                      ],
+                      "o": [
+                        "MrTaxR8V2blo",
+                        18
+                      ],
+                      "l": -6,
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "MrTaxR8V2blo",
+                            25
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "MrTaxR8V2blo",
+                            26
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            47
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              11
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            49
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            50
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              24
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            51
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ],
                       "a": [
@@ -3945,92 +6710,26 @@
                           "a": [
                             "b"
                           ]
-                        }
-                      ]
-                    },
-                    {
-                      "t": "e",
-                      "b": []
-                    }
-                  ],
-                  "l": ""
-                },
-                "c": []
-              }
-            }
-          }
-        }
-      },
-      "role": "reader"
-    },
-    "87c3efe9-a24f-464f-bf0d-393a74417242": {
-      "value": {
-        "id": "87c3efe9-a24f-464f-bf0d-393a74417242",
-        "version": 4,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "Software Engineering Resume (PDF)",
-              [
-                [
-                  "a",
-                  "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
-                ],
-                [
-                  "b"
-                ]
-              ]
-            ]
-          ]
-        },
-        "created_time": 1773160702630,
-        "last_edited_time": 1773160702630,
-        "parent_id": "f40de7a1-fdfb-42df-be05-27e2ab126f62",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-        "crdt_format_version": 1,
-        "crdt_data": {
-          "title": {
-            "r": "CMT2JCttz86h3zETfG7mow,\"start\",\"end\"",
-            "n": {
-              "CMT2JCttz86h3zETfG7mow,\"start\",\"end\"": {
-                "s": {
-                  "x": "CMT2JCttz86h3zETfG7mow",
-                  "i": [
-                    {
-                      "t": "s"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "bMVJtnnRapYA",
-                        1
-                      ],
-                      "o": "start",
-                      "l": 33,
-                      "c": "Software Engineering Resume (PDF)",
-                      "b": [
+                        },
                         {
                           "t": "a",
-                          "x": "CMT2JCttz86h3zETfG7mow",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
                           "l": "",
                           "i": [
-                            "bMVJtnnRapYA",
-                            34
+                            "OVQiDrITjJX2",
+                            70
                           ],
                           "s": {
                             "i": [
-                              "bMVJtnnRapYA",
-                              1
+                              "OVQiDrITjJX2",
+                              52
                             ],
                             "a": "b"
                           },
                           "e": {
                             "i": [
-                              "bMVJtnnRapYA",
-                              33
+                              "OVQiDrITjJX2",
+                              64
                             ],
                             "a": "a"
                           },
@@ -4041,16 +6740,190 @@
                         },
                         {
                           "t": "a",
-                          "x": "CMT2JCttz86h3zETfG7mow",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
                           "l": "",
                           "i": [
-                            "bMVJtnnRapYA",
-                            35
+                            "OVQiDrITjJX2",
+                            71
                           ],
                           "s": {
                             "i": [
-                              "bMVJtnnRapYA",
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "OVQiDrITjJX2",
+                        61
+                      ],
+                      "o": [
+                        "MrTaxR8V2blo",
+                        24
+                      ],
+                      "l": 4,
+                      "c": ".pdf",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "MrTaxR8V2blo",
+                            26
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
                               1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            47
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              11
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            49
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            51
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            65
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              61
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            70
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              64
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
                             ],
                             "a": "b"
                           },
@@ -4066,16 +6939,125 @@
                       "a": [
                         {
                           "t": "a",
-                          "x": "CMT2JCttz86h3zETfG7mow",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
                           "l": "",
                           "i": [
-                            "bMVJtnnRapYA",
-                            35
+                            "MrTaxR8V2blo",
+                            26
                           ],
                           "s": {
                             "i": [
-                              "bMVJtnnRapYA",
+                              "MrTaxR8V2blo",
                               1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            47
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              11
+                            ],
+                            "a": "a"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "a"
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            49
+                          ],
+                          "s": {
+                            "i": [
+                              "MrTaxR8V2blo",
+                              12
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "R-pjHcHYh_93",
+                            51
+                          ],
+                          "s": {
+                            "i": [
+                              "R-pjHcHYh_93",
+                              27
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            65
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              61
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3Oom6EXUP-l4YjOSWdEhWg",
+                          "l": "",
+                          "i": [
+                            "OVQiDrITjJX2",
+                            71
+                          ],
+                          "s": {
+                            "i": [
+                              "OVQiDrITjJX2",
+                              52
                             ],
                             "a": "b"
                           },
@@ -4192,12 +7174,12 @@
     "c9acd4fc-446d-4737-89f8-e152b5fdbe11": {
       "value": {
         "id": "c9acd4fc-446d-4737-89f8-e152b5fdbe11",
-        "version": 4,
+        "version": 10,
         "type": "text",
         "properties": {
           "title": [
             [
-              "Masters of Science in Chemical Engineering",
+              "Master of Science in Chemical Engineering",
               [
                 [
                   "i"
@@ -4206,13 +7188,27 @@
             ]
           ]
         },
+        "format": {
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
         "created_time": 1773150892851,
-        "last_edited_time": 1773150892851,
+        "last_edited_time": 1793897523518,
         "parent_id": "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "68Y7gzi7t3Go3wRkR3XgrA,\"start\",\"end\"",
@@ -4231,8 +7227,8 @@
                         1
                       ],
                       "o": "start",
-                      "l": 42,
-                      "c": "Masters of Science in Chemical Engineering",
+                      "l": 6,
+                      "c": "Master",
                       "b": [
                         {
                           "t": "a",
@@ -4256,8 +7252,77 @@
                           "a": [
                             "i"
                           ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "68Y7gzi7t3Go3wRkR3XgrA",
+                          "l": "",
+                          "i": [
+                            "rANZcyNsaUVF",
+                            44
+                          ],
+                          "s": {
+                            "i": [
+                              "CuseaE3oTR4l",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "i"
+                        },
+                        {
+                          "t": "a",
+                          "x": "68Y7gzi7t3Go3wRkR3XgrA",
+                          "l": "",
+                          "i": [
+                            "rANZcyNsaUVF",
+                            45
+                          ],
+                          "s": {
+                            "i": [
+                              "CuseaE3oTR4l",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "i"
+                          ]
                         }
                       ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "CuseaE3oTR4l",
+                        7
+                      ],
+                      "o": [
+                        "CuseaE3oTR4l",
+                        6
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "CuseaE3oTR4l",
+                        8
+                      ],
+                      "o": [
+                        "CuseaE3oTR4l",
+                        7
+                      ],
+                      "l": 35,
+                      "c": " of Science in Chemical Engineering"
                     },
                     {
                       "t": "e",
@@ -4987,7 +8052,7 @@
     "28693c3d-cf9f-45a7-8ea4-237f84618356": {
       "value": {
         "id": "28693c3d-cf9f-45a7-8ea4-237f84618356",
-        "version": 4,
+        "version": 10,
         "type": "text",
         "properties": {
           "title": [
@@ -5000,17 +8065,31 @@
               ]
             ],
             [
-              " FastAPI | PostgreSQL | Neo4j | Docker | Microservices"
+              " FastAPI | PostgreSQL | Neo4j | Docker | Microservices | Temporal | Redis"
             ]
           ]
         },
+        "format": {
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
         "created_time": 1773150892855,
-        "last_edited_time": 1773150892855,
+        "last_edited_time": 1793895640015,
         "parent_id": "f94c96dc-7bbd-4503-9d50-5c2ecb5b056b",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "X-DnZWOkGQiK2qMEys2YyA,\"start\",\"end\"",
@@ -5057,6 +8136,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "X-DnZWOkGQiK2qMEys2YyA",
+                          "l": "",
+                          "i": [
+                            "2hnMXB8p9afn",
+                            93
+                          ],
+                          "s": {
+                            "i": [
+                              "1gQTgSQzAu1O",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "1gQTgSQzAu1O",
+                              19
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "X-DnZWOkGQiK2qMEys2YyA",
+                          "l": "",
+                          "i": [
+                            "2hnMXB8p9afn",
+                            94
+                          ],
+                          "s": {
+                            "i": [
+                              "1gQTgSQzAu1O",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "1gQTgSQzAu1O",
+                              19
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
@@ -5075,6 +8204,19 @@
                       "b": []
                     },
                     {
+                      "t": "t",
+                      "i": [
+                        "2hnMXB8p9afn",
+                        74
+                      ],
+                      "o": [
+                        "1gQTgSQzAu1O",
+                        72
+                      ],
+                      "l": 19,
+                      "c": " | Temporal | Redis"
+                    },
+                    {
                       "t": "e"
                     }
                   ],
@@ -5091,7 +8233,7 @@
     "b7c8a338-a894-46e9-87eb-236bcc5a7f76": {
       "value": {
         "id": "b7c8a338-a894-46e9-87eb-236bcc5a7f76",
-        "version": 4,
+        "version": 10,
         "type": "text",
         "properties": {
           "title": [
@@ -5104,17 +8246,31 @@
               ]
             ],
             [
-              " AWS | Azure | PySpark | OpenTelemetry | Pydantic | CI/CD | Kubernetes"
+              " AWS | GCP Cloud Run | Azure | PySpark | OpenTelemetry | Pydantic | CI/CD | Kubernetes"
             ]
           ]
         },
+        "format": {
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
         "created_time": 1773150892855,
-        "last_edited_time": 1773150892855,
+        "last_edited_time": 1793895640015,
         "parent_id": "edc5721b-e656-41d8-8309-3cfb19d0157b",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "mPue60iJoAkWx7DrhDSb0w,\"start\",\"end\"",
@@ -5161,6 +8317,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "mPue60iJoAkWx7DrhDSb0w",
+                          "l": "",
+                          "i": [
+                            "U5AGyLO08hey",
+                            101
+                          ],
+                          "s": {
+                            "i": [
+                              "-GeFS6xkFQ1e",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "-GeFS6xkFQ1e",
+                              14
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "mPue60iJoAkWx7DrhDSb0w",
+                          "l": "",
+                          "i": [
+                            "U5AGyLO08hey",
+                            102
+                          ],
+                          "s": {
+                            "i": [
+                              "-GeFS6xkFQ1e",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "-GeFS6xkFQ1e",
+                              14
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
@@ -5174,9 +8380,35 @@
                         "-GeFS6xkFQ1e",
                         13
                       ],
-                      "l": 70,
-                      "c": " AWS | Azure | PySpark | OpenTelemetry | Pydantic | CI/CD | Kubernetes",
+                      "l": 7,
+                      "c": " AWS | ",
                       "b": []
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "U5AGyLO08hey",
+                        85
+                      ],
+                      "o": [
+                        "-GeFS6xkFQ1e",
+                        20
+                      ],
+                      "l": 16,
+                      "c": "GCP Cloud Run | "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "-GeFS6xkFQ1e",
+                        21
+                      ],
+                      "o": [
+                        "-GeFS6xkFQ1e",
+                        20
+                      ],
+                      "l": 63,
+                      "c": "Azure | PySpark | OpenTelemetry | Pydantic | CI/CD | Kubernetes"
                     },
                     {
                       "t": "e"
@@ -6707,7 +9939,7 @@
     "3862349e-44dc-44b8-b417-f974f3a8df02": {
       "value": {
         "id": "3862349e-44dc-44b8-b417-f974f3a8df02",
-        "version": 79,
+        "version": 85,
         "type": "gallery",
         "name": "Gallery",
         "format": {
@@ -6753,6 +9985,7 @@
         "alive": true,
         "page_sort": [
           "31f181ec-d4f6-8049-b7d4-de62b00f4635",
+          "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
           "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
           "31f181ec-d4f6-819a-b300-f71d6329a121",
           "31f181ec-d4f6-81b3-80fe-da3e76304597",
@@ -6765,9 +9998,11 @@
         },
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "created_time": 1773144036622,
-        "last_edited_time": 1773153862680,
+        "last_edited_time": 1793911071217,
         "created_by_table": "notion_user",
-        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     },
@@ -7089,7 +10324,7 @@
     "bb34e8bb-b8b4-491c-88c2-97b3bf575377": {
       "value": {
         "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
-        "version": 70,
+        "version": 82,
         "name": [
           [
             "Work"
@@ -7100,6 +10335,16 @@
             "name": "Position",
             "type": "multi_select",
             "options": [
+              {
+                "id": "3155597d-1abe-4fe9-abfa-50951c761c68",
+                "color": "blue",
+                "value": "Forward Deployed AI Engineer"
+              },
+              {
+                "id": "d9e9cece-f355-4e53-9919-2e0b55cabc30",
+                "color": "blue",
+                "value": "Software Engineer"
+              },
               {
                 "id": "25a59960-f293-4cb1-9b01-bc031befff88",
                 "color": "blue",
@@ -7129,6 +10374,11 @@
                 "id": "984549d1-2191-4ad3-ac07-be10a40ec092",
                 "color": "blue",
                 "value": "Battery Research Intern"
+              },
+              {
+                "id": "5258f056-2bb9-44b9-aed0-e590d162cad7",
+                "color": "blue",
+                "value": "Battery Research Lab Intern"
               },
               {
                 "id": "0cd49b46-4747-4149-add7-e5d0406f33b5",
@@ -7239,7 +10489,9 @@
         "created_by_table": "notion_user",
         "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
         "last_edited_by_table": "bot",
-        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4"
+        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     },

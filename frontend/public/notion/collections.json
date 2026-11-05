@@ -1,19 +1,20 @@
 {
   "experiences": [
     {
-      "id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
-      "title": "Stealth Startup",
-      "slug": "stealth-startup",
+      "id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+      "title": "Scale AI",
+      "slug": "scale-ai",
       "section": "experiences",
       "position": [
-        "AI Engineer"
+        "Forward Deployed AI Engineer",
+        "Software Engineer"
       ],
-      "team": "AI Engineering",
+      "team": "Enterprise Business Unit",
       "duration": {
-        "start": "2024-06-01",
+        "start": "2026-04-01",
         "end": "Present"
       },
-      "image": "machining.png"
+      "image": "scaleai.png"
     },
     {
       "id": "31f181ec-d4f6-819a-b300-f71d6329a121",
@@ -27,9 +28,24 @@
       "team": "Engineering",
       "duration": {
         "start": "2025-01-01",
-        "end": "Present"
+        "end": "2026-04-01"
       },
       "image": "vulcan.png"
+    },
+    {
+      "id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+      "title": "Stealth Startup",
+      "slug": "stealth-startup",
+      "section": "experiences",
+      "position": [
+        "AI Engineer"
+      ],
+      "team": "AI Engineering",
+      "duration": {
+        "start": "2022-05-01",
+        "end": "2026-04-01"
+      },
+      "image": "machining.png"
     },
     {
       "id": "31f181ec-d4f6-81b3-80fe-da3e76304597",
@@ -67,7 +83,7 @@
       "slug": "uc-san-diego",
       "section": "experiences",
       "position": [
-        "Battery Research Intern"
+        "Battery Research Lab Intern"
       ],
       "team": "Battery Camp",
       "duration": {
@@ -114,12 +130,12 @@
       "section": "projects",
       "link": "",
       "image": "mit.png",
-      "tools": "MySQL, HTML, CSS, Design Patterns",
+      "tools": "Python, Qiskit, Voronoi diagrams, NumPy, Matplotlib",
       "date": {
         "start": "2024-01-01",
         "end": "2024-01-31"
       },
-      "description": "Client-server system with MySQL, creational design patterns, and UI/UX \u2014 January 2024"
+      "description": "Polygon map generator using quantum randomness to seed procedural terrain \u2014 January 2024"
     },
     {
       "id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
@@ -241,16 +257,6 @@
       "image": "heatexchanger.png",
       "description": "Paper & Presentation \u2014 Analysis of heat transfer correlations in plate heat exchanger systems",
       "tools": "Heat Transfer Analysis, Plate Heat Exchangers, Correlation Modeling"
-    }
-  ],
-  "resume": [
-    {
-      "title": "Chemical Engineering Resume (PDF)",
-      "url": "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume_ChemE.pdf"
-    },
-    {
-      "title": "Software Engineering Resume (PDF)",
-      "url": "https://bchu-ops.github.io/pumpkio9-website/resume/Brian_Chu_Resume.pdf"
     }
   ]
 }

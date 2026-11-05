@@ -3,7 +3,7 @@
     "31f181ec-d4f6-8167-90d5-eceb30a7d10c": {
       "value": {
         "id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
-        "version": 40,
+        "version": 50,
         "type": "page",
         "properties": {
           "LEI=": [
@@ -50,14 +50,27 @@
         },
         "content": [
           "03a74f9f-0954-4e6f-8d2e-54ebd5890ee7",
+          "3a0f8bc8-6786-438a-83a3-2a4f937d1a9d",
+          "574ad84f-f9e3-4ad9-83a5-6de82947c36e",
+          "a3bf9f9a-d3e9-46e6-9267-aca9789b0785",
           "eee678a0-c22e-4c5b-b573-116123cf64d2"
         ],
         "format": {
           "page_icon": "\ud83d\udee0\ufe0f",
-          "card_cover_position": 0.5
+          "card_cover_position": 0.5,
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
         },
         "created_time": 1773145360302,
-        "last_edited_time": 1773150999994,
+        "last_edited_time": 1793898236285,
         "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "parent_table": "collection",
         "alive": true,
@@ -66,6 +79,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "crdt_data": {
           "title": {
             "r": "lxOMighCNBKIPlc7BsAoaQ,\"start\",\"end\"",
@@ -170,7 +185,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 275,
+        "version": 316,
         "type": "page",
         "properties": {
           "title": [
@@ -224,30 +239,14 @@
         },
         "permissions": [
           {
-            "role": "editor",
-            "type": "user_permission",
-            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
-          },
-          {
             "role": "reader",
             "type": "public_permission",
             "is_site": true,
             "added_timestamp": 1773152043547
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
-            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-            "parent_table": "space"
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1793911068994,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -260,6 +259,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_data": {
           "title": {
             "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
@@ -369,6 +370,279 @@
                       "o": "start",
                       "l": 177,
                       "c": "Knowledge Graph Neural Network system for predicting combined drug effects from pharmacological text data, achieving 82% accuracy across 10K+ drug-drug interaction descriptions."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "3a0f8bc8-6786-438a-83a3-2a4f937d1a9d": {
+      "value": {
+        "id": "3a0f8bc8-6786-438a-83a3-2a4f937d1a9d",
+        "version": 11,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Predicted combined drug effects with 82% accuracy by developing a Knowledge Graph Neural Network for 10K+ drug-drug interaction descriptions with TensorFlow and Neo4j"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867347063,
+        "last_edited_time": 1793898236285,
+        "parent_id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
+        "crdt_data": {
+          "title": {
+            "r": "bGJhblwXlzpvD2o2M4yS-A,\"start\",\"end\"",
+            "n": {
+              "bGJhblwXlzpvD2o2M4yS-A,\"start\",\"end\"": {
+                "s": {
+                  "x": "bGJhblwXlzpvD2o2M4yS-A",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "c5YOagQWE9O8",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 107,
+                      "c": "Predicted combined drug effects with 82% accuracy by developing a Knowledge Graph Neural Network for 10K+ d"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "0vYDJPT6uHM8",
+                        145
+                      ],
+                      "o": [
+                        "c5YOagQWE9O8",
+                        107
+                      ],
+                      "l": 22,
+                      "c": "rug-drug interaction d"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "c5YOagQWE9O8",
+                        108
+                      ],
+                      "o": [
+                        "c5YOagQWE9O8",
+                        107
+                      ],
+                      "l": 37,
+                      "c": "escriptions with TensorFlow and Neo4j"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "574ad84f-f9e3-4ad9-83a5-6de82947c36e": {
+      "value": {
+        "id": "574ad84f-f9e3-4ad9-83a5-6de82947c36e",
+        "version": 11,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Processed pharmacological text data by tokenizing with spaCy and generating feature pipelines using Hugging Face Transformers, improving model input quality for the Knowledge Graph Neural Network"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867347063,
+        "last_edited_time": 1793898236285,
+        "parent_id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
+        "crdt_data": {
+          "title": {
+            "r": "RsLCvXIYnMSNV8dvoLc2Zg,\"start\",\"end\"",
+            "n": {
+              "RsLCvXIYnMSNV8dvoLc2Zg,\"start\",\"end\"": {
+                "s": {
+                  "x": "RsLCvXIYnMSNV8dvoLc2Zg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "awySrFidpxka",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 156,
+                      "c": "Processed pharmacological text data by tokenizing with spaCy and generating feature pipelines using Hugging Face Transformers, improving model input quality"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "VlHdauSFKQdc",
+                        157
+                      ],
+                      "o": [
+                        "awySrFidpxka",
+                        156
+                      ],
+                      "l": 39,
+                      "c": " for the Knowledge Graph Neural Network"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "a3bf9f9a-d3e9-46e6-9267-aca9789b0785": {
+      "value": {
+        "id": "a3bf9f9a-d3e9-46e6-9267-aca9789b0785",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Benchmarked KGNN performance against classical ML models using scikit-learn, including Logistic Regression, SVM, Random Forest, and KNN, improving evaluation rigor and comparison"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867347063,
+        "last_edited_time": 1793867347063,
+        "parent_id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
+        "crdt_data": {
+          "title": {
+            "r": "rwILOU-D-GB1H7N4pgRonA,\"start\",\"end\"",
+            "n": {
+              "rwILOU-D-GB1H7N4pgRonA,\"start\",\"end\"": {
+                "s": {
+                  "x": "rwILOU-D-GB1H7N4pgRonA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "5jU5-rBl3n51",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 178,
+                      "c": "Benchmarked KGNN performance against classical ML models using scikit-learn, including Logistic Regression, SVM, Random Forest, and KNN, improving evaluation rigor and comparison"
                     },
                     {
                       "t": "e"

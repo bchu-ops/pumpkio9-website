@@ -3,7 +3,7 @@
     "31f181ec-d4f6-811b-8187-c3c28e765692": {
       "value": {
         "id": "31f181ec-d4f6-811b-8187-c3c28e765692",
-        "version": 44,
+        "version": 53,
         "type": "page",
         "properties": {
           "?rG}": [
@@ -60,13 +60,25 @@
         },
         "content": [
           "176108f2-82f5-4c50-93cd-a1f5de5dba9e",
+          "bcece834-8109-45a0-8636-b2af9eeca0fd",
+          "161845ef-c086-4aac-9bcc-a12eab6f9aa5",
           "52311a7a-f681-45c4-b648-30daff82403d"
         ],
         "format": {
-          "page_icon": "\ud83d\udee0\ufe0f"
+          "page_icon": "\ud83d\udee0\ufe0f",
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
         },
         "created_time": 1773145360302,
-        "last_edited_time": 1773150994612,
+        "last_edited_time": 1793898233546,
         "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "parent_table": "collection",
         "alive": true,
@@ -75,6 +87,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "crdt_data": {
           "title": {
             "r": "5kjkwdnf5jmSkc1wgvkeew,\"start\",\"end\"",
@@ -179,7 +193,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 275,
+        "version": 316,
         "type": "page",
         "properties": {
           "title": [
@@ -233,30 +247,14 @@
         },
         "permissions": [
           {
-            "role": "editor",
-            "type": "user_permission",
-            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
-          },
-          {
             "role": "reader",
             "type": "public_permission",
             "is_site": true,
             "added_timestamp": 1773152043547
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
-            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-            "parent_table": "space"
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1793911068994,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -269,6 +267,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_data": {
           "title": {
             "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
@@ -378,6 +378,188 @@
                       "o": "start",
                       "l": 170,
                       "c": "Real-time telemetry and AI-driven racing technology automation platform integrating LangChain agents with GraphRAG for predictive driver analysis on FSAE go-kart chassis."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "bcece834-8109-45a0-8636-b2af9eeca0fd": {
+      "value": {
+        "id": "bcece834-8109-45a0-8636-b2af9eeca0fd",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Engineered real-time telemetry system using OpenTelemetry, with a time-series database on AWS EC2, integrating LangChain agents utilizing skills and MCP with GraphRAG to predict driver style"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867345039,
+        "last_edited_time": 1793867345039,
+        "parent_id": "31f181ec-d4f6-811b-8187-c3c28e765692",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-811b-8187-c3c28e765692",
+        "crdt_data": {
+          "title": {
+            "r": "6wzuGBFmp2KWPCP_rmbtoA,\"start\",\"end\"",
+            "n": {
+              "6wzuGBFmp2KWPCP_rmbtoA,\"start\",\"end\"": {
+                "s": {
+                  "x": "6wzuGBFmp2KWPCP_rmbtoA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Yfcshsi-dYHX",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 190,
+                      "c": "Engineered real-time telemetry system using OpenTelemetry, with a time-series database on AWS EC2, integrating LangChain agents utilizing skills and MCP with GraphRAG to predict driver style"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "161845ef-c086-4aac-9bcc-a12eab6f9aa5": {
+      "value": {
+        "id": "161845ef-c086-4aac-9bcc-a12eab6f9aa5",
+        "version": 11,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Orchestrated a distributed data processing backend by implementing batch and stream processing using PySpark on AWS EC2 cloud infrastructure with centralized monitoring"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867345039,
+        "last_edited_time": 1793898233546,
+        "parent_id": "31f181ec-d4f6-811b-8187-c3c28e765692",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-811b-8187-c3c28e765692",
+        "crdt_data": {
+          "title": {
+            "r": "ho6QXr0FKjDdvz50iv9UJQ,\"start\",\"end\"",
+            "n": {
+              "ho6QXr0FKjDdvz50iv9UJQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "ho6QXr0FKjDdvz50iv9UJQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "NrcAZjs9RYV4",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 112,
+                      "c": "Orchestrated a distributed data processing backend by implementing batch and stream processing using PySpark on "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "HOgRH8Yk9lAF",
+                        161
+                      ],
+                      "o": [
+                        "NrcAZjs9RYV4",
+                        112
+                      ],
+                      "l": 8,
+                      "c": "AWS EC2 "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "NrcAZjs9RYV4",
+                        113
+                      ],
+                      "o": [
+                        "NrcAZjs9RYV4",
+                        112
+                      ],
+                      "l": 48,
+                      "c": "cloud infrastructure with centralized monitoring"
                     },
                     {
                       "t": "e"

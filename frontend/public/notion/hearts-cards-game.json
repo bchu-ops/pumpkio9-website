@@ -3,7 +3,7 @@
     "31f181ec-d4f6-81fe-8f53-e94ce7a9991e": {
       "value": {
         "id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
-        "version": 33,
+        "version": 41,
         "type": "page",
         "properties": {
           "LEI=": [
@@ -50,13 +50,27 @@
         },
         "content": [
           "0ac7007e-6767-4dc0-835a-54ff4764af66",
+          "4d601ba6-cf29-430c-9b7e-7da439a0a967",
+          "086f4436-9702-432d-8d79-5c35d5fb1a78",
+          "f2ea1c02-1035-4a75-934c-cc7b63e5d3f6",
+          "7794c3a6-82ff-46d5-a75d-3ec41d1757c7",
           "738aa7d5-9b72-4a8d-913d-1a090a455435"
         ],
         "format": {
-          "page_icon": "\ud83d\udee0\ufe0f"
+          "page_icon": "\ud83d\udee0\ufe0f",
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
         },
         "created_time": 1773145918381,
-        "last_edited_time": 1773151012745,
+        "last_edited_time": 1793867359784,
         "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "parent_table": "collection",
         "alive": true,
@@ -65,6 +79,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "crdt_data": {
           "title": {
             "r": "SEs9KwCLRt3nlS0ICTQs5g,\"start\",\"end\"",
@@ -169,7 +185,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 275,
+        "version": 316,
         "type": "page",
         "properties": {
           "title": [
@@ -223,30 +239,14 @@
         },
         "permissions": [
           {
-            "role": "editor",
-            "type": "user_permission",
-            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
-          },
-          {
             "role": "reader",
             "type": "public_permission",
             "is_site": true,
             "added_timestamp": 1773152043547
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
-            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-            "parent_table": "space"
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1793911068994,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -259,6 +259,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_data": {
           "title": {
             "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
@@ -889,6 +891,318 @@
                         94
                       ],
                       "l": -4
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "4d601ba6-cf29-430c-9b7e-7da439a0a967": {
+      "value": {
+        "id": "4d601ba6-cf29-430c-9b7e-7da439a0a967",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Developed an online Hearts card game using the Java Spring Boot framework"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867359784,
+        "last_edited_time": 1793867359784,
+        "parent_id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+        "crdt_data": {
+          "title": {
+            "r": "bdOh18WzmMYbvNvKy-kT4Q,\"start\",\"end\"",
+            "n": {
+              "bdOh18WzmMYbvNvKy-kT4Q,\"start\",\"end\"": {
+                "s": {
+                  "x": "bdOh18WzmMYbvNvKy-kT4Q",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "1rBbX78QLP3n",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 73,
+                      "c": "Developed an online Hearts card game using the Java Spring Boot framework"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "086f4436-9702-432d-8d79-5c35d5fb1a78": {
+      "value": {
+        "id": "086f4436-9702-432d-8d79-5c35d5fb1a78",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Implemented multithreading, servlets, and remote method invocation (RMI) for gameplay and server communication"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867359784,
+        "last_edited_time": 1793867359784,
+        "parent_id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+        "crdt_data": {
+          "title": {
+            "r": "7xih1rmgC-rgx0Z0Au8jfA,\"start\",\"end\"",
+            "n": {
+              "7xih1rmgC-rgx0Z0Au8jfA,\"start\",\"end\"": {
+                "s": {
+                  "x": "7xih1rmgC-rgx0Z0Au8jfA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "wJfu3qDcvhZu",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 110,
+                      "c": "Implemented multithreading, servlets, and remote method invocation (RMI) for gameplay and server communication"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "f2ea1c02-1035-4a75-934c-cc7b63e5d3f6": {
+      "value": {
+        "id": "f2ea1c02-1035-4a75-934c-cc7b63e5d3f6",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Built a data visualization model for card counting to determine optimal strategies during gameplay"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867359784,
+        "last_edited_time": 1793867359784,
+        "parent_id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+        "crdt_data": {
+          "title": {
+            "r": "KpdCdFL-WsnxfNK8uuOkcQ,\"start\",\"end\"",
+            "n": {
+              "KpdCdFL-WsnxfNK8uuOkcQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "KpdCdFL-WsnxfNK8uuOkcQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "G-3nfvU37J8E",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 98,
+                      "c": "Built a data visualization model for card counting to determine optimal strategies during gameplay"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "7794c3a6-82ff-46d5-a75d-3ec41d1757c7": {
+      "value": {
+        "id": "7794c3a6-82ff-46d5-a75d-3ec41d1757c7",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Added gameplay modes allowing a human-like strategy or a cheating strategy"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867359784,
+        "last_edited_time": 1793867359784,
+        "parent_id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+        "crdt_data": {
+          "title": {
+            "r": "dTCD3EG-m9Cf1ELSARod-A,\"start\",\"end\"",
+            "n": {
+              "dTCD3EG-m9Cf1ELSARod-A,\"start\",\"end\"": {
+                "s": {
+                  "x": "dTCD3EG-m9Cf1ELSARod-A",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GkjGPLoDwZ9f",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 74,
+                      "c": "Added gameplay modes allowing a human-like strategy or a cheating strategy"
                     },
                     {
                       "t": "e"

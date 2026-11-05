@@ -3,12 +3,12 @@
     "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1": {
       "value": {
         "id": "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
-        "version": 57,
+        "version": 67,
         "type": "page",
         "properties": {
           "<>_<": [
             [
-              "Battery Research Intern"
+              "Battery Research Lab Intern"
             ]
           ],
           "MKuJ": [
@@ -61,15 +61,27 @@
         "content": [
           "dca46825-a621-4be3-b9c7-b7f9c7af4ec8",
           "4e1e26bb-5694-4777-b58a-12e58a748543",
+          "0c3b0c4f-7bd3-4a85-ac03-871a22b0a340",
+          "a56a373c-8527-4723-aa52-6fe52f7e0aff",
           "4dd3618c-0a15-4e77-b9e2-f2730feae5f6",
           "99085bf6-67d7-4014-8eb1-d7530b70eb78",
           "ab249535-36a3-4c4d-b304-487e4289aa68"
         ],
         "format": {
-          "page_icon": "\ud83d\udcbc"
+          "page_icon": "\ud83d\udcbc",
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
         },
         "created_time": 1773145354356,
-        "last_edited_time": 1773150983027,
+        "last_edited_time": 1793867353778,
         "parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "parent_table": "collection",
         "alive": true,
@@ -78,6 +90,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "crdt_data": {
           "title": {
             "r": "kevJBn_BQ5uuIl7QNdHuOA,\"start\",\"end\"",
@@ -289,7 +303,7 @@
     "6a83e54d-6563-4444-b5f5-e9177926917a": {
       "value": {
         "id": "6a83e54d-6563-4444-b5f5-e9177926917a",
-        "version": 54,
+        "version": 74,
         "type": "collection_view",
         "properties": {
           "title": [
@@ -312,12 +326,14 @@
           "hide_inline_collection_name": false
         },
         "created_time": 1773144036619,
-        "last_edited_time": 1773154266130,
+        "last_edited_time": 1793911068994,
         "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"",
@@ -356,7 +372,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 275,
+        "version": 316,
         "type": "page",
         "properties": {
           "title": [
@@ -410,30 +426,14 @@
         },
         "permissions": [
           {
-            "role": "editor",
-            "type": "user_permission",
-            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
-          },
-          {
             "role": "reader",
             "type": "public_permission",
             "is_site": true,
             "added_timestamp": 1773152043547
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
-            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-            "parent_table": "space"
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1793911068994,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -446,6 +446,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_data": {
           "title": {
             "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
@@ -715,6 +717,162 @@
                     {
                       "t": "e",
                       "b": []
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "0c3b0c4f-7bd3-4a85-ac03-871a22b0a340": {
+      "value": {
+        "id": "0c3b0c4f-7bd3-4a85-ac03-871a22b0a340",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Optimized lithium-ion cathode electrode formulations, increasing discharge capacity 15% through binder and dispersion improvements"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867353778,
+        "last_edited_time": 1793867353778,
+        "parent_id": "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
+        "crdt_data": {
+          "title": {
+            "r": "G_F27VUiCNav88mqPEjghg,\"start\",\"end\"",
+            "n": {
+              "G_F27VUiCNav88mqPEjghg,\"start\",\"end\"": {
+                "s": {
+                  "x": "G_F27VUiCNav88mqPEjghg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8r1ttolCLYPI",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 130,
+                      "c": "Optimized lithium-ion cathode electrode formulations, increasing discharge capacity 15% through binder and dispersion improvements"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "a56a373c-8527-4723-aa52-6fe52f7e0aff": {
+      "value": {
+        "id": "a56a373c-8527-4723-aa52-6fe52f7e0aff",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Conducted 50+ battery performance and degradation tests, improving feedback cycle time 30% using DOE-based experimental design"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867353778,
+        "last_edited_time": 1793867353778,
+        "parent_id": "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
+        "crdt_data": {
+          "title": {
+            "r": "LnK80_cEiCoQvH2KAu6eeg,\"start\",\"end\"",
+            "n": {
+              "LnK80_cEiCoQvH2KAu6eeg,\"start\",\"end\"": {
+                "s": {
+                  "x": "LnK80_cEiCoQvH2KAu6eeg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "1z0-1cvjZHwJ",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 126,
+                      "c": "Conducted 50+ battery performance and degradation tests, improving feedback cycle time 30% using DOE-based experimental design"
+                    },
+                    {
+                      "t": "e"
                     }
                   ],
                   "l": ""
@@ -1939,7 +2097,7 @@
     "bb34e8bb-b8b4-491c-88c2-97b3bf575377": {
       "value": {
         "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
-        "version": 70,
+        "version": 82,
         "name": [
           [
             "Work"
@@ -1950,6 +2108,16 @@
             "name": "Position",
             "type": "multi_select",
             "options": [
+              {
+                "id": "3155597d-1abe-4fe9-abfa-50951c761c68",
+                "color": "blue",
+                "value": "Forward Deployed AI Engineer"
+              },
+              {
+                "id": "d9e9cece-f355-4e53-9919-2e0b55cabc30",
+                "color": "blue",
+                "value": "Software Engineer"
+              },
               {
                 "id": "25a59960-f293-4cb1-9b01-bc031befff88",
                 "color": "blue",
@@ -1979,6 +2147,11 @@
                 "id": "984549d1-2191-4ad3-ac07-be10a40ec092",
                 "color": "blue",
                 "value": "Battery Research Intern"
+              },
+              {
+                "id": "5258f056-2bb9-44b9-aed0-e590d162cad7",
+                "color": "blue",
+                "value": "Battery Research Lab Intern"
               },
               {
                 "id": "0cd49b46-4747-4149-add7-e5d0406f33b5",
@@ -2089,7 +2262,9 @@
         "created_by_table": "notion_user",
         "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
         "last_edited_by_table": "bot",
-        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4"
+        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     }
@@ -2098,7 +2273,7 @@
     "3862349e-44dc-44b8-b417-f974f3a8df02": {
       "value": {
         "id": "3862349e-44dc-44b8-b417-f974f3a8df02",
-        "version": 79,
+        "version": 85,
         "type": "gallery",
         "name": "Gallery",
         "format": {
@@ -2144,6 +2319,7 @@
         "alive": true,
         "page_sort": [
           "31f181ec-d4f6-8049-b7d4-de62b00f4635",
+          "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
           "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
           "31f181ec-d4f6-819a-b300-f71d6329a121",
           "31f181ec-d4f6-81b3-80fe-da3e76304597",
@@ -2156,9 +2332,11 @@
         },
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "created_time": 1773144036622,
-        "last_edited_time": 1773153862680,
+        "last_edited_time": 1793911071217,
         "created_by_table": "notion_user",
-        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     },

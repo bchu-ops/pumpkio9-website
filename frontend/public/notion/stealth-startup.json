@@ -3,7 +3,7 @@
     "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62": {
       "value": {
         "id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
-        "version": 59,
+        "version": 78,
         "type": "page",
         "properties": {
           "<>_<": [
@@ -33,8 +33,9 @@
                 [
                   "d",
                   {
-                    "type": "date",
-                    "start_date": "2024-06-01"
+                    "type": "daterange",
+                    "end_date": "2026-04-01",
+                    "start_date": "2022-05-01"
                   }
                 ]
               ]
@@ -60,15 +61,30 @@
         "content": [
           "0b62f852-9a81-4c65-8aa6-0cdce8a04480",
           "b7220849-2707-4754-9f6f-d274fbf588f9",
+          "6e17fb84-c511-4d5d-94fc-8c6072a41dac",
+          "64dbfe05-fe5c-4033-9705-d6f8fd75214d",
+          "c26cf190-6049-494d-ae74-16d77225fa2e",
+          "630d457b-deaa-451c-ac0b-968f1c2eeced",
+          "66ef1aaa-3059-4c76-bcdd-245918eae1d2",
           "875da221-9f2d-4c24-88f1-8a530de3f32d",
           "25707389-bec3-47f1-a5d2-30905398d269",
           "234369c1-6c7f-4f0a-b440-a078eb592044"
         ],
         "format": {
-          "page_icon": "\ud83d\udcbc"
+          "page_icon": "\ud83d\udcbc",
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
         },
         "created_time": 1773145354356,
-        "last_edited_time": 1773150972227,
+        "last_edited_time": 1793898237671,
         "parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "parent_table": "collection",
         "alive": true,
@@ -77,6 +93,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "crdt_data": {
           "title": {
             "r": "Lu7MVnlFP2XgYy_dOYHtBA,\"start\",\"end\"",
@@ -176,7 +194,7 @@
     "6a83e54d-6563-4444-b5f5-e9177926917a": {
       "value": {
         "id": "6a83e54d-6563-4444-b5f5-e9177926917a",
-        "version": 54,
+        "version": 74,
         "type": "collection_view",
         "properties": {
           "title": [
@@ -199,12 +217,14 @@
           "hide_inline_collection_name": false
         },
         "created_time": 1773144036619,
-        "last_edited_time": 1773154266130,
+        "last_edited_time": 1793911068994,
         "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"",
@@ -243,7 +263,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 275,
+        "version": 316,
         "type": "page",
         "properties": {
           "title": [
@@ -297,30 +317,14 @@
         },
         "permissions": [
           {
-            "role": "editor",
-            "type": "user_permission",
-            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
-          },
-          {
             "role": "reader",
             "type": "public_permission",
             "is_site": true,
             "added_timestamp": 1773152043547
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
-            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-            "parent_table": "space"
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1793911068994,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -333,6 +337,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_data": {
           "title": {
             "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
@@ -510,12 +516,12 @@
     "b7220849-2707-4754-9f6f-d274fbf588f9": {
       "value": {
         "id": "b7220849-2707-4754-9f6f-d274fbf588f9",
-        "version": 4,
+        "version": 10,
         "type": "text",
         "properties": {
           "title": [
             [
-              "[June 2024 \u2192 Present]: AI Engineering",
+              "[May 2022 \u2192 April 2026]: AI Engineering",
               [
                 [
                   "b"
@@ -524,13 +530,27 @@
             ]
           ]
         },
+        "format": {
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
         "created_time": 1773148399767,
-        "last_edited_time": 1773148399767,
+        "last_edited_time": 1793860389653,
         "parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
         "crdt_data": {
           "title": {
             "r": "3n9KR8Gtd43vbfjzMCI2Tg,\"start\",\"end\"",
@@ -549,8 +569,8 @@
                         1
                       ],
                       "o": "start",
-                      "l": 37,
-                      "c": "[June 2024 \u2192 Present]: AI Engineering",
+                      "l": 1,
+                      "c": "[",
                       "b": [
                         {
                           "t": "a",
@@ -574,12 +594,1468 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            56
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "Pu-4GQrZk1EQ",
+                              39
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Pu-4GQrZk1EQ",
+                        39
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        1
+                      ],
+                      "l": 3,
+                      "c": "May",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            42
+                          ],
+                          "s": {
+                            "i": [
+                              "Pu-4GQrZk1EQ",
+                              39
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              2
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6niX_TzZZ3kJ",
+                        2
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        1
+                      ],
+                      "l": -4,
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6niX_TzZZ3kJ",
+                        6
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        5
+                      ],
+                      "l": 4,
+                      "c": " 202",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            57
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              6
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "Pu-4GQrZk1EQ",
+                              43
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Pu-4GQrZk1EQ",
+                        43
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        9
+                      ],
+                      "l": 1,
+                      "c": "2",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            44
+                          ],
+                          "s": {
+                            "i": [
+                              "Pu-4GQrZk1EQ",
+                              43
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              10
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6niX_TzZZ3kJ",
+                        10
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        9
+                      ],
+                      "l": -1,
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6niX_TzZZ3kJ",
+                        11
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        10
+                      ],
+                      "l": 3,
+                      "c": " \u2192 ",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            58
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              11
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "Pu-4GQrZk1EQ",
+                              45
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Pu-4GQrZk1EQ",
+                        45
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        13
+                      ],
+                      "l": 2,
+                      "c": "Ap",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            47
+                          ],
+                          "s": {
+                            "i": [
+                              "Pu-4GQrZk1EQ",
+                              45
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              14
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6niX_TzZZ3kJ",
+                        14
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        13
+                      ],
+                      "l": -1,
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6niX_TzZZ3kJ",
+                        15
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        14
+                      ],
+                      "l": 1,
+                      "c": "r",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            59
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              15
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "Pu-4GQrZk1EQ",
+                              48
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Pu-4GQrZk1EQ",
+                        48
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        15
+                      ],
+                      "l": 7,
+                      "c": "il 2026",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            55
+                          ],
+                          "s": {
+                            "i": [
+                              "Pu-4GQrZk1EQ",
+                              48
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              16
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6niX_TzZZ3kJ",
+                        16
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        15
+                      ],
+                      "l": -5,
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "6niX_TzZZ3kJ",
+                        21
+                      ],
+                      "o": [
+                        "6niX_TzZZ3kJ",
+                        20
+                      ],
+                      "l": 17,
+                      "c": "]: AI Engineering",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "6niX_TzZZ3kJ",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            60
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              21
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "3n9KR8Gtd43vbfjzMCI2Tg",
+                          "l": "",
+                          "i": [
+                            "Pu-4GQrZk1EQ",
+                            61
+                          ],
+                          "s": {
+                            "i": [
+                              "6niX_TzZZ3kJ",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
                     {
                       "t": "e",
                       "b": []
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "6e17fb84-c511-4d5d-94fc-8c6072a41dac": {
+      "value": {
+        "id": "6e17fb84-c511-4d5d-94fc-8c6072a41dac",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Deployed multi-provider AI agent system serving 3 LLM providers by building tool-calling agentic loops with structured Pydantic output via FastAPI microservices, replacing manual machinist quoting with autonomous AI-driven pricing across 7 cost categories"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867338416,
+        "last_edited_time": 1793867338416,
+        "parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "crdt_data": {
+          "title": {
+            "r": "D7kXmBvtBUjnmcP507KgMg,\"start\",\"end\"",
+            "n": {
+              "D7kXmBvtBUjnmcP507KgMg,\"start\",\"end\"": {
+                "s": {
+                  "x": "D7kXmBvtBUjnmcP507KgMg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "5pvz5VIXWcOw",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 255,
+                      "c": "Deployed multi-provider AI agent system serving 3 LLM providers by building tool-calling agentic loops with structured Pydantic output via FastAPI microservices, replacing manual machinist quoting with autonomous AI-driven pricing across 7 cost categories"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "64dbfe05-fe5c-4033-9705-d6f8fd75214d": {
+      "value": {
+        "id": "64dbfe05-fe5c-4033-9705-d6f8fd75214d",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Achieved 40% higher engineering drawing analysis accuracy by developing a VLM-based preprocessing pipeline using Gemini Vision for classification, assembly trees, and BOM extraction"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867338416,
+        "last_edited_time": 1793867338416,
+        "parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "crdt_data": {
+          "title": {
+            "r": "xIhPCV7T6fYtGT_SuOVLJA,\"start\",\"end\"",
+            "n": {
+              "xIhPCV7T6fYtGT_SuOVLJA,\"start\",\"end\"": {
+                "s": {
+                  "x": "xIhPCV7T6fYtGT_SuOVLJA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "i3Ne31L2og8e",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 181,
+                      "c": "Achieved 40% higher engineering drawing analysis accuracy by developing a VLM-based preprocessing pipeline using Gemini Vision for classification, assembly trees, and BOM extraction"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "c26cf190-6049-494d-ae74-16d77225fa2e": {
+      "value": {
+        "id": "c26cf190-6049-494d-ae74-16d77225fa2e",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Consolidated three separate quote workflows into a unified microservices architecture (React, FastAPI, PostgreSQL) with recursive assembly quoting across arbitrarily nested BOMs, implementing async communication with retries and structured logging"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867338416,
+        "last_edited_time": 1793867338416,
+        "parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "crdt_data": {
+          "title": {
+            "r": "jj19nEJNBlJ7d5JDO3SL8g,\"start\",\"end\"",
+            "n": {
+              "jj19nEJNBlJ7d5JDO3SL8g,\"start\",\"end\"": {
+                "s": {
+                  "x": "jj19nEJNBlJ7d5JDO3SL8g",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "yAWT5vhf7XfL",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 247,
+                      "c": "Consolidated three separate quote workflows into a unified microservices architecture (React, FastAPI, PostgreSQL) with recursive assembly quoting across arbitrarily nested BOMs, implementing async communication with retries and structured logging"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "630d457b-deaa-451c-ac0b-968f1c2eeced": {
+      "value": {
+        "id": "630d457b-deaa-451c-ac0b-968f1c2eeced",
+        "version": 11,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Integrated vendor pricing APIs with OAuth authentication and caching layers to automate component pricing and cut pricing lookup latency by 70%"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867338416,
+        "last_edited_time": 1793898237671,
+        "parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "crdt_data": {
+          "title": {
+            "r": "vPK0Usc6f5hCAFPnIE3xiQ,\"start\",\"end\"",
+            "n": {
+              "vPK0Usc6f5hCAFPnIE3xiQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "vPK0Usc6f5hCAFPnIE3xiQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "wjdaBnDnlVJj",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 110,
+                      "c": "Integrated vendor pricing APIs with OAuth authentication and caching layers to automate component pricing and "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "WXbzq_l1yyI1",
+                        139
+                      ],
+                      "o": [
+                        "wjdaBnDnlVJj",
+                        110
+                      ],
+                      "l": 5,
+                      "c": "cut p"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "wjdaBnDnlVJj",
+                        111
+                      ],
+                      "o": [
+                        "wjdaBnDnlVJj",
+                        110
+                      ],
+                      "l": 1,
+                      "c": "r"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "WXbzq_l1yyI1",
+                        144
+                      ],
+                      "o": [
+                        "wjdaBnDnlVJj",
+                        111
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "wjdaBnDnlVJj",
+                        112
+                      ],
+                      "o": [
+                        "wjdaBnDnlVJj",
+                        111
+                      ],
+                      "l": -3
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "wjdaBnDnlVJj",
+                        115
+                      ],
+                      "o": [
+                        "wjdaBnDnlVJj",
+                        114
+                      ],
+                      "l": 1,
+                      "c": "c"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "WXbzq_l1yyI1",
+                        145
+                      ],
+                      "o": [
+                        "wjdaBnDnlVJj",
+                        115
+                      ],
+                      "l": 3,
+                      "c": "ing"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "wjdaBnDnlVJj",
+                        116
+                      ],
+                      "o": [
+                        "wjdaBnDnlVJj",
+                        115
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "wjdaBnDnlVJj",
+                        117
+                      ],
+                      "o": [
+                        "wjdaBnDnlVJj",
+                        116
+                      ],
+                      "l": 22,
+                      "c": " lookup latency by 70%"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "66ef1aaa-3059-4c76-bcdd-245918eae1d2": {
+      "value": {
+        "id": "66ef1aaa-3059-4c76-bcdd-245918eae1d2",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Built a React/TypeScript frontend featuring real-time async job polling, editable cost breakdown tables, and a browser-based 3D CAD viewer (Three.js + WebAssembly) for STEP/STL files"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867338416,
+        "last_edited_time": 1793867338416,
+        "parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+        "crdt_data": {
+          "title": {
+            "r": "b9F-fVsTgwB3ogegm8LzQA,\"start\",\"end\"",
+            "n": {
+              "b9F-fVsTgwB3ogegm8LzQA,\"start\",\"end\"": {
+                "s": {
+                  "x": "b9F-fVsTgwB3ogegm8LzQA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "nyTOElC4B91c",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 182,
+                      "c": "Built a React/TypeScript frontend featuring real-time async job polling, editable cost breakdown tables, and a browser-based 3D CAD viewer (Three.js + WebAssembly) for STEP/STL files"
+                    },
+                    {
+                      "t": "e"
                     }
                   ],
                   "l": ""
@@ -1925,7 +3401,7 @@
     "bb34e8bb-b8b4-491c-88c2-97b3bf575377": {
       "value": {
         "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
-        "version": 70,
+        "version": 82,
         "name": [
           [
             "Work"
@@ -1936,6 +3412,16 @@
             "name": "Position",
             "type": "multi_select",
             "options": [
+              {
+                "id": "3155597d-1abe-4fe9-abfa-50951c761c68",
+                "color": "blue",
+                "value": "Forward Deployed AI Engineer"
+              },
+              {
+                "id": "d9e9cece-f355-4e53-9919-2e0b55cabc30",
+                "color": "blue",
+                "value": "Software Engineer"
+              },
               {
                 "id": "25a59960-f293-4cb1-9b01-bc031befff88",
                 "color": "blue",
@@ -1965,6 +3451,11 @@
                 "id": "984549d1-2191-4ad3-ac07-be10a40ec092",
                 "color": "blue",
                 "value": "Battery Research Intern"
+              },
+              {
+                "id": "5258f056-2bb9-44b9-aed0-e590d162cad7",
+                "color": "blue",
+                "value": "Battery Research Lab Intern"
               },
               {
                 "id": "0cd49b46-4747-4149-add7-e5d0406f33b5",
@@ -2075,7 +3566,9 @@
         "created_by_table": "notion_user",
         "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
         "last_edited_by_table": "bot",
-        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4"
+        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     }
@@ -2084,7 +3577,7 @@
     "3862349e-44dc-44b8-b417-f974f3a8df02": {
       "value": {
         "id": "3862349e-44dc-44b8-b417-f974f3a8df02",
-        "version": 79,
+        "version": 85,
         "type": "gallery",
         "name": "Gallery",
         "format": {
@@ -2130,6 +3623,7 @@
         "alive": true,
         "page_sort": [
           "31f181ec-d4f6-8049-b7d4-de62b00f4635",
+          "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
           "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
           "31f181ec-d4f6-819a-b300-f71d6329a121",
           "31f181ec-d4f6-81b3-80fe-da3e76304597",
@@ -2142,9 +3636,11 @@
         },
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "created_time": 1773144036622,
-        "last_edited_time": 1773153862680,
+        "last_edited_time": 1793911071217,
         "created_by_table": "notion_user",
-        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     },

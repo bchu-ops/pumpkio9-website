@@ -3,7 +3,7 @@
     "31f181ec-d4f6-81c1-859c-f894f93c3bc6": {
       "value": {
         "id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
-        "version": 59,
+        "version": 66,
         "type": "page",
         "properties": {
           "<>_<": [
@@ -61,15 +61,28 @@
         "content": [
           "7ceaba4b-ab3b-40f5-93df-6fba3e2713f6",
           "e62ea15e-4787-4409-9c83-e4fdea701efa",
+          "4ee4f2c0-16c1-4241-90bd-66ea0d181366",
+          "319ed7f5-7613-4074-8f16-043d71fa9338",
+          "3ba6079a-0d4b-41c5-ac09-0c972cdc174a",
           "99082ca4-b88c-4509-9ca1-472a30f9f28f",
           "60dd15b9-5ffe-4a1b-a046-0088a2868199",
           "348f8c20-c817-48af-8637-d1a449874c56"
         ],
         "format": {
-          "page_icon": "\ud83d\udcbc"
+          "page_icon": "\ud83d\udcbc",
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
         },
         "created_time": 1773145354356,
-        "last_edited_time": 1773150985293,
+        "last_edited_time": 1793867355659,
         "parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "parent_table": "collection",
         "alive": true,
@@ -78,6 +91,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "crdt_data": {
           "title": {
             "r": "MmH7W0LepwWLcQED9cV0_g,\"start\",\"end\"",
@@ -267,7 +282,7 @@
     "6a83e54d-6563-4444-b5f5-e9177926917a": {
       "value": {
         "id": "6a83e54d-6563-4444-b5f5-e9177926917a",
-        "version": 54,
+        "version": 74,
         "type": "collection_view",
         "properties": {
           "title": [
@@ -290,12 +305,14 @@
           "hide_inline_collection_name": false
         },
         "created_time": 1773144036619,
-        "last_edited_time": 1773154266130,
+        "last_edited_time": 1793911068994,
         "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"",
@@ -334,7 +351,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 275,
+        "version": 316,
         "type": "page",
         "properties": {
           "title": [
@@ -388,30 +405,14 @@
         },
         "permissions": [
           {
-            "role": "editor",
-            "type": "user_permission",
-            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
-          },
-          {
             "role": "reader",
             "type": "public_permission",
             "is_site": true,
             "added_timestamp": 1773152043547
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
-            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-            "parent_table": "space"
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1793911068994,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -424,6 +425,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_data": {
           "title": {
             "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
@@ -671,6 +674,240 @@
                     {
                       "t": "e",
                       "b": []
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "4ee4f2c0-16c1-4241-90bd-66ea0d181366": {
+      "value": {
+        "id": "4ee4f2c0-16c1-4241-90bd-66ea0d181366",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Officiated 80+ soccer matches coordinating in trained teams of 3 referees"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867355659,
+        "last_edited_time": 1793867355659,
+        "parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "crdt_data": {
+          "title": {
+            "r": "iyOit4gDzOk-OTN5hGNXdA,\"start\",\"end\"",
+            "n": {
+              "iyOit4gDzOk-OTN5hGNXdA,\"start\",\"end\"": {
+                "s": {
+                  "x": "iyOit4gDzOk-OTN5hGNXdA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Kd6YWajVtT05",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 73,
+                      "c": "Officiated 80+ soccer matches coordinating in trained teams of 3 referees"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "319ed7f5-7613-4074-8f16-043d71fa9338": {
+      "value": {
+        "id": "319ed7f5-7613-4074-8f16-043d71fa9338",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Constantly examined administrative effectiveness and sought better procedures"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867355659,
+        "last_edited_time": 1793867355659,
+        "parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "crdt_data": {
+          "title": {
+            "r": "VQvrUZEGHoEV_mtKovTEiQ,\"start\",\"end\"",
+            "n": {
+              "VQvrUZEGHoEV_mtKovTEiQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "VQvrUZEGHoEV_mtKovTEiQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "8chwaKP5kz8Y",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 77,
+                      "c": "Constantly examined administrative effectiveness and sought better procedures"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "3ba6079a-0d4b-41c5-ac09-0c972cdc174a": {
+      "value": {
+        "id": "3ba6079a-0d4b-41c5-ac09-0c972cdc174a",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Made difficult and unpopular decisions in high-pressure environments with an audience"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867355659,
+        "last_edited_time": 1793867355659,
+        "parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81c1-859c-f894f93c3bc6",
+        "crdt_data": {
+          "title": {
+            "r": "Mg0lBKGkIWRWBfyZMzGXng,\"start\",\"end\"",
+            "n": {
+              "Mg0lBKGkIWRWBfyZMzGXng,\"start\",\"end\"": {
+                "s": {
+                  "x": "Mg0lBKGkIWRWBfyZMzGXng",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "rS1W0zYCc7ci",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 85,
+                      "c": "Made difficult and unpopular decisions in high-pressure environments with an audience"
+                    },
+                    {
+                      "t": "e"
                     }
                   ],
                   "l": ""
@@ -1492,7 +1729,7 @@
     "bb34e8bb-b8b4-491c-88c2-97b3bf575377": {
       "value": {
         "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
-        "version": 70,
+        "version": 82,
         "name": [
           [
             "Work"
@@ -1503,6 +1740,16 @@
             "name": "Position",
             "type": "multi_select",
             "options": [
+              {
+                "id": "3155597d-1abe-4fe9-abfa-50951c761c68",
+                "color": "blue",
+                "value": "Forward Deployed AI Engineer"
+              },
+              {
+                "id": "d9e9cece-f355-4e53-9919-2e0b55cabc30",
+                "color": "blue",
+                "value": "Software Engineer"
+              },
               {
                 "id": "25a59960-f293-4cb1-9b01-bc031befff88",
                 "color": "blue",
@@ -1532,6 +1779,11 @@
                 "id": "984549d1-2191-4ad3-ac07-be10a40ec092",
                 "color": "blue",
                 "value": "Battery Research Intern"
+              },
+              {
+                "id": "5258f056-2bb9-44b9-aed0-e590d162cad7",
+                "color": "blue",
+                "value": "Battery Research Lab Intern"
               },
               {
                 "id": "0cd49b46-4747-4149-add7-e5d0406f33b5",
@@ -1642,7 +1894,9 @@
         "created_by_table": "notion_user",
         "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
         "last_edited_by_table": "bot",
-        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4"
+        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     }
@@ -1651,7 +1905,7 @@
     "3862349e-44dc-44b8-b417-f974f3a8df02": {
       "value": {
         "id": "3862349e-44dc-44b8-b417-f974f3a8df02",
-        "version": 79,
+        "version": 85,
         "type": "gallery",
         "name": "Gallery",
         "format": {
@@ -1697,6 +1951,7 @@
         "alive": true,
         "page_sort": [
           "31f181ec-d4f6-8049-b7d4-de62b00f4635",
+          "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
           "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
           "31f181ec-d4f6-819a-b300-f71d6329a121",
           "31f181ec-d4f6-81b3-80fe-da3e76304597",
@@ -1709,9 +1964,11 @@
         },
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "created_time": 1773144036622,
-        "last_edited_time": 1773153862680,
+        "last_edited_time": 1793911071217,
         "created_by_table": "notion_user",
-        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     },

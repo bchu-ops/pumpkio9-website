@@ -3,7 +3,7 @@
     "31f181ec-d4f6-81f7-8e91-c4ccf85492bf": {
       "value": {
         "id": "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
-        "version": 57,
+        "version": 63,
         "type": "page",
         "properties": {
           "<>_<": [
@@ -61,15 +61,27 @@
         "content": [
           "87485fc8-aa93-4bee-8494-470a29ca5580",
           "8f4ac3f5-304d-4d35-8fd7-966d71261595",
+          "594da4e3-983c-48fe-9a86-6f4c47708ccd",
+          "fb8783e5-0a10-4cea-9df9-99219c34acfd",
           "fe9f2e26-418b-46ae-bc04-4bf0fcab7b9e",
           "fdd15e38-56dc-4c59-9d18-27826d9dcfd9",
           "ed2e5879-3318-40e0-9d4e-a2c6edbb5589"
         ],
         "format": {
-          "page_icon": "\ud83d\udcbc"
+          "page_icon": "\ud83d\udcbc",
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
         },
         "created_time": 1773145354356,
-        "last_edited_time": 1773150980416,
+        "last_edited_time": 1793867357755,
         "parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "parent_table": "collection",
         "alive": true,
@@ -78,6 +90,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "crdt_data": {
           "title": {
             "r": "E33mG5Z98V9zOj8452d4Pw,\"start\",\"end\"",
@@ -252,7 +266,7 @@
     "6a83e54d-6563-4444-b5f5-e9177926917a": {
       "value": {
         "id": "6a83e54d-6563-4444-b5f5-e9177926917a",
-        "version": 54,
+        "version": 74,
         "type": "collection_view",
         "properties": {
           "title": [
@@ -275,12 +289,14 @@
           "hide_inline_collection_name": false
         },
         "created_time": 1773144036619,
-        "last_edited_time": 1773154266130,
+        "last_edited_time": 1793911068994,
         "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "parent_table": "block",
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"",
@@ -319,7 +335,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 275,
+        "version": 316,
         "type": "page",
         "properties": {
           "title": [
@@ -373,30 +389,14 @@
         },
         "permissions": [
           {
-            "role": "editor",
-            "type": "user_permission",
-            "user_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
-          },
-          {
             "role": "reader",
             "type": "public_permission",
             "is_site": true,
             "added_timestamp": 1773152043547
-          },
-          {
-            "role": {
-              "read_content": true,
-              "insert_content": true,
-              "update_content": true
-            },
-            "type": "bot_permission",
-            "bot_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
-            "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-            "parent_table": "space"
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1773160702634,
+        "last_edited_time": 1793911068994,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -409,6 +409,8 @@
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_data": {
           "title": {
             "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
@@ -1754,6 +1756,162 @@
       },
       "role": "reader"
     },
+    "594da4e3-983c-48fe-9a86-6f4c47708ccd": {
+      "value": {
+        "id": "594da4e3-983c-48fe-9a86-6f4c47708ccd",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Hands-on laboratory experience involving teamwork, experimental design, data analysis, technical reports, and research presentations"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867357755,
+        "last_edited_time": 1793867357755,
+        "parent_id": "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
+        "crdt_data": {
+          "title": {
+            "r": "r2jLiAB0rMibKnreMXIspg,\"start\",\"end\"",
+            "n": {
+              "r2jLiAB0rMibKnreMXIspg,\"start\",\"end\"": {
+                "s": {
+                  "x": "r2jLiAB0rMibKnreMXIspg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "5JFcPG0PYyRb",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 132,
+                      "c": "Hands-on laboratory experience involving teamwork, experimental design, data analysis, technical reports, and research presentations"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "fb8783e5-0a10-4cea-9df9-99219c34acfd": {
+      "value": {
+        "id": "fb8783e5-0a10-4cea-9df9-99219c34acfd",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Conducted experiments and simulations involving hydrogen fuel cells, low-pressure chemical vapor deposition reactors, plate heat exchangers, liposome nanoparticle synthesis, photocatalytic reactors, and solid oxide fuel cells"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793867357755,
+        "last_edited_time": 1793867357755,
+        "parent_id": "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
+        "crdt_data": {
+          "title": {
+            "r": "OHJOUuUD-IjB2jlBE0Y5qg,\"start\",\"end\"",
+            "n": {
+              "OHJOUuUD-IjB2jlBE0Y5qg,\"start\",\"end\"": {
+                "s": {
+                  "x": "OHJOUuUD-IjB2jlBE0Y5qg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "S0aHPOLWCdKd",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 225,
+                      "c": "Conducted experiments and simulations involving hydrogen fuel cells, low-pressure chemical vapor deposition reactors, plate heat exchangers, liposome nanoparticle synthesis, photocatalytic reactors, and solid oxide fuel cells"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
     "fe9f2e26-418b-46ae-bc04-4bf0fcab7b9e": {
       "value": {
         "id": "fe9f2e26-418b-46ae-bc04-4bf0fcab7b9e",
@@ -2170,7 +2328,7 @@
     "bb34e8bb-b8b4-491c-88c2-97b3bf575377": {
       "value": {
         "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
-        "version": 70,
+        "version": 82,
         "name": [
           [
             "Work"
@@ -2181,6 +2339,16 @@
             "name": "Position",
             "type": "multi_select",
             "options": [
+              {
+                "id": "3155597d-1abe-4fe9-abfa-50951c761c68",
+                "color": "blue",
+                "value": "Forward Deployed AI Engineer"
+              },
+              {
+                "id": "d9e9cece-f355-4e53-9919-2e0b55cabc30",
+                "color": "blue",
+                "value": "Software Engineer"
+              },
               {
                 "id": "25a59960-f293-4cb1-9b01-bc031befff88",
                 "color": "blue",
@@ -2210,6 +2378,11 @@
                 "id": "984549d1-2191-4ad3-ac07-be10a40ec092",
                 "color": "blue",
                 "value": "Battery Research Intern"
+              },
+              {
+                "id": "5258f056-2bb9-44b9-aed0-e590d162cad7",
+                "color": "blue",
+                "value": "Battery Research Lab Intern"
               },
               {
                 "id": "0cd49b46-4747-4149-add7-e5d0406f33b5",
@@ -2320,7 +2493,9 @@
         "created_by_table": "notion_user",
         "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
         "last_edited_by_table": "bot",
-        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4"
+        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     }
@@ -2329,7 +2504,7 @@
     "3862349e-44dc-44b8-b417-f974f3a8df02": {
       "value": {
         "id": "3862349e-44dc-44b8-b417-f974f3a8df02",
-        "version": 79,
+        "version": 85,
         "type": "gallery",
         "name": "Gallery",
         "format": {
@@ -2375,6 +2550,7 @@
         "alive": true,
         "page_sort": [
           "31f181ec-d4f6-8049-b7d4-de62b00f4635",
+          "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
           "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
           "31f181ec-d4f6-819a-b300-f71d6329a121",
           "31f181ec-d4f6-81b3-80fe-da3e76304597",
@@ -2387,9 +2563,11 @@
         },
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "created_time": 1773144036622,
-        "last_edited_time": 1773153862680,
+        "last_edited_time": 1793911071217,
         "created_by_table": "notion_user",
-        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
       },
       "role": "reader"
     },

@@ -1,0 +1,2675 @@
+{
+  "block": {
+    "40f181ec-d4f6-8148-9add-c7a58ba0f4ad": {
+      "value": {
+        "id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "version": 61,
+        "type": "page",
+        "properties": {
+          "<>_<": [
+            [
+              "Forward Deployed AI Engineer,Software Engineer"
+            ]
+          ],
+          "MKuJ": [
+            [
+              "Enterprise Business Unit"
+            ]
+          ],
+          "z^Hp": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2026-04-01"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "{?gk": [
+            [
+              "scaleai.png",
+              [
+                [
+                  "a",
+                  "attachment:44bae104-7982-4636-9747-8bb67f76eeec:scaleai.png"
+                ]
+              ]
+            ]
+          ],
+          "title": [
+            [
+              "Scale AI"
+            ]
+          ]
+        },
+        "content": [
+          "f48cd41f-b1ec-4574-89ea-a2758712d091",
+          "d41eb3ad-923d-4d18-83df-1ec51dcd8432",
+          "def4c75c-92e2-4862-815e-38fd3abe7d2a",
+          "681e2ddd-cc72-4a61-b037-db7470e44636",
+          "4e6c7c1d-8d6c-4f92-a1a4-ece905ef8c96",
+          "d0795975-8b57-401c-bb33-89255d623c0e",
+          "4c4f4ce9-437a-4f33-86c3-ac0bfd1ba5cf",
+          "768dc644-fee9-4a40-8f6e-629ffa056cae",
+          "f5dbc9cb-f8db-41c4-b7d8-9be10effaec6",
+          "ec8ace54-93da-4fdf-96e4-f64fbc7ca6d4",
+          "38a885ad-7cdd-48e1-aa00-f23b5f447a33",
+          "ad71a325-4e72-4b6d-b7b6-ac283ace3523"
+        ],
+        "format": {
+          "page_icon": "\ud83d\udcbc",
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893714,
+        "last_edited_time": 1793911068994,
+        "parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "parent_table": "collection",
+        "alive": true,
+        "file_ids": [
+          "44bae104-7982-4636-9747-8bb67f76eeec"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "crdt_data": {
+          "title": {
+            "r": "ghm_By20rCwPB6xJPJIElg,\"start\",\"end\"",
+            "n": {
+              "ghm_By20rCwPB6xJPJIElg,\"start\",\"end\"": {
+                "s": {
+                  "x": "ghm_By20rCwPB6xJPJIElg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "DgI4kiTcdGJL",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 8,
+                      "c": "Scale AI"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "6a83e54d-6563-4444-b5f5-e9177926917a": {
+      "value": {
+        "id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "version": 74,
+        "type": "collection_view",
+        "properties": {
+          "title": [
+            [
+              "Experiences"
+            ]
+          ]
+        },
+        "view_ids": [
+          "3862349e-44dc-44b8-b417-f974f3a8df02",
+          "31f181ec-d4f6-8062-9db6-000c6fb2d6a5"
+        ],
+        "collection_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "format": {
+          "collection_pointer": {
+            "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "hide_inline_collection_name": false
+        },
+        "created_time": 1773144036619,
+        "last_edited_time": 1793911068994,
+        "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "crdt_data": {
+          "title": {
+            "r": "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"",
+            "n": {
+              "OZyOaVE3XMQgzJTpySddVg,\"start\",\"end\"": {
+                "s": {
+                  "x": "OZyOaVE3XMQgzJTpySddVg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "HMWLQ18-Xb_r",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 11,
+                      "c": "Experiences"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
+      "value": {
+        "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "version": 316,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Brian\u2019s Portfolio"
+            ]
+          ]
+        },
+        "content": [
+          "861b745c-0cdb-4d4b-8b87-70ebe849da9d",
+          "6d6ab2a2-c8d8-4e4a-ade5-acfc7ce7f20b",
+          "fef0f191-c193-465f-bca6-44e5cab932a7",
+          "6a83e54d-6563-4444-b5f5-e9177926917a",
+          "e3d04709-fc3e-44ba-8e8b-d38f4b38884e",
+          "d29488e8-e56e-4aea-aadb-46cb3b9c4b22",
+          "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+          "6854cd5a-ed72-4cbd-b8de-48cc52166116",
+          "3ea3adf4-6275-46e5-8c8f-90c5994480ba",
+          "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+          "0748870d-7024-4eee-ac3d-e00d98e4dd08",
+          "2fdec1f2-b38c-4a02-bdd6-257fc1243b15",
+          "79cac193-c76d-4c60-8b75-8c2b2a68b76e",
+          "f40de7a1-fdfb-42df-be05-27e2ab126f62",
+          "d214cede-f8b1-45f3-9834-92ccf6da9b21",
+          "8441a1c4-71b4-4bdd-bb1b-e8b44a900136",
+          "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
+          "38678f4a-7abe-4554-8535-f1cf9d495854",
+          "d1c070a3-4073-415b-b012-b2013b9f84aa",
+          "796e82c2-bd04-4db9-a28e-118eecee1fc2",
+          "b18a50c8-0812-4cb2-a9ae-bd8bd9c52d69",
+          "734e9d55-bcea-4ca4-8282-85e4f87c1551",
+          "5624b648-3139-47b8-bdcf-63002991b542",
+          "f94c96dc-7bbd-4503-9d50-5c2ecb5b056b",
+          "edc5721b-e656-41d8-8309-3cfb19d0157b",
+          "e6559921-92aa-4785-b679-5e385d5d1f96",
+          "cdbee9d0-3b67-461e-bcf2-cd724d7b9d9b",
+          "330c4ccd-e7b8-47ca-81be-3ebb93a94063",
+          "9da9c9ed-1c09-4d08-99a5-8be8fc463111",
+          "9e2dbffd-eb9d-4078-a54c-935f19792ff3",
+          "82734aee-b7df-46e4-ae01-8bccfd3a836e",
+          "16aa2e9c-b2bb-4280-9922-ed6b1fb0d2b9",
+          "733a3432-ddbe-473a-977b-5810f959ca5f",
+          "f15d54a9-c59d-4b33-8d2f-b92fd5dd2580",
+          "31f181ec-d4f6-80e1-968c-f53cb804d75b"
+        ],
+        "format": {
+          "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
+          "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
+          "page_cover_position": 0.8909,
+          "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
+        },
+        "permissions": [
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1773152043547
+          }
+        ],
+        "created_time": 1773143151480,
+        "last_edited_time": 1793911068994,
+        "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "parent_table": "space",
+        "alive": true,
+        "file_ids": [
+          "309d92fa-9e28-481b-94ea-7db16ae6ed22",
+          "43763043-51d8-40de-af0e-07fbe47b8c9e",
+          "37a2bdff-e54d-4514-811a-0cedf450d601",
+          "e3258caa-35df-4e27-836c-cfbc063959cf",
+          "b478773e-0567-44d2-8f19-b22b707786af"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_data": {
+          "title": {
+            "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
+            "n": {
+              "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"": {
+                "s": {
+                  "x": "_wIDyDrI9jEsMA8IfUUeGA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        10
+                      ],
+                      "o": "start",
+                      "l": 5,
+                      "c": "Brian"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        16
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": 3,
+                      "c": "\u2019s "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        15
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Portfolio"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "f48cd41f-b1ec-4574-89ea-a2758712d091": {
+      "value": {
+        "id": "f48cd41f-b1ec-4574-89ea-a2758712d091",
+        "version": 4,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Leading AI data and evaluation company powering frontier models and enterprise generative AI applications."
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893731,
+        "last_edited_time": 1793864893731,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "oH6OvmHIZFMY-vHf3zfFnA,\"start\",\"end\"",
+            "n": {
+              "oH6OvmHIZFMY-vHf3zfFnA,\"start\",\"end\"": {
+                "s": {
+                  "x": "oH6OvmHIZFMY-vHf3zfFnA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "91JIoN1Q2Jif",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 106,
+                      "c": "Leading AI data and evaluation company powering frontier models and enterprise generative AI applications."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "d41eb3ad-923d-4d18-83df-1ec51dcd8432": {
+      "value": {
+        "id": "d41eb3ad-923d-4d18-83df-1ec51dcd8432",
+        "version": 10,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "[August 2026 \u2192 Present]: Forward Deployed AI Engineer, Enterprise Business Unit",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893731,
+        "last_edited_time": 1793901164961,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "wiFXkZFw-19lkDLLS5SkVQ,\"start\",\"end\"",
+            "n": {
+              "wiFXkZFw-19lkDLLS5SkVQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GuEEVOcsVk_9",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 2,
+                      "c": "[A",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "GuEEVOcsVk_9",
+                            79
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            117
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "PLbafnFhD6do",
+                              80
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            120
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "PLbafnFhD6do",
+                        80
+                      ],
+                      "o": [
+                        "GuEEVOcsVk_9",
+                        2
+                      ],
+                      "l": 5,
+                      "c": "ugust",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "GuEEVOcsVk_9",
+                            79
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            85
+                          ],
+                          "s": {
+                            "i": [
+                              "PLbafnFhD6do",
+                              80
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              3
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            120
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GuEEVOcsVk_9",
+                        3
+                      ],
+                      "o": [
+                        "GuEEVOcsVk_9",
+                        2
+                      ],
+                      "l": -4,
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "GuEEVOcsVk_9",
+                            79
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            120
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GuEEVOcsVk_9",
+                        7
+                      ],
+                      "o": [
+                        "GuEEVOcsVk_9",
+                        6
+                      ],
+                      "l": 18,
+                      "c": " 2026 \u2192 Present]: ",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "GuEEVOcsVk_9",
+                            79
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            118
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              7
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "PLbafnFhD6do",
+                              86
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            120
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GuEEVOcsVk_9",
+                        25
+                      ],
+                      "o": [
+                        "GuEEVOcsVk_9",
+                        24
+                      ],
+                      "l": -29
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GuEEVOcsVk_9",
+                        54
+                      ],
+                      "o": [
+                        "GuEEVOcsVk_9",
+                        53
+                      ],
+                      "l": 17,
+                      "c": "Forward Deployed "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "PLbafnFhD6do",
+                        86
+                      ],
+                      "o": [
+                        "GuEEVOcsVk_9",
+                        70
+                      ],
+                      "l": 3,
+                      "c": "AI ",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "GuEEVOcsVk_9",
+                            79
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            89
+                          ],
+                          "s": {
+                            "i": [
+                              "PLbafnFhD6do",
+                              86
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              71
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            120
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "GuEEVOcsVk_9",
+                        71
+                      ],
+                      "o": [
+                        "GuEEVOcsVk_9",
+                        70
+                      ],
+                      "l": 8,
+                      "c": "Engineer",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "GuEEVOcsVk_9",
+                            79
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            119
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              71
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "PLbafnFhD6do",
+                              90
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            120
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "PLbafnFhD6do",
+                        90
+                      ],
+                      "o": [
+                        "GuEEVOcsVk_9",
+                        78
+                      ],
+                      "l": 26,
+                      "c": ", Enterprise Business Unit",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "GuEEVOcsVk_9",
+                            79
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            116
+                          ],
+                          "s": {
+                            "i": [
+                              "PLbafnFhD6do",
+                              90
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "wiFXkZFw-19lkDLLS5SkVQ",
+                          "l": "",
+                          "i": [
+                            "PLbafnFhD6do",
+                            120
+                          ],
+                          "s": {
+                            "i": [
+                              "GuEEVOcsVk_9",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "e",
+                      "b": []
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "def4c75c-92e2-4862-815e-38fd3abe7d2a": {
+      "value": {
+        "id": "def4c75c-92e2-4862-815e-38fd3abe7d2a",
+        "version": 19,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Built internal MCP tooling with a deterministic architecture and Redis caching that plugs into AI agents and evals, powering 20+ structured-output features for enterprise health clinic and engineering firm clients"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893731,
+        "last_edited_time": 1793898848223,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "_B9hD1E8kcfMignPUhDvSw,\"start\",\"end\"",
+            "n": {
+              "_B9hD1E8kcfMignPUhDvSw,\"start\",\"end\"": {
+                "s": {
+                  "x": "_B9hD1E8kcfMignPUhDvSw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "yP10fQtE601k",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 61,
+                      "c": "Built internal MCP tooling with a deterministic architecture "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "zmYiW3Yha7zu",
+                        175
+                      ],
+                      "o": [
+                        "yP10fQtE601k",
+                        61
+                      ],
+                      "l": 18,
+                      "c": "and Redis caching "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "yP10fQtE601k",
+                        62
+                      ],
+                      "o": [
+                        "yP10fQtE601k",
+                        61
+                      ],
+                      "l": 25,
+                      "c": "that plugs into AI agents"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "v2UktCdXlBKQ",
+                        204
+                      ],
+                      "o": [
+                        "yP10fQtE601k",
+                        86
+                      ],
+                      "l": 10,
+                      "c": " and evals"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "yP10fQtE601k",
+                        87
+                      ],
+                      "o": [
+                        "yP10fQtE601k",
+                        86
+                      ],
+                      "l": 46,
+                      "c": ", powering 20+ structured-output features for "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "3djPk4Akg2gw",
+                        193
+                      ],
+                      "o": [
+                        "yP10fQtE601k",
+                        132
+                      ],
+                      "l": 11,
+                      "c": "enterprise "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "yP10fQtE601k",
+                        133
+                      ],
+                      "o": [
+                        "yP10fQtE601k",
+                        132
+                      ],
+                      "l": 42,
+                      "c": "health clinic and engineering firm clients"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "681e2ddd-cc72-4a61-b037-db7470e44636": {
+      "value": {
+        "id": "681e2ddd-cc72-4a61-b037-db7470e44636",
+        "version": 14,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Recovered $10M in credits across ~15K documents by deploying an AI document extraction pipeline orchestrated in Temporal, routing low-confidence extractions to human-in-the-loop (HITL) reviewers before submission"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893732,
+        "last_edited_time": 1793897942609,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "pTp91bZUqpZOMvfjgaU8SQ,\"start\",\"end\"",
+            "n": {
+              "pTp91bZUqpZOMvfjgaU8SQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "pTp91bZUqpZOMvfjgaU8SQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "c_QMLR92Q0Qk",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 48,
+                      "c": "Recovered $10M in credits across ~15K documents "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "DftKa1MK0lSq",
+                        205
+                      ],
+                      "o": [
+                        "c_QMLR92Q0Qk",
+                        48
+                      ],
+                      "l": 9,
+                      "c": "by deploy"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "c_QMLR92Q0Qk",
+                        49
+                      ],
+                      "o": [
+                        "c_QMLR92Q0Qk",
+                        48
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "c_QMLR92Q0Qk",
+                        50
+                      ],
+                      "o": [
+                        "c_QMLR92Q0Qk",
+                        49
+                      ],
+                      "l": 1,
+                      "c": "i"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "DftKa1MK0lSq",
+                        214
+                      ],
+                      "o": [
+                        "c_QMLR92Q0Qk",
+                        50
+                      ],
+                      "l": 2,
+                      "c": "ng"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "c_QMLR92Q0Qk",
+                        51
+                      ],
+                      "o": [
+                        "c_QMLR92Q0Qk",
+                        50
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "c_QMLR92Q0Qk",
+                        53
+                      ],
+                      "o": [
+                        "c_QMLR92Q0Qk",
+                        52
+                      ],
+                      "l": 35,
+                      "c": " an AI document extraction pipeline"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "G-diKtwZZAbI",
+                        180
+                      ],
+                      "o": [
+                        "c_QMLR92Q0Qk",
+                        87
+                      ],
+                      "l": 25,
+                      "c": " orchestrated in Temporal"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "c_QMLR92Q0Qk",
+                        88
+                      ],
+                      "o": [
+                        "c_QMLR92Q0Qk",
+                        87
+                      ],
+                      "l": 92,
+                      "c": ", routing low-confidence extractions to human-in-the-loop (HITL) reviewers before submission"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "4e6c7c1d-8d6c-4f92-a1a4-ece905ef8c96": {
+      "value": {
+        "id": "4e6c7c1d-8d6c-4f92-a1a4-ece905ef8c96",
+        "version": 9,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Built executive metrics dashboards on 1M+ weekly logged events, replacing manual reports with real-time visibility into credit recovery and informing a $2M budget reallocation"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893732,
+        "last_edited_time": 1793867334891,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "_TSlr4KSHCudPHRvAiDrHA,\"start\",\"end\"",
+            "n": {
+              "_TSlr4KSHCudPHRvAiDrHA,\"start\",\"end\"": {
+                "s": {
+                  "x": "_TSlr4KSHCudPHRvAiDrHA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "qp-HTiNmvAaf",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 89,
+                      "c": "Built executive metrics dashboards on 1M+ weekly logged events, replacing manual reports "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Ci91N7g0UCkF",
+                        129
+                      ],
+                      "o": [
+                        "qp-HTiNmvAaf",
+                        89
+                      ],
+                      "l": 47,
+                      "c": "with real-time visibility into credit recovery "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "qp-HTiNmvAaf",
+                        90
+                      ],
+                      "o": [
+                        "qp-HTiNmvAaf",
+                        89
+                      ],
+                      "l": 39,
+                      "c": "and informing a $2M budget reallocation"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "d0795975-8b57-401c-bb33-89255d623c0e": {
+      "value": {
+        "id": "d0795975-8b57-401c-bb33-89255d623c0e",
+        "version": 6,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "[April 2026 \u2192 August 2026]: Software Engineer",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793901164961,
+        "last_edited_time": 1793901164961,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "7qcVm1shAAaTOncm3TNaNg,\"start\",\"end\"",
+            "n": {
+              "7qcVm1shAAaTOncm3TNaNg,\"start\",\"end\"": {
+                "s": {
+                  "x": "7qcVm1shAAaTOncm3TNaNg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "JGhhFZouilAE",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 45,
+                      "c": "[April 2026 \u2192 August 2026]: Software Engineer",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "7qcVm1shAAaTOncm3TNaNg",
+                          "l": "",
+                          "i": [
+                            "JGhhFZouilAE",
+                            46
+                          ],
+                          "s": {
+                            "i": [
+                              "JGhhFZouilAE",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "e",
+                      "b": []
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "4c4f4ce9-437a-4f33-86c3-ac0bfd1ba5cf": {
+      "value": {
+        "id": "4c4f4ce9-437a-4f33-86c3-ac0bfd1ba5cf",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Cut new feature build time from 2 weeks to 3 days by reusing shared, deterministic MCP tooling with Redis caching across client projects instead of building each integration from scratch"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793901164961,
+        "last_edited_time": 1793901164961,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "LM3wj31pyJBaDwN5jULR7w,\"start\",\"end\"",
+            "n": {
+              "LM3wj31pyJBaDwN5jULR7w,\"start\",\"end\"": {
+                "s": {
+                  "x": "LM3wj31pyJBaDwN5jULR7w",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "JAV0NsCbvNEn",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 186,
+                      "c": "Cut new feature build time from 2 weeks to 3 days by reusing shared, deterministic MCP tooling with Redis caching across client projects instead of building each integration from scratch"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "768dc644-fee9-4a40-8f6e-629ffa056cae": {
+      "value": {
+        "id": "768dc644-fee9-4a40-8f6e-629ffa056cae",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Ran 1,000+ eval cases daily against agent outputs on GCP Cloud Run jobs and Cloud Scheduler to catch regressions before client releases for enterprise deployments"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793901164961,
+        "last_edited_time": 1793901164961,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "7t3QVerXu6Zcc4mmApYt5g,\"start\",\"end\"",
+            "n": {
+              "7t3QVerXu6Zcc4mmApYt5g,\"start\",\"end\"": {
+                "s": {
+                  "x": "7t3QVerXu6Zcc4mmApYt5g",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "fBqRObvkXYa7",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 162,
+                      "c": "Ran 1,000+ eval cases daily against agent outputs on GCP Cloud Run jobs and Cloud Scheduler to catch regressions before client releases for enterprise deployments"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "f5dbc9cb-f8db-41c4-b7d8-9be10effaec6": {
+      "value": {
+        "id": "f5dbc9cb-f8db-41c4-b7d8-9be10effaec6",
+        "version": 14,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Automated trade research and proposal generation by architecting a multi-agent portfolio trading system where tool-calling research and strategy agents turn market data and filings into structured trade proposals, gated by deterministic risk checks, AWS IAM-scoped access, and HITL approval"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893732,
+        "last_edited_time": 1793867334891,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "B7vBsXkC3hGwlpuJyjjcgg,\"start\",\"end\"",
+            "n": {
+              "B7vBsXkC3hGwlpuJyjjcgg,\"start\",\"end\"": {
+                "s": {
+                  "x": "B7vBsXkC3hGwlpuJyjjcgg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "re4ErFxd7f-p",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 1,
+                      "c": "A"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "BkYoENFL-oMQ",
+                        238
+                      ],
+                      "o": [
+                        "re4ErFxd7f-p",
+                        1
+                      ],
+                      "l": 52,
+                      "c": "utomated trade research and proposal generation by a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "re4ErFxd7f-p",
+                        2
+                      ],
+                      "o": [
+                        "re4ErFxd7f-p",
+                        1
+                      ],
+                      "l": 8,
+                      "c": "rchitect"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "BkYoENFL-oMQ",
+                        290
+                      ],
+                      "o": [
+                        "re4ErFxd7f-p",
+                        9
+                      ],
+                      "l": 3,
+                      "c": "ing"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "re4ErFxd7f-p",
+                        10
+                      ],
+                      "o": [
+                        "re4ErFxd7f-p",
+                        9
+                      ],
+                      "l": -2
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "re4ErFxd7f-p",
+                        12
+                      ],
+                      "o": [
+                        "re4ErFxd7f-p",
+                        11
+                      ],
+                      "l": 184,
+                      "c": " a multi-agent portfolio trading system where tool-calling research and strategy agents turn market data and filings into structured trade proposals, gated by deterministic risk checks"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "vxJMp1ryOn-K",
+                        214
+                      ],
+                      "o": [
+                        "re4ErFxd7f-p",
+                        195
+                      ],
+                      "l": 24,
+                      "c": ", AWS IAM-scoped access,"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "re4ErFxd7f-p",
+                        196
+                      ],
+                      "o": [
+                        "re4ErFxd7f-p",
+                        195
+                      ],
+                      "l": 18,
+                      "c": " and HITL approval"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "ec8ace54-93da-4fdf-96e4-f64fbc7ca6d4": {
+      "value": {
+        "id": "ec8ace54-93da-4fdf-96e4-f64fbc7ca6d4",
+        "version": 10,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Languages / Tools Used:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " Python, TypeScript, MCP, LLM Agents, Evals, HITL, Structured Output, Temporal, Redis, GCP Cloud Run, Cloud Scheduler, AWS IAM, Event Logging"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893732,
+        "last_edited_time": 1793867052519,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "PdCeCQVI51BzbX5nipDyTg,\"start\",\"end\"",
+            "n": {
+              "PdCeCQVI51BzbX5nipDyTg,\"start\",\"end\"": {
+                "s": {
+                  "x": "PdCeCQVI51BzbX5nipDyTg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "0Kv8ew21fuiN",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 23,
+                      "c": "Languages / Tools Used:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "PdCeCQVI51BzbX5nipDyTg",
+                          "l": "",
+                          "i": [
+                            "0Kv8ew21fuiN",
+                            107
+                          ],
+                          "s": {
+                            "i": [
+                              "0Kv8ew21fuiN",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "0Kv8ew21fuiN",
+                              24
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "PdCeCQVI51BzbX5nipDyTg",
+                          "l": "",
+                          "i": [
+                            "wSmU_0GUy5pA",
+                            166
+                          ],
+                          "s": {
+                            "i": [
+                              "0Kv8ew21fuiN",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "0Kv8ew21fuiN",
+                              24
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "PdCeCQVI51BzbX5nipDyTg",
+                          "l": "",
+                          "i": [
+                            "wSmU_0GUy5pA",
+                            167
+                          ],
+                          "s": {
+                            "i": [
+                              "0Kv8ew21fuiN",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "0Kv8ew21fuiN",
+                              24
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "0Kv8ew21fuiN",
+                        24
+                      ],
+                      "o": [
+                        "0Kv8ew21fuiN",
+                        23
+                      ],
+                      "l": 70,
+                      "c": " Python, TypeScript, MCP, LLM Agents, Evals, HITL, Structured Output, ",
+                      "b": []
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "wSmU_0GUy5pA",
+                        108
+                      ],
+                      "o": [
+                        "0Kv8ew21fuiN",
+                        93
+                      ],
+                      "l": 58,
+                      "c": "Temporal, Redis, GCP Cloud Run, Cloud Scheduler, AWS IAM, "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "0Kv8ew21fuiN",
+                        94
+                      ],
+                      "o": [
+                        "0Kv8ew21fuiN",
+                        93
+                      ],
+                      "l": 13,
+                      "c": "Event Logging"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "38a885ad-7cdd-48e1-aa00-f23b5f447a33": {
+      "value": {
+        "id": "38a885ad-7cdd-48e1-aa00-f23b5f447a33",
+        "version": 5,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Location:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " San Francisco, CA (Hybrid)"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893732,
+        "last_edited_time": 1793864893732,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "KMsU7ZnroeGplJYjD3NbAg,\"start\",\"end\"",
+            "n": {
+              "KMsU7ZnroeGplJYjD3NbAg,\"start\",\"end\"": {
+                "s": {
+                  "x": "KMsU7ZnroeGplJYjD3NbAg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "eFUxiMA_Zqzz",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Location:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "KMsU7ZnroeGplJYjD3NbAg",
+                          "l": "",
+                          "i": [
+                            "eFUxiMA_Zqzz",
+                            37
+                          ],
+                          "s": {
+                            "i": [
+                              "eFUxiMA_Zqzz",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "eFUxiMA_Zqzz",
+                              10
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "eFUxiMA_Zqzz",
+                        10
+                      ],
+                      "o": [
+                        "eFUxiMA_Zqzz",
+                        9
+                      ],
+                      "l": 27,
+                      "c": " San Francisco, CA (Hybrid)",
+                      "b": []
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "ad71a325-4e72-4b6d-b7b6-ac283ace3523": {
+      "value": {
+        "id": "ad71a325-4e72-4b6d-b7b6-ac283ace3523",
+        "version": 4,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Building AI agents, evals, and MCP tooling for enterprise clients across healthcare, engineering, and finance!"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1793864893732,
+        "last_edited_time": 1793864893732,
+        "parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+        "crdt_data": {
+          "title": {
+            "r": "x6JDk3V5wPQQh0NQHyGkmg,\"start\",\"end\"",
+            "n": {
+              "x6JDk3V5wPQQh0NQHyGkmg,\"start\",\"end\"": {
+                "s": {
+                  "x": "x6JDk3V5wPQQh0NQHyGkmg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "I9iWFJ7Tp3U3",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 110,
+                      "c": "Building AI agents, evals, and MCP tooling for enterprise clients across healthcare, engineering, and finance!"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    }
+  },
+  "collection": {
+    "bb34e8bb-b8b4-491c-88c2-97b3bf575377": {
+      "value": {
+        "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+        "version": 82,
+        "name": [
+          [
+            "Work"
+          ]
+        ],
+        "schema": {
+          "<>_<": {
+            "name": "Position",
+            "type": "multi_select",
+            "options": [
+              {
+                "id": "3155597d-1abe-4fe9-abfa-50951c761c68",
+                "color": "blue",
+                "value": "Forward Deployed AI Engineer"
+              },
+              {
+                "id": "d9e9cece-f355-4e53-9919-2e0b55cabc30",
+                "color": "blue",
+                "value": "Software Engineer"
+              },
+              {
+                "id": "25a59960-f293-4cb1-9b01-bc031befff88",
+                "color": "blue",
+                "value": "AI Engineer"
+              },
+              {
+                "id": "e267d15e-8183-46f3-b2c3-fb49fff63414",
+                "color": "blue",
+                "value": "ML Operations Engineer"
+              },
+              {
+                "id": "24e92934-340e-44e5-b2c2-83a44b65d102",
+                "color": "blue",
+                "value": "Software Engineer Intern"
+              },
+              {
+                "id": "d5e72db6-d3da-40a2-be5c-27209d027ffc",
+                "color": "blue",
+                "value": "Thermal Process Engineer"
+              },
+              {
+                "id": "db23cd19-01e1-44cf-8c68-c433cc61c38f",
+                "color": "blue",
+                "value": "Presenter and Lab Team Member"
+              },
+              {
+                "id": "984549d1-2191-4ad3-ac07-be10a40ec092",
+                "color": "blue",
+                "value": "Battery Research Intern"
+              },
+              {
+                "id": "5258f056-2bb9-44b9-aed0-e590d162cad7",
+                "color": "blue",
+                "value": "Battery Research Lab Intern"
+              },
+              {
+                "id": "0cd49b46-4747-4149-add7-e5d0406f33b5",
+                "color": "blue",
+                "value": "Professional Referee"
+              },
+              {
+                "id": "9ab160fb-973c-4b65-b6ea-143290c3fa30",
+                "color": "purple",
+                "value": "Process Engineer"
+              }
+            ]
+          },
+          "MKuJ": {
+            "name": "Team",
+            "type": "text"
+          },
+          "z^Hp": {
+            "name": "Duration",
+            "type": "date"
+          },
+          "{?gk": {
+            "name": "Image",
+            "type": "file"
+          },
+          "title": {
+            "name": "Role",
+            "type": "title"
+          }
+        },
+        "format": {
+          "property_visibility": [
+            {
+              "property": "z^Hp",
+              "visibility": "show"
+            },
+            {
+              "property": "{?gk",
+              "visibility": "show"
+            },
+            {
+              "property": "<>_<",
+              "visibility": "show"
+            },
+            {
+              "property": "MKuJ",
+              "visibility": "hide_if_empty"
+            }
+          ],
+          "ai_suggested_properties": [
+            {
+              "name": "Location",
+              "type": "text"
+            },
+            {
+              "name": "Website",
+              "type": "url"
+            },
+            {
+              "name": "Skills",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "dj}G",
+                  "color": "pink",
+                  "value": "Communication"
+                },
+                {
+                  "id": "~]WZ",
+                  "color": "orange",
+                  "value": "Teamwork"
+                },
+                {
+                  "id": "J|?A",
+                  "color": "red",
+                  "value": "Problem Solving"
+                },
+                {
+                  "id": "wlmd",
+                  "color": "default",
+                  "value": "Leadership"
+                }
+              ]
+            },
+            {
+              "name": "Status",
+              "type": "status"
+            }
+          ]
+        },
+        "parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "parent_table": "block",
+        "alive": true,
+        "migrated": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "deleted_schema": {
+          "TumX": {
+            "name": "Tools",
+            "type": "text"
+          },
+          "]Bpy": {
+            "name": "Location",
+            "type": "text"
+          }
+        },
+        "created_time": 1773144036619,
+        "last_edited_time": 1773156802906,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "last_edited_by_table": "bot",
+        "last_edited_by_id": "31f181ec-d4f6-817e-a3ce-0027b59cf4c4",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
+      },
+      "role": "reader"
+    }
+  },
+  "collection_view": {
+    "3862349e-44dc-44b8-b417-f974f3a8df02": {
+      "value": {
+        "id": "3862349e-44dc-44b8-b417-f974f3a8df02",
+        "version": 85,
+        "type": "gallery",
+        "name": "Gallery",
+        "format": {
+          "card_layout": {
+            "mode": "compact"
+          },
+          "gallery_cover": {
+            "type": "property",
+            "property": "{?gk"
+          },
+          "collection_pointer": {
+            "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "gallery_properties": [
+            {
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "visible": true,
+              "property": "<>_<"
+            },
+            {
+              "visible": false,
+              "property": "z^Hp"
+            },
+            {
+              "visible": false,
+              "property": "{?gk"
+            },
+            {
+              "visible": false,
+              "property": "MKuJ"
+            }
+          ],
+          "collection_peek_mode": "full_page",
+          "subitem_filter_scope": "parents"
+        },
+        "parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "parent_table": "block",
+        "alive": true,
+        "page_sort": [
+          "31f181ec-d4f6-8049-b7d4-de62b00f4635",
+          "40f181ec-d4f6-8148-9add-c7a58ba0f4ad",
+          "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+          "31f181ec-d4f6-819a-b300-f71d6329a121",
+          "31f181ec-d4f6-81b3-80fe-da3e76304597",
+          "31f181ec-d4f6-81f7-8e91-c4ccf85492bf",
+          "31f181ec-d4f6-81e7-8d88-cd1ea263e0e1",
+          "31f181ec-d4f6-81c1-859c-f894f93c3bc6"
+        ],
+        "query2": {
+          "calendar_by": "z^Hp"
+        },
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144036622,
+        "last_edited_time": 1793911071217,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "nav_parent_table": "block",
+        "nav_parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a"
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-8062-9db6-000c6fb2d6a5": {
+      "value": {
+        "id": "31f181ec-d4f6-8062-9db6-000c6fb2d6a5",
+        "version": 21,
+        "type": "table",
+        "name": "Table",
+        "format": {
+          "table_wrap": true,
+          "table_properties": [
+            {
+              "wrap": true,
+              "width": 280,
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "z^Hp"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": false,
+              "property": "{?gk"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "<>_<"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "MKuJ"
+            }
+          ],
+          "collection_pointer": {
+            "id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "subitem_filter_scope": "parents_and_subitems",
+          "table_frozen_column_index": -1,
+          "table_subitem_toggle_column": "title"
+        },
+        "parent_id": "6a83e54d-6563-4444-b5f5-e9177926917a",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773153868898,
+        "last_edited_time": 1773153977340,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  }
+}
