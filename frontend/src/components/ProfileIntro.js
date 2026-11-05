@@ -26,7 +26,8 @@ function ProfileIntro() {
             I'm passionate about exploring uncharted spaces to change the world through bold ideas and action. 😎
           </p>
           <p className="text-lg md:text-xl text-gray-700 mb-2">
-            Recently completed Masters of Science in <span className="font-semibold">Chemical Engineering! 🚀✨</span>
+            Currently an <span className="font-semibold">AI Forward Deployed Engineer at Scale AI</span>, building AI agents, evals, and MCP tooling for enterprise clients.
+            M.S. in Chemical Engineering from UC San Diego with a <span className="font-semibold">FE Chemical! 🚀✨</span>
           </p>
           <p className="text-lg md:text-xl text-gray-700">
             Thanks for visiting, let's connect :D !
