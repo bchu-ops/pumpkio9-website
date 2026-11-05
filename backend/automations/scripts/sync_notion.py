@@ -71,7 +71,25 @@ def fetch_page(client: httpx.Client, page_id: str) -> dict:
         headers=HEADERS,
     )
     resp.raise_for_status()
-    return resp.json().get("recordMap", {})
+    return normalize_record_map(resp.json().get("recordMap", {}))
+
+
+def normalize_record_map(record_map: dict) -> dict:
+    """Unwrap Notion's newer nested record format ({"value": {"value": {...}}})
+    into the flat {"value": {...}} shape this script and react-notion-x expect."""
+    for table, records in record_map.items():
+        if not isinstance(records, dict):
+            continue
+        for rid, rec in records.items():
+            if not isinstance(rec, dict):
+                continue
+            val = rec.get("value")
+            if isinstance(val, dict) and "value" in val and isinstance(val["value"], dict):
+                rec["value"] = val["value"]
+                if "role" in val and "role" not in rec:
+                    rec["role"] = val["role"]
+    record_map.pop("__version__", None)
+    return record_map
 
 
 def query_collection(client: httpx.Client, collection_id: str, view_id: str) -> dict:
@@ -352,6 +370,13 @@ def main():
                     rows = process_collection(
                         client, col, section, OUTPUT_DIR, manifest,
                     )
+                    if section == "experiences":
+                        # Most recent first: current jobs, then by end date, then start date.
+                        def recency(r):
+                            d = r.get("duration") or {}
+                            end = d.get("end") or ""
+                            return ("9999" if end == "Present" else end, d.get("start") or "")
+                        rows.sort(key=recency, reverse=True)
                     print(f"    {len(rows)} rows:")
                     for r in rows:
                         print(f"      - {r['title']}")
