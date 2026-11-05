@@ -88,6 +88,7 @@ def normalize_record_map(record_map: dict) -> dict:
                 rec["value"] = val["value"]
                 if "role" in val and "role" not in rec:
                     rec["role"] = val["role"]
+            rec.pop("spaceId", None)
     record_map.pop("__version__", None)
     return record_map
 
