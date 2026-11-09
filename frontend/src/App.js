@@ -4,6 +4,7 @@ import Footer from './components/Footer';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import PageRoutes from './components/blocks/PageRoutes.js';
+import ScrollToTop from './components/blocks/ScrollToTop';
 
 const Home = lazy(() => import('./components/pages/Home'));
 const Spotify = lazy(() => import('./components/pages/Spotify'));
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <Router basename="/pumpkio9-website">
+        <ScrollToTop />
         <div className="app-container">
           <div ref={topRef} /> {/* Attach ref at the top */}
           <Navbar topRef={topRef} bottomRef={bottomRef}/>
