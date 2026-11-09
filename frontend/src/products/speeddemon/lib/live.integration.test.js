@@ -1,5 +1,6 @@
 // Hits the real OpenF1 API. Run with: OPENF1_LIVE=1 CI=true npx react-scripts test src/products
 import { createClient } from './openf1';
+import { findCorners, cornerReport, narrative } from './corners';
 import { buildTrace, compareLaps, fastestLap, insights, lapTime, miniSectors } from './telemetry';
 
 const live = process.env.OPENF1_LIVE === '1' ? describe : describe.skip;
@@ -33,6 +34,13 @@ live('OpenF1 live: 2025 Abu Dhabi qualifying, VER vs NOR', () => {
     expect(cmp.length).toBeLessThan(5600);
     expect(cmp.delta[cmp.delta.length - 1]).toBeCloseTo(gap, 3);
     expect(cmp.a.every((p) => p.x !== null)).toBe(true);
+
+    const corners = findCorners(cmp.a);
+    expect(corners.length).toBeGreaterThanOrEqual(6);
+    expect(corners.length).toBeLessThanOrEqual(16);
+    const story = narrative(cornerReport(cmp, corners), { a: 'VER', b: 'NOR' });
+    // eslint-disable-next-line no-console
+    console.log([story.summary, ...story.corners].join('\n'));
 
     const sectors = miniSectors(cmp, 24);
     const notes = insights(cmp, { a: 'VER', b: 'NOR' });

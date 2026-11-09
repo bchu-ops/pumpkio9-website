@@ -1,8 +1,7 @@
 import React from 'react';
 import { lapTime } from './lib/telemetry';
 
-function DriverCard({ driver, color, isFaster }) {
-  const lap = driver.best;
+function DriverCard({ driver, lap, color, isFaster }) {
   const sectors = [lap.duration_sector_1, lap.duration_sector_2, lap.duration_sector_3];
   return (
     <div className="sd-driver" style={{ borderColor: color }}>
@@ -25,12 +24,12 @@ function DriverCard({ driver, color, isFaster }) {
   );
 }
 
-export default function LapSummary({ driverA, driverB, colors, notes }) {
-  const aFaster = driverA.best.lap_duration <= driverB.best.lap_duration;
+export default function LapSummary({ driverA, driverB, lapA, lapB, colors, notes }) {
+  const aFaster = lapA.lap_duration <= lapB.lap_duration;
   return (
     <section className="sd-summary" aria-label="Lap summary">
-      <DriverCard driver={driverA} color={colors.a} isFaster={aFaster} />
-      <DriverCard driver={driverB} color={colors.b} isFaster={!aFaster} />
+      <DriverCard driver={driverA} lap={lapA} color={colors.a} isFaster={aFaster} />
+      <DriverCard driver={driverB} lap={lapB} color={colors.b} isFaster={!aFaster} />
       <div className="sd-notes">
         <h3>What the data says</h3>
         <ul>

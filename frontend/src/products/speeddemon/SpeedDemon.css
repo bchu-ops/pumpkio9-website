@@ -39,7 +39,7 @@
 
 .sd-controls {
   display: grid;
-  grid-template-columns: 110px minmax(220px, 2fr) repeat(2, minmax(160px, 1fr));
+  grid-template-columns: 100px minmax(200px, 2fr) minmax(140px, 1fr) minmax(120px, 1fr) minmax(140px, 1fr) minmax(120px, 1fr);
   gap: 12px;
   margin-bottom: 20px;
 }
@@ -127,6 +127,42 @@
 
 .sd-axis { color: var(--sd-muted); font-size: 0.8rem; text-align: center; margin: 4px 0 0; }
 .sd-footnote { color: var(--sd-muted); font-size: 0.8rem; margin-top: 20px; max-width: 760px; }
+
+/* Session pace (lap times, tyres, pits) */
+.sd-race { background: var(--sd-panel); border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; }
+.sd-race__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+.sd-race__head h3 { font-size: 0.95rem; margin: 0; }
+.sd-race__pace { display: flex; gap: 14px; flex-wrap: wrap; font-size: 0.8rem; font-variant-numeric: tabular-nums; }
+.sd-race__svg { width: 100%; height: auto; display: block; margin-top: 6px; }
+.sd-race__grid { stroke: var(--sd-line); stroke-width: 1; }
+.sd-race__label { fill: var(--sd-muted); font-size: 12px; }
+.sd-race__tyre { fill: #111; font-size: 11px; font-weight: 700; }
+.sd-race__pit { stroke: var(--sd-text); stroke-width: 2; }
+.sd-race__dot { cursor: pointer; }
+.sd-race__dot:focus-visible { outline: none; stroke: var(--sd-accent); stroke-width: 3; }
+.sd-race__hint { color: var(--sd-muted); font-size: 0.75rem; margin: 4px 0 0; }
+
+/* Corner by corner */
+.sd-corners { margin-top: 16px; background: var(--sd-panel); border-radius: 8px; padding: 12px 14px; }
+.sd-corners h3 { font-size: 0.95rem; margin: 0 0 4px; }
+.sd-corners__summary { color: var(--sd-muted); font-size: 0.9rem; margin: 0 0 8px; }
+.sd-corners__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 6px; }
+.sd-corners__item {
+  width: 100%;
+  text-align: left;
+  font: inherit;
+  font-size: 0.85rem;
+  color: var(--sd-text);
+  background: var(--sd-bg);
+  border: none;
+  border-left: 3px solid transparent;
+  border-radius: 6px;
+  padding: 8px 10px;
+  cursor: pointer;
+}
+.sd-corners__item:hover, .sd-corners__item:focus-visible { outline: 2px solid var(--sd-accent); outline-offset: 0; }
+.sd-map__corner circle { fill: var(--sd-text); }
+.sd-map__corner text { fill: var(--sd-muted); font-size: 14px; font-weight: 600; }
 
 @media (max-width: 900px) {
   .sd-controls { grid-template-columns: 1fr 1fr; }

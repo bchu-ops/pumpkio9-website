@@ -7,7 +7,7 @@ const MARGIN = 24;
  * Racing line from driver A's lap, coloured by who was quicker in each
  * mini-sector. Dots show both cars at the hovered point of the lap.
  */
-export default function TrackMap({ cmp, sectors, colors, names, hoverIndex }) {
+export default function TrackMap({ cmp, sectors, corners = [], colors, names, hoverIndex }) {
   const { points, toView } = useMemo(() => {
     const pts = cmp.a.map((p) => ({ x: p.x, y: p.y }));
     const xs = pts.map((p) => p.x);
@@ -35,6 +35,15 @@ export default function TrackMap({ cmp, sectors, colors, names, hoverIndex }) {
         {sectors.map((s) => (
           <path key={s.from} d={segment(s.from, s.to)} stroke={colors[s.winner]} className="sd-map__sector" />
         ))}
+        {corners.map((c) => {
+          const p = points[c.apexIndex];
+          return (
+            <g key={c.n} className="sd-map__corner">
+              <circle cx={p.x} cy={p.y} r="3" />
+              <text x={p.x + 8} y={p.y - 8}>C{c.n}</text>
+            </g>
+          );
+        })}
         <circle className="sd-map__start" cx={points[0].x} cy={points[0].y} r="6" />
         {dotB && <circle cx={dotB.x} cy={dotB.y} r="8" fill={colors.b} className="sd-map__car" />}
         {dotA && <circle cx={dotA.x} cy={dotA.y} r="8" fill={colors.a} className="sd-map__car" />}
