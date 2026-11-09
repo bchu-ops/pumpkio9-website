@@ -185,7 +185,7 @@
       "slug": "personal-website",
       "section": "projects",
       "link": "https://bchu-ops.github.io/pumpkio9-website/",
-      "image": "icon.png",
+      "image": "personal-website.png",
       "tools": "React, JavaScript, CSS, Notion API, Spotify API, Google Maps API",
       "date": {
         "start": "2025-07-01",

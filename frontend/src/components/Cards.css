@@ -7,6 +7,11 @@
   color: rgb(55, 53, 47);
 }
 
+/* Home intro: avoid stacking 4rem + 4rem padding above the Notion sections */
+.cards.profile-intro {
+  padding-bottom: 1rem;
+}
+
 .cards h1 {
   text-align: center;
 }

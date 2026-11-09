@@ -3,7 +3,7 @@
     "31f181ec-d4f6-819a-b300-f71d6329a121": {
       "value": {
         "id": "31f181ec-d4f6-819a-b300-f71d6329a121",
-        "version": 105,
+        "version": 110,
         "type": "page",
         "properties": {
           "<>_<": [
@@ -47,7 +47,7 @@
               [
                 [
                   "a",
-                  "attachment:97e9470a-135c-41a5-a48d-713b1bc28437:vulcan.png"
+                  "attachment:1b5e3902-ca07-4a03-a149-b7206fd4d1cc:vulcan.png"
                 ]
               ]
             ]
@@ -84,12 +84,13 @@
           }
         },
         "created_time": 1773145354356,
-        "last_edited_time": 1793867341007,
+        "last_edited_time": 1794198983633,
         "parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "parent_table": "collection",
         "alive": true,
         "file_ids": [
-          "97e9470a-135c-41a5-a48d-713b1bc28437"
+          "97e9470a-135c-41a5-a48d-713b1bc28437",
+          "1b5e3902-ca07-4a03-a149-b7206fd4d1cc"
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,

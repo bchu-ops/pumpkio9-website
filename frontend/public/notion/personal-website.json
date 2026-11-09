@@ -3,7 +3,7 @@
     "31f181ec-d4f6-8199-93e3-d3190b20f412": {
       "value": {
         "id": "31f181ec-d4f6-8199-93e3-d3190b20f412",
-        "version": 47,
+        "version": 53,
         "type": "page",
         "properties": {
           "?rG}": [
@@ -19,11 +19,11 @@
           ],
           "LEI=": [
             [
-              "icon.png",
+              "personal-website.png",
               [
                 [
                   "a",
-                  "attachment:2a643d8a-c3cf-4a84-b5b0-e516991725cb:icon.png"
+                  "attachment:ad81da9a-b92e-4489-b808-c718f03045f9:personal-website.png"
                 ]
               ]
             ]
@@ -63,19 +63,32 @@
           "66327ded-5cc8-46df-b8f8-fbf9aba0a6d9"
         ],
         "format": {
-          "page_icon": "\ud83d\udee0\ufe0f"
+          "page_icon": "\ud83d\udee0\ufe0f",
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
         },
         "created_time": 1773145360302,
-        "last_edited_time": 1773150997159,
+        "last_edited_time": 1794198981438,
         "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "parent_table": "collection",
         "alive": true,
         "file_ids": [
           "2cbe02c1-a0b6-4f60-83c8-329b1fb876e3",
-          "2a643d8a-c3cf-4a84-b5b0-e516991725cb"
+          "2a643d8a-c3cf-4a84-b5b0-e516991725cb",
+          "ad81da9a-b92e-4489-b808-c718f03045f9"
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "crdt_data": {
           "title": {
             "r": "Cx2mUQwjhw5JhSaZBxEilw,\"start\",\"end\"",
