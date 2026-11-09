@@ -6,7 +6,8 @@ import { buildLoginUrl, completeLogin, getAccessToken, logout } from './lib/pkce
 import { fetchListening } from './lib/spotifyApi';
 import './spotify.css';
 
-const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID || '';
+// Read at call time (CRA still inlines it at build) so tests can set it.
+const clientId = () => process.env.REACT_APP_SPOTIFY_CLIENT_ID || '';
 
 function storage() {
   try {
@@ -29,28 +30,29 @@ function useBrianListening() {
   return state;
 }
 
-function useVisitorListening(search, onLoggedIn) {
+// Runs once, the first time the "Yours" tab opens. The login code in the URL
+// is single-use, so the ref keeps it from being exchanged twice.
+function useVisitorListening(active, search, clearUrl) {
   const [state, setState] = useState({ status: 'idle' });
   const started = useRef(false);
 
   useEffect(() => {
-    // StrictMode runs effects twice; the login code can only be used once.
-    if (started.current || !CLIENT_ID) return;
+    if (!active || started.current || !clientId()) return;
     started.current = true;
     (async () => {
+      const store = storage();
       try {
-        const store = storage();
-        const fresh = await completeLogin({ search, clientId: CLIENT_ID, storage: store });
-        if (fresh) onLoggedIn();
-        const token = await getAccessToken({ clientId: CLIENT_ID, storage: store });
+        await completeLogin({ search, clientId: clientId(), storage: store });
+        const token = await getAccessToken({ clientId: clientId(), storage: store });
         if (!token) return setState({ status: 'loggedOut' });
-        setState({ status: 'loading' });
         setState({ status: 'ready', data: await fetchListening(token) });
       } catch (err) {
         setState({ status: 'error', message: err.message, forbidden: err.status === 403 });
+      } finally {
+        clearUrl();
       }
     })();
-  }, [search, onLoggedIn]);
+  }, [active, search, clearUrl]);
 
   return [state, setState];
 }
@@ -68,14 +70,14 @@ function BrianTab() {
 
 function VisitorTab({ state, setState }) {
   const login = async () => {
-    window.location.assign(await buildLoginUrl({ clientId: CLIENT_ID, storage: storage() }));
+    window.location.assign(await buildLoginUrl({ clientId: clientId(), storage: storage() }));
   };
   const signOut = () => {
     logout(storage());
     setState({ status: 'loggedOut' });
   };
 
-  if (!CLIENT_ID) return <Status>Spotify login isn't set up on this site yet.</Status>;
+  if (!clientId()) return <Status>Spotify login isn't set up on this site yet.</Status>;
   if (state.status === 'idle' || state.status === 'loading') return <Status>Loading your Spotify…</Status>;
 
   if (state.status === 'loggedOut' || state.status === 'error') {
@@ -109,8 +111,11 @@ export default function SpotifyPage() {
   const navigate = useNavigate();
   const returningFromLogin = /[?&](code|error)=/.test(location.search);
   const [tab, setTab] = useState(returningFromLogin ? 'you' : 'brian');
-  const onLoggedIn = useRef(() => navigate('/Spotify', { replace: true })).current;
-  const [visitor, setVisitor] = useVisitorListening(location.search, onLoggedIn);
+  // Drop ?code&state from the address bar and history once handled.
+  const clearUrl = useRef(() => {
+    if (returningFromLogin) navigate('/Spotify', { replace: true });
+  }).current;
+  const [visitor, setVisitor] = useVisitorListening(tab === 'you', location.search, clearUrl);
 
   return (
     <div className="sp-shell">

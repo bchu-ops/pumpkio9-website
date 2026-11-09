@@ -106,9 +106,11 @@ export default function ListeningView({ data, now = new Date() }) {
   const repeats = onRepeat(data.recent);
   return (
     <div className="sp-view">
-      <p className="sp-asof">
-        As of <time dateTime={data.generated_at}>{relativeTime(data.generated_at, now)}</time>
-      </p>
+      {data.recent[0] && (
+        <p className="sp-asof">
+          Last song played <time dateTime={data.recent[0].played_at}>{relativeTime(data.recent[0].played_at, now)}</time>
+        </p>
+      )}
 
       {repeats.length > 0 && (
         <section className="sp-section" aria-labelledby="sp-repeat">

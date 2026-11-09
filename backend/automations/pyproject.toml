@@ -7,6 +7,15 @@ requires-python = ">=3.10"
 dependencies = [
     "httpx>=0.28.1",
     "notion-client>=3.0.0",
+    "pydantic>=2.14.3",
     "pymupdf>=1.27.1",
     "python-dotenv>=1.2.2",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8,<9",
+]
+
+[tool.pytest.ini_options]
+markers = ["unit: fast tests with no network"]

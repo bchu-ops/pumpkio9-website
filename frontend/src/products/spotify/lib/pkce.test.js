@@ -1,6 +1,7 @@
 /**
  * @jest-environment node
  */
+/* global globalThis */
 import { webcrypto } from 'crypto';
 import { buildLoginUrl, challengeFrom, completeLogin, getAccessToken, logout, TOKEN_URL } from './pkce';
 

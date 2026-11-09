@@ -1,6 +1,6 @@
 # Handoff: Spotify product page
 
-Status: not started. Discovery only, no design approved yet.
+Status: v1 built on `dev` (2026-11-09). Waiting on Spotify app setup (see "Setup" below) before real data shows.
 Owner: Brian. Written 2026-11-09.
 
 ## What Brian asked for
@@ -71,3 +71,39 @@ Trade-off: the data is "as of last sync", not live. To get live data you'd need 
 
 - Logging visitors into their own Spotify.
 - Writing to Spotify (playlists, playback control).
+
+## Built (v1, 2026-11-09)
+
+Brian asked for visitor login too, so v1 has two tabs on `/Spotify`:
+
+- **Mine:** hourly GitHub Action (`.github/workflows/sync-spotify.yml`) runs `backend/automations/scripts/sync_spotify.py`, which writes `frontend/public/spotify/listening.json`. The workflow commits only when the data changed, then dispatches `deploy.yml`.
+- **Yours:** visitors log in with Spotify's PKCE flow entirely in the browser (`frontend/src/products/spotify/lib/pkce.js`). There's no client secret, tokens live in sessionStorage, and nothing is sent to the site.
+- **Page:** "On repeat" chips, recently played grouped by day (10 shown, expandable to 50), and top tracks and artists for 4 weeks, 6 months and all time. Supports dark mode and 390px phone width.
+
+## Decisions
+
+| Decision | Chosen | Over | Why |
+|---|---|---|---|
+| Visitor login | Mine for everyone, plus login for invited friends | Login only, or mine only | Dev-mode apps cap at 5 users (owner included) and need a manual allowlist. Extended quota is org-only with 250k+ MAU since 2025-05-15, so strangers would just get a 403. |
+| Visitor auth flow | PKCE in the browser | Serverless token proxy | No server or secret needed, and it fits GitHub Pages. Spotify recommends PKCE for single-page apps. |
+| Brian's data | Hourly Actions cron writing static JSON | Live serverless function | Same pattern as the Notion sync, with no new infra. Data is at most about an hour old. |
+| Brian's auth | Auth code flow with client secret (one-time `spotify_auth.py`) | PKCE | PKCE refresh tokens can rotate, which would break a stored Actions secret. |
+| Freshness label | "Last song played N ago" | "As of <sync time>" | JSON is only rewritten when data changes, so a sync timestamp would look stale. |
+| Redirect URI | `/pumpkio9-website/Spotify` via the existing 404.html SPA redirect | A dedicated callback page | The 404.html encoding keeps `code` and `state` intact. |
+| Data shown | Plays, top tracks, top artists | Audio features, popularity, follower counts | Removed for dev-mode apps (Nov 2024 and Feb 2026 changes). Endpoints were checked against Spotify's Feb 2026 "still available" list. |
+| Token storage | sessionStorage | localStorage | Cleared when the tab closes, which reduces exposure. |
+
+## Setup (one time, Brian)
+
+1. In the Spotify dashboard, create an app with Web API enabled. Add these redirect URIs:
+   - `http://127.0.0.1:8888/callback`
+   - `https://bchu-ops.github.io/pumpkio9-website/Spotify`
+   - `http://127.0.0.1:3000/pumpkio9-website/Spotify`
+2. Put `SPOTIFY_CLIENT_ID` and `SPOTIFY_CLIENT_SECRET` in `backend/automations/.env`. From `backend/automations`, run `uv run python scripts/spotify_auth.py` and copy the refresh token it prints.
+3. Add the GitHub repo secrets `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET` and `SPOTIFY_REFRESH_TOKEN`, and the repo variable `SPOTIFY_CLIENT_ID`.
+4. In the dashboard's User Management, allowlist friends (4 max).
+5. The owner account needs Spotify Premium.
+
+## Later ideas
+
+Listening clock (24h radial chart from `played_at`), Spotify embed players, and a "last played" pill in the footer.

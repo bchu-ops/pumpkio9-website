@@ -11,6 +11,11 @@ permissions:
   pages: write
   id-token: write
 
+# The Spotify sync can start a deploy while a push starts another.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -34,6 +39,10 @@ jobs:
       # 4. Build frontend
       - name: Build frontend
         working-directory: ./frontend
+        env:
+          # Public by design (PKCE login needs no secret). Set under
+          # Settings > Secrets and variables > Actions > Variables.
+          REACT_APP_SPOTIFY_CLIENT_ID: ${{ vars.SPOTIFY_CLIENT_ID }}
         run: npm run build
 
       # 5. Upload build output as artifact

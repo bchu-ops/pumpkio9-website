@@ -7,7 +7,7 @@
   --sp-surface: #fff;
   --sp-accent: #1db954;
   --sp-accent-text: #0b3d1e;
-  --sp-link: rgb(35, 131, 226);
+  --sp-link: #0b62c4;
 
   background: var(--sp-bg);
 }
