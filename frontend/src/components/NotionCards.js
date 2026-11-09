@@ -121,7 +121,7 @@ function NotionCards() {
     const isOpen = openDropdown === sectionKey;
 
     return (
-      <div className="notion-collection-section">
+      <div className="notion-collection-section" id={sectionKey}>
         {/* Section title */}
         <div className="notion-collection-header">
           <span className="notion-collection-header-title">{title}</span>

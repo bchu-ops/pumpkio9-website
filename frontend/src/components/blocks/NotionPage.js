@@ -80,7 +80,7 @@ function NotionPage() {
   return (
     <div className="notion-page-wrapper">
       <div className="notion-page-breadcrumb">
-        <Link to="/">{type.charAt(0).toUpperCase() + type.slice(1)}</Link>
+        <Link to={`/#${type}`}>{type.charAt(0).toUpperCase() + type.slice(1)}</Link>
         <span className="notion-page-breadcrumb-sep">/</span>
         <span>{pageTitle || id.replace(/-/g, ' ')}</span>
       </div>

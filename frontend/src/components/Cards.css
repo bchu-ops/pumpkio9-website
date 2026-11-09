@@ -39,6 +39,7 @@
 .notion-collection-section {
   width: 100%;
   margin-bottom: 2rem;
+  scroll-margin-top: 96px; /* clear the 80px navbar when jumping to #experiences etc. */
 }
 
 /* Collection header — matches Notion's .notion-collection-header */

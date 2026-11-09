@@ -3,7 +3,7 @@
     "31f181ec-d4f6-819a-b300-f71d6329a121": {
       "value": {
         "id": "31f181ec-d4f6-819a-b300-f71d6329a121",
-        "version": 110,
+        "version": 115,
         "type": "page",
         "properties": {
           "<>_<": [
@@ -60,10 +60,10 @@
         },
         "content": [
           "de9fb72e-6048-4d3e-9d75-e53ad592cd63",
-          "31f181ec-d4f6-80eb-aeac-c0f545772e02",
           "dfc7c5b9-4ee9-4c1e-9e65-f3f9a26da21c",
           "8d2fd960-a860-486c-821b-91fa590e17d3",
           "31f8c678-9eda-4207-affa-ff1ca18986b7",
+          "e83cc201-e6d2-44fb-8de8-556a7e3541bd",
           "634de687-dcf0-4dda-9f3c-2fdb670fce1e",
           "a74bd922-aa9e-4a96-99c0-4a7f9c747fe0",
           "09671f5b-6feb-4039-8005-280276d9fdaf",
@@ -84,7 +84,7 @@
           }
         },
         "created_time": 1773145354356,
-        "last_edited_time": 1794198983633,
+        "last_edited_time": 1794202825000,
         "parent_id": "bb34e8bb-b8b4-491c-88c2-97b3bf575377",
         "parent_table": "collection",
         "alive": true,
@@ -599,426 +599,15 @@
       },
       "role": "reader"
     },
-    "31f181ec-d4f6-80eb-aeac-c0f545772e02": {
-      "value": {
-        "id": "31f181ec-d4f6-80eb-aeac-c0f545772e02",
-        "version": 59,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "[January 2025 \u2192 June 2025]: Backend Team",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ]
-          ]
-        },
-        "format": {
-          "last_edited_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          }
-        },
-        "created_time": 1773148543184,
-        "last_edited_time": 1793860396663,
-        "parent_id": "31f181ec-d4f6-819a-b300-f71d6329a121",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-        "crdt_format_version": 1,
-        "nav_parent_table": "block",
-        "nav_parent_id": "31f181ec-d4f6-819a-b300-f71d6329a121",
-        "crdt_data": {
-          "title": {
-            "r": "ZasGl7NCGdq470L97utlVw,\"start\",\"end\"",
-            "n": {
-              "ZasGl7NCGdq470L97utlVw,\"start\",\"end\"": {
-                "s": {
-                  "x": "ZasGl7NCGdq470L97utlVw",
-                  "i": [
-                    {
-                      "t": "s"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "XIldzLMk1IGZ",
-                        1
-                      ],
-                      "o": "start",
-                      "l": 16,
-                      "c": "[January 2025 \u2192 ",
-                      "b": [
-                        {
-                          "t": "a",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "XIldzLMk1IGZ",
-                            25
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "a": [
-                            "b"
-                          ]
-                        },
-                        {
-                          "t": "r",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "kID6rZ15tICN",
-                            51
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": [
-                              "kID6rZ15tICN",
-                              49
-                            ],
-                            "a": "b"
-                          },
-                          "k": "b"
-                        },
-                        {
-                          "t": "a",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "kID6rZ15tICN",
-                            53
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "a": [
-                            "b"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "XIldzLMk1IGZ",
-                        26
-                      ],
-                      "o": [
-                        "XIldzLMk1IGZ",
-                        16
-                      ],
-                      "l": 8,
-                      "c": "June 202"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "kID6rZ15tICN",
-                        49
-                      ],
-                      "o": [
-                        "XIldzLMk1IGZ",
-                        33
-                      ],
-                      "l": 1,
-                      "c": "5",
-                      "b": [
-                        {
-                          "t": "a",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "XIldzLMk1IGZ",
-                            25
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "a": [
-                            "b"
-                          ]
-                        },
-                        {
-                          "t": "r",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "kID6rZ15tICN",
-                            50
-                          ],
-                          "s": {
-                            "i": [
-                              "kID6rZ15tICN",
-                              49
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              34
-                            ],
-                            "a": "b"
-                          },
-                          "k": "b"
-                        },
-                        {
-                          "t": "a",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "kID6rZ15tICN",
-                            53
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "a": [
-                            "b"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "XIldzLMk1IGZ",
-                        34
-                      ],
-                      "o": [
-                        "XIldzLMk1IGZ",
-                        33
-                      ],
-                      "l": -1,
-                      "b": [
-                        {
-                          "t": "a",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "XIldzLMk1IGZ",
-                            25
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "a": [
-                            "b"
-                          ]
-                        },
-                        {
-                          "t": "a",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "kID6rZ15tICN",
-                            53
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "a": [
-                            "b"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "XIldzLMk1IGZ",
-                        17
-                      ],
-                      "o": [
-                        "XIldzLMk1IGZ",
-                        16
-                      ],
-                      "l": -7
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "XIldzLMk1IGZ",
-                        24
-                      ],
-                      "o": [
-                        "XIldzLMk1IGZ",
-                        23
-                      ],
-                      "l": 1,
-                      "c": "]",
-                      "b": [
-                        {
-                          "t": "a",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "XIldzLMk1IGZ",
-                            25
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "a": [
-                            "b"
-                          ]
-                        },
-                        {
-                          "t": "r",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "kID6rZ15tICN",
-                            52
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              24
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "k": "b"
-                        },
-                        {
-                          "t": "a",
-                          "x": "ZasGl7NCGdq470L97utlVw",
-                          "l": "",
-                          "i": [
-                            "kID6rZ15tICN",
-                            53
-                          ],
-                          "s": {
-                            "i": [
-                              "XIldzLMk1IGZ",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "a": [
-                            "b"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "XIldzLMk1IGZ",
-                        35
-                      ],
-                      "o": [
-                        "XIldzLMk1IGZ",
-                        24
-                      ],
-                      "l": 14,
-                      "c": ": Backend Team"
-                    },
-                    {
-                      "t": "e",
-                      "b": []
-                    }
-                  ],
-                  "l": ""
-                },
-                "c": []
-              }
-            }
-          }
-        }
-      },
-      "role": "reader"
-    },
     "dfc7c5b9-4ee9-4c1e-9e65-f3f9a26da21c": {
       "value": {
         "id": "dfc7c5b9-4ee9-4c1e-9e65-f3f9a26da21c",
-        "version": 77,
+        "version": 82,
         "type": "text",
         "properties": {
           "title": [
             [
-              "[June 2025 \u2192 April 2026]: Machine Learning Team",
+              "[June 2025 \u2192 April 2026]: Machine Learning Team, ML Operations Engineer",
               [
                 [
                   "b"
@@ -1040,7 +629,7 @@
           }
         },
         "created_time": 1773148406724,
-        "last_edited_time": 1793860396663,
+        "last_edited_time": 1794202825000,
         "parent_id": "31f181ec-d4f6-819a-b300-f71d6329a121",
         "parent_table": "block",
         "alive": true,
@@ -1123,6 +712,56 @@
                           "i": [
                             "TvegOLvyz9hs",
                             81
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            107
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "U_4l_70yIZlE",
+                              82
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            108
                           ],
                           "s": {
                             "i": [
@@ -1292,6 +931,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            107
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "U_4l_70yIZlE",
+                              82
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            108
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
@@ -1337,6 +1026,56 @@
                           "i": [
                             "TvegOLvyz9hs",
                             81
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            107
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "U_4l_70yIZlE",
+                              82
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            108
                           ],
                           "s": {
                             "i": [
@@ -1443,6 +1182,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            107
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "U_4l_70yIZlE",
+                              82
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            108
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
@@ -1531,6 +1320,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            107
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "U_4l_70yIZlE",
+                              82
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            108
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
@@ -1576,6 +1415,56 @@
                           "i": [
                             "TvegOLvyz9hs",
                             81
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            107
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "U_4l_70yIZlE",
+                              82
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            108
                           ],
                           "s": {
                             "i": [
@@ -1682,6 +1571,56 @@
                           "a": [
                             "b"
                           ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            107
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "U_4l_70yIZlE",
+                              82
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            108
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
                         }
                       ]
                     },
@@ -1710,6 +1649,144 @@
                       ],
                       "l": 20,
                       "c": "achine Learning Team"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "U_4l_70yIZlE",
+                        82
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        62
+                      ],
+                      "l": 24,
+                      "c": ", ML Operations Engineer",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "CmBotvzqTMlg",
+                            38
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "TvegOLvyz9hs",
+                            80
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              24
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "TvegOLvyz9hs",
+                            81
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        },
+                        {
+                          "t": "r",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            106
+                          ],
+                          "s": {
+                            "i": [
+                              "U_4l_70yIZlE",
+                              82
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "k": "b"
+                        },
+                        {
+                          "t": "a",
+                          "x": "GhXckLBjfqynWwyumUBEnA",
+                          "l": "",
+                          "i": [
+                            "U_4l_70yIZlE",
+                            108
+                          ],
+                          "s": {
+                            "i": [
+                              "CmBotvzqTMlg",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "XIldzLMk1IGZ",
+                              42
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
                     },
                     {
                       "t": "t",
@@ -3273,6 +3350,115 @@
                     },
                     {
                       "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "e83cc201-e6d2-44fb-8de8-556a7e3541bd": {
+      "value": {
+        "id": "e83cc201-e6d2-44fb-8de8-556a7e3541bd",
+        "version": 6,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "[January 2025 \u2192 June 2025]: Backend Team, Software Engineer Intern",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794202825000,
+        "last_edited_time": 1794202825000,
+        "parent_id": "31f181ec-d4f6-819a-b300-f71d6329a121",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-819a-b300-f71d6329a121",
+        "crdt_data": {
+          "title": {
+            "r": "3effaX33ubUUV_NXdG63CA,\"start\",\"end\"",
+            "n": {
+              "3effaX33ubUUV_NXdG63CA,\"start\",\"end\"": {
+                "s": {
+                  "x": "3effaX33ubUUV_NXdG63CA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jY-P1JrDP5DY",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 66,
+                      "c": "[January 2025 \u2192 June 2025]: Backend Team, Software Engineer Intern",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "3effaX33ubUUV_NXdG63CA",
+                          "l": "",
+                          "i": [
+                            "jY-P1JrDP5DY",
+                            67
+                          ],
+                          "s": {
+                            "i": [
+                              "jY-P1JrDP5DY",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "e",
+                      "b": []
                     }
                   ],
                   "l": ""

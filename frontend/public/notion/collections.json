@@ -128,14 +128,14 @@
       "title": "Polygon Map Generator (MIT iQuHack)",
       "slug": "polygon-map-generator-mit-iquhack",
       "section": "projects",
-      "link": "",
+      "link": "https://github.com/bchu-ops/QCSD-iQuHACK-2022",
       "image": "mit.png",
-      "tools": "Python, Qiskit, Voronoi diagrams, NumPy, Matplotlib",
+      "tools": "Python, Q#, QuTiP, Voronoi diagrams",
       "date": {
-        "start": "2024-01-01",
-        "end": "2024-01-31"
+        "start": "2022-01-01",
+        "end": "2022-01-31"
       },
-      "description": "Polygon map generator using quantum randomness to seed procedural terrain \u2014 January 2024"
+      "description": "Polygon map generator using quantum randomness to seed procedural terrain \u2014 January 2022"
     },
     {
       "id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
