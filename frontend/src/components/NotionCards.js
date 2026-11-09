@@ -238,7 +238,7 @@ function NotionCards() {
   }
 
   if (!collections) {
-    return <div className="cards"><p>Loading...</p></div>;
+    return <div className="cards notion-loading"><p>Loading...</p></div>;
   }
 
   return (

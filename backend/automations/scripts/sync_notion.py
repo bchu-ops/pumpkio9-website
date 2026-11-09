@@ -372,11 +372,11 @@ def main():
                         client, col, section, OUTPUT_DIR, manifest,
                     )
                     if section == "experiences":
-                        # Most recent first: current jobs, then by end date, then start date.
+                        # Most recent first by end date (current jobs first).
+                        # Ties keep the Notion gallery order (stable sort).
                         def recency(r):
-                            d = r.get("duration") or {}
-                            end = d.get("end") or ""
-                            return ("9999" if end == "Present" else end, d.get("start") or "")
+                            end = (r.get("duration") or {}).get("end") or ""
+                            return "9999" if end == "Present" else end
                         rows.sort(key=recency, reverse=True)
                     print(f"    {len(rows)} rows:")
                     for r in rows:

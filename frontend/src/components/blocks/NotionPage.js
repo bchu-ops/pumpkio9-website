@@ -10,6 +10,17 @@ function NotionPage() {
   const [recordMap, setRecordMap] = useState(null);
   const [pageTitle, setPageTitle] = useState('');
   const [error, setError] = useState(null);
+  const [darkMode, setDarkMode] = useState(
+    () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
+
+  useEffect(() => {
+    if (!window.matchMedia) return undefined;
+    const media = window.matchMedia('(prefers-color-scheme: dark)');
+    const onChange = (e) => setDarkMode(e.matches);
+    media.addEventListener('change', onChange);
+    return () => media.removeEventListener('change', onChange);
+  }, []);
 
   useEffect(() => {
     setRecordMap(null);
@@ -77,7 +88,7 @@ function NotionPage() {
       <NotionRenderer
         recordMap={recordMap}
         fullPage={false}
-        darkMode={false}
+        darkMode={darkMode}
         disableHeader={false}
         mapPageUrl={(pageId) => `/${type}/${pageId}`}
         components={{

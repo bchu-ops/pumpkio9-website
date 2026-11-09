@@ -17,6 +17,21 @@
       "image": "scaleai.png"
     },
     {
+      "id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
+      "title": "Stealth Startup",
+      "slug": "stealth-startup",
+      "section": "experiences",
+      "position": [
+        "AI Engineer"
+      ],
+      "team": "AI Engineering",
+      "duration": {
+        "start": "2022-05-01",
+        "end": "2026-04-01"
+      },
+      "image": "machining.png"
+    },
+    {
       "id": "31f181ec-d4f6-819a-b300-f71d6329a121",
       "title": "Vulcan Engineering Solutions",
       "slug": "vulcan-engineering-solutions",
@@ -31,21 +46,6 @@
         "end": "2026-04-01"
       },
       "image": "vulcan.png"
-    },
-    {
-      "id": "31f181ec-d4f6-81aa-9af0-d3f4b96d0f62",
-      "title": "Stealth Startup",
-      "slug": "stealth-startup",
-      "section": "experiences",
-      "position": [
-        "AI Engineer"
-      ],
-      "team": "AI Engineering",
-      "duration": {
-        "start": "2022-05-01",
-        "end": "2026-04-01"
-      },
-      "image": "machining.png"
     },
     {
       "id": "31f181ec-d4f6-81b3-80fe-da3e76304597",

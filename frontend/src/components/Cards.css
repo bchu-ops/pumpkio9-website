@@ -12,6 +12,15 @@
   padding-bottom: 1rem;
 }
 
+.cards .profile-intro-text h1 {
+  text-align: left;
+}
+
+/* Reserve space while collections.json loads so the footer doesn't jump */
+.cards.notion-loading {
+  min-height: 150vh;
+}
+
 .cards h1 {
   text-align: center;
 }
@@ -70,7 +79,7 @@
   display: inline-flex;
   align-items: center;
   font-size: 14px;
-  color: rgba(55, 53, 47, 0.65);
+  color: rgba(55, 53, 47, 0.82);
   user-select: none;
 }
 
@@ -205,7 +214,7 @@
   overflow: hidden;
   text-overflow: ellipsis;
   font-size: 12px;
-  color: rgba(55, 53, 47, 0.65);
+  color: rgba(55, 53, 47, 0.82);
 }
 
 .notion-collection-section .notion-collection-card-property:first-child {
@@ -232,7 +241,7 @@
   padding: 7px 8px;
   font-size: 14px;
   font-weight: 400;
-  color: rgba(55, 53, 47, 0.65);
+  color: rgba(55, 53, 47, 0.82);
   border-top: 1px solid rgba(55, 53, 47, 0.16);
   border-bottom: 1px solid rgba(55, 53, 47, 0.16);
   white-space: nowrap;
@@ -276,7 +285,7 @@
 }
 
 .notion-collection-section .notion-table-cell-text {
-  color: rgba(55, 53, 47, 0.65);
+  color: rgba(55, 53, 47, 0.82);
   white-space: pre-wrap;
   line-height: 1.5;
 }
@@ -333,5 +342,46 @@
 
   .notion-collection-section .notion-table {
     min-width: 500px;
+  }
+}
+
+/* Simple dark mode: follows the visitor's system setting */
+@media (prefers-color-scheme: dark) {
+  .cards {
+    background: #191919;
+    color: #e6e6e3;
+  }
+  .cards .text-gray-700 {
+    color: #d6d6d3;
+  }
+  .notion-collection-section .notion-collection-header-title,
+  .notion-collection-section .notion-collection-card-property:first-child,
+  .notion-collection-section .notion-table-cell-title {
+    color: #ebebe8;
+  }
+  .notion-collection-section .notion-collection-card-property,
+  .notion-collection-section > .notion-collection-header span {
+    color: rgba(235, 235, 232, 0.72);
+  }
+  .notion-collection-section .notion-collection-card {
+    background: #252525;
+    color: #e6e6e3;
+    box-shadow: rgba(255, 255, 255, 0.08) 0 0 0 1px;
+  }
+  .notion-collection-section .notion-collection-card:hover {
+    background: #2f2f2f;
+  }
+  .notion-collection-section .notion-collection-card-cover {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+  .notion-collection-section .notion-collection-view-dropdown {
+    color: rgba(235, 235, 232, 0.8);
+  }
+  .notion-collection-section .notion-collection-view-dropdown:hover,
+  .notion-resume-link:hover {
+    background: rgba(255, 255, 255, 0.08);
+  }
+  .notion-resume-link {
+    color: #e6e6e3;
   }
 }

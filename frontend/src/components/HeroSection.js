@@ -73,10 +73,28 @@ function HeroSection() {
 
   return (
 	<div className='hero-container'>
-	  <video src={publicFile("videos/video-4.mp4")} autoPlay loop muted />
-	  <h1>Welcome :D</h1>
-	  <p>Explore my portfolio and recent music</p>
+	  <video
+		src={publicFile("videos/video-4.mp4")}
+		poster={publicFile("images/hero-poster.jpg")}
+		autoPlay
+		loop
+		muted
+		playsInline
+		preload='metadata'
+		aria-hidden='true'
+	  />
+	  <h1>Hi, I'm Brian :D</h1>
+	  <p>Forward Deployed AI Engineer @ Scale AI</p>
+	  <p className='hero-sub'>Building AI agents, evals &amp; MCP tooling ✨</p>
 	  <div className='hero-btns'>
+		<Button
+			className='btns'
+			buttonStyle='btn--primary'
+			buttonSize='btn--large'
+			onClick={() => window.open(publicFile('resume/Brian_Chu_Resume.pdf'), '_blank', 'noopener')}
+		>
+		  Resume <i className='far fa-file-alt' />
+		</Button>
 		{/* <Button 
 			className='btns' 
 			buttonStyle='btn--outline' 
@@ -84,9 +102,9 @@ function HeroSection() {
 		>
 		  Get Started
 		</Button> */}
-		<Button 
-			className='btns' 
-			buttonStyle='btn--primary' 
+		<Button
+			className='btns'
+			buttonStyle='btn--outline'
 			buttonSize='btn--large'
 			onClick={() => routeChange('/Spotify')}
 		>

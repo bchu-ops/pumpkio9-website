@@ -97,3 +97,15 @@
 @keyframes notion-spin {
   to { transform: rotate(360deg); }
 }
+
+@media (prefers-color-scheme: dark) {
+  .notion-page-wrapper {
+    background: #191919;
+    color: #e6e6e3;
+  }
+  .notion-page-wrapper .notion-page-title,
+  .notion-page-wrapper .notion-page-breadcrumb a,
+  .notion-page-wrapper .notion-page-breadcrumb span {
+    color: #e6e6e3;
+  }
+}
