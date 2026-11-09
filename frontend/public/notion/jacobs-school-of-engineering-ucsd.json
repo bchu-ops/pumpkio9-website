@@ -323,7 +323,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 316,
+        "version": 320,
         "type": "page",
         "properties": {
           "title": [
@@ -373,6 +373,16 @@
           "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
           "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
           "page_cover_position": 0.8909,
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
           "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
         },
         "permissions": [
@@ -384,7 +394,7 @@
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1793911068994,
+        "last_edited_time": 1794203527654,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,

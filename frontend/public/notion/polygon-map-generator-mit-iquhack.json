@@ -190,7 +190,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 316,
+        "version": 320,
         "type": "page",
         "properties": {
           "title": [
@@ -240,6 +240,16 @@
           "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
           "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
           "page_cover_position": 0.8909,
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
           "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
         },
         "permissions": [
@@ -251,7 +261,7 @@
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1793911068994,
+        "last_edited_time": 1794203527654,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -2709,6 +2719,240 @@
       },
       "role": "reader"
     },
+    "8ff106bc-febd-4f53-9967-a8df3cc93cef": {
+      "value": {
+        "id": "8ff106bc-febd-4f53-9967-a8df3cc93cef",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Adapted Amit Patel's mapgen2 into Python with separate elevation, moisture, water, river, and biome generation stages"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794202829526,
+        "last_edited_time": 1794202829526,
+        "parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+        "crdt_data": {
+          "title": {
+            "r": "OCmK1kua5cHRLx8p0lOw1Q,\"start\",\"end\"",
+            "n": {
+              "OCmK1kua5cHRLx8p0lOw1Q,\"start\",\"end\"": {
+                "s": {
+                  "x": "OCmK1kua5cHRLx8p0lOw1Q",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "61zCgk7BoJc7",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 117,
+                      "c": "Adapted Amit Patel's mapgen2 into Python with separate elevation, moisture, water, river, and biome generation stages"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "585d90f2-c785-48c1-86fe-ee926a1d11ce": {
+      "value": {
+        "id": "585d90f2-c785-48c1-86fe-ee926a1d11ce",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Wrote a Q# quantum random number generator and used QuTiP quantum noise as true randomness to seed Voronoi polygon regions"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794202829526,
+        "last_edited_time": 1794202829526,
+        "parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+        "crdt_data": {
+          "title": {
+            "r": "muL89fBM-RGaAXhG0k4eRA,\"start\",\"end\"",
+            "n": {
+              "muL89fBM-RGaAXhG0k4eRA,\"start\",\"end\"": {
+                "s": {
+                  "x": "muL89fBM-RGaAXhG0k4eRA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "ZnG74ND86DWl",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 122,
+                      "c": "Wrote a Q# quantum random number generator and used QuTiP quantum noise as true randomness to seed Voronoi polygon regions"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "8b6de7da-a57d-46b6-ad44-3d7b4c8c0d37": {
+      "value": {
+        "id": "8b6de7da-a57d-46b6-ad44-3d7b4c8c0d37",
+        "version": 6,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Built with Quantum Computing at UCSD as the team's MIT iQuHACK 2022 submission"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794202829526,
+        "last_edited_time": 1794202829526,
+        "parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+        "crdt_data": {
+          "title": {
+            "r": "70CRGy-yjMNoEa9ybrp90g,\"start\",\"end\"",
+            "n": {
+              "70CRGy-yjMNoEa9ybrp90g,\"start\",\"end\"": {
+                "s": {
+                  "x": "70CRGy-yjMNoEa9ybrp90g",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "MtQ8Zc8WRi1i",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 78,
+                      "c": "Built with Quantum Computing at UCSD as the team's MIT iQuHACK 2022 submission"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
     "0fb917cd-b60b-45c9-a8c2-6e5d6bf0f318": {
       "value": {
         "id": "0fb917cd-b60b-45c9-a8c2-6e5d6bf0f318",
@@ -3819,240 +4063,6 @@
                       "o": "start",
                       "l": 51,
                       "c": "Turning qubit measurements into one-of-a-kind maps!"
-                    },
-                    {
-                      "t": "e"
-                    }
-                  ],
-                  "l": ""
-                },
-                "c": []
-              }
-            }
-          }
-        }
-      },
-      "role": "reader"
-    },
-    "8ff106bc-febd-4f53-9967-a8df3cc93cef": {
-      "value": {
-        "id": "8ff106bc-febd-4f53-9967-a8df3cc93cef",
-        "version": 6,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "Adapted Amit Patel's mapgen2 into Python with separate elevation, moisture, water, river, and biome generation stages"
-            ]
-          ]
-        },
-        "format": {
-          "created_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          },
-          "last_edited_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          }
-        },
-        "created_time": 1794202829526,
-        "last_edited_time": 1794202829526,
-        "parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-        "crdt_format_version": 1,
-        "nav_parent_table": "block",
-        "nav_parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
-        "crdt_data": {
-          "title": {
-            "r": "OCmK1kua5cHRLx8p0lOw1Q,\"start\",\"end\"",
-            "n": {
-              "OCmK1kua5cHRLx8p0lOw1Q,\"start\",\"end\"": {
-                "s": {
-                  "x": "OCmK1kua5cHRLx8p0lOw1Q",
-                  "i": [
-                    {
-                      "t": "s"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "61zCgk7BoJc7",
-                        1
-                      ],
-                      "o": "start",
-                      "l": 117,
-                      "c": "Adapted Amit Patel's mapgen2 into Python with separate elevation, moisture, water, river, and biome generation stages"
-                    },
-                    {
-                      "t": "e"
-                    }
-                  ],
-                  "l": ""
-                },
-                "c": []
-              }
-            }
-          }
-        }
-      },
-      "role": "reader"
-    },
-    "585d90f2-c785-48c1-86fe-ee926a1d11ce": {
-      "value": {
-        "id": "585d90f2-c785-48c1-86fe-ee926a1d11ce",
-        "version": 6,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "Wrote a Q# quantum random number generator and used QuTiP quantum noise as true randomness to seed Voronoi polygon regions"
-            ]
-          ]
-        },
-        "format": {
-          "created_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          },
-          "last_edited_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          }
-        },
-        "created_time": 1794202829526,
-        "last_edited_time": 1794202829526,
-        "parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-        "crdt_format_version": 1,
-        "nav_parent_table": "block",
-        "nav_parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
-        "crdt_data": {
-          "title": {
-            "r": "muL89fBM-RGaAXhG0k4eRA,\"start\",\"end\"",
-            "n": {
-              "muL89fBM-RGaAXhG0k4eRA,\"start\",\"end\"": {
-                "s": {
-                  "x": "muL89fBM-RGaAXhG0k4eRA",
-                  "i": [
-                    {
-                      "t": "s"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "ZnG74ND86DWl",
-                        1
-                      ],
-                      "o": "start",
-                      "l": 122,
-                      "c": "Wrote a Q# quantum random number generator and used QuTiP quantum noise as true randomness to seed Voronoi polygon regions"
-                    },
-                    {
-                      "t": "e"
-                    }
-                  ],
-                  "l": ""
-                },
-                "c": []
-              }
-            }
-          }
-        }
-      },
-      "role": "reader"
-    },
-    "8b6de7da-a57d-46b6-ad44-3d7b4c8c0d37": {
-      "value": {
-        "id": "8b6de7da-a57d-46b6-ad44-3d7b4c8c0d37",
-        "version": 6,
-        "type": "bulleted_list",
-        "properties": {
-          "title": [
-            [
-              "Built with Quantum Computing at UCSD as the team's MIT iQuHACK 2022 submission"
-            ]
-          ]
-        },
-        "format": {
-          "created_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          },
-          "last_edited_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          }
-        },
-        "created_time": 1794202829526,
-        "last_edited_time": 1794202829526,
-        "parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-        "crdt_format_version": 1,
-        "nav_parent_table": "block",
-        "nav_parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
-        "crdt_data": {
-          "title": {
-            "r": "70CRGy-yjMNoEa9ybrp90g,\"start\",\"end\"",
-            "n": {
-              "70CRGy-yjMNoEa9ybrp90g,\"start\",\"end\"": {
-                "s": {
-                  "x": "70CRGy-yjMNoEa9ybrp90g",
-                  "i": [
-                    {
-                      "t": "s"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "MtQ8Zc8WRi1i",
-                        1
-                      ],
-                      "o": "start",
-                      "l": 78,
-                      "c": "Built with Quantum Computing at UCSD as the team's MIT iQuHACK 2022 submission"
                     },
                     {
                       "t": "e"

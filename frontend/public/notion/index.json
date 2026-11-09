@@ -3,7 +3,7 @@
     "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
       "value": {
         "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
-        "version": 316,
+        "version": 320,
         "type": "page",
         "properties": {
           "title": [
@@ -53,6 +53,16 @@
           "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
           "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
           "page_cover_position": 0.8909,
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
           "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
         },
         "permissions": [
@@ -64,7 +74,7 @@
           }
         ],
         "created_time": 1773143151480,
-        "last_edited_time": 1793911068994,
+        "last_edited_time": 1794203527654,
         "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "parent_table": "space",
         "alive": true,
@@ -1578,12 +1588,11 @@
     "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a": {
       "value": {
         "id": "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
-        "version": 4,
+        "version": 5,
         "type": "callout",
         "content": [
           "cf1acb0c-cb1c-4576-b714-369a308c8c11",
-          "c9acd4fc-446d-4737-89f8-e152b5fdbe11",
-          "6bfb39d2-3525-486a-a502-1c4bf8a4ac55"
+          "c9acd4fc-446d-4737-89f8-e152b5fdbe11"
         ],
         "format": {
           "block_color": "blue_background",
@@ -1596,6 +1605,8 @@
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "ueGvnesKsq6cWkr45aieYg,\"start\",\"end\"",
@@ -1624,12 +1635,11 @@
     "38678f4a-7abe-4554-8535-f1cf9d495854": {
       "value": {
         "id": "38678f4a-7abe-4554-8535-f1cf9d495854",
-        "version": 4,
+        "version": 5,
         "type": "callout",
         "content": [
           "c010a36a-ee93-4a59-999c-3a5a1294384f",
-          "827dd645-43a5-4ac5-8d73-c7e264e11870",
-          "1aa92cb7-e972-4da8-8c6b-06899e9ba327"
+          "827dd645-43a5-4ac5-8d73-c7e264e11870"
         ],
         "format": {
           "block_color": "blue_background",
@@ -1642,6 +1652,8 @@
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "y9paZX596EYaxwkEOlwu6g,\"start\",\"end\"",
@@ -1670,12 +1682,11 @@
     "d1c070a3-4073-415b-b012-b2013b9f84aa": {
       "value": {
         "id": "d1c070a3-4073-415b-b012-b2013b9f84aa",
-        "version": 4,
+        "version": 5,
         "type": "callout",
         "content": [
           "c04bd3f1-4125-4506-aae7-31b3c0c5f059",
-          "14c2902d-44e2-4a3c-9baf-39d8d83191ed",
-          "2da150ce-d618-4e1e-844f-eb3cd593df47"
+          "14c2902d-44e2-4a3c-9baf-39d8d83191ed"
         ],
         "format": {
           "block_color": "blue_background",
@@ -1688,6 +1699,8 @@
         "alive": true,
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
         "crdt_data": {
           "title": {
             "r": "WBGP-MoXio3WAkZCrFxilA,\"start\",\"end\"",
@@ -7339,60 +7352,6 @@
       },
       "role": "reader"
     },
-    "6bfb39d2-3525-486a-a502-1c4bf8a4ac55": {
-      "value": {
-        "id": "6bfb39d2-3525-486a-a502-1c4bf8a4ac55",
-        "version": 4,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "August 2024 - December 2025"
-            ]
-          ]
-        },
-        "created_time": 1773150892851,
-        "last_edited_time": 1773150892851,
-        "parent_id": "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-        "crdt_format_version": 1,
-        "crdt_data": {
-          "title": {
-            "r": "x2Bu8MpZZ2tmTNWE7G8Rdw,\"start\",\"end\"",
-            "n": {
-              "x2Bu8MpZZ2tmTNWE7G8Rdw,\"start\",\"end\"": {
-                "s": {
-                  "x": "x2Bu8MpZZ2tmTNWE7G8Rdw",
-                  "i": [
-                    {
-                      "t": "s"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "hqMXp_4z7viB",
-                        1
-                      ],
-                      "o": "start",
-                      "l": 27,
-                      "c": "August 2024 - December 2025"
-                    },
-                    {
-                      "t": "e"
-                    }
-                  ],
-                  "l": ""
-                },
-                "c": []
-              }
-            }
-          }
-        }
-      },
-      "role": "reader"
-    },
     "c010a36a-ee93-4a59-999c-3a5a1294384f": {
       "value": {
         "id": "c010a36a-ee93-4a59-999c-3a5a1294384f",
@@ -7563,60 +7522,6 @@
       },
       "role": "reader"
     },
-    "1aa92cb7-e972-4da8-8c6b-06899e9ba327": {
-      "value": {
-        "id": "1aa92cb7-e972-4da8-8c6b-06899e9ba327",
-        "version": 4,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "August 2020 - June 2024"
-            ]
-          ]
-        },
-        "created_time": 1773150892852,
-        "last_edited_time": 1773150892852,
-        "parent_id": "38678f4a-7abe-4554-8535-f1cf9d495854",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-        "crdt_format_version": 1,
-        "crdt_data": {
-          "title": {
-            "r": "Oo4CUASDa_t2u9NrtblApw,\"start\",\"end\"",
-            "n": {
-              "Oo4CUASDa_t2u9NrtblApw,\"start\",\"end\"": {
-                "s": {
-                  "x": "Oo4CUASDa_t2u9NrtblApw",
-                  "i": [
-                    {
-                      "t": "s"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "AQXZhfxqK7J_",
-                        1
-                      ],
-                      "o": "start",
-                      "l": 23,
-                      "c": "August 2020 - June 2024"
-                    },
-                    {
-                      "t": "e"
-                    }
-                  ],
-                  "l": ""
-                },
-                "c": []
-              }
-            }
-          }
-        }
-      },
-      "role": "reader"
-    },
     "c04bd3f1-4125-4506-aae7-31b3c0c5f059": {
       "value": {
         "id": "c04bd3f1-4125-4506-aae7-31b3c0c5f059",
@@ -7775,60 +7680,6 @@
                     {
                       "t": "e",
                       "b": []
-                    }
-                  ],
-                  "l": ""
-                },
-                "c": []
-              }
-            }
-          }
-        }
-      },
-      "role": "reader"
-    },
-    "2da150ce-d618-4e1e-844f-eb3cd593df47": {
-      "value": {
-        "id": "2da150ce-d618-4e1e-844f-eb3cd593df47",
-        "version": 4,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "August 2019 - June 2020"
-            ]
-          ]
-        },
-        "created_time": 1773150892853,
-        "last_edited_time": 1773150892853,
-        "parent_id": "d1c070a3-4073-415b-b012-b2013b9f84aa",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-        "crdt_format_version": 1,
-        "crdt_data": {
-          "title": {
-            "r": "R6oXHWdvoq40iaJtpTSwtA,\"start\",\"end\"",
-            "n": {
-              "R6oXHWdvoq40iaJtpTSwtA,\"start\",\"end\"": {
-                "s": {
-                  "x": "R6oXHWdvoq40iaJtpTSwtA",
-                  "i": [
-                    {
-                      "t": "s"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "56NCRTkdWgfp",
-                        1
-                      ],
-                      "o": "start",
-                      "l": 23,
-                      "c": "August 2019 - June 2020"
-                    },
-                    {
-                      "t": "e"
                     }
                   ],
                   "l": ""
