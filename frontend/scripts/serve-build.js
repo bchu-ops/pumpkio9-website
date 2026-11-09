@@ -1,5 +1,5 @@
-// Serves the production build at /pumpkio9-website/ like GitHub Pages does,
-// including the SPA fallback to index.html. Usage: npm run preview
+// Serves the production build at /pumpkio9-website/ like GitHub Pages does:
+// unknown paths get build/404.html with a 404 status. Usage: npm run preview
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -39,10 +39,15 @@ http
       res.writeHead(403);
       return res.end();
     }
-    if (!fs.existsSync(file) || fs.statSync(file).isDirectory()) {
-      file = path.join(ROOT, 'index.html');
+    let status = 200;
+    if (fs.existsSync(file) && fs.statSync(file).isDirectory()) {
+      file = path.join(file, 'index.html');
     }
-    res.writeHead(200, { 'Content-Type': TYPES[path.extname(file)] || 'application/octet-stream' });
+    if (!fs.existsSync(file)) {
+      file = path.join(ROOT, '404.html');
+      status = 404;
+    }
+    res.writeHead(status, { 'Content-Type': TYPES[path.extname(file)] || 'application/octet-stream' });
     fs.createReadStream(file).pipe(res);
   })
   .listen(PORT, () => console.log(`Preview: http://localhost:${PORT}${BASE}/`));

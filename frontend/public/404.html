@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Brian Chu</title>
+    <script>
+      // GitHub Pages serves this file for any path it doesn't know.
+      // Send the visitor back to the app with the path in the query string,
+      // where index.html restores it so React Router can render the page
+      // (or the app's own 404 page). Adapted from rafgraph/spa-github-pages.
+      (function () {
+        var base = '/pumpkio9-website';
+        var l = window.location;
+        var rest = l.pathname.indexOf(base) === 0 ? l.pathname.slice(base.length) : l.pathname;
+        l.replace(
+          l.protocol + '//' + l.host + base + '/?/' +
+          rest.slice(1).replace(/&/g, '~and~') +
+          (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+          l.hash
+        );
+      })();
+    </script>
+  </head>
+  <body></body>
+</html>

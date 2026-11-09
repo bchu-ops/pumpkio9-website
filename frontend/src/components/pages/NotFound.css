@@ -1,0 +1,142 @@
+.notfound {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.25rem;
+  background: rgb(247, 246, 243);
+  color: rgb(55, 53, 47);
+}
+
+.notfound-card {
+  max-width: 560px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 2.75rem 2rem 2.25rem;
+  box-shadow: rgba(15, 15, 15, 0.06) 0 0 0 1px, rgba(15, 15, 15, 0.08) 0 8px 24px;
+}
+
+.notfound-trees {
+  font-size: 2.75rem;
+  letter-spacing: 0.4rem;
+  line-height: 1;
+}
+
+.notfound-lost {
+  display: inline-block;
+  animation: notfound-spin 3.2s ease-in-out infinite;
+}
+
+@keyframes notfound-spin {
+  0%, 100% { transform: rotate(-25deg); }
+  50% { transform: rotate(25deg); }
+}
+
+.notfound-code {
+  margin-top: 1rem;
+  font-size: 4.5rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  color: rgb(35, 131, 226);
+}
+
+.notfound-title {
+  margin-top: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.notfound-text {
+  margin-top: 0.75rem;
+  color: rgba(55, 53, 47, 0.82);
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+.notfound-text code {
+  font-family: SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.9em;
+  background: rgba(135, 131, 120, 0.15);
+  color: #b4413c;
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+.notfound-actions {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  justify-content: center;
+}
+
+.notfound-btn {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: rgb(55, 53, 47);
+  background: rgba(55, 53, 47, 0.06);
+  box-shadow: rgba(15, 15, 15, 0.1) 0 0 0 1px inset;
+  transition: background 120ms ease, transform 120ms ease;
+}
+
+.notfound-btn:hover {
+  background: rgba(55, 53, 47, 0.12);
+  transform: translateY(-1px);
+}
+
+.notfound-btn:focus-visible {
+  outline: 2px solid rgb(35, 131, 226);
+  outline-offset: 2px;
+}
+
+.notfound-btn--primary {
+  color: #fff;
+  background: rgb(35, 131, 226);
+  box-shadow: none;
+}
+
+.notfound-btn--primary:hover {
+  background: rgb(26, 112, 199);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .notfound-lost {
+    animation: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .notfound {
+    background: #191919;
+    color: #e6e6e3;
+  }
+  .notfound-card {
+    background: #252525;
+    box-shadow: rgba(255, 255, 255, 0.08) 0 0 0 1px;
+  }
+  .notfound-text {
+    color: rgba(235, 235, 232, 0.78);
+  }
+  .notfound-text code {
+    background: rgba(255, 255, 255, 0.08);
+    color: #ff8a80;
+  }
+  .notfound-btn {
+    color: #e6e6e3;
+    background: rgba(255, 255, 255, 0.06);
+    box-shadow: rgba(255, 255, 255, 0.12) 0 0 0 1px inset;
+  }
+  .notfound-btn:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+  .notfound-btn--primary {
+    color: #fff;
+    background: rgb(35, 131, 226);
+    box-shadow: none;
+  }
+}

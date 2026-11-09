@@ -85,7 +85,7 @@ function HeroSection() {
 	  />
 	  <h1>Hi, I'm Brian :D</h1>
 	  <p>Forward Deployed AI Engineer @ Scale AI</p>
-	  <p className='hero-sub'>Building AI agents, evals &amp; MCP tooling ✨</p>
+	  <p className='hero-sub'>Building AI agents, evals &amp; MCP tooling 🛰️</p>
 	  <div className='hero-btns'>
 		<Button
 			className='btns'
