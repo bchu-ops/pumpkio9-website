@@ -103,6 +103,9 @@
 
 /* Zoom level display */
 .chrome-pdf-zoom-level {
+  border: none;
+  background: transparent;
+  font-family: inherit;
   color: #e8eaed;
   font-size: 12px;
   min-width: 40px;
@@ -131,7 +134,7 @@
   padding: 16px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 8px;
 }
 
@@ -155,24 +158,55 @@
 }
 
 /* Individual page */
+/* margin auto centers the page, but lets a zoomed-in page scroll sideways */
 .chrome-pdf-page {
+  position: relative;
+  flex-shrink: 0;
+  margin: 0 auto;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
   background: white;
   line-height: 0;
 }
 
-.chrome-pdf-page-canvas {
-  display: flex;
-  justify-content: center;
+.chrome-pdf-page canvas {
+  display: block;
 }
 
-.chrome-pdf-page-canvas canvas {
-  display: block;
+/* Invisible, selectable text over each page (pdf.js 2.x text layer) */
+.chrome-pdf-page .textLayer {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  line-height: 1;
+  text-size-adjust: none;
+  forced-color-adjust: none;
+}
+
+.chrome-pdf-page .textLayer span,
+.chrome-pdf-page .textLayer br {
+  color: transparent;
+  position: absolute;
+  white-space: pre;
+  cursor: text;
+  transform-origin: 0% 0%;
+}
+
+.chrome-pdf-page .textLayer ::selection {
+  background: rgba(35, 131, 226, 0.35);
+}
+
+/* Keyboard focus */
+.chrome-pdf-viewer:focus-visible,
+.chrome-pdf-btn:focus-visible,
+.chrome-pdf-zoom-level:focus-visible {
+  outline: 2px solid #8ab4f8;
+  outline-offset: 2px;
 }
 
 /* Loading spinner */
 .chrome-pdf-loading {
   flex: 1;
+  align-self: stretch;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,6 +235,7 @@
 /* Error state */
 .chrome-pdf-error {
   flex: 1;
+  align-self: stretch;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -218,6 +253,11 @@
   color: #9aa0a6;
 }
 
+.chrome-pdf-error-link {
+  margin-top: 12px;
+  color: #8ab4f8;
+}
+
 /* Fullscreen adjustments */
 .chrome-pdf-viewer:fullscreen {
   height: 100vh;
@@ -233,4 +273,18 @@
   .chrome-pdf-toolbar {
     justify-content: space-between;
   }
+}
+
+/* react-notion-x wraps PDF blocks in a small fixed box (e.g. 446x320) with its
+   own scrollbar. Let the viewer use the full column width and its own height. */
+.notion-asset-wrapper-pdf > div {
+  width: 100% !important;
+  height: auto !important;
+  padding: 0 !important;
+  overflow: visible !important;
+  background: transparent !important;
+}
+
+.notion-asset-wrapper-pdf .chrome-pdf-viewer {
+  height: min(85vh, 900px);
 }
