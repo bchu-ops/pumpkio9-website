@@ -144,7 +144,7 @@ function Footer() {
 						<i className="fa fa-envelope"/>
 					</Link>
 					<Link
-						className='social-icon-link notion'
+						className='social-icon-link notion-icon'
 						to='https://pumpkio9.notion.site/Brian-s-Portfolio-31f181ecd4f680f4b71df7b0d1d87d60?pvs=74'
 						target='_blank'
 						rel="noopener noreferrer"
