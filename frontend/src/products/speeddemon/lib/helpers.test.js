@@ -53,3 +53,15 @@ describe('rankDrivers', () => {
     expect(ranked[2].best).toBeNull();
   });
 });
+
+describe('driverColors with a third driver', () => {
+  it('keeps C distinct from A and B', () => {
+    const c = driverColors('4781D7', 'F47600', '4781D7');
+    expect(c.c).toBeDefined();
+    expect(c.c).not.toBe(c.a);
+    expect(c.c).not.toBe(c.b);
+  });
+  it('uses C team colour when it is unique', () => {
+    expect(driverColors('4781D7', 'F47600', 'E8002D').c).toBe('#e8002d');
+  });
+});

@@ -21,3 +21,6 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Speed Demon snapshot, built at deploy time (scripts/prefetch-f1.mjs)
+/public/f1

@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { openf1 } from './lib/openf1';
+import { f1data } from './data';
 
 export const FIRST_YEAR = 2023; // OpenF1 coverage starts in 2023
 
@@ -29,8 +29,8 @@ export function useSessions(year) {
   useEffect(() => {
     let cancelled = false;
     setState({ status: 'loading', sessions: [] });
-    Promise.all([openf1.meetings(year), openf1.get('sessions', { year })])
-      .then(([meetings, sessions]) => {
+    f1data.yearSessions(year)
+      .then(({ meetings, sessions }) => {
         if (!cancelled) setState({ status: 'ready', sessions: finishedSessions(meetings, sessions) });
       })
       .catch((error) => {

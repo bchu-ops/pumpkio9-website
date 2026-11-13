@@ -24,12 +24,14 @@ function DriverCard({ driver, lap, color, isFaster }) {
   );
 }
 
-export default function LapSummary({ driverA, driverB, lapA, lapB, colors, notes }) {
-  const aFaster = lapA.lap_duration <= lapB.lap_duration;
+/** entries: [{ key, driver, lap, color }] for 2 or 3 drivers. */
+export default function LapSummary({ entries, notes }) {
+  const quickest = entries.reduce((q, e) => (e.lap.lap_duration < q.lap.lap_duration ? e : q));
   return (
-    <section className="sd-summary" aria-label="Lap summary">
-      <DriverCard driver={driverA} lap={lapA} color={colors.a} isFaster={aFaster} />
-      <DriverCard driver={driverB} lap={lapB} color={colors.b} isFaster={!aFaster} />
+    <section className={`sd-summary${entries.length > 2 ? ' sd-summary--three' : ''}`} aria-label="Lap summary">
+      {entries.map((e) => (
+        <DriverCard key={e.key} driver={e.driver} lap={e.lap} color={e.color} isFaster={e === quickest} />
+      ))}
       <div className="sd-notes">
         <h3>What the data says</h3>
         <ul>

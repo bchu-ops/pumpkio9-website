@@ -266,3 +266,19 @@ export function insights(cmp, names) {
   });
   return notes;
 }
+
+/**
+ * Quickest driver in each of `count` equal mini-sectors, for 2+ grids that
+ * share the same distance points (e.g. cmp.a, cmp.b and a second cmp's b).
+ */
+export function sectorWinners(grids, count = 24) {
+  const keys = Object.keys(grids);
+  const n = grids[keys[0]].length;
+  return Array.from({ length: count }, (_, s) => {
+    const from = Math.round((s * (n - 1)) / count);
+    const to = Math.round(((s + 1) * (n - 1)) / count);
+    const times = Object.fromEntries(keys.map((k) => [k, grids[k][to].t - grids[k][from].t]));
+    const winner = keys.reduce((best, k) => (times[k] < times[best] ? k : best), keys[0]);
+    return { from, to, winner, times };
+  });
+}

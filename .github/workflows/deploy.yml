@@ -5,6 +5,9 @@ on:
     branches:
       - main  # or master
   workflow_dispatch:   # 👈 Allows manual trigger from Actions tab
+  schedule:
+    # Daily rebuild so Speed Demon's F1 snapshot picks up new race weekends.
+    - cron: '23 10 * * *'
 
 permissions:
   contents: read
@@ -35,6 +38,28 @@ jobs:
       - name: Install frontend dependencies
         working-directory: ./frontend
         run: npm ci
+
+      # Speed Demon: reuse today's F1 snapshot if a run already made one.
+      - name: Date key for F1 snapshot
+        id: f1date
+        run: echo "day=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Restore F1 snapshot
+        id: f1cache
+        uses: actions/cache@v4
+        with:
+          path: frontend/public/f1
+          key: f1-snapshot-${{ steps.f1date.outputs.day }}
+          restore-keys: f1-snapshot-
+
+      # Free OpenF1 API, ~7 min for 2 race weekends. Never fails the deploy:
+      # the site falls back to the live API for anything not cached.
+      - name: Prefetch F1 snapshot
+        if: steps.f1cache.outputs.cache-hit != 'true'
+        working-directory: ./frontend
+        continue-on-error: true
+        timeout-minutes: 15
+        run: node scripts/prefetch-f1.mjs --meetings 2
 
       # 4. Build frontend
       - name: Build frontend

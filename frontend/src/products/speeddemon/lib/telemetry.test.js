@@ -8,6 +8,7 @@ import {
   miniSectors,
   brakingZones,
   insights,
+  sectorWinners,
 } from './telemetry';
 
 const START = '2025-12-07T14:00:00.000000+00:00';
@@ -161,5 +162,23 @@ describe('insights', () => {
     expect(notes.length).toBeGreaterThan(0);
     expect(notes.join(' ')).toMatch(/VER/);
     expect(notes.join(' ')).toMatch(/top speed/i);
+  });
+});
+
+describe('sectorWinners', () => {
+  // Three drivers on the same 11-point grid; C is quickest early, A late.
+  const grid = (times) => times.map((t, i) => ({ d: i * 100, t }));
+  const a = grid([0, 2, 4, 6, 8, 10, 11, 12, 13, 14, 15]);
+  const b = grid([0, 2.1, 4.2, 6.3, 8.4, 10.5, 11.6, 12.7, 13.8, 14.9, 16]);
+  const c = grid([0, 1.5, 3, 4.5, 6, 7.5, 9, 10.5, 12, 13.5, 15]);
+
+  it('picks the quickest driver in each mini-sector', () => {
+    const w = sectorWinners({ a, b, c }, 2);
+    expect(w.map((s) => s.winner)).toEqual(['c', 'a']);
+    expect(w[0].times.c).toBeCloseTo(7.5, 6);
+  });
+
+  it('works with two drivers', () => {
+    expect(sectorWinners({ a, b }, 1)[0].winner).toBe('a');
   });
 });

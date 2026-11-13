@@ -39,10 +39,33 @@
 
 .sd-controls {
   display: grid;
-  grid-template-columns: 100px minmax(200px, 2fr) minmax(140px, 1fr) minmax(120px, 1fr) minmax(140px, 1fr) minmax(120px, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
   gap: 12px;
-  margin-bottom: 20px;
 }
+
+.sd-controls-wrap { margin-bottom: 18px; }
+.sd-controls__session { grid-column: span 2; min-width: 0; }
+.sd-actions { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+.sd-chip {
+  font: inherit;
+  font-size: 0.82rem;
+  color: var(--sd-text);
+  background: var(--sd-panel);
+  border: 1px solid var(--sd-line);
+  border-radius: 999px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: border-color 120ms ease;
+}
+.sd-chip:hover:not(:disabled) { border-color: var(--sd-accent); }
+.sd-chip:focus-visible { outline: 2px solid var(--sd-accent); outline-offset: 2px; }
+.sd-chip:disabled { opacity: 0.5; cursor: default; }
+.sd-board-head { display: flex; justify-content: flex-end; margin-bottom: 8px; }
+.sd-summary--three { grid-template-columns: 1fr 1fr 1fr; }
+.sd-summary--three .sd-notes { grid-column: 1 / -1; }
+
+/* Chart tabs: phones only */
+.sd-tabs { display: none; }
 
 /* Dropdowns */
 .sd-dd { position: relative; display: flex; flex-direction: column; gap: 4px; min-width: 0; }
@@ -205,6 +228,31 @@
 .sd-axis { color: var(--sd-muted); font-size: 0.8rem; text-align: center; margin: 4px 0 0; }
 .sd-footnote { color: var(--sd-muted); font-size: 0.8rem; margin-top: 20px; max-width: 760px; }
 
+/* Loading progress + skeletons */
+.sd-steps { list-style: none; margin: 0 0 14px; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 0.85rem; color: var(--sd-muted); }
+.sd-steps__item { display: flex; align-items: center; gap: 8px; }
+.sd-steps__icon { width: 16px; height: 16px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 700; flex: none; }
+.sd-steps__item.is-ready .sd-steps__icon { background: rgba(46, 160, 67, 0.18); color: rgb(46, 160, 67); }
+.sd-steps__item.is-loading .sd-steps__icon { border: 2px solid var(--sd-line); border-top-color: var(--sd-accent); animation: sd-spin 0.8s linear infinite; }
+.sd-steps__item.is-loading { color: var(--sd-text); }
+.sd-steps__item.is-error { color: var(--sd-error); }
+.sd-steps__item.is-error .sd-steps__icon { background: var(--sd-error); color: var(--sd-bg); }
+@keyframes sd-spin { to { transform: rotate(360deg); } }
+
+.sd-skeleton__row { display: grid; grid-template-columns: 1fr 1fr 1.4fr; gap: 12px; margin-bottom: 16px; }
+.sd-skel {
+  border-radius: 8px;
+  background: linear-gradient(90deg, var(--sd-panel) 0%, var(--sd-line) 50%, var(--sd-panel) 100%);
+  background-size: 200% 100%;
+  animation: sd-shimmer 1.3s ease-in-out infinite;
+}
+.sd-skel--card { height: 110px; }
+.sd-skel--map { aspect-ratio: 1; }
+@keyframes sd-shimmer { from { background-position: 100% 0; } to { background-position: -100% 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .sd-skel, .sd-steps__item.is-loading .sd-steps__icon { animation: none; }
+}
+
 /* Session pace (lap times, tyres, pits) */
 .sd-race { background: var(--sd-panel); border-radius: 8px; padding: 12px 14px; margin-bottom: 16px; }
 .sd-race__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
@@ -244,12 +292,46 @@
 @media (max-width: 900px) {
   .sd-controls { grid-template-columns: 1fr 1fr; }
   .sd-summary { grid-template-columns: 1fr 1fr; }
+  .sd-skeleton__row { grid-template-columns: 1fr 1fr; }
   .sd-notes { grid-column: 1 / -1; }
   .sd-board { grid-template-columns: 1fr; }
   .sd-map { position: static; max-width: 420px; margin: 0 auto; width: 100%; }
 }
 
+@media (max-width: 640px) {
+  .sd-tabs {
+    display: flex;
+    gap: 4px;
+    overflow-x: auto;
+    padding: 4px;
+    background: var(--sd-panel);
+    border-radius: 10px;
+    position: sticky;
+    top: 84px;
+    z-index: 5;
+  }
+  .sd-tabs__tab {
+    flex: 1 0 auto;
+    font: inherit;
+    font-size: 0.85rem;
+    color: var(--sd-muted);
+    background: transparent;
+    border: none;
+    border-radius: 7px;
+    padding: 7px 10px;
+    cursor: pointer;
+  }
+  .sd-tabs__tab.is-active { background: var(--sd-bg); color: var(--sd-text); font-weight: 600; box-shadow: 0 1px 3px rgba(15, 15, 15, 0.12); }
+  .sd-charts:not([data-tab='gap']) [data-chart='gap'],
+  .sd-charts:not([data-tab='speed']) [data-chart='speed'],
+  .sd-charts:not([data-tab='throttle']) [data-chart='throttle'],
+  .sd-charts:not([data-tab='brake']) [data-chart='brake'],
+  .sd-charts:not([data-tab='gear']) [data-chart='gear'] { display: none; }
+  .sd-charts__item .sd-chart__svg { height: 220px !important; }
+}
+
 @media (max-width: 520px) {
   .sd { padding: 24px 16px 48px; }
-  .sd-controls, .sd-summary { grid-template-columns: 1fr; }
+  .sd-controls { grid-template-columns: 1fr 1fr; }
+  .sd-summary, .sd-summary--three, .sd-skeleton__row { grid-template-columns: 1fr; }
 }

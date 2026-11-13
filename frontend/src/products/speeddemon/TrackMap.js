@@ -7,7 +7,7 @@ const MARGIN = 24;
  * Racing line from driver A's lap, coloured by who was quicker in each
  * mini-sector. Dots show both cars at the hovered point of the lap.
  */
-export default function TrackMap({ cmp, sectors, corners = [], colors, names, hoverIndex }) {
+export default function TrackMap({ cmp, cmpC = null, sectors, corners = [], colors, names, hoverIndex }) {
   const { points, toView } = useMemo(() => {
     const pts = cmp.a.map((p) => ({ x: p.x, y: p.y }));
     const xs = pts.map((p) => p.x);
@@ -26,11 +26,13 @@ export default function TrackMap({ cmp, sectors, corners = [], colors, names, ho
   const dot = (grid) => (hoverIndex == null || grid[hoverIndex].x == null ? null : toView(grid[hoverIndex]));
   const dotA = dot(cmp.a);
   const dotB = dot(cmp.b);
-  const won = { a: sectors.filter((s) => s.winner === 'a').length, b: sectors.filter((s) => s.winner === 'b').length };
+  const dotC = cmpC ? dot(cmpC.b) : null;
+  const sides = Object.keys(names).filter((k) => names[k]);
+  const won = Object.fromEntries(sides.map((k) => [k, sectors.filter((s) => s.winner === k).length]));
 
   return (
     <figure className="sd-map">
-      <svg viewBox={`0 0 ${SIZE} ${SIZE}`} role="img" aria-label={`Track map: ${names.a} faster in ${won.a} of ${sectors.length} mini-sectors, ${names.b} in ${won.b}`}>
+      <svg viewBox={`0 0 ${SIZE} ${SIZE}`} role="img" aria-label={`Track map, quickest driver per mini-sector: ${sides.map((k) => `${names[k]} ${won[k]}`).join(', ')} of ${sectors.length}`}>
         <path className="sd-map__base" d={segment(0, points.length - 1)} />
         {sectors.map((s) => (
           <path key={s.from} d={segment(s.from, s.to)} stroke={colors[s.winner]} className="sd-map__sector" />
@@ -45,12 +47,14 @@ export default function TrackMap({ cmp, sectors, corners = [], colors, names, ho
           );
         })}
         <circle className="sd-map__start" cx={points[0].x} cy={points[0].y} r="6" />
+        {dotC && <circle cx={dotC.x} cy={dotC.y} r="8" fill={colors.c} className="sd-map__car" />}
         {dotB && <circle cx={dotB.x} cy={dotB.y} r="8" fill={colors.b} className="sd-map__car" />}
         {dotA && <circle cx={dotA.x} cy={dotA.y} r="8" fill={colors.a} className="sd-map__car" />}
       </svg>
       <figcaption className="sd-map__legend">
-        <span><i style={{ background: colors.a }} />{names.a} quicker ({won.a})</span>
-        <span><i style={{ background: colors.b }} />{names.b} quicker ({won.b})</span>
+        {sides.map((k) => (
+          <span key={k}><i style={{ background: colors[k] }} />{names[k]} quickest ({won[k]})</span>
+        ))}
         <span><i className="sd-map__legend-start" />Start / finish</span>
       </figcaption>
     </figure>

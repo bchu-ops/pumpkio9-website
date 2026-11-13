@@ -1,4 +1,4 @@
-const FALLBACK = { a: '#2383e2', b: '#e2554f' };
+const FALLBACK = { a: '#2383e2', b: '#e2554f', c: '#2ea043' };
 
 const hex = (c) => (c && /^[0-9a-f]{6}$/i.test(c) ? `#${c.toLowerCase()}` : null);
 
@@ -12,10 +12,17 @@ export function lighten(color, amount) {
   return `#${((r << 16) | (g << 8) | b).toString(16).padStart(6, '0')}`;
 }
 
-/** Team colours for both drivers; teammates get a lighter shade for B. */
-export function driverColors(teamA, teamB) {
+/**
+ * Team colours per driver; a teammate gets a lighter shade so lines stay
+ * distinct. The third driver is optional.
+ */
+export function driverColors(teamA, teamB, teamC) {
   const a = hex(teamA) || FALLBACK.a;
   let b = hex(teamB) || FALLBACK.b;
-  if (a === b) b = lighten(b, 0.55);
-  return { a, b };
+  if (b === a) b = lighten(b, 0.55);
+  if (teamC === undefined) return { a, b };
+  let c = hex(teamC) || FALLBACK.c;
+  if (c === a || c === b) c = lighten(c, 0.3);
+  if (c === a || c === b) c = FALLBACK.c;
+  return { a, b, c };
 }
