@@ -1,5 +1,5 @@
 import React from 'react';
-import { enthalpy } from './units';
+import { enthalpy } from './lib/units';
 
 const f = (v, d = 1) => (Number.isFinite(v) ? v.toFixed(d) : '—');
 

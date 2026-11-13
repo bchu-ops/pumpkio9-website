@@ -1,6 +1,6 @@
 # Research: Thermodynamics for the controls lab (2026-11-13)
 
-Companion to `docs/products/2026-11-09-controls-cfd-handoff.md`. Goal: replace black-box transfer functions with physics-based process models where it adds teaching value.
+Companion to `docs/products/2026-11-09-process-lab.md`. Goal: replace black-box transfer functions with physics-based process models where it adds teaching value.
 
 ## Questions
 1. Which thermodynamic models fit the site (browser-only) and Brian's lab work?

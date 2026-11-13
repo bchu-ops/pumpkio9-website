@@ -1,22 +1,22 @@
 import React, { useState } from 'react';
 import LoopLab from './LoopLab';
-import ProcessBuilder from './builder/ProcessBuilder';
-import './controls.css';
+import ThermoBuilder from './ThermoBuilder';
+import './ProcessLab.css';
 
 const TABS = [
   { id: 'loop', label: 'Loop Lab', Body: LoopLab },
-  { id: 'builder', label: 'Thermo & Materials', Body: ProcessBuilder },
+  { id: 'builder', label: 'Thermo & Materials', Body: ThermoBuilder },
 ];
 
-/** Product page: header plus tabs. Each tab is an independent tool. */
-export default function ProductPage() {
+/** Process Lab: header plus tabs. Each tab is an independent tool. */
+export default function ProcessLab() {
   const [tab, setTab] = useState(TABS[0].id);
   const { Body } = TABS.find((t) => t.id === tab);
   return (
     <div className="cl-shell">
       <main className="cl-page">
         <header className="cl-header">
-          <h1 className="cl-title">Process Control Lab</h1>
+          <h1 className="cl-title">Process Lab</h1>
           <p className="cl-cred">Built by a chemical engineer (M.S. ChemE). Control theory, thermodynamics and materials in one place. Every model cites its source and is unit-tested against a known answer.</p>
         </header>
         <div className="cl-tabs" role="tablist" aria-label="Tools">

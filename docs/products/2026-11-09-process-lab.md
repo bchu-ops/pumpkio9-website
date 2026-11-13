@@ -1,6 +1,20 @@
-# Handoff: Controls / CFD simulator + valves learning tool
+# Process Lab: control theory, thermodynamics and materials
 
-Status: building. Loop Lab + Process Builder (B1–B3) running locally 2026-11-13; see slices below.
+Status: v2 at `/process-lab` (Products → Process Lab). Written 2026-11-09, updated 2026-11-13.
+
+v2 adds: Thermo & Materials tab (block diagram with PID loop blocks, three fluids with phase change, wall and insulation materials, stream table, energy balance).
+
+## What it does
+
+- **Loop Lab tab:** PID control theory sandbox. First-order, second-order and integrating processes with dead time; sliders paired with number inputs; plot of PV/SP/MV; overshoot, rise, settling and IAE readouts; presets for overshoot, tuning, P-only offset, dead time, windup and underdamped processes.
+- **Thermo & Materials tab:** build a process as a block diagram (Source → Valve / Heater / Heat exchanger / Pipe / Tank → Sink) with PID loop blocks. Choose fluids and wall/insulation materials; see stream temperatures and vapor fractions on the diagram, a stream table and a closed energy balance.
+
+## Code
+
+`frontend/src/products/processlab/`: `ProcessLab.js` (page + tabs), `LoopLab.js`, `ThermoBuilder.js` and their components at the top; all models, data and presets in `lib/` with unit tests next to them.
+
+## Original handoff (2026-11-09)
+
 Owner: Brian. Written 2026-11-09.
 
 ## What Brian asked for
@@ -93,8 +107,8 @@ Three modules behind one product page. Each works on its own, so they can ship o
 
 ## Slices (control loop lab)
 
-- [x] 1. Solver core `frontend/src/products/controls/sim/`: RK4, first/second-order/integrating models, dead time, PID, step metrics, Ziegler–Nichols. 13 unit tests, 99% coverage.
-- [x] 2. (preview on localhost 2026-11-13) Page shell on `/Product3`: canvas plot (PV/SP/MV), sliders paired with number inputs for Kc, τI, τD, dead time; Pause/Reset; text readouts. Lazy-loaded, fixed-size skeleton.
+- [x] 1. Solver core `frontend/src/products/processlab/lib/`: RK4, first/second-order/integrating models, dead time, PID, step metrics, Ziegler–Nichols. 13 unit tests, 99% coverage.
+- [x] 2. (preview on localhost 2026-11-13) Page shell (now at `/process-lab`): canvas plot (PV/SP/MV), sliders paired with number inputs for Kc, τI, τD, dead time; Pause/Reset; text readouts. Lazy-loaded, fixed-size skeleton.
 - [ ] 3. Presets (step, disturbance, noisy sensor, unstable) + noise and disturbance inputs.
 - [ ] 4. pH CSTR preset from the paper (needs the paper's fitted K, τ, θ) + link to the paper page.
 - [ ] 5. Tuning helpers: Cohen–Coon and SIMC after their formulas are verified; anti-windup toggle demo.
@@ -104,7 +118,7 @@ Three modules behind one product page. Each works on its own, so they can ship o
 
 Brian: the Loop Lab tab (basic control theory) is good as is. The second tab should focus on thermodynamics and materials, laid out as a block diagram where units and controllers go in series.
 
-Built 2026-11-13 (`frontend/src/products/controls/builder/`, data in `sim/fluids.js` and `sim/materials.js`):
+Built 2026-11-13 (`frontend/src/products/processlab/`, data in `lib/fluids.js` and `lib/materials.js`):
 - **Block diagram (SVG):**
   - Blocks: Source → Valve / Heater / Heat exchanger / Pipe / Tank → Sink.
   - Arrows show T and vapor %.
@@ -131,7 +145,7 @@ Next:
 
 ## Thermodynamics track (research: `docs/research/2026-11-13-thermo-research.md`)
 
-- [x] T1. `sim/thermo.js`: Antoine vapor pressure (NIST water) + Kw(T) table, with tests. (2026-11-13)
+- [x] T1. `lib/thermo.js`: Antoine vapor pressure (NIST water) + Kw(T) table, with tests. (2026-11-13)
 - [ ] T2. pH CSTR physics model (reaction invariants + charge balance) as a loop-lab process; compare with the paper's FOPDT fit.
 - [ ] T3. Heat exchanger: ε-NTU calculator, then lumped dynamic model for temperature control.
 - [ ] T4. Exothermic CSTR: G(T)/R(T) multiplicity plot + jacket temperature PID.

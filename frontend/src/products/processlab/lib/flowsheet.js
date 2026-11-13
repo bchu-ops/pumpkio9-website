@@ -3,8 +3,8 @@
  * Units are stepped in order each dt; a valve directly after a tank is that tank's outlet valve.
  * Returns time series, final streams, per-unit duties and an energy balance [W].
  */
-import { createPid } from '../sim/pid';
-import { FLUIDS } from '../sim/fluids';
+import { createPid } from './pid';
+import { FLUIDS } from './fluids';
 import {
   HEATER_LAG, PIPE_CELLS, boilT, defaultParams, enthalpy, heaterOut, hxOut, pipeUA, tankOutflow, tankUA,
 } from './units';

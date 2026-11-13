@@ -44,7 +44,7 @@ function Navbar({ topRef, bottomRef }) {
 			items: [
 				{ name: "Speed Demon", path: "/speed-demon" },
 				{ name: "Product 2", path: "/Product2" },
-				{ name: "Product 3", path: "/Product3" }
+				{ name: "Process Lab", path: "/process-lab" }
 			],
 		}
 		/*,	// if want to add another dropdown menu, uncomment this
@@ -143,7 +143,7 @@ function Navbar({ topRef, bottomRef }) {
 							<Link
 								to={item.path}
 								className="dropdown-item"
-								onClick={[closeMobileMenu]}
+								onClick={closeMobileMenu}
 							>
 								{item.name}
 							</Link>

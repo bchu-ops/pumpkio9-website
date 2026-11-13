@@ -1,12 +1,12 @@
 import React, { useMemo, useRef, useState } from 'react';
-import LoopPlot from '../LoopPlot';
-import ParamSlider from '../ParamSlider';
+import LoopPlot from './LoopPlot';
+import ParamSlider from './ParamSlider';
 import BlockDiagram from './BlockDiagram';
 import { LoopInspector, UnitInspector } from './Inspector';
 import StreamTable from './StreamTable';
-import { BUILDER_PRESETS } from './presets';
-import { simulateFlowsheet } from './flowsheet';
-import { UNIT_TYPES, defaultParams } from './units';
+import { BUILDER_PRESETS } from './lib/thermoPresets';
+import { simulateFlowsheet } from './lib/flowsheet';
+import { UNIT_TYPES, defaultParams } from './lib/units';
 
 const ADDABLE = ['valve', 'heater', 'hx', 'pipe', 'tank'];
 const KINDS = {
@@ -34,7 +34,7 @@ const measurementsOf = (units, names) => units.filter((u) => u.type !== 'sink').
 
 const fmt = (v, d = 2) => (Number.isFinite(v) ? v.toFixed(d) : '—');
 
-export default function ProcessBuilder() {
+export default function ThermoBuilder() {
   const [preset, setPreset] = useState(BUILDER_PRESETS[0]);
   const [units, setUnits] = useState(preset.units);
   const [loops, setLoops] = useState(preset.loops);

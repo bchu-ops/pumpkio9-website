@@ -1,6 +1,6 @@
 import React from 'react';
-import ParamSlider from '../ParamSlider';
-import { UNIT_TYPES } from './units';
+import ParamSlider from './ParamSlider';
+import { UNIT_TYPES } from './lib/units';
 
 function Field({ id, spec, value, disabled, onChange }) {
   if (spec.options) {

@@ -1,4 +1,4 @@
-import { BUILDER_PRESETS } from './presets';
+import { BUILDER_PRESETS } from './thermoPresets';
 import { simulateFlowsheet } from './flowsheet';
 
 const last = (a) => a[a.length - 1];

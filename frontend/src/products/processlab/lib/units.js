@@ -3,10 +3,10 @@
  * Stream: { m: kg/s, T: °C, x: vapor mass fraction, fluid } at 1 atm.
  * Enthalpy reference: saturated-free liquid at 0 °C, h = cp·T + x·hvap (constant cp, hvap).
  */
-import { FLUIDS, WATER } from '../sim/fluids';
-import { H, INSULATION, WALLS } from '../sim/materials';
-import { wallU } from '../sim/heat';
-import { boilingPointC } from '../sim/thermo';
+import { FLUIDS, WATER } from './fluids';
+import { H, INSULATION, WALLS } from './materials';
+import { wallU } from './heat';
+import { boilingPointC } from './thermo';
 
 export const G = 9.80665; // m/s²
 export const P_ATM = 1.01325; // bar

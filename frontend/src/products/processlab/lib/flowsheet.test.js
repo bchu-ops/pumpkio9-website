@@ -1,7 +1,7 @@
 import { simulateFlowsheet } from './flowsheet';
 import { G, PIPE_CELLS, pipeUA, tankUA } from './units';
-import { pipeCellsOutlet } from '../sim/heat';
-import { WATER } from '../sim/fluids';
+import { pipeCellsOutlet } from './heat';
+import { WATER } from './fluids';
 
 const last = (a) => a[a.length - 1];
 const env = { Tamb: 20 };

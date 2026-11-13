@@ -1,6 +1,6 @@
 # Research: Controls / CFD / valves simulator  (2026-11-09)
 
-Companion to `docs/products/2026-11-09-controls-cfd-handoff.md`.
+Companion to `docs/products/2026-11-09-process-lab.md`.
 Status: second pass. Verified 2026-11-09 (fetched): RK4, ideal PID form, derivative-on-PV + filter (Wikipedia gives 3 ≤ N ≤ 10), Ziegler–Nichols ultimate-gain table, FOPDT ODE (APMonitor), second-order overshoot (Wikipedia Step response). Still **unverified**: Cohen–Coon, SIMC, back-calculation Tt, valve sizing, LBM limits, Strouhal range.
 
 ## Questions

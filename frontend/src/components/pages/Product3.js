@@ -1,6 +1,6 @@
-import React from 'react';
-import ProductPage from '../../products/controls/ProductPage';
+import React from 'react'
+import '../../App.css'
 
-export default function Product3() {
-  return <ProductPage />;
+export default function Project3() {
+  return <h1 className='Project3'>Project3</h1>;
 }

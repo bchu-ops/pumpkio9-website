@@ -1,11 +1,11 @@
 import React, { useMemo, useState } from 'react';
 import LoopPlot from './LoopPlot';
 import ParamSlider from './ParamSlider';
-import { DEFAULT_PRESET, PRESETS } from './presets';
-import { createPid } from './sim/pid';
-import { firstOrder, integrating, secondOrder } from './sim/processes';
-import { simulateLoop } from './sim/simulate';
-import { stepMetrics } from './sim/metrics';
+import { DEFAULT_PRESET, PRESETS } from './lib/loopPresets';
+import { createPid } from './lib/pid';
+import { firstOrder, integrating, secondOrder } from './lib/processes';
+import { simulateLoop } from './lib/simulate';
+import { stepMetrics } from './lib/metrics';
 
 const STEPS = 3000;
 

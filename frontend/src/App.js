@@ -11,6 +11,7 @@ const Spotify = lazy(() => import('./components/pages/Spotify'));
 const Interests = lazy(() => import('./components/pages/Interests'));
 const Product1 = lazy(() => import('./components/pages/Product1'));
 const SpeedDemon = lazy(() => import('./products/speeddemon/SpeedDemon'));
+const ProcessLab = lazy(() => import('./products/processlab/ProcessLab'));
 const Product2 = lazy(() => import('./components/pages/Product2'));
 const Product3 = lazy(() => import('./components/pages/Product3'));
 const Projects = lazy(() => import('./components/pages/Projects'));
@@ -36,6 +37,7 @@ function App() {
                 <Route path='/Spotify' element={<Spotify />}/>
                 <Route path="/Projects" element={<Projects />} />
                 <Route path="/speed-demon" element={<SpeedDemon />} />
+                <Route path="/process-lab" element={<ProcessLab />} />
                 <Route path="/Product1" element={<Product1 />} />
                 <Route path="/Product2" element={<Product2 />} />
                 <Route path="/Product3" element={<Product3 />} />

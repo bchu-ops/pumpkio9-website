@@ -1,6 +1,6 @@
-import { FLUIDS, WATER } from '../sim/fluids';
+import { FLUIDS, WATER } from './fluids';
 import { G, enthalpy, fromEnthalpy, heaterOut, hxEffectivenessCounterflow, tankOutflow } from './units';
-import { boilingPointC } from '../sim/thermo';
+import { boilingPointC } from './thermo';
 
 const stream = (T, fluid = WATER, m = 0.1, x = 0) => ({ m, T, x, fluid });
 
