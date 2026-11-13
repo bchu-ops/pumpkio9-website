@@ -1,6 +1,6 @@
 # Handoff: Controls / CFD simulator + valves learning tool
 
-Status: not started. Discovery only, no design approved yet.
+Status: building. Loop Lab + Process Builder (B1–B3) running locally 2026-11-13; see slices below.
 Owner: Brian. Written 2026-11-09.
 
 ## What Brian asked for
@@ -82,3 +82,56 @@ Three modules behind one product page. Each works on its own, so they can ship o
 ## Out of scope for v1
 
 - 3D CFD, turbulence models, user accounts, saving scenarios server-side.
+
+## Decisions (2026-11-09)
+
+- Order: control loop lab → valves → CFD (CFD is the riskiest).
+- No Web Worker for the loop lab; the ODE is cheap on the main thread.
+- PID: ideal (ISA) form, derivative on PV with filter (N = 10), clamping anti-windup. Formulas cited in code.
+- Only formulas verified against a fetched source ship. Unverified ones wait in later slices.
+- Research: `docs/research/2026-11-09-controls-sim-research.md`.
+
+## Slices (control loop lab)
+
+- [x] 1. Solver core `frontend/src/products/controls/sim/`: RK4, first/second-order/integrating models, dead time, PID, step metrics, Ziegler–Nichols. 13 unit tests, 99% coverage.
+- [x] 2. (preview on localhost 2026-11-13) Page shell on `/Product3`: canvas plot (PV/SP/MV), sliders paired with number inputs for Kc, τI, τD, dead time; Pause/Reset; text readouts. Lazy-loaded, fixed-size skeleton.
+- [ ] 3. Presets (step, disturbance, noisy sensor, unstable) + noise and disturbance inputs.
+- [ ] 4. pH CSTR preset from the paper (needs the paper's fitted K, τ, θ) + link to the paper page.
+- [ ] 5. Tuning helpers: Cohen–Coon and SIMC after their formulas are verified; anti-windup toggle demo.
+- [ ] 6. Verify: phone 390 px, Lighthouse a11y 100, no CLS, reduced-motion.
+
+## Thermo & Materials tab (decided 2026-11-13, replaces the card-list Process Builder)
+
+Brian: the Loop Lab tab (basic control theory) is good as is. The second tab should focus on thermodynamics and materials, laid out as a block diagram where units and controllers go in series.
+
+Built 2026-11-13 (`frontend/src/products/controls/builder/`, data in `sim/fluids.js` and `sim/materials.js`):
+- **Block diagram (SVG):**
+  - Blocks: Source → Valve / Heater / Heat exchanger / Pipe / Tank → Sink.
+  - Arrows show T and vapor %.
+  - PID blocks are drawn as dashed PV→PID→MV loops, several allowed.
+  - Add a block after the selected one, move it left or right, or remove it.
+  - The selected block's settings show in a side panel.
+- **Fluids:** water, ethanol and ethylene glycol (NIST/Wikipedia: ρ, cp, Antoine, latent heat). The heater can partially vaporize a stream using enthalpy, so a stream can be two-phase.
+- **Materials:** wall material, thickness and insulation set U through series resistances. Tank and pipe lose heat to ambient. Exchanger plate material sets UA.
+- **Pipe:** 10 mixed cells, giving transport delay plus heat loss.
+- **Stream table:** ṁ, T, vapor fraction, ρ, cp and enthalpy flow. A per-block duty, loss and vent table; the overall energy balance closes (tested).
+- **Scenarios:**
+  - insulation matters
+  - boiling point by fluid
+  - heated tank + PID
+  - exchanger + pipe delay
+  - level + temperature with two loops
+- **Tests:** 46 controls tests, including every scenario's teaching claim.
+
+Next:
+- [ ] Material selection on the heater (element sheath) and a "compare two designs" view.
+- [ ] Pressure network so pumps and valve cavitation (Antoine Pv, FL/FF formula to verify) become possible.
+- [ ] pH CSTR and exothermic CSTR blocks (equations still to verify).
+- [ ] Temperature-dependent properties (cp(T), ρ(T)).
+
+## Thermodynamics track (research: `docs/research/2026-11-13-thermo-research.md`)
+
+- [x] T1. `sim/thermo.js`: Antoine vapor pressure (NIST water) + Kw(T) table, with tests. (2026-11-13)
+- [ ] T2. pH CSTR physics model (reaction invariants + charge balance) as a loop-lab process; compare with the paper's FOPDT fit.
+- [ ] T3. Heat exchanger: ε-NTU calculator, then lumped dynamic model for temperature control.
+- [ ] T4. Exothermic CSTR: G(T)/R(T) multiplicity plot + jacket temperature PID.
