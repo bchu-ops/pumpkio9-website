@@ -6,6 +6,7 @@ import { driverColors } from './lib/colors';
 import LapSummary from './LapSummary';
 import TrackMap from './TrackMap';
 import TraceChart from './TraceChart';
+import Dropdown from './Dropdown';
 import RacePace from './RacePace';
 import CornerNotes from './CornerNotes';
 import { cleanLaps } from './lib/race';
@@ -15,23 +16,25 @@ import './SpeedDemon.css';
 const THIS_YEAR = new Date().getFullYear();
 const YEARS = Array.from({ length: THIS_YEAR - FIRST_YEAR + 1 }, (_, i) => THIS_YEAR - i);
 
-function Select({ label, value, onChange, children, disabled }) {
-  return (
-    <label className="sd-field">
-      <span>{label}</span>
-      <select value={value ?? ''} onChange={(e) => onChange(e.target.value)} disabled={disabled}>
-        {children}
-      </select>
-    </label>
-  );
-}
 
 // Timed laps (with a start time, so telemetry can be fetched) for one driver.
 const lapsFor = (all, driver) => (driver
   ? cleanLaps(all.filter((l) => l.driver_number === driver.driver_number && l.date_start))
   : []);
 
-const lapLabel = (l, best) => `Lap ${l.lap} · ${lapTime(l.time)}${l === best ? ' · fastest' : ''}${l.pitOut ? ' · pit out' : ''}${l.slow ? ' · slow' : ''}`;
+const lapOption = (l, best) => ({
+  value: l.lap,
+  label: `Lap ${l.lap}`,
+  hint: lapTime(l.time),
+  badge: l === best ? 'Fastest' : l.pitOut ? 'Pit out' : l.slow ? 'Slow' : undefined,
+});
+
+const driverOption = (d) => ({
+  value: d.driver_number,
+  label: d.name_acronym,
+  hint: `${d.team_name} · ${lapTime(d.best?.lap_duration)}`,
+  swatch: d.team_colour ? `#${d.team_colour}` : undefined,
+});
 
 function Status({ state, what }) {
   if (state.status === 'loading') return <p className="sd-status" role="status">Loading {what}…</p>;
@@ -88,24 +91,36 @@ export default function SpeedDemon() {
       </header>
 
       <section className="sd-controls" aria-label="Choose a session and drivers">
-        <Select label="Season" value={year} onChange={(v) => update({ year: v, event: null, a: null, b: null, la: null, lb: null })}>
-          {YEARS.map((y) => <option key={y} value={y}>{y}</option>)}
-        </Select>
-        <Select label="Session" value={session?.key} disabled={!sessions.sessions.length} onChange={(v) => update({ event: v, a: null, b: null, la: null, lb: null })}>
-          {sessions.sessions.map((s) => <option key={s.key} value={s.key}>{s.label}</option>)}
-        </Select>
-        <Select label="Driver A" value={driverA?.driver_number} disabled={!withLaps.length} onChange={(v) => update({ a: v, la: null })}>
-          {withLaps.map((d) => <option key={d.driver_number} value={d.driver_number}>{d.name_acronym} · {d.team_name}</option>)}
-        </Select>
-        <Select label={`${names.a || 'A'} lap`} value={lapA?.lap_number} disabled={!lapsA.length} onChange={(v) => update({ la: v })}>
-          {lapsA.map((l) => <option key={l.lap} value={l.lap}>{lapLabel(l, lapsA.find((x) => x.raw === driverA?.best))}</option>)}
-        </Select>
-        <Select label="Driver B" value={driverB?.driver_number} disabled={!withLaps.length} onChange={(v) => update({ b: v, lb: null })}>
-          {withLaps.map((d) => <option key={d.driver_number} value={d.driver_number}>{d.name_acronym} · {d.team_name}</option>)}
-        </Select>
-        <Select label={`${names.b || 'B'} lap`} value={lapB?.lap_number} disabled={!lapsB.length} onChange={(v) => update({ lb: v })}>
-          {lapsB.map((l) => <option key={l.lap} value={l.lap}>{lapLabel(l, lapsB.find((x) => x.raw === driverB?.best))}</option>)}
-        </Select>
+        <Dropdown
+          label="Season" value={year}
+          options={YEARS.map((y) => ({ value: y, label: String(y) }))}
+          onChange={(v) => update({ year: v, event: null, a: null, b: null, la: null, lb: null })}
+        />
+        <Dropdown
+          label="Session" value={session?.key} searchable disabled={!sessions.sessions.length}
+          options={sessions.sessions.map((s) => ({ value: s.key, label: s.meeting, hint: s.name }))}
+          onChange={(v) => update({ event: v, a: null, b: null, la: null, lb: null })}
+        />
+        <Dropdown
+          label="Driver A" value={driverA?.driver_number} searchable disabled={!withLaps.length}
+          options={withLaps.map(driverOption)}
+          onChange={(v) => update({ a: v, la: null })}
+        />
+        <Dropdown
+          label={`${names.a || 'A'} lap`} value={lapA?.lap_number} searchable disabled={!lapsA.length}
+          options={lapsA.map((l) => lapOption(l, lapsA.find((x) => x.raw === driverA?.best)))}
+          onChange={(v) => update({ la: v })}
+        />
+        <Dropdown
+          label="Driver B" value={driverB?.driver_number} searchable disabled={!withLaps.length}
+          options={withLaps.map(driverOption)}
+          onChange={(v) => update({ b: v, lb: null })}
+        />
+        <Dropdown
+          label={`${names.b || 'B'} lap`} value={lapB?.lap_number} searchable disabled={!lapsB.length}
+          options={lapsB.map((l) => lapOption(l, lapsB.find((x) => x.raw === driverB?.best)))}
+          onChange={(v) => update({ lb: v })}
+        />
       </section>
 
       <Status state={sessions} what="sessions" />
