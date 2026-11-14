@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+spec:
+  # LoadBalancer type works on both Cloud (GKE/EKS) and Docker Desktop
+  # On Docker Desktop, this maps your app to http://localhost:80
+  type: LoadBalancer 
+  selector:
+    app: backend-app  # MUST match the labels in k8s-deployment.yml
+  ports:
+    - protocol: TCP
+      port: 80          # The port you type in your browser
+      targetPort: 8000  # The port your FastAPI/Python app listens on
