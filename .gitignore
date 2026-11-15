@@ -1,0 +1,27 @@
+# Repo-wide ignores (frontend/ and backend/automations/ have their own too)
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+
+# Node
+node_modules/
+
+# Secrets (keep .env.example)
+.env
+.env.*
+!.env.example
+
+# Local Claude Code settings
+.claude/settings.local.json

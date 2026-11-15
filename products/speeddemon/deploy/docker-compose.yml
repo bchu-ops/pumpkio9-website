@@ -19,24 +19,6 @@ services:
       - DEBUG=True
     # Bind mounts provide instant file syncing, no watch mode needed
   
-  # React UI: Vite-based Hot Reload
-  frontend:
-    build:
-      context: ..
-      dockerfile: deploy/Dockerfile.frontend
-    container_name: speeddemon_frontend
-    ports:
-      - "3000:3000"
-    volumes:
-      - ../frontend:/app
-      # Exclude node_modules from mount to avoid platform conflicts
-      - /app/node_modules
-    depends_on:
-      - backend
-    # Install dependencies on startup to ensure Linux-compatible binaries
-    command: sh -c "npm install && npm run dev"
-    # Bind mount already syncs files, no watch needed
-
   # ML Notebook: Research lab using the backend environment
   notebook:
     build:

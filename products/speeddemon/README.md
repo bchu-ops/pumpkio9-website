@@ -1,6 +1,8 @@
 # SpeedDemon
 Files and Process of Building a Kart, paired with optimizing laptimes using OpenAI Groq Chatbot and PostgreSQL
 
+> Part of [pumpkio9-website](../../README.md) (merged from the archived github.com/bchu-ops/speeddemon). The Speed Demon web page is `web/` here and is built and deployed by the site (`frontend/`), at https://bchu-ops.github.io/pumpkio9-website/speed-demon. This folder holds the backend, data pipeline, deploy files and docs.
+
 
 **Target Customers:**  
 **Project Focus:** 
@@ -15,9 +17,9 @@ First, run the setup script to configure your environment:
 
 This script will:
 
-- Check prerequisites (Docker, Node.js, Python, uv)
+- Check prerequisites (Docker, Python, uv)
 - Create environment files for all services
-- Set up dependencies for frontend and backend
+- Set up backend dependencies
 - Validate the complete setup
 
 Next, add your OpenAI API key:
@@ -43,17 +45,7 @@ make up
 
 ```
 Project/
-├── frontend/                # React + Vite + JavaScript (UI)
-│   ├── src/
-│   │   ├── components/      # React components (Header, Footer)
-│   │   ├── pages/           # Page components (Home)
-│   │   ├── services/        # API client
-│   │   ├── App.jsx          # Main application
-│   │   └── main.jsx         # React entry point
-│   ├── reports/             # Reports directory
-│   ├── package.json
-│   ├── vite.config.js
-│   └── index.html
+├── web/                     # Speed Demon page (React), built by the site's frontend/
 ├── backend/
 │   ├── src/
 │   │   ├── data_pipeline/  # ETL pipeline (extract, load, transform)
@@ -71,10 +63,8 @@ Project/
 ├── deploy/
 │   ├── docker-compose.yml   # Service orchestration
 │   ├── Dockerfile.backend   # Backend Docker image
-│   ├── Dockerfile.frontend  # Frontend Docker image
 │   ├── k8s-deployment.yml   # Kubernetes deployment
 │   └── k8s-service.yml      # Kubernetes service
-├── .github/workflows/       # CI/CD pipelines
 ├── docs/                    # Documentation
 ├── Makefile                 # Project management commands
 ├── setup.sh                 # Automated setup script
@@ -84,11 +74,11 @@ Project/
 
 ## 🛠️ Development Commands
 
-The project includes a comprehensive **Master Makefile** at the root for easy management across **ELT, ML, and Frontend** services:
+The project includes a comprehensive **Master Makefile** at the root for easy management across **ELT, ML, and Notebook** services:
 
 ### Production Commands
 ```bash
-- `make build`          # Build all Docker images (Backend, Frontend, Notebook)
+- `make build`          # Build all Docker images (Backend, Notebook)
 - `make up`             # Start all services in the background
 - `make down`           # Stop all services and remove containers
 - `make restart`        # Restart all services
@@ -99,12 +89,11 @@ The project includes a comprehensive **Master Makefile** at the root for easy ma
 ### Development Commands (with hot reload)
 ```bash
 - `make dev`            # Start all services in development mode (foreground with logs)
-- `make dev [services]` # Start specific services (e.g., `make dev frontend backend`)
+- `make dev [services]` # Start specific services (e.g., `make dev backend notebook`)
 - `make dev-up`         # Start development services in the background
 - `make dev-down`       # Stop development services
 - `make dev-logs`       # View development logs (Backend specifically)
 - `make dev-backend`    # Start only backend (foreground with logs)
-- `make dev-frontend`   # Start only frontend (foreground with logs)
 - `make dev-notebook`   # Start only notebook (foreground with logs)
 ```
 
@@ -116,8 +105,6 @@ The project includes a comprehensive **Master Makefile** at the root for easy ma
 - `make backend-down`    # Stop only the Backend service
 - `make shell`           # Open a terminal inside the running Backend container
 - `make notebook-url`     # Get the Jupyter login URL for ML research
-- `make frontend-shell`  # Open a terminal inside the running Frontend container
-- `make dev-frontend`     # Start only the Frontend service (foreground with logs)
 - `make dev-notebook`     # Start only the Notebook service (foreground with logs)
 ```
 
@@ -146,7 +133,6 @@ make up
 # ═══════════════════════════════════════════════════════════════
 # VIEW YOUR SERVICES AT (LOCAL DEVELOPMENT):
 # ═══════════════════════════════════════════════════════════════
-# FRONTEND (UI):    http://localhost:3000
 # BACKEND (API):    http://localhost:8000
 # NOTEBOOK (ML):    http://localhost:8888
 # ═══════════════════════════════════════════════════════════════
@@ -158,13 +144,12 @@ make up
 make dev
 
 # Services run with hot reload for development
-# Frontend changes auto-reload
+# Backend changes auto-reload
 # Backend changes auto-reload
 
 # ═══════════════════════════════════════════════════════════════
 # VIEW YOUR SERVICES AT (LOCAL DEVELOPMENT):
 # ═══════════════════════════════════════════════════════════════
-# FRONTEND (UI):    http://localhost:3000
 # BACKEND (API):    http://localhost:8000
 # NOTEBOOK (ML):    http://localhost:8888
 # ═══════════════════════════════════════════════════════════════
@@ -181,13 +166,12 @@ make dev-notebook
 # Run ONLY the Backend API and ELT logic (FastAPI)
 make dev-backend
 
-# Run Frontend and Backend together (No Notebook to save RAM)
-make dev frontend backend
+# Run Backend and Notebook together
+make dev backend notebook
 
 # ═══════════════════════════════════════════════════════════════
 # VIEW YOUR SERVICES AT (LOCAL DEVELOPMENT):
 # ═══════════════════════════════════════════════════════════════
-# FRONTEND (UI):    http://localhost:3000
 # BACKEND (API):    http://localhost:8000
 # ═══════════════════════════════════════════════════════════════
 ```
@@ -196,7 +180,6 @@ make dev frontend backend
 
 **Requirements:**
 - Python 3.10+
-- Node.js 20+
 - uv
 - jq
 
@@ -209,74 +192,7 @@ make sync
 uv run python backend/src/main.py
 ```
 
-```bash
-# Frontend
-cd frontend
-npm install
-npm run dev
 
-# ═══════════════════════════════════════════════════════════════
-# VIEW YOUR SERVICES AT (LOCAL DEVELOPMENT):
-# ═══════════════════════════════════════════════════════════════
-# FRONTEND (UI):    http://localhost:3000
-# BACKEND (API):    http://localhost:8000 (if running separately)
-# ═══════════════════════════════════════════════════════════════
-```
-
-## 🔧 Services
-
-The application consists of three main services:
-
-1. **Backend**: Python FastAPI service for data pipeline, ML inference, and API endpoints
-2. **Frontend**: React application for user interface
-3. **Notebook**: Jupyter notebook environment for ML research and experimentation
-
-## ⚙️ Configuration
-
-### Environment Variables
-in .env.example
-
-- `OPENAI_API_KEY` (required)
-- `OPENAI_MODEL` (default: `gpt-5.1`)
-
-## 🔍 Health & Monitoring
-
-### Local Development (Docker)
-```
-═══════════════════════════════════════════════════════════════
-VIEW YOUR SERVICES AT (LOCAL DEVELOPMENT):
-═══════════════════════════════════════════════════════════════
-FRONTEND (UI):    http://localhost:3000
-BACKEND (API):    http://localhost:8000
-NOTEBOOK (ML):    http://localhost:8888
-═══════════════════════════════════════════════════════════════
-```
-
-### Production Deployment (GitHub Pages)
-```
-═══════════════════════════════════════════════════════════════
-VIEW YOUR DEPLOYED WEBSITE (GITHUB PAGES):
-═══════════════════════════════════════════════════════════════
-PRODUCTION SITE:  https://bchu-ops.github.io/speeddemon/
-═══════════════════════════════════════════════════════════════
-```
-*Note: The URL is automatically generated based on your repository name. For this repo, it's `https://bchu-ops.github.io/speeddemon/`*
-
-## 🛠️ Tech Stack
-
-### Frontend
-- React 19 with JavaScript (JSX)
-- Vite for fast development and building
-- Modern CSS with responsive design
-- Component-based architecture
-
-### Backend
-- Python 3.10+ with FastAPI (when implemented)
-- uv for dependency management
-- Pydantic for data validation (when implemented)
-- Data pipeline (ETL) with pandas
-- Machine learning with scikit-learn
-- Docker and Docker Compose for containerization
 
 ### Infrastructure
 - Docker for containerization
@@ -284,7 +200,7 @@ PRODUCTION SITE:  https://bchu-ops.github.io/speeddemon/
 - Makefile for project management
 - Automated setup script for environment configuration
 - Kubernetes deployment files (k8s-deployment.yml, k8s-service.yml)
-- GitHub Pages for frontend deployment (automatic via GitHub Actions)
+- Web page deployed with the site (pumpkio9-website GitHub Pages)
 
 ## 🚀 Deployment & Scaling
 
@@ -319,25 +235,6 @@ make k8s-sync-secrets
 make k8s-deploy
 ```
 
-### GitHub Pages Deployment (Frontend)
-
-The frontend is automatically deployed to GitHub Pages when you push to the `main` branch.
-
-**Deployment URL:**
-```
-═══════════════════════════════════════════════════════════════
-VIEW YOUR DEPLOYED WEBSITE (GITHUB PAGES):
-═══════════════════════════════════════════════════════════════
-PRODUCTION SITE:  https://bchu-ops.github.io/speeddemon/
-═══════════════════════════════════════════════════════════════
-```
-
-**Base Path Configuration:**
-- The frontend automatically uses `/speeddemon/` as the base path for GitHub Pages
-- Configured in `frontend/vite.config.js` - auto-detects repository name
-- Local/Docker development uses `/` (root path)
-- No manual configuration needed - works automatically
-
 ## 🧪 Testing
 
 Run the service integration tests:
@@ -368,17 +265,16 @@ This project is for educational and research purposes.
 
 ### Common Issues
 - **Docker not running:** Start Docker Desktop
-- **Port conflicts:** Check if ports 3000, 8000, 8888 are available
+- **Port conflicts:** Check if ports 8000 and 8888 are available
 - **Environment variables:** Ensure `.env` file is properly configured with `OPENAI_API_KEY`
 - **Dependencies:** Run `./setup.sh` to ensure all dependencies are installed
-- **Frontend not connecting:** Ensure backend is running on port 8000
 
 ### Getting Help
 - Check service logs: `make logs` or `make dev-logs`
 - Verify health endpoints: `make health`
 - Review service-specific READMEs:
   - `backend/README.md`
-  - `frontend/README.md`
+  - `docs/frontend-README.md` (old starter frontend, for reference)
 
 ### Service Status
 

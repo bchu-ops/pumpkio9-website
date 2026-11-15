@@ -8,13 +8,12 @@ K8S_NAME    := app-secrets
 
 # --- Service Names (Matches docker-compose) ---
 BACKEND_NAME  := speeddemon_backend
-FRONTEND_NAME := speeddemon_frontend
 NOTEBOOK_NAME := speeddemon_notebook
 
 # --- Docker Variable ---
 COMPOSE = docker compose -f $(DEPLOY_DIR)/docker-compose.yml
 
-.PHONY: help build up down restart logs clean dev dev-up dev-down dev-logs dev-backend dev-frontend dev-notebook backend-build backend-up backend-down status health sync add test lint shell notebook-url frontend-shell
+.PHONY: help build up down restart logs clean dev dev-up dev-down dev-logs dev-backend dev-notebook backend-build backend-up backend-down status health sync add test lint shell notebook-url
 # --- Help ---
 help: ## Show all available commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
@@ -36,7 +35,7 @@ clean: ## Deep clean: remove containers, images, volumes, and orphans
 	$(COMPOSE) down --rmi all --volumes --remove-orphans
 
 # --- Development Commands ---
-dev: ## Start in development mode (Hot-reload via bind mounts). Usage: make dev [service1] [service2] (e.g., make dev backend frontend)
+dev: ## Start in development mode (Hot-reload via bind mounts). Usage: make dev [service1] [service2] (e.g., make dev backend notebook)
 	$(COMPOSE) up $(filter-out $@,$(MAKECMDGOALS))
 
 dev-up: ## Start development services (detached)
@@ -52,9 +51,6 @@ notebook-url: ## Get the login URL for the Jupyter Notebook container
 shell: ## Open a shell in the Backend (ELT/API) container
 	docker exec -it $(BACKEND_NAME) bash
 
-frontend-shell: ## Open a shell in the Frontend (React) container
-	docker exec -it $(FRONTEND_NAME) bash
-
 # --- Backend Specific Commands ---
 backend-build: ## Build only backend services
 	$(COMPOSE) build backend
@@ -67,19 +63,6 @@ dev-backend: ## Start only backend in development mode (foreground with logs)
 
 backend-down: ## Stop only backend services
 	$(COMPOSE) stop backend
-
-# --- Frontend Specific Commands ---
-frontend-build: ## Build only frontend services
-	$(COMPOSE) build frontend
-
-frontend-up: ## Start only frontend services (detached)
-	$(COMPOSE) up -d frontend
-
-dev-frontend: ## Start only frontend in development mode (foreground with logs)
-	$(COMPOSE) up frontend
-
-frontend-down: ## Stop only frontend services
-	$(COMPOSE) stop frontend
 
 # --- Notebook Specific Commands ---
 notebook-build: ## Build only notebook services
