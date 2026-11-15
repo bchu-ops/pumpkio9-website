@@ -62,7 +62,7 @@ export default function LoopLab() {
               t={run.t}
               summary={summary}
               panels={[
-                { title: 'PV vs SP', series: [{ data: run.sp, color: '--cl-sp', dash: [6, 4] }, { data: run.pv, color: '--cl-pv' }] },
+                { title: 'PV vs SP', series: [{ data: run.sp, color: '--cl-sp', dash: [6, 4], width: 1.25 }, { data: run.pv, color: '--cl-pv', width: 2 }] },
                 { title: 'Controller output (MV)', series: [{ data: run.u, color: '--cl-mv' }] },
               ]}
             />

@@ -1,7 +1,10 @@
 import React, { useMemo, useRef, useState } from 'react';
 import LoopPlot from './LoopPlot';
 import ParamSlider from './ParamSlider';
-import BlockDiagram from './BlockDiagram';
+import BlockDiagram, { MiniSymbol, blockAt, slotAt } from './BlockDiagram';
+import Palette from './Palette';
+import useDrag from './useDrag';
+import { insertUnit, loopFor, moveUnit, removeUnit } from './lib/editFlowsheet';
 import { LoopInspector, UnitInspector } from './Inspector';
 import StreamTable from './StreamTable';
 import { BUILDER_PRESETS } from './lib/thermoPresets';
@@ -15,7 +18,6 @@ const KINDS = {
   q: { label: 'liquid flow', unit: 'L/s', min: 0, max: 20 },
   x: { label: 'vapor fraction', unit: '-', min: 0, max: 1 },
 };
-const ICONS = Object.fromEntries(Object.entries(UNIT_TYPES).map(([k, v]) => [k, v.icon]));
 const LOOP_COLORS = ['--cl-mv', '--cl-sp', '--cl-pv'];
 
 function unitNames(units) {
@@ -64,41 +66,77 @@ export default function ThermoBuilder() {
   const outlet = units[units.length - 2];
   const watchLoop = liveLoops.findIndex((l) => l.enabled && l.pv === watchKey);
 
-  const insertAt = () => {
-    const i = units.findIndex((u) => u.id === selected);
-    return i <= 0 || i >= units.length - 1 ? units.length - 1 : i + 1;
-  };
-  const add = (type) => {
-    const unit = { id: `n${nextId.current++}`, type, params: defaultParams(type) };
-    const at = insertAt();
-    setUnits((us) => [...us.slice(0, at), unit, ...us.slice(at)]);
-    setSelected(unit.id);
-  };
-  const addLoop = () => {
-    const mv = mvUnits[0]?.id ?? null;
-    setLoops((ls) => [...ls, { enabled: true, pv: watchKey, mv, sp: lastOf(watchKey) || 1, Kc: 0.05, tauI: 120, reverse: false }]);
-    setSelected(`loop-${loops.length}`);
-  };
   const selIdx = units.findIndex((u) => u.id === selected);
   const selUnit = units[selIdx];
   const loopIdx = selected?.startsWith('loop-') ? Number(selected.slice(5)) : -1;
-  const movable = selUnit && !UNIT_TYPES[selUnit.type].fixed;
-  const move = (dir) => setUnits((us) => {
-    const j = selIdx + dir;
-    if (j < 1 || j > us.length - 2) return us;
-    const next = [...us];
-    [next[selIdx], next[j]] = [next[j], next[selIdx]];
-    return next;
+
+  // --- Editing: drag from the palette, drag blocks to reorder, drop on the palette to remove ---
+  const svgRef = useRef(null);
+  const paletteRef = useRef(null);
+  const afterSelected = () => (selIdx <= 0 || selIdx >= units.length - 1 ? units.length - 1 : selIdx + 1);
+  const pidTarget = () => (selUnit && selUnit.type !== 'sink' ? selUnit.id : outlet.id);
+  const addUnit = (type, slot) => {
+    const unit = { id: `n${nextId.current++}`, type, params: defaultParams(type) };
+    setUnits((us) => insertUnit(us, unit, slot));
+    setSelected(unit.id);
+  };
+  const addLoopOn = (pvId) => {
+    setLoops((ls) => [...ls, loopFor(units, pvId, lastOf(`${pvId}.T`) || 1)]);
+    setSelected(`loop-${loops.length}`);
+  };
+  const removeId = (id) => {
+    const i = units.findIndex((u) => u.id === id);
+    const out = removeUnit(units, loops, id);
+    setUnits(out.units);
+    setLoops(out.loops);
+    setSelected(units[i - 1]?.id);
+  };
+  const moveBy = (id, dir) => {
+    const i = units.findIndex((u) => u.id === id);
+    setUnits((us) => moveUnit(us, id, dir < 0 ? i - 1 : i + 2));
+  };
+  const within = (el, x, y, pad = 0) => {
+    if (!el) return false;
+    const r = el.getBoundingClientRect();
+    return x >= r.left - pad && x <= r.right + pad && y >= r.top - pad && y <= r.bottom + pad;
+  };
+  const locate = (x, y) => {
+    if (within(paletteRef.current, x, y)) return { zone: 'palette' };
+    const svg = svgRef.current;
+    if (!svg || !within(svg.parentNode, x, y, 24)) return { zone: null };
+    const sx = x - svg.getBoundingClientRect().left;
+    return { zone: 'diagram', slot: slotAt(units.length, sx), block: Math.min(blockAt(units.length, sx), units.length - 2) };
+  };
+  const hintFor = (payload, x, y) => {
+    const at = locate(x, y);
+    if (at.zone !== 'diagram') return null;
+    return payload.kind === 'pid' ? { target: units[at.block].id } : { slot: at.slot };
+  };
+  const { drag, start } = useDrag({
+    onTap: (p) => {
+      if (p.kind === 'add') addUnit(p.type, afterSelected());
+      if (p.kind === 'pid') addLoopOn(pidTarget());
+    },
+    onDrop: (p, x, y) => {
+      const at = locate(x, y);
+      if (p.kind === 'move') {
+        if (at.zone === 'palette') removeId(p.id);
+        if (at.zone === 'diagram') setUnits((us) => moveUnit(us, p.id, at.slot));
+      } else if (at.zone === 'diagram') {
+        if (p.kind === 'pid') addLoopOn(units[at.block].id);
+        else addUnit(p.type, at.slot);
+      }
+    },
   });
-  const removeSel = () => { setUnits((us) => us.filter((u) => u.id !== selected)); setSelected(units[selIdx - 1]?.id); };
+  const hint = drag ? hintFor(drag.payload, drag.x, drag.y) : null;
   const setParam = (k, v) => setUnits((us) => us.map((u) => (u.id === selected ? { ...u, params: { ...u.params, [k]: v } } : u)));
 
   const panels = [
     {
       title: meas.find((m) => m.key === watchKey)?.label ?? '',
       series: [
-        ...(watchLoop >= 0 ? [{ data: s[`loop${watchLoop}.sp`], color: '--cl-sp', dash: [6, 4] }] : []),
-        { data: s[watchKey], color: '--cl-pv' },
+        ...(watchLoop >= 0 ? [{ data: s[`loop${watchLoop}.sp`], color: '--cl-sp', dash: [6, 4], width: 1.25 }] : []),
+        { data: s[watchKey], color: '--cl-pv', width: 2 },
       ],
     },
     liveLoops.some((l) => l.enabled)
@@ -116,15 +154,24 @@ export default function ThermoBuilder() {
       </div>
       <p className="cl-note">{preset.note}</p>
 
-      <BlockDiagram units={units} names={names} icons={ICONS} loops={liveLoops} streams={run.streams} selected={selected} onSelect={setSelected} />
-      <div className="pb-toolbar" role="group" aria-label="Edit diagram">
-        <span className="pb-toolbar-label">Add after selected:</span>
-        {ADDABLE.map((t) => <button key={t} type="button" className="cl-chip" onClick={() => add(t)}>{UNIT_TYPES[t].icon} {UNIT_TYPES[t].label}</button>)}
-        <button type="button" className="cl-chip" onClick={addLoop}>PID loop</button>
-        <span className="pb-toolbar-sep" />
-        <button type="button" className="cl-chip" disabled={!movable || selIdx <= 1} onClick={() => move(-1)} aria-label="Move selected block left">←</button>
-        <button type="button" className="cl-chip" disabled={!movable || selIdx >= units.length - 2} onClick={() => move(1)} aria-label="Move selected block right">→</button>
-        <button type="button" className="cl-chip" disabled={!movable} onClick={removeSel}>Remove</button>
+      <div className={drag ? 'pb-editing is-dragging' : 'pb-editing'}>
+        <Palette
+          ref={paletteRef}
+          types={ADDABLE}
+          removing={drag?.payload.kind === 'move'}
+          armed={drag?.payload.kind === 'move' && within(paletteRef.current, drag.x, drag.y)}
+          onStart={start}
+          onAdd={(p) => (p.kind === 'pid' ? addLoopOn(pidTarget()) : addUnit(p.type, afterSelected()))}
+        />
+        <p className="pb-hint">Drag equipment onto the line, or tap it to add after the selected block. Drag a block along the line to reorder it, or back to the palette to remove it. Drop a PID loop on the block it should measure.</p>
+        <BlockDiagram
+          units={units} names={names} loops={liveLoops} streams={run.streams} selected={selected} onSelect={setSelected}
+          svgRef={svgRef} hint={hint} draggingId={drag?.payload.kind === 'move' ? drag.payload.id : null}
+          onBlockDown={(u) => start({ kind: 'move', id: u.id, type: u.type })} onRemove={removeId} onMove={moveBy}
+        />
+        {drag && (
+          <div className="pb-ghost" style={{ left: drag.x, top: drag.y }} aria-hidden="true"><MiniSymbol type={drag.payload.type} /></div>
+        )}
       </div>
 
       <div className="cl-grid">
@@ -143,7 +190,7 @@ export default function ThermoBuilder() {
         </section>
 
         <section className="cl-controls" aria-label="Selected block settings">
-          {selUnit && <UnitInspector unit={selUnit} name={names[selUnit.id]} controlled={liveLoops.some((l) => l.enabled && l.mv === selUnit.id)} onParam={setParam} />}
+          {selUnit && <UnitInspector unit={selUnit} name={names[selUnit.id]} controlled={liveLoops.some((l) => l.enabled && l.mv === selUnit.id)} onParam={setParam} onRemove={UNIT_TYPES[selUnit.type].fixed ? null : () => removeId(selUnit.id)} />}
           {loopIdx >= 0 && loops[loopIdx] && (
             <LoopInspector
               loop={loops[loopIdx]}

@@ -12,7 +12,10 @@ import RacePace from './RacePace';
 import CornerNotes from './CornerNotes';
 import ShareButton from './ShareButton';
 import { LoadingSteps, SkeletonBoard } from './Loading';
+import useFonts from '../useFonts';
 import './SpeedDemon.css';
+
+const FONTS = 'https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;1,700&family=Barlow:wght@400;500;600&display=swap';
 
 const THIS_YEAR = new Date().getFullYear();
 const YEARS = Array.from({ length: THIS_YEAR - FIRST_YEAR + 1 }, (_, i) => THIS_YEAR - i);
@@ -25,6 +28,7 @@ const lapsFor = (all, driver) => (driver
 const forDriver = (rows, driver) => rows.filter((x) => x.driver_number === driver.driver_number);
 
 export default function SpeedDemon() {
+  useFonts(FONTS);
   const [params, setParams] = useSearchParams();
   const year = Number(params.get('year')) || THIS_YEAR;
   const update = (changes) => {
@@ -70,7 +74,7 @@ export default function SpeedDemon() {
   return (
     <main className="sd">
       <header className="sd-hero">
-        <p className="sd-eyebrow">🏎️ Product · Speed Demon</p>
+        <p className="sd-eyebrow">Product · Speed Demon</p>
         <h1>Lap telemetry explorer</h1>
         <p className="sd-lede">
           Pick any Formula 1 session, up to three drivers and any of their laps (fastest by default). The laps are

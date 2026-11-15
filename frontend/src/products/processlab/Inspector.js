@@ -17,16 +17,17 @@ function Field({ id, spec, value, disabled, onChange }) {
 }
 
 /** Settings for the selected unit block. */
-export function UnitInspector({ unit, name, controlled, onParam }) {
+export function UnitInspector({ unit, name, controlled, onParam, onRemove }) {
   const spec = UNIT_TYPES[unit.type];
   return (
     <>
-      <h2>{spec.icon} {name}</h2>
+      <h2>{name}</h2>
       {spec.params.length === 0 && <p className="pb-empty">Everything reaching the sink leaves the process.</p>}
       {spec.params.map((p) => (
         <Field key={p.key} id={`${unit.id}-${p.key}`} spec={p} value={unit.params[p.key] ?? p.def} disabled={controlled && spec.manual === p.key} onChange={(v) => onParam(p.key, v)} />
       ))}
       {controlled && <p className="pb-empty">Manual {spec.mv} is overridden by a PID loop.</p>}
+      {onRemove && <button type="button" className="cl-reset" onClick={onRemove}>Remove {name}</button>}
     </>
   );
 }
