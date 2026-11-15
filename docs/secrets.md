@@ -17,7 +17,7 @@ For CI, the same names go in GitHub → Settings → Secrets and variables → A
 | `SPOTIFY_CLIENT_SECRET` | **yes** | secret `SPOTIFY_CLIENT_SECRET` | `sync_spotify.py` in `deploy.yml` |
 | `SPOTIFY_REFRESH_TOKEN` | **yes** | secret `SPOTIFY_REFRESH_TOKEN` | `sync_spotify.py` in `deploy.yml` |
 | `SPOTIFY_CLIENT_ID` | no (public) | variable `SPOTIFY_CLIENT_ID` | `sync_spotify.py` in `deploy.yml`, and the site build as `VITE_SPOTIFY_CLIENT_ID` |
-| `VITE_SPOTIFY_CLIENT_ID` | no (public, built into the site) | (from variable `SPOTIFY_CLIENT_ID`) | Spotify page "Invited" tab (invite-only, max 5 accounts) |
+| `VITE_SPOTIFY_CLIENT_ID` | no (public, built into the site) | (from variable `SPOTIFY_CLIENT_ID`) | Spotify page "Invited" tab, shown only via the private /Spotify?invited link (max 5 accounts) |
 | `OPENAI_API_KEY`, `PDF_SERVICE_TOKEN` | **yes** | — | Speed Demon backend (Docker, local only) |
 
 ## Rules

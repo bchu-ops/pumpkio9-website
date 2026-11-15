@@ -90,9 +90,8 @@ function VisitorTab({ state, setState }) {
           </p>
         )}
         <p>
-          Invite only. Spotify limits hobby apps like this one to 5 accounts, and I add each one by hand.
-          If I&apos;ve added yours, log in to see your recently played tracks and favorites. Your data stays
-          in this browser tab and is never sent to my site.
+          This private link is for the few Spotify accounts I&apos;ve added. Log in to see your recently
+          played tracks and favorites. Your data stays in this browser tab and is never sent to my site.
         </p>
         <button type="button" className="sp-button" onClick={login}>Log in with Spotify</button>
       </div>
@@ -111,6 +110,10 @@ export default function SpotifyPage() {
   const location = useLocation();
   const navigate = useNavigate();
   const returningFromLogin = /[?&](code|error)=/.test(location.search);
+  // Spotify only lets invited accounts log in (dev mode, max 5), so the login
+  // tab is not shown publicly: only via the private /Spotify?invited link or
+  // when Spotify sends someone back after logging in.
+  const [inviteMode] = useState(() => returningFromLogin || /[?&]invited\b/.test(location.search));
   const [tab, setTab] = useState(returningFromLogin ? 'you' : 'brian');
   // Drop ?code&state from the address bar and history once handled.
   const clearUrl = useRef(() => {
@@ -124,10 +127,12 @@ export default function SpotifyPage() {
         <h1 className="sp-title">Recent Songs</h1>
         <p className="sp-subtitle">What I've been listening to on Spotify</p>
 
-        <div className="sp-segmented sp-tabs" role="group" aria-label="Whose listening">
-          <button type="button" aria-pressed={tab === 'brian'} onClick={() => setTab('brian')}>Mine</button>
-          <button type="button" aria-pressed={tab === 'you'} onClick={() => setTab('you')}>Invited</button>
-        </div>
+        {inviteMode && (
+          <div className="sp-segmented sp-tabs" role="group" aria-label="Whose listening">
+            <button type="button" aria-pressed={tab === 'brian'} onClick={() => setTab('brian')}>Mine</button>
+            <button type="button" aria-pressed={tab === 'you'} onClick={() => setTab('you')}>Invited</button>
+          </div>
+        )}
 
         {tab === 'brian' ? <BrianTab /> : <VisitorTab state={visitor} setState={setVisitor} />}
       </div>
