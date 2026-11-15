@@ -19,7 +19,9 @@ test('pKw interpolates the table', () => {
   expect(pKw(37.5)).toBeCloseTo((13.99 + 13.26) / 2, 6);
 });
 
-test('vapor pressure is not extrapolated outside the Antoine range', () => {
-  expect(Number.isNaN(vaporPressureBar(25))).toBe(true); // water set is valid 344–373 K
+test('water vapor pressure uses the Antoine set covering T, and is not extrapolated', () => {
+  expect(vaporPressureBar(25)).toBeCloseTo(0.0317, 3); // NIST: 3.17 kPa at 25 °C
+  expect(vaporPressureBar(60)).toBeCloseTo(0.1994, 2); // 19.9 kPa at 60 °C
   expect(vaporPressureBar(90)).toBeGreaterThan(0.6);
+  expect(Number.isNaN(vaporPressureBar(-20))).toBe(true); // below every water set
 });

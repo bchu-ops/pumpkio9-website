@@ -18,6 +18,12 @@ export const FLUIDS = {
   water: {
     id: 'water', name: 'Water', rho: 997.05, cp: 4181.3, hvap: 2258e3, // W1, W1, W3 (40.68 kJ/mol ÷ 18.015 g/mol)
     antoine: { A: 5.08354, B: 1663.125, C: -45.622, tMinK: 344, tMaxK: 373 }, // W2 (Bridgeman & Aldrich 1964; gives 99.99 °C at 1 atm)
+    // Lower-temperature sets from the same NIST page (Bridgeman & Aldrich 1964), for vapor pressure below 344 K.
+    antoineRanges: [
+      { A: 5.40221, B: 1838.675, C: -31.737, tMinK: 273, tMaxK: 303 },
+      { A: 5.20389, B: 1733.926, C: -39.485, tMinK: 304, tMaxK: 333 },
+      { A: 5.0768, B: 1659.793, C: -45.854, tMinK: 334, tMaxK: 363 },
+    ],
   },
   ethanol: {
     id: 'ethanol', name: 'Ethanol', rho: 785.22, cp: 2440, hvap: 837e3, // E3, E2 (÷ 46.068), E1 (38.56 kJ/mol at Tb)

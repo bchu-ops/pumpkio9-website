@@ -48,7 +48,9 @@ export default function TuningRules({ p, onApply }) {
             <tr><th scope="col" className="pb-left">Rule</th><th scope="col">Kc</th><th scope="col">τI [s]</th><th scope="col">τD [s]</th><th scope="col"><span className="sr-only">Apply</span></th></tr>
           </thead>
           <tbody>
-            {rows.map(({ id, name, r, why }) => (
+            {rows.map(({ id, name, r, why }) => {
+              const gains = r ? applicableGains(r) : null;
+              return (
               <tr key={id}>
                 <th scope="row" className="pb-left">{name}<div className="tr-why">{why}</div></th>
                 {r ? (
@@ -57,15 +59,16 @@ export default function TuningRules({ p, onApply }) {
                     <td>{num(r.tauI)}</td>
                     <td>{num(r.tauD)}</td>
                     <td>
-                      <button type="button" className="cl-chip" onClick={() => { const { limited, ...g } = applicableGains(r); onApply(g); }}>Apply</button>
-                      {applicableGains(r).limited && <div className="tr-why">limited to slider range</div>}
+                      <button type="button" className="cl-chip" onClick={() => { const { limited, ...g } = gains; onApply(g); }}>Apply</button>
+                      {gains.limited && <div className="tr-why">limited to slider range</div>}
                     </td>
                   </>
                 ) : (
                   <td colSpan={4} className="pb-left">Needs dead time θ &gt; 0</td>
                 )}
               </tr>
-            ))}
+              );
+            })}
           </tbody>
         </table>
       </div>
