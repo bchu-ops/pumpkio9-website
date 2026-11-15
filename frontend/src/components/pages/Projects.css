@@ -1,0 +1,96 @@
+/* Projects page: same Notion-like palette as the home page cards (Cards.css). */
+.pj-page {
+  --pj-bg: rgb(247, 246, 243);
+  --pj-surface: #ffffff;
+  --pj-text: rgb(55, 53, 47);
+  --pj-muted: rgba(55, 53, 47, 0.65);
+  --pj-line: rgba(55, 53, 47, 0.12);
+  --pj-chip: rgba(55, 53, 47, 0.06);
+  --pj-accent: rgb(35, 131, 226);
+  --pj-shadow: rgba(15, 15, 15, 0.1) 0 0 0 1px, rgba(15, 15, 15, 0.1) 0 2px 4px;
+
+  background: var(--pj-bg);
+  color: var(--pj-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  padding: 3.5rem 16px 4rem;
+  min-height: 100vh;
+}
+@media (prefers-color-scheme: dark) {
+  .pj-page {
+    --pj-bg: #191919;
+    --pj-surface: #252525;
+    --pj-text: #e6e6e3;
+    --pj-muted: rgba(235, 235, 232, 0.68);
+    --pj-line: rgba(255, 255, 255, 0.1);
+    --pj-chip: rgba(255, 255, 255, 0.07);
+    --pj-accent: #6fb1ff;
+    --pj-shadow: rgba(255, 255, 255, 0.08) 0 0 0 1px;
+  }
+}
+/* App.css sets PT Sans on every element; inherit this page's font instead. */
+.pj-page *, .pj-page *::before, .pj-page *::after { font-family: inherit; }
+.pj-page > * { max-width: 1120px; margin-left: auto; margin-right: auto; }
+
+.pj-header h1 { font-size: clamp(2rem, 4vw, 2.6rem); font-weight: 700; margin: 0 0 0.5rem; text-align: left; }
+.pj-header p { margin: 0; max-width: 65ch; color: var(--pj-muted); line-height: 1.55; }
+.pj-jump { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-top: 1rem; font-size: 0.92rem; }
+.pj-jump a { color: var(--pj-muted); text-decoration: underline; text-decoration-color: var(--pj-line); text-underline-offset: 3px; }
+.pj-jump a:hover { color: var(--pj-text); }
+
+.pj-section { margin-top: 2.75rem; scroll-margin-top: 96px; }
+.pj-section h2 { font-size: 1.25rem; font-weight: 600; margin: 0 0 0.9rem; padding-bottom: 0.4rem; border-bottom: 1px solid var(--pj-line); }
+.pj-status { margin-top: 2rem; color: var(--pj-muted); }
+
+/* Live products: three equal columns, each a framed panel with actions. */
+.pj-products { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.pj-product { display: flex; flex-direction: column; background: var(--pj-surface); border-radius: 6px; box-shadow: var(--pj-shadow); padding: 18px 18px 16px; }
+.pj-product-head { display: flex; align-items: center; gap: 10px; }
+.pj-product-head h3 { margin: 0; font-size: 1.1rem; font-weight: 600; }
+.pj-product-icon { font-size: 1.25rem; width: 1.5rem; text-align: center; color: var(--pj-muted); }
+.pj-summary { margin: 0.6rem 0 0.5rem; line-height: 1.5; }
+.pj-points { margin: 0 0 1rem; padding-left: 1.1rem; color: var(--pj-muted); font-size: 0.92rem; line-height: 1.5; flex: 1; list-style: disc; }
+.pj-actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.pj-button {
+  display: inline-flex; align-items: center; min-height: 36px; padding: 0 14px; border-radius: 4px;
+  font-size: 0.9rem; font-weight: 500; text-decoration: none; color: var(--pj-text);
+  border: 1px solid var(--pj-line); background: transparent;
+}
+.pj-button:hover { background: var(--pj-chip); }
+.pj-button-primary { background: var(--pj-text); color: var(--pj-bg); border-color: var(--pj-text); }
+.pj-button-primary:hover { background: var(--pj-text); opacity: 0.88; }
+.pj-button:focus-visible, .pj-card-link:focus-visible, .pj-external:focus-visible, .pj-jump a:focus-visible {
+  outline: 2px solid var(--pj-accent); outline-offset: 2px;
+}
+
+/* Projects and papers: Notion-style gallery cards. */
+.pj-grid { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+.pj-card { display: flex; flex-direction: column; background: var(--pj-surface); border-radius: 6px; box-shadow: var(--pj-shadow); overflow: hidden; }
+.pj-card-link { display: block; color: inherit; text-decoration: none; flex: 1; }
+.pj-card-link:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.pj-cover { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; border-bottom: 1px solid var(--pj-line); }
+.pj-card-body { padding: 12px 14px 4px; }
+.pj-card-body h3 { margin: 0; font-size: 1rem; font-weight: 600; line-height: 1.35; }
+.pj-year { display: inline-block; margin-top: 4px; font-size: 0.8rem; color: var(--pj-muted); font-variant-numeric: tabular-nums; }
+.pj-card-body p { margin: 0.45rem 0 0; font-size: 0.9rem; line-height: 1.5; color: var(--pj-muted); }
+.pj-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 5px; margin: 0; padding: 8px 14px 0; }
+.pj-tags li { font-size: 0.75rem; padding: 2px 7px; border-radius: 3px; background: var(--pj-chip); color: var(--pj-text); }
+.pj-external { margin: 8px 14px 0; font-size: 0.85rem; color: var(--pj-accent); align-self: flex-start; }
+.pj-card > :last-child { margin-bottom: 14px; }
+
+@media (max-width: 900px) {
+  .pj-products { grid-template-columns: 1fr; }
+}
+@media (max-width: 520px) {
+  .pj-page { padding-top: 2.5rem; }
+  .pj-grid { grid-template-columns: 1fr; gap: 10px; }
+  /* Phones: compact rows (square thumbnail + text) instead of tall gallery cards */
+  .pj-card-link { display: grid; grid-template-columns: 96px minmax(0, 1fr); align-items: start; }
+  .pj-card-link.pj-no-cover { display: block; }
+  .pj-cover { width: 84px; height: 84px; aspect-ratio: auto; margin: 12px 0 0 12px; border-radius: 4px; border-bottom: 0; }
+  .pj-card-body { padding: 10px 12px 2px; }
+  .pj-card-body p { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .pj-tags { padding: 8px 12px 0; }
+  .pj-tags li:nth-child(n + 5) { display: none; }
+  .pj-external { margin: 6px 12px 0; }
+  .pj-card > :last-child { margin-bottom: 12px; }
+}
