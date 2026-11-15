@@ -27,20 +27,20 @@ Frontend
 
 	Src
 		- source code
-		-->	App.js
+		-->	App.jsx
 				- general hierachy and routes
 
 		Components
 			HeroSection.js
   				- background video
 
-  			Navbar.js
+  			Navbar.jsx
   				- navigation bar at the top/referencing
 
 			Cards.js
 				- cards section of frontpage
 
-  			Footer.js
+  			Footer.jsx
   				- bottom portion with extra links and resume
 
 			Blocks

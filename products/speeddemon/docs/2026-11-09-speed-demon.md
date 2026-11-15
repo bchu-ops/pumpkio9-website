@@ -1,6 +1,6 @@
 # Speed Demon: lap telemetry explorer
 
-Status: v3 at `/speed-demon` (Products → Speed Demon). Written 2026-11-09, updated 2026-11-13.
+Status: v3 at `/speed-demon` (Products → Speed Demon). Written 2026-11-09, updated 2026-11-15 (timing-screen restyle; site moved to Vite).
 
 v3 adds: snapshot data (first load ~0.6s vs ~10s), loading steps + skeletons, phone chart tabs, optional third driver + teammate button, lap picker, session pace (lap times, tyres, pits), corner-by-corner notes, styled dropdowns, copy-as-image.
 
@@ -19,8 +19,8 @@ It defaults to the most recent finished qualifying session and its two fastest d
 
 | Layer | v1 (shipped) | Later |
 |---|---|---|
-| Hosting | GitHub Pages, static React (CRA). Route lazy-loaded so the home page doesn't pay for it | — |
-| Data | Static snapshot first: `backend/automations/scripts/prefetch-f1.mjs` runs in the deploy workflow, caching the latest 2 race weekends (Qualifying + Race: drivers, laps, stints, pits, every driver's fastest-lap telemetry, ~1.1 MB per weekend) into `public/f1` (not committed). Daily scheduled deploy + `actions/cache` keyed by date, so pushes reuse the day's snapshot. Anything else falls back to the live [OpenF1](https://openf1.org) API from the browser (free, no key, CORS `*`). $0 total | Live race weekends need OpenF1's paid tier or our own feed |
+| Hosting | GitHub Pages, static React (Vite). Page lives in `products/speeddemon/web`, lazy-loaded so the home page doesn't pay for it | — |
+| Data | Static snapshot first: `backend/automations/scripts/prefetch-f1.mjs` runs in the deploy workflow, caching the latest 2 race weekends (Qualifying + Race: drivers, laps, stints, pits, every driver's fastest-lap telemetry, ~1.1 MB per weekend) into `public/f1` (not committed). Hourly scheduled deploy + `actions/cache` keyed by date, so OpenF1 is fetched once a day and other runs reuse that day's snapshot. Anything else falls back to the live [OpenF1](https://openf1.org) API from the browser (free, no key, CORS `*`). $0 total | Live race weekends need OpenF1's paid tier or our own feed |
 | Client | `lib/openf1.js`: max 2 requests at once, retry once on 429/5xx, memory + sessionStorage cache, rejects non-list responses | — |
 | Analysis | `lib/telemetry.js`: pure functions, unit-tested | — |
 | Charts | Hand-rolled SVG (no chart library) | — |

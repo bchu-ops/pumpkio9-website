@@ -1,3 +1,5 @@
+> Describes the original standalone speeddemon repo. Its starter `frontend/` was removed when it moved into pumpkio9-website; the Speed Demon page now lives in `products/speeddemon/web/`.
+
 # In-depth File Structure
 ```text
 SpeedDemon/
