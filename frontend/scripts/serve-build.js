@@ -10,6 +10,7 @@ const PORT = Number(process.env.PORT) || 5055;
 const TYPES = {
   '.html': 'text/html',
   '.js': 'application/javascript',
+  '.mjs': 'application/javascript',
   '.css': 'text/css',
   '.json': 'application/json',
   '.png': 'image/png',

@@ -172,14 +172,20 @@
   display: block;
 }
 
-/* Invisible, selectable text over each page (pdf.js 2.x text layer) */
+/* Invisible, selectable text over each page (pdf.js 6 text layer; rules from pdfjs-dist/web/pdf_viewer.css) */
 .chrome-pdf-page .textLayer {
   position: absolute;
   inset: 0;
-  overflow: hidden;
+  overflow: clip;
   line-height: 1;
+  text-align: initial;
   text-size-adjust: none;
   forced-color-adjust: none;
+  transform-origin: 0 0;
+  z-index: 0;
+  --min-font-size: 1;
+  --text-scale-factor: calc(var(--total-scale-factor) * var(--min-font-size));
+  --min-font-size-inv: calc(1 / var(--min-font-size));
 }
 
 .chrome-pdf-page .textLayer span,
@@ -189,6 +195,20 @@
   white-space: pre;
   cursor: text;
   transform-origin: 0% 0%;
+}
+
+.chrome-pdf-page .textLayer > :not(.markedContent),
+.chrome-pdf-page .textLayer .markedContent span:not(.markedContent) {
+  z-index: 1;
+  --font-height: 0;
+  font-size: calc(var(--text-scale-factor) * var(--font-height));
+  --scale-x: 1;
+  --rotate: 0deg;
+  transform: rotate(var(--rotate)) scaleX(var(--scale-x)) scale(var(--min-font-size-inv));
+}
+
+.chrome-pdf-page .textLayer .markedContent {
+  display: contents;
 }
 
 .chrome-pdf-page .textLayer ::selection {
