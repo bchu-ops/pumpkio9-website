@@ -1,0 +1,45 @@
+name: CI
+
+# Runs on every PR into dev (feature branches) and on each push to dev.
+# promote.yml also calls it before fast-forwarding main. Merge only when green.
+on:
+  pull_request:
+    branches: [dev, main]
+  push:
+    branches: [dev]
+  workflow_call:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  web:
+    name: Site + product pages (lint, test, build)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+      - run: npm ci
+      - run: npm run lint
+      - run: npm test
+      - run: npm run build
+
+  automations:
+    name: Automations (pytest)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./backend/automations
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv run --group dev pytest -q

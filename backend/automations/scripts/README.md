@@ -1,11 +1,13 @@
 # Automation Scripts
 
-Two scripts that bridge Notion and the portfolio website:
+Scripts that feed the portfolio website:
 
 | Script | Direction | Purpose |
 |--------|-----------|---------|
 | `sync_notion.py` | Notion → Website | Pulls Notion page content as static JSON for react-notion-x |
 | `pdf_to_notion/` | PDF → Notion | Parses resume PDFs and creates database entries in 3 Notion databases |
+| `sync_spotify.py` | Spotify → Website | Hourly listening snapshot into `frontend/public/spotify/` (workflow `sync-spotify.yml`) |
+| `prefetch-f1.mjs` | OpenF1 → Website | Speed Demon data snapshot into `frontend/public/f1/`, run by the deploy workflow (`node scripts/prefetch-f1.mjs --meetings 2`) |
 
 **Typical flow:** Edit resume PDF → `pdf_to_notion` → clean up in Notion → `sync_notion.py` → deploy
 

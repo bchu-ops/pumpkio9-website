@@ -32,7 +32,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '20'
+          node-version: '22'  # Vite 8 needs Node 20.19+ / 22.12+
 
       # 3. Navigate to frontend folder
       - name: Install frontend dependencies
@@ -56,21 +56,26 @@ jobs:
       # the site falls back to the live API for anything not cached.
       - name: Prefetch F1 snapshot
         if: steps.f1cache.outputs.cache-hit != 'true'
-        working-directory: ./frontend
+        working-directory: ./backend/automations
         continue-on-error: true
         timeout-minutes: 15
         run: node scripts/prefetch-f1.mjs --meetings 2
 
-      # 4. Build frontend
+      # 4. Lint and test (site + products/*/web)
+      - name: Lint and test
+        working-directory: ./frontend
+        run: npm run lint && npm test
+
+      # 5. Build frontend (Vite; imports product pages from ../products)
       - name: Build frontend
         working-directory: ./frontend
         env:
           # Public by design (PKCE login needs no secret). Set under
           # Settings > Secrets and variables > Actions > Variables.
-          REACT_APP_SPOTIFY_CLIENT_ID: ${{ vars.SPOTIFY_CLIENT_ID }}
+          VITE_SPOTIFY_CLIENT_ID: ${{ vars.SPOTIFY_CLIENT_ID }}
         run: npm run build
 
-      # 5. Upload build output as artifact
+      # 6. Upload build output as artifact
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
