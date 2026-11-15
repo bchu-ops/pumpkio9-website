@@ -1,6 +1,9 @@
 import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
-import * as pdfjsLib from 'pdfjs-dist';
-import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
+// Legacy build: same API, but bundles fallbacks (core-js) for newer JS the modern build
+// needs (Map.getOrInsertComputed, Math.sumPrecise, Uint8Array.fromBase64), so PDFs also
+// open in older Safari/Firefox ESR.
+import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf.mjs';
+import workerUrl from 'pdfjs-dist/legacy/build/pdf.worker.min.mjs?url';
 import PdfPage from './PdfPage';
 import PdfToolbar from './PdfToolbar';
 import './PdfViewer.css';
