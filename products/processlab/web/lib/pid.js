@@ -16,9 +16,11 @@
  * @param {number} [p.N] derivative filter factor
  * @param {number} [p.uMin] [p.uMax] output limits (valve range)
  * @param {boolean} [p.antiWindup]
+ * @param {number} [p.bias] output at zero error (steady-state valve position), so a loop that
+ *   starts at steady state does not kick at t = 0
  */
 export function createPid({
-  Kc, tauI = Infinity, tauD = 0, N = 10, uMin = -Infinity, uMax = Infinity, antiWindup = true,
+  Kc, tauI = Infinity, tauD = 0, N = 10, uMin = -Infinity, uMax = Infinity, antiWindup = true, bias = 0,
 }) {
   let integral = 0;
   let deriv = 0;
@@ -33,7 +35,7 @@ export function createPid({
       }
       pvPrev = pv;
 
-      const unsat = Kc * e + integral + deriv;
+      const unsat = bias + Kc * e + integral + deriv;
       const u = Math.min(uMax, Math.max(uMin, unsat));
       const windingUp = (unsat > uMax && Kc * e > 0) || (unsat < uMin && Kc * e < 0);
       if (Number.isFinite(tauI) && !(antiWindup && windingUp)) {
