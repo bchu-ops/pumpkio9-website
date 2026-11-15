@@ -78,28 +78,28 @@ test('time range switch changes favorites', async () => {
   expect(screen.getByRole('button', { name: 'All time' })).toHaveAttribute('aria-pressed', 'true');
 });
 
-test('Yours tab explains when login is not configured', async () => {
+test('Invited tab explains when login is not configured', async () => {
   renderAt(loadPage(''), '/Spotify');
-  fireEvent.click(screen.getByRole('button', { name: 'Yours' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
   expect(screen.getByText(/isn't set up on this site yet/)).toBeInTheDocument();
 });
 
-test('Yours tab offers login and does not call Spotify until opened', async () => {
+test('Invited tab offers login and does not call Spotify until opened', async () => {
   renderAt(loadPage('cid'), '/Spotify');
   await screen.findByText('Song One');
   expect(global.fetch).toHaveBeenCalledTimes(1);
-  fireEvent.click(screen.getByRole('button', { name: 'Yours' }));
+  fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
   expect(await screen.findByRole('button', { name: 'Log in with Spotify' })).toBeInTheDocument();
 });
 
 test('bad login callback shows error and clears code from URL', async () => {
   renderAt(loadPage('cid'), '/Spotify?code=abc&state=nope');
-  expect(screen.getByRole('button', { name: 'Yours' })).toHaveAttribute('aria-pressed', 'true');
+  expect(screen.getByRole('button', { name: 'Invited' })).toHaveAttribute('aria-pressed', 'true');
   expect(await screen.findByRole('alert')).toHaveTextContent(/did not match/);
   await waitFor(() => expect(lastLocation.search).toBe(''));
 });
 
-test('logged-in visitor not on allowlist sees guest list message', async () => {
+test('logged-in account not on the invite list sees invite-only message', async () => {
   window.sessionStorage.setItem(
     'spotify.tokens',
     JSON.stringify({ accessToken: 'AT', refreshToken: 'RT', expiresAt: NOW + 3_600_000 }),
@@ -110,6 +110,6 @@ test('logged-in visitor not on allowlist sees guest list message', async () => {
       : { ok: true, status: 200, json: async () => DATA },
   );
   renderAt(loadPage('cid'), '/Spotify');
-  fireEvent.click(screen.getByRole('button', { name: 'Yours' }));
-  expect(await screen.findByRole('alert')).toHaveTextContent(/Ask Brian to add yours/);
+  fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
+  expect(await screen.findByRole('alert')).toHaveTextContent(/isn't on the invite list/);
 });
