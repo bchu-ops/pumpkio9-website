@@ -1,1 +1,1 @@
-export { default } from '../../products/spotify/SpotifyPage';
+export { default } from '@products/spotify/web/SpotifyPage';
