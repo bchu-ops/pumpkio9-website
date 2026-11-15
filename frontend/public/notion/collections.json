@@ -156,7 +156,7 @@
       "title": "F1 AI Racing \u2014 Speed Demon",
       "slug": "f1-ai-racing-speed-demon",
       "section": "projects",
-      "link": "https://github.com/bchu-ops/speeddemon",
+      "link": "https://github.com/bchu-ops/pumpkio9-website/tree/main/products/speeddemon",
       "image": "f1.png",
       "tools": "Python, OpenTelemetry, AWS EC2, LangChain, GraphRAG, PySpark, MCP",
       "date": {
