@@ -21,4 +21,4 @@ docs/                site-wide notes
 | Spotify | `/Spotify` | `products/spotify/` |
 | Product 2 | `/Product2` (placeholder) | `products/product2/` |
 
-Commands: see `docs/npm_guide.md`.
+Commands: see `docs/npm_guide.md`. How changes get deployed: `docs/workflow.md` (feature branch → PR → squash into `dev` → Promote to `main`).

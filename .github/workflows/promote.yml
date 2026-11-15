@@ -1,0 +1,46 @@
+name: Promote dev to main
+
+# Release button: Actions > "Promote dev to main" > Run workflow (branch: dev).
+# Runs CI on dev, then fast-forwards main to exactly dev's commits (no merge
+# commit, so dev and main keep the same history), then deploys.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: promote
+  cancel-in-progress: false
+
+jobs:
+  ci:
+    if: github.ref == 'refs/heads/dev'
+    uses: ./.github/workflows/ci.yml
+
+  promote:
+    needs: ci
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+          fetch-depth: 0
+
+      - name: Fast-forward main to dev
+        run: |
+          git fetch origin main
+          if ! git merge-base --is-ancestor origin/main HEAD; then
+            echo "::error::main has commits that dev doesn't. Bring them into dev first (PR main -> dev), then promote again."
+            exit 1
+          fi
+          echo "Promoting $(git rev-list --count origin/main..HEAD) commit(s):"
+          git log --oneline origin/main..HEAD
+          git push origin HEAD:main
+
+      # A push made with GITHUB_TOKEN doesn't trigger other workflows, so start the deploy explicitly.
+      - name: Deploy
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run deploy.yml --ref main
