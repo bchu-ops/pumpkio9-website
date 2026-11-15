@@ -1,6 +1,7 @@
 import React, { useMemo, useState } from 'react';
 import LoopPlot from './LoopPlot';
 import ParamSlider from './ParamSlider';
+import TuningRules from './TuningRules';
 import { DEFAULT_PRESET, PRESETS } from './lib/loopPresets';
 import { createPid } from './lib/pid';
 import { firstOrder, integrating, secondOrder } from './lib/processes';
@@ -102,11 +103,14 @@ export default function LoopLab() {
           </section>
         </div>
 
+        <TuningRules p={p} onApply={(gains) => setP((prev) => ({ ...prev, ...gains }))} />
+
         <details className="cl-details">
           <summary>Equations used</summary>
           <p><strong>Process:</strong> {MODELS[p.model].eq}</p>
           <p><strong>Controller (ideal PID):</strong> u = Kc·[e + (1/τI)∫e dt − τD·dPV/dt]. Derivative acts on PV, filtered with τD/10, so setpoint steps cause no kick.</p>
           <p><strong>Anti-windup:</strong> integration pauses while the valve is saturated and the error would push it further.</p>
+          <p><strong>Tuning rules:</strong> Cohen–Coon (NI LabVIEW and Dataforth AN-123 tables) and SIMC PI (Skogestad, J. Process Control 13, 2003), both for G = K·e^(−θs)/(τs + 1) in ideal PID form.</p>
           <p><strong>Solver:</strong> fixed-step RK4, {STEPS} steps; dead time as a delay buffer.</p>
         </details>
     </>
