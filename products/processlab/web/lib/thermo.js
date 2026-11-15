@@ -3,8 +3,10 @@
  * Sources (verified 2026-11-13):
  * - Water rho, cp at 25 °C, 1 bar: NIST Webbook fluid data
  *   https://webbook.nist.gov/cgi/fluid.cgi?ID=C7732185
- * - Antoine (Stull 1947, 255.9–373 K, P in bar, T in K):
+ * - Antoine constants per fluid in fluids.js (water: Bridgeman & Aldrich 1964, 344–373 K, P in bar, T in K):
  *   https://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&Mask=4
+ *   Each set is only valid inside its tMinK–tMaxK range; vaporPressureBar returns NaN outside it
+ *   rather than silently extrapolating.
  * - pKw vs T: https://en.wikipedia.org/wiki/Self-ionization_of_water
  */
 
@@ -16,8 +18,11 @@ const K0 = 273.15;
 
 /** Vapor pressure [bar] from Antoine: log10(P) = A − B/(T + C), T in K. */
 export function vaporPressureBar(tC, fluid = WATER) {
-  const { A, B, C } = fluid.antoine;
-  return 10 ** (A - B / (tC + K0 + C));
+  const { A, B, C, tMinK, tMaxK } = fluid.antoine;
+  const tK = tC + K0;
+  // Published ranges are rounded to whole kelvin (water's 373 K end means 373.15 K, the normal boiling point).
+  if (tK < tMinK - 0.5 || tK > tMaxK + 0.5) return NaN;
+  return 10 ** (A - B / (tK + C));
 }
 
 /** Boiling point [°C] at pressure P [bar] (Antoine inverted). */

@@ -11,14 +11,22 @@
  */
 export const KW = 1e-14;
 
+/**
+ * [H+] root of h² + x·h − Kw = 0, written to avoid cancellation: for basic solutions (x > 0)
+ * −x + √(x² + 4Kw) subtracts two nearly equal numbers, so use the equivalent 2Kw/(x + √(x² + 4Kw)).
+ */
+export function hydrogenIon(x) {
+  const root = Math.sqrt(x * x + 4 * KW);
+  return x > 0 ? (2 * KW) / (x + root) : (-x + root) / 2;
+}
+
 export function phFromX(x) {
-  const h = (-x + Math.sqrt(x * x + 4 * KW)) / 2;
-  return -Math.log10(h);
+  return -Math.log10(hydrogenIon(x));
 }
 
 /** Slope dpH/dx = 1/(ln10·([H+] + [OH−])): about 5000× larger at pH 7 than at pH 3. */
 export function phSensitivity(x) {
-  const h = (-x + Math.sqrt(x * x + 4 * KW)) / 2;
+  const h = hydrogenIon(x);
   return 1 / (Math.LN10 * (h + KW / h));
 }
 

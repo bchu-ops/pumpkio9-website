@@ -4,6 +4,7 @@ import ParamSlider from './ParamSlider';
 import { VALVE_STYLES, inherent, installed, sizeLiquidValve } from './lib/valves';
 
 const OPENINGS = Array.from({ length: 101 }, (_, i) => i / 100);
+const OPENINGS_PCT = OPENINGS.map((x) => x * 100); // stable x-axis so the plot only redraws when N or R change
 const CHARS = [
   { id: 'linear', label: 'Linear', color: '--cl-pv' },
   { id: 'equal', label: 'Equal percentage', color: '--cl-mv' },
@@ -72,7 +73,7 @@ function Characteristics({ v, set }) {
       <h3 className="vl-heading">Inherent vs installed characteristic</h3>
       <div className="cl-grid">
         <div className="cl-figure">
-          <LoopPlot t={OPENINGS.map((x) => x * 100)} panels={panels} xLabel="opening [%]" summary={`Relative flow versus valve opening for linear, equal-percentage and quick-opening valves, alone and installed with authority ${v.N}.`} />
+          <LoopPlot t={OPENINGS_PCT} panels={panels} xLabel="opening [%]" summary={`Relative flow versus valve opening for linear, equal-percentage and quick-opening valves, alone and installed with authority ${v.N}.`} />
           <ul className="cl-legend" aria-hidden="true">
             <li><span className="sw sw-pv" />Linear</li>
             <li><span className="sw sw-mv" />Equal percentage</li>

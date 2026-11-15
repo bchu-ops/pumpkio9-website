@@ -48,3 +48,9 @@ test('installed characteristic: N = 1 is inherent, low authority pushes flow up'
   expect(installed(inherent('equal', 0.75), 0.2)).toBeCloseTo(0.67203, 5); // 0.37606 / √(0.2 + 0.8·0.37606²)
   expect(installed(0, 0.3)).toBe(0);
 });
+
+test('vapor pressure at or above inlet pressure is rejected instead of giving NaN', () => {
+  const r = sizeLiquidValve({ q: 50, P1: 1, P2: 0.5, Pv: 2, FL: 0.9 });
+  expect(r.error).toMatch(/Vapor pressure must be below the inlet pressure/);
+  expect(Number.isNaN(r.Kv)).toBe(false);
+});
