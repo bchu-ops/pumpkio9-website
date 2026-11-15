@@ -59,3 +59,10 @@ test('dead-time buffer can start at the steady input', () => {
   const d = createDelay(0.3, 0.1, 300);
   expect([d.push(1), d.push(2), d.push(3), d.push(4)]).toEqual([300, 300, 300, 1]);
 });
+
+test('pH stays accurate for strongly basic and acidic solutions (no cancellation)', () => {
+  expect(phFromX(0.1)).toBeCloseTo(13, 9);
+  expect(phFromX(1)).toBeCloseTo(14, 9);
+  expect(phFromX(-0.1)).toBeCloseTo(1, 9);
+  expect(phSensitivity(0.01)).toBeGreaterThan(0);
+});

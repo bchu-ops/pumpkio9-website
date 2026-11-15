@@ -38,7 +38,9 @@ export const kvFor = ({ q, dP, Gf = 1 }) => q / Math.sqrt(dP / Gf);
 export function sizeLiquidValve({ q, P1, P2, Pv, Gf = 1, FL, Pc = PC_WATER }) {
   const dP = P1 - P2;
   if (!(dP > 0) || !(q >= 0)) return { error: 'Outlet pressure must be below inlet pressure.' };
+  if (!(Pv < P1)) return { error: 'Vapor pressure must be below the inlet pressure: at these conditions the liquid is already boiling at the inlet, so liquid sizing does not apply.' };
   const dPch = chokedDp({ FL, P1, Pv, Pc });
+  if (!(dPch > 0)) return { error: 'No liquid pressure drop is possible before choking at these pressures. Raise the inlet pressure.' };
   const choked = dP >= dPch;
   const dPsizing = Math.min(dP, dPch);
   const Kv = kvFor({ q, dP: dPsizing, Gf });

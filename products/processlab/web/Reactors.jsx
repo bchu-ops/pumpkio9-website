@@ -41,8 +41,10 @@ function runReactor(p) {
   // Cut the run where a runaway leaves the range the solver handles.
   const bad = run.pv.findIndex((v) => !Number.isFinite(v) || (p.reactor === 'cstr' && v > RUNAWAY_K));
   const end = bad < 0 ? run.t.length : Math.max(1, bad);
+  // A finite value above the limit is a physical runaway; anything else is a numerical failure.
+  const stopped = bad < 0 ? null : (Number.isFinite(run.pv[bad]) ? 'runaway' : 'numerical');
   const cut = (a) => a.slice(0, end);
-  return { t: cut(run.t), pv: cut(run.pv), u: cut(run.u), sp: p.loop ? cut(run.t).map(() => p.sp) : null, ranAway: bad >= 0 };
+  return { t: cut(run.t), pv: cut(run.pv), u: cut(run.u), sp: p.loop ? cut(run.t).map(() => p.sp) : null, stopped };
 }
 
 const fmt = (v, d = 2) => (Number.isFinite(v) ? v.toFixed(d) : '—');
@@ -56,10 +58,10 @@ export default function Reactors() {
   const choose = (pr) => { setPreset(pr); setP(pr.p); };
   const switchReactor = (id) => choose(REACTOR_PRESETS.find((pr) => pr.p.reactor === id));
 
-  const panels = [
+  const panels = useMemo(() => [
     { title: R.pv, series: [...(run.sp ? [{ data: run.sp, color: '--cl-sp', dash: [6, 4], width: 1.25 }] : []), { data: run.pv, color: '--cl-pv', width: 2 }] },
     { title: R.mv, series: [{ data: run.u, color: '--cl-mv' }] },
-  ];
+  ], [run, R]);
   const tail = run.pv.slice(Math.floor(run.pv.length * 0.8));
   const swing = Math.max(...tail) - Math.min(...tail);
 
@@ -75,14 +77,15 @@ export default function Reactors() {
 
       <div className="cl-grid">
         <section className="cl-figure" aria-label="Reactor response">
-          <LoopPlot t={run.t} panels={panels} xLabel="time [min]" summary={`${R.label}: final ${R.pv} ${fmt(run.pv.at(-1))}${run.ranAway ? ', reactor ran away' : ''}.`} />
+          <LoopPlot t={run.t} panels={panels} xLabel="time [min]" summary={`${R.label}: final ${R.pv} ${fmt(run.pv.at(-1))}${run.stopped === 'runaway' ? ', reactor ran away' : ''}.`} />
           <dl className="cl-readouts">
             <div><dt>Final {R.pv}</dt><dd>{fmt(run.pv.at(-1))}</dd></div>
             <div><dt>Peak</dt><dd>{fmt(Math.max(...run.pv))}</dd></div>
             <div><dt>Swing, last 20%</dt><dd>{fmt(swing)}</dd></div>
             <div><dt>Final {p.reactor === 'ph' ? 'base flow' : 'coolant T'}</dt><dd>{fmt(run.u.at(-1))}</dd></div>
           </dl>
-          {run.ranAway && <p className="cl-warn" role="status">The reactor ran away (above {RUNAWAY_K} K). The run is stopped there.</p>}
+          {run.stopped === 'runaway' && <p className="cl-warn" role="status">The reactor ran away (above {RUNAWAY_K} K). The run is stopped there.</p>}
+          {run.stopped === 'numerical' && <p className="cl-warn" role="status">The simulation became numerically unstable with these settings, so it is stopped there. Try a smaller gain or less sensor delay.</p>}
         </section>
 
         <section className="cl-controls" aria-label="Reactor settings">

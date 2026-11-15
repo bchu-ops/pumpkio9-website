@@ -4,6 +4,18 @@ import { cohenCoon, simcPI } from './lib/tuning';
 
 const num = (v) => (v === undefined ? '—' : Number(v.toPrecision(3)));
 
+// Same ranges as the Loop Lab sliders, so applied gains stay adjustable.
+export const GAIN_RANGES = { Kc: [0.05, 50], tauI: [0.5, 100], tauD: [0, 10] };
+const clampTo = (v, [lo, hi]) => Math.min(hi, Math.max(lo, v));
+
+/** Gains a rule gives, limited to the slider ranges; `limited` says whether any value was changed. */
+export function applicableGains(r) {
+  const g = { Kc: r.Kc, tauI: r.tauI, tauD: r.tauD ?? 0 };
+  const out = { Kc: clampTo(g.Kc, GAIN_RANGES.Kc), tauI: clampTo(g.tauI, GAIN_RANGES.tauI), tauD: clampTo(g.tauD, GAIN_RANGES.tauD) };
+  const limited = Object.keys(g).some((k) => Math.abs(out[k] - g[k]) > 1e-12);
+  return { ...out, useI: true, limited };
+}
+
 /**
  * Model-based tuning for the first-order-plus-dead-time process: settings from K, τ, θ
  * that can be applied to the controller with one click.
@@ -36,7 +48,9 @@ export default function TuningRules({ p, onApply }) {
             <tr><th scope="col" className="pb-left">Rule</th><th scope="col">Kc</th><th scope="col">τI [s]</th><th scope="col">τD [s]</th><th scope="col"><span className="sr-only">Apply</span></th></tr>
           </thead>
           <tbody>
-            {rows.map(({ id, name, r, why }) => (
+            {rows.map(({ id, name, r, why }) => {
+              const gains = r ? applicableGains(r) : null;
+              return (
               <tr key={id}>
                 <th scope="row" className="pb-left">{name}<div className="tr-why">{why}</div></th>
                 {r ? (
@@ -44,18 +58,23 @@ export default function TuningRules({ p, onApply }) {
                     <td>{num(r.Kc)}</td>
                     <td>{num(r.tauI)}</td>
                     <td>{num(r.tauD)}</td>
-                    <td><button type="button" className="cl-chip" onClick={() => onApply({ Kc: r.Kc, tauI: r.tauI, tauD: r.tauD ?? 0, useI: true })}>Apply</button></td>
+                    <td>
+                      <button type="button" className="cl-chip" onClick={() => { const { limited, ...g } = gains; onApply(g); }}>Apply</button>
+                      {gains.limited && <div className="tr-why">limited to slider range</div>}
+                    </td>
                   </>
                 ) : (
                   <td colSpan={4} className="pb-left">Needs dead time θ &gt; 0</td>
                 )}
               </tr>
-            ))}
+              );
+            })}
           </tbody>
         </table>
       </div>
       <div className="tr-tauc">
         <ParamSlider id="tr-tauc" label="SIMC τc (smaller = faster, less robust)" unit="s" value={tc} min={0.1} max={20} log onChange={setTauC} />
+        {tauC !== null && <button type="button" className="cl-chip" onClick={() => setTauC(null)}>Back to τc = θ</button>}
       </div>
       <p className="pb-empty">
         Cohen–Coon: Kc = (τ/Kθ)(0.9 + θ/12τ) for PI. SIMC (Skogestad 2003): Kc = τ/(K(τc + θ)), τI = min(τ, 4(τc + θ)); τc = θ is the recommended default.
