@@ -214,3 +214,8 @@
   .cl-readouts div:nth-child(3) { border-left: 0; padding-left: 0; }
   .cl-readouts div:nth-child(n + 3) { border-top: 1px solid var(--cl-border); }
 }
+
+/* Valves tab */
+.vl-heading { font-size: 1.05rem; font-weight: 600; margin: 1.75rem 0 0.75rem; }
+.vl-heading:first-of-type { margin-top: 0.5rem; }
+.vl-reset { width: auto; padding: 0 20px; margin-top: 1.25rem; }

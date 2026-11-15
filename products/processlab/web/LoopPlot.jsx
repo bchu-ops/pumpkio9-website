@@ -79,7 +79,7 @@ function drawPanel(ctx, { x0, y0, w, h, t, series, title, colors, xTicks }) {
  * Stacked time-series panels on one canvas.
  * panels: [{ title, series: [{ data, color: '--css-var', dash }] }]; last panel gets time ticks.
  */
-export default function LoopPlot({ t, panels, summary }) {
+export default function LoopPlot({ t, panels, summary, xLabel = 'time [s]' }) {
   const wrapRef = useRef(null);
   const canvasRef = useRef(null);
   const [width, setWidth] = useState(0);
@@ -134,8 +134,8 @@ export default function LoopPlot({ t, panels, summary }) {
     ctx.font = `11px ${colors.mono}`;
     ctx.textAlign = 'right';
     ctx.textBaseline = 'bottom';
-    ctx.fillText('time [s]', width - 12, height - 2);
-  }, [t, panels, width, fontsReady]);
+    ctx.fillText(xLabel, width - 12, height - 2);
+  }, [t, panels, width, fontsReady, xLabel]);
 
   return (
     <div ref={wrapRef} className="cl-plot">
