@@ -54,7 +54,7 @@ export default function PdfPage({ pdf, pageNumber, size, scale, rotation, rootRe
         canvas.style.height = `${viewport.height}px`;
 
         renderTask = page.render({
-          canvasContext: canvas.getContext('2d'),
+          canvas,
           viewport,
           transform: dpr !== 1 ? [dpr, 0, 0, dpr, 0, 0] : null,
         });
@@ -63,10 +63,8 @@ export default function PdfPage({ pdf, pageNumber, size, scale, rotation, rootRe
 
         const textLayer = textRef.current;
         textLayer.replaceChildren();
-        const textContent = await page.getTextContent();
-        if (cancelled) return;
-        textTask = pdfjsLib.renderTextLayer({ textContent, container: textLayer, viewport, textDivs: [] });
-        await textTask.promise;
+        textTask = new pdfjsLib.TextLayer({ textContentSource: page.streamTextContent(), container: textLayer, viewport });
+        await textTask.render();
         if (!cancelled) onRendered?.(pageNumber);
       } catch (err) {
         if (err?.name !== 'RenderingCancelledException') {
@@ -79,7 +77,7 @@ export default function PdfPage({ pdf, pageNumber, size, scale, rotation, rootRe
     return () => {
       cancelled = true;
       renderTask?.cancel();
-      textTask?.cancel?.();
+      textTask?.cancel();
     };
   }, [isNear, pdf, pageNumber, scale, rotation, onRendered]);
 
@@ -88,7 +86,8 @@ export default function PdfPage({ pdf, pageNumber, size, scale, rotation, rootRe
       ref={wrapperRef}
       className="chrome-pdf-page"
       data-page-number={pageNumber}
-      style={{ width, height }}
+      // pdf.js sizes and places the text layer from these CSS variables.
+      style={{ width, height, '--scale-factor': scale, '--total-scale-factor': scale, '--scale-round-x': '1px', '--scale-round-y': '1px' }}
     >
       <canvas ref={canvasRef} />
       <div ref={textRef} className="textLayer" />

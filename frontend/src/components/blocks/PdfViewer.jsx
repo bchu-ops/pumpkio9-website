@@ -1,11 +1,13 @@
 import React, { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
+import workerUrl from 'pdfjs-dist/build/pdf.worker.min.mjs?url';
 import PdfPage from './PdfPage';
 import PdfToolbar from './PdfToolbar';
 import './PdfViewer.css';
 import { publicFile } from '../../App';
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = publicFile('/tools/pdf.worker.js');
+// Worker comes from the installed pdfjs-dist, so it always matches the library version.
+pdfjsLib.GlobalWorkerOptions.workerSrc = workerUrl;
 
 const ZOOM_STEP = 0.25;
 const MIN_ZOOM = 0.5;
@@ -47,8 +49,7 @@ export default function PdfViewer({ fileUrl }) {
 
     const load = async () => {
       try {
-        // isEvalSupported: false mitigates GHSA-wgrm-67xf-hhpq (code execution via a crafted PDF) on pdfjs-dist 2.x.
-        task = pdfjsLib.getDocument({ url: resolvedUrl, isEvalSupported: false });
+        task = pdfjsLib.getDocument({ url: resolvedUrl });
         const doc = await task.promise;
         const pageSizes = await readPageSizes(doc);
         if (cancelled) return;
