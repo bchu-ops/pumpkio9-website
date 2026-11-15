@@ -13,7 +13,7 @@ test('open tank fills to the Torricelli steady level', () => {
     { id: 'k', type: 'sink', params: {} },
   ];
   const run = simulateFlowsheet({ units, loops: [], env, dt: 0.5, tEnd: 3000 });
-  expect(last(run.series['t.level'])).toBeCloseTo((0.002 / (0.65e-3)) ** 2 / (2 * G), 2);
+  expect(last(run.series['t.level'])).toBeCloseTo((0.002 / (0.61e-3)) ** 2 / (2 * G), 2);
 });
 
 test('pipe at steady state matches the N-cell heat-loss formula', () => {
@@ -29,9 +29,11 @@ test('pipe at steady state matches the N-cell heat-loss formula', () => {
   expect(last(run.series['p.T'])).toBeCloseTo(expected, 3);
 });
 
-test('insulation cuts pipe heat loss', () => {
+test('insulation cuts pipe heat loss (cylindrical layers: about 7.5x for 50 mm wool on a 50 mm pipe)', () => {
   const base = { length: 50, diamMm: 50, wall: 'carbonSteel', wallMm: 3 };
-  expect(pipeUA({ ...base, ins: 'mineralWool', insMm: 50 })).toBeLessThan(pipeUA({ ...base, ins: 'none', insMm: 0 }) / 10);
+  const ratio = pipeUA({ ...base, ins: 'none', insMm: 0 }) / pipeUA({ ...base, ins: 'mineralWool', insMm: 50 });
+  expect(ratio).toBeGreaterThan(6);
+  expect(ratio).toBeLessThan(9);
 });
 
 test('closed tank with no flow cools as T_amb + ΔT·exp(−t·UA/(M·cp))', () => {

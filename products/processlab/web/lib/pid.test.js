@@ -31,6 +31,15 @@ test('anti-windup (clamping) cuts overshoot when the valve saturates', () => {
   expect(peak(run(true))).toBeLessThan(peak(run(false)));
 });
 
+test('anti-windup also works for reverse-acting loops (Kc < 0)', () => {
+  // Output stuck at its upper limit while Kc·e keeps pushing up: the integral must freeze.
+  const pid = createPid({ Kc: -2, tauI: 1, uMin: 0, uMax: 1, antiWindup: true });
+  for (let i = 0; i < 100; i += 1) pid.step({ sp: 0, pv: 5, dt: 0.1 });
+  // Once the error flips, the output leaves the limit right away instead of
+  // first unwinding a large integral.
+  expect(pid.step({ sp: 0, pv: -0.5, dt: 0.1 })).toBeLessThan(1);
+});
+
 test('derivative acts on PV: setpoint step gives no derivative kick', () => {
   const pid = createPid({ Kc: 1, tauD: 2 });
   const u0 = pid.step({ sp: 0, pv: 0, dt: 0.01 });

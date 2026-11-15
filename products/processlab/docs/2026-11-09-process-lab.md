@@ -15,6 +15,21 @@ v3 adds: drawing-sheet restyle (IBM Plex, P&ID symbols) and drag-and-drop editin
 
 `products/processlab/web/`: `ProcessLab.jsx` (page + tabs), `LoopLab.jsx`, `ThermoBuilder.jsx` and their components at the top; all models, data and presets in `lib/` with unit tests next to them.
 
+## Verification (2026-11-15)
+
+Every formula and constant in `web/lib/` was checked against primary sources (Åström & Murray *Feedback Systems* ch. 11, Incropera *Fundamentals of Heat and Mass Transfer*, NIST WebBook).
+- **Control math correct:** ideal PID with filtered derivative on PV, Ziegler–Nichols table, process ODEs, RK4, step metrics.
+- **Fixed:** anti-windup now checks the sign of Kc·e (was wrong for reverse-acting loops); the dead-time preset note now says the loop goes unstable.
+- **Thermo data correct**, with these fixes:
+  - Pipes use cylindrical layers (Incropera eq. 3.33); the planar shortcut overstated thick insulation about 3x.
+  - Water vapor pressure uses Bridgeman & Aldrich (100.00 °C at 1 atm).
+  - Glycol ΔHvap is now taken at the boiling point: 857 kJ/kg.
+  - Orifice Cd is 0.61 (sharp edge).
+  - Borosilicate glass k is 1.1 W/(m·K).
+  - h values are cited to Incropera Table 1.1.
+- **Known limits, documented in code:** superheat isn't modelled, so the energy balance closes only up to x = 1. Dead time is rounded to whole time steps. Rise and settling times are measured against SP.
+- **Never implemented**, so nothing to verify yet: Cohen–Coon and SIMC tuning, valve sizing and cavitation, the pH and exothermic CSTR models.
+
 ## Original handoff (2026-11-09)
 
 _Kept as written on 2026-11-09; file names and the CRA setup it mentions have since changed (see Code above)._
