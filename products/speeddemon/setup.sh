@@ -105,23 +105,6 @@ setup_python_environment() {
     fi
 }
 
-# Setup Node.js and npm (for frontend)
-setup_nodejs() {
-    log_info "Checking for Node.js..."
-    
-    if ! command_exists node; then
-        log_warning "Node.js is not installed. Frontend development will require Node.js 18+."
-        log_info "Download from: https://nodejs.org/"
-    else
-        NODE_VERSION=$(node --version | cut -d'v' -f2 | cut -d'.' -f1)
-        if [ "$NODE_VERSION" -lt 18 ]; then
-            log_warning "Node.js version is $NODE_VERSION. Recommended version is 18+."
-        else
-            log_info "Node.js version $(node --version) detected ✓"
-        fi
-    fi
-}
-
 # Setup jq (required for dependency management)
 setup_jq() {
     log_info "Checking for jq..."
@@ -254,32 +237,12 @@ create_root_env_file() {
 create_environment_files() {
     log_info "Creating environment file templates..."
     
-    # Frontend environment file
-    frontend_env="frontend/.env"
-    if [ ! -f "$frontend_env" ]; then
-        log_info "Creating $frontend_env"
-        cat > "$frontend_env" << EOF
-# Frontend Environment Variables
-NODE_ENV=development
-VITE_APP_NAME=SpeedDemon
-
-# Backend API URL (for production)
-VITE_API_URL=http://localhost:8000
-
-# Feature Flags
-VITE_ENABLE_DEBUG_MODE=true
-
-# Add frontend-specific environment variables below
-EOF
-    else
-        log_info "$frontend_env already exists, skipping..."
-    fi
-    
+    # The web page lives in products/speeddemon/web and is built by the website (frontend/).
     log_success "Environment files created"
 }
 
 # ============================================================================
-# BACKEND & FRONTEND SETUP
+# BACKEND SETUP
 # ============================================================================
 
 # Setup backend
@@ -300,42 +263,6 @@ setup_backend() {
     log_success "Backend setup completed"
 }
 
-# Setup frontend
-setup_frontend() {
-    log_info "Setting up frontend..."
-    
-    if [ ! -d "frontend" ]; then
-        log_warning "frontend directory does not exist, skipping..."
-        return
-    fi
-    
-    cd frontend
-    
-    # Check if package.json exists
-    if [ ! -f "package.json" ]; then
-        log_warning "package.json not found in frontend, skipping..."
-        cd - >/dev/null
-        return
-    fi
-    
-    # Check if package-lock.json exists and node_modules is up to date
-    if [ ! -d "node_modules" ] || [ "package.json" -nt "node_modules" ]; then
-        if command_exists npm; then
-            log_info "Installing frontend dependencies..."
-            npm ci >/dev/null 2>&1 || npm install >/dev/null 2>&1
-            log_success "Frontend dependencies installed"
-        else
-            log_warning "npm not found, skipping frontend dependency installation"
-        fi
-    else
-        log_info "Frontend dependencies are up to date"
-    fi
-    
-    cd - >/dev/null
-    
-    log_success "Frontend setup completed"
-}
-
 # ============================================================================
 # VALIDATION
 # ============================================================================
@@ -348,7 +275,6 @@ validate_setup() {
     REQUIRED_FILES=(
         "deploy/docker-compose.yml"
         "deploy/Dockerfile.backend"
-        "deploy/Dockerfile.frontend"
         "Makefile"
         "pyproject.toml"
     )
@@ -371,13 +297,6 @@ validate_setup() {
     
     if [ ! -f "backend/pyproject.toml" ]; then
         log_warning "Backend pyproject.toml missing"
-    fi
-    
-    # Check if frontend exists
-    if [ ! -d "frontend" ]; then
-        log_warning "Frontend directory missing"
-    elif [ ! -f "frontend/package.json" ]; then
-        log_warning "Frontend package.json missing"
     fi
     
     log_success "Setup validation completed"
@@ -404,7 +323,6 @@ main() {
     # Package & Language Setup
     setup_python_package_manager
     setup_jq
-    setup_nodejs
     setup_python_environment
     
     # Docker Setup
@@ -415,9 +333,8 @@ main() {
     create_root_env_file
     create_environment_files
     
-    # Backend & Frontend Setup
+    # Backend Setup
     setup_backend
-    setup_frontend
     
     # Validation
     validate_setup
@@ -435,7 +352,6 @@ main() {
     echo "2. Run 'make build' to build all Docker images"
     echo "3. Run 'make up' to start all services"
     echo "4. Access the application:"
-    echo "   - Frontend: http://localhost:3000"
     echo "   - Backend:  http://localhost:8000"
     echo "   - Notebook: http://localhost:8888"
     echo ""
