@@ -43,7 +43,7 @@ function Navbar({ topRef, bottomRef }) {
 			label: "Products",
 			items: [
 				{ name: "Speed Demon", path: "/speed-demon" },
-				{ name: "Product 2", path: "/Product2" },
+				{ name: "My Spotify", path: "/Spotify" },
 				{ name: "Process Lab", path: "/process-lab" }
 			],
 		}
