@@ -18,7 +18,6 @@ docs/                site-wide notes
 |---|---|---|
 | Speed Demon | `/speed-demon` | `products/speeddemon/` (web page, plus the kart/telemetry project merged from github.com/bchu-ops/speeddemon with history) |
 | Process Lab | `/process-lab` | `products/processlab/` |
-| Spotify | `/Spotify` | `products/spotify/` |
-| Product 2 | `/Product2` (placeholder) | `products/product2/` |
+| My Spotify | `/Spotify` | `products/spotify/` |
 
 Commands: see `docs/npm_guide.md`. Secrets and `.env` files: `docs/secrets.md`. How changes get deployed: `docs/workflow.md` (feature branch → PR → squash into `dev` → Promote to `main`).

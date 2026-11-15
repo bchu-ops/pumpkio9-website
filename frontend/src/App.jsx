@@ -1,7 +1,7 @@
 import React, { useRef, Suspense, lazy } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './App.css';
 import PageRoutes from './components/blocks/PageRoutes';
 import ScrollToTop from './components/blocks/ScrollToTop';
@@ -12,7 +12,6 @@ const Interests = lazy(() => import('./components/pages/Interests'));
 const Product1 = lazy(() => import('./components/pages/Product1'));
 const SpeedDemon = lazy(() => import('@products/speeddemon/web/SpeedDemon'));
 const ProcessLab = lazy(() => import('@products/processlab/web/ProcessLab'));
-const Product2 = lazy(() => import('@products/product2/web/Product2'));
 const Product3 = lazy(() => import('./components/pages/Product3'));
 const Projects = lazy(() => import('./components/pages/Projects'));
 const NotFound = lazy(() => import('./components/pages/NotFound'));
@@ -39,7 +38,8 @@ function App() {
                 <Route path="/speed-demon" element={<SpeedDemon />} />
                 <Route path="/process-lab" element={<ProcessLab />} />
                 <Route path="/Product1" element={<Product1 />} />
-                <Route path="/Product2" element={<Product2 />} />
+                {/* Old placeholder; the navbar slot is now My Spotify */}
+                <Route path="/Product2" element={<Navigate to="/Spotify" replace />} />
                 <Route path="/Product3" element={<Product3 />} />
 
                 {/* Dynamic route for all types (papers, projects, tutorials, etc) */}
