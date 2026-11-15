@@ -413,4 +413,23 @@
   .notion-resume-link {
     color: #e6e6e3;
   }
+  /* Table view */
+  .notion-collection-section .notion-table-th {
+    color: rgba(235, 235, 232, 0.72);
+    border-color: rgba(255, 255, 255, 0.14);
+  }
+  .notion-collection-section .notion-table-row {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+  }
+  .notion-collection-section .notion-table-row:hover,
+  .notion-collection-section .notion-table-cell-title:hover {
+    background: rgba(255, 255, 255, 0.06);
+  }
+  .notion-collection-section .notion-table-cell {
+    color: #e6e6e3;
+    border-right-color: rgba(255, 255, 255, 0.08);
+  }
+  .notion-collection-section .notion-table-cell-text {
+    color: rgba(235, 235, 232, 0.8);
+  }
 }
