@@ -1,6 +1,7 @@
 /**
  * Fixed dead time as a ring buffer of round(theta/dt) samples.
  * push(u) returns the input from theta seconds ago (0 before that).
+ * theta is rounded to a whole number of dt steps.
  */
 export function createDelay(theta, dt) {
   const n = Math.max(0, Math.round(theta / dt));

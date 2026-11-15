@@ -1,9 +1,11 @@
 /**
  * PID controller, ideal (ISA) form: u = Kc[e + (1/tauI)∫e dt + tauD de/dt].
  * - Derivative acts on PV (not error), so setpoint steps cause no derivative kick.
- * - Derivative is low-pass filtered with Tf = tauD/N (typical 3 <= N <= 10).
+ * - Derivative is low-pass filtered with Tf = tauD/N; N is typically 5–20 (Åström & Murray,
+ *   Feedback Systems §11.5, https://www.cds.caltech.edu/~murray/books/AM08/pdf/fbs-pid_24Jul2020.pdf); default 10.
  * - Anti-windup by conditional integration (clamping): stop integrating while
- *   the output is saturated and the error would push it further.
+ *   the output is saturated and the integrator input (Kc·e) would push it further.
+ *   Using the sign of Kc·e, not e, keeps this right for reverse-acting loops (Kc < 0).
  * Source: https://en.wikipedia.org/wiki/Proportional%E2%80%93integral%E2%80%93derivative_controller
  * (verified 2026-11-09)
  *
@@ -33,7 +35,7 @@ export function createPid({
 
       const unsat = Kc * e + integral + deriv;
       const u = Math.min(uMax, Math.max(uMin, unsat));
-      const windingUp = (unsat > uMax && e > 0) || (unsat < uMin && e < 0);
+      const windingUp = (unsat > uMax && Kc * e > 0) || (unsat < uMin && Kc * e < 0);
       if (Number.isFinite(tauI) && !(antiWindup && windingUp)) {
         integral += ((Kc * dt) / tauI) * e;
       }

@@ -17,7 +17,7 @@ export const PRESETS = [
   },
   {
     id: 'deadtime', label: 'Dead time',
-    note: 'Same gains, more dead time: the loop starts to oscillate.',
+    note: 'Same gains, more dead time: the loop goes unstable, and the valve limits turn that into a steady oscillation.',
     params: { model: 'first', K: 1, tau: 5, zeta: 0.5, deadTime: 3.5, Kc: 3, tauI: 4, useI: true, tauD: 0, uMax: 10, antiWindup: true, tEnd: 80 },
   },
   {

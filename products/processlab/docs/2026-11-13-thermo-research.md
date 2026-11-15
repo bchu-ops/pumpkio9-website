@@ -14,10 +14,11 @@ log10(P/bar) = A − B/(T/K + C)
 
 | T range (K) | A | B | C | Source |
 |---|---|---|---|---|
-| 255.9–373 | 4.6543 | 1435.264 | −64.848 | Stull 1947 (one set for the demo) |
+| 255.9–373 | 4.6543 | 1435.264 | −64.848 | Stull 1947 (used until 2026-11-15; gives 100.45 °C at 1 atm) |
 | 273–303 | 5.40221 | 1838.675 | −31.737 | Bridgeman & Aldrich 1964 |
 | 304–333 | 5.20389 | 1733.926 | −39.485 | Bridgeman & Aldrich 1964 |
 | 334–363 | 5.0768 | 1659.793 | −45.854 | Bridgeman & Aldrich 1964 |
+| 344–373 | 5.08354 | 1663.125 | −45.622 | Bridgeman & Aldrich 1964 (**used in code** since 2026-11-15; 99.99 °C at 1 atm) |
 | 344–373 | 5.08354 | 1663.125 | −45.622 | Bridgeman & Aldrich 1964 |
 
 Critical pressure of water Pc = 220.64 bar (same page). The 379–573 K set on that page cites a D2O paper; do not use it for water.

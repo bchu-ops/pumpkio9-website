@@ -5,19 +5,23 @@
  */
 import { FLUIDS, WATER } from './fluids';
 import { H, INSULATION, WALLS } from './materials';
-import { wallU } from './heat';
+import { cylinderUA, wallU } from './heat';
 import { boilingPointC } from './thermo';
 
 export const G = 9.80665; // m/s²
 export const P_ATM = 1.01325; // bar
 export const HEATER_LAG = 5; // s, element heat-up
 export const PIPE_CELLS = 10;
-const CD = 0.65; // orifice discharge coefficient, water (Torricelli's law article)
+const CD = 0.61; // sharp-edged orifice: contraction coefficient 0.611 (https://en.wikipedia.org/wiki/Vena_contracta), velocity loss ignored
 
 export const boilT = (fluid) => boilingPointC(P_ATM, fluid);
 export const enthalpy = (fluid, T, x = 0) => fluid.cp * T + x * fluid.hvap;
 
-/** (T, x) from specific enthalpy at 1 atm. dry = fully vaporized (superheat not modelled). */
+/**
+ * (T, x) from specific enthalpy at 1 atm, liquid at 0 °C as the reference.
+ * dry = fully vaporized. Superheat is not modelled: enthalpy beyond saturated vapor is
+ * dropped, so the energy balance only closes when streams stay at or below x = 1.
+ */
 export function fromEnthalpy(fluid, h) {
   const tb = boilT(fluid);
   const hLiq = fluid.cp * tb;
@@ -46,8 +50,10 @@ export function tankUA(p, h) {
   return wallU({ hIn: H.waterFree, hOut: H.airFree, layers: layers(p) }) * area;
 }
 
-/** Pipe outer surface (thin wall): forced flow inside, still air outside. */
-export const pipeUA = (p) => wallU({ hIn: H.waterForced, hOut: H.airFree, layers: layers(p) }) * Math.PI * (p.diamMm / 1000) * p.length;
+/** Pipe (diamMm = inner diameter): forced flow inside, still air outside, cylindrical wall and insulation layers. */
+export const pipeUA = (p) => cylinderUA({
+  hIn: H.waterForced, hOut: H.airFree, rIn: p.diamMm / 2000, length: p.length, layers: layers(p),
+});
 
 /** Exchanger plate: forced liquid on both sides plus wall conduction. */
 export const hxUA = (p) => wallU({ hIn: H.waterForced, hOut: H.waterForced, layers: layers({ ...p, ins: 'none' }) }) * p.area;

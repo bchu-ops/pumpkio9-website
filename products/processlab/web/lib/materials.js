@@ -9,7 +9,7 @@ export const WALLS = {
   carbonSteel: { name: 'Carbon steel', k: 45 }, // K1 36–54
   copper: { name: 'Copper', k: 400 }, // K1 401
   aluminium: { name: 'Aluminium', k: 237 }, // K1 237
-  glass: { name: 'Borosilicate glass', k: 1.0 }, // K1 1.35, K2 1.005
+  glass: { name: 'Borosilicate glass', k: 1.1 }, // K1 Pyrex 7740 (NBS 1966): 1.11 at 300 K
   hdpe: { name: 'HDPE plastic', k: 0.45 }, // K1 0.42–0.51
 };
 
@@ -21,11 +21,13 @@ export const INSULATION = {
 };
 
 /**
- * Representative convective coefficients h [W/(m²·K)], picked inside the ranges in
- * https://www.engineeringtoolbox.com/convective-heat-transfer-d_430.html (fetched 2026-11-13).
+ * Representative convective coefficients h [W/(m²·K)], picked inside the typical ranges of
+ * Incropera et al., Fundamentals of Heat and Mass Transfer, Table 1.1
+ * (copy: https://pages.mtu.edu/~fmorriso/cm3120/typical_values_heat_transfer_coefficient.pdf).
+ * Radiation from hot surfaces (several W/(m²·K)) is not included.
  */
 export const H = {
-  airFree: 10, // range 0.5–1000
-  waterFree: 500, // range 50–3000 (liquid inside a tank)
-  waterForced: 3000, // range 50–10000 (pipe and exchanger flow)
+  airFree: 10, // free convection, gases: 2–25
+  waterFree: 500, // free convection, liquids: 50–1000 (liquid inside a tank)
+  waterForced: 3000, // forced convection, liquids: 100–20 000 (pipe and exchanger flow)
 };

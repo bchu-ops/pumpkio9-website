@@ -30,7 +30,7 @@ test('enthalpy round-trips through fromEnthalpy', () => {
 });
 
 test('Torricelli outflow q = Cd·a·√(2gh)', () => {
-  expect(tankOutflow({ h: 2, a: 1e-3, opening: 1 })).toBeCloseTo(0.65 * 1e-3 * Math.sqrt(2 * G * 2), 12);
+  expect(tankOutflow({ h: 2, a: 1e-3, opening: 1 })).toBeCloseTo(0.61 * 1e-3 * Math.sqrt(2 * G * 2), 12);
 });
 
 test('counterflow effectiveness with Cr = 1 is NTU/(1+NTU)', () => {
