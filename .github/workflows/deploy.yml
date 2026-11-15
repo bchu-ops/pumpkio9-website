@@ -6,15 +6,16 @@ on:
       - main  # or master
   workflow_dispatch:   # 👈 Allows manual trigger from Actions tab
   schedule:
-    # Daily rebuild so Speed Demon's F1 snapshot picks up new race weekends.
-    - cron: '23 10 * * *'
+    # Hourly rebuild: fresh Spotify listening data each run; the F1 snapshot
+    # cache is keyed by date, so OpenF1 is only fetched once a day.
+    - cron: '17 * * * *'
 
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# The Spotify sync can start a deploy while a push starts another.
+# A scheduled run can overlap a push or a Promote; queue them.
 concurrency:
   group: pages
   cancel-in-progress: false
@@ -60,6 +61,26 @@ jobs:
         continue-on-error: true
         timeout-minutes: 15
         run: node scripts/prefetch-f1.mjs --meetings 2
+
+      # Spotify: build-time snapshot into frontend/public/spotify (not committed,
+      # so nothing ever commits to main outside the dev -> main flow).
+      # Never fails the deploy: without secrets, the committed file is kept.
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Fetch Spotify listening data
+        working-directory: ./backend/automations
+        continue-on-error: true
+        env:
+          SPOTIFY_CLIENT_ID: ${{ secrets.SPOTIFY_CLIENT_ID }}
+          SPOTIFY_CLIENT_SECRET: ${{ secrets.SPOTIFY_CLIENT_SECRET }}
+          SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
+        run: |
+          if [ -z "$SPOTIFY_REFRESH_TOKEN" ]; then
+            echo "::notice::Spotify secrets not set; keeping the committed listening.json"
+            exit 0
+          fi
+          uv run python scripts/sync_spotify.py
 
       # 4. Lint and test (site + products/*/web)
       - name: Lint and test
