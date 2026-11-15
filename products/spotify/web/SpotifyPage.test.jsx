@@ -54,6 +54,14 @@ afterEach(() => {
   vi.unstubAllEnvs();
 });
 
+test('public page does not offer a visitor login', async () => {
+  renderAt(loadPage('cid'), '/Spotify');
+  expect(await screen.findByText(/Last song played/)).toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: 'Invited' })).not.toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: 'Log in with Spotify' })).not.toBeInTheDocument();
+  expect(screen.queryByText(/log in/i)).not.toBeInTheDocument();
+});
+
 test('Mine tab shows synced plays, last-played time and favorites', async () => {
   renderAt(loadPage(''), '/Spotify');
   expect(await screen.findByText('Song One')).toBeInTheDocument();
@@ -79,13 +87,13 @@ test('time range switch changes favorites', async () => {
 });
 
 test('Invited tab explains when login is not configured', async () => {
-  renderAt(loadPage(''), '/Spotify');
+  renderAt(loadPage(''), '/Spotify?invited');
   fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
   expect(screen.getByText(/isn't set up on this site yet/)).toBeInTheDocument();
 });
 
 test('Invited tab offers login and does not call Spotify until opened', async () => {
-  renderAt(loadPage('cid'), '/Spotify');
+  renderAt(loadPage('cid'), '/Spotify?invited');
   await screen.findByText('Song One');
   expect(global.fetch).toHaveBeenCalledTimes(1);
   fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
@@ -109,7 +117,7 @@ test('logged-in account not on the invite list sees invite-only message', async 
       ? { ok: false, status: 403, json: async () => ({}) }
       : { ok: true, status: 200, json: async () => DATA },
   );
-  renderAt(loadPage('cid'), '/Spotify');
+  renderAt(loadPage('cid'), '/Spotify?invited');
   fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
   expect(await screen.findByRole('alert')).toHaveTextContent(/isn't on the invite list/);
 });
