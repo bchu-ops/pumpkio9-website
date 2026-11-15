@@ -1,0 +1,83 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Allow manual triggering
+
+# Set permissions for GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install dependencies
+        working-directory: ./frontend
+        run: npm ci
+
+      - name: Build frontend
+        working-directory: ./frontend
+        env:
+          NODE_ENV: production
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          echo "=== Build Configuration ==="
+          echo "Repository: $GITHUB_REPOSITORY"
+          REPO_NAME=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2 | tr '[:upper:]' '[:lower:]')
+          echo "Repo name (lowercase): $REPO_NAME"
+          echo "Expected base path: /$REPO_NAME/"
+          echo ""
+          echo "Building frontend..."
+          npm run build
+          echo ""
+          echo "=== Verifying Build Output ==="
+          echo "Full index.html content (checking asset paths):"
+          cat dist/index.html
+          echo ""
+          echo "Checking for asset references:"
+          grep -oE '(href|src)="[^"]*"' dist/index.html || echo "No asset references found"
+          echo ""
+          echo "Listing dist directory contents:"
+          ls -la dist/ || true
+          echo ""
+          echo "Checking if assets directory exists:"
+          ls -la dist/assets/ 2>/dev/null || echo "Assets directory not found"
+      
+      - name: Create 404.html for SPA routing
+        working-directory: ./frontend/dist
+        run: cp index.html 404.html
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './frontend/dist'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
