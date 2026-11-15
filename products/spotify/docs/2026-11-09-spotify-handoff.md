@@ -76,7 +76,7 @@ Trade-off: the data is "as of last sync", not live. To get live data you'd need 
 
 Brian asked for visitor login too, so v1 has two tabs on `/Spotify`:
 
-- **Mine:** hourly GitHub Action (`.github/workflows/sync-spotify.yml`) runs `backend/automations/scripts/sync_spotify.py`, which writes `frontend/public/spotify/listening.json`. The workflow commits only when the data changed, then dispatches `deploy.yml`.
+- **Mine:** the hourly deploy (`.github/workflows/deploy.yml`) runs `backend/automations/scripts/sync_spotify.py` at build time, which writes `frontend/public/spotify/listening.json` into the build. Nothing is committed. (Until 2026-11-15 a separate `sync-spotify.yml` committed the file to main.)
 - **Yours:** visitors log in with Spotify's PKCE flow entirely in the browser (`products/spotify/web/lib/pkce.js`). There's no client secret, tokens live in sessionStorage, and nothing is sent to the site.
 - **Page:** "On repeat" chips, recently played grouped by day (10 shown, expandable to 50), and top tracks and artists for 4 weeks, 6 months and all time. Supports dark mode and 390px phone width.
 

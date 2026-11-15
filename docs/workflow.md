@@ -30,13 +30,14 @@ Because `main` only fast-forwards to `dev`, both have the same commits: one per 
    CI (`.github/workflows/ci.yml`) runs lint, tests and the build for the site, the product pages and the automations.
 4. **Review** the PR's "Files changed" tab. Fix anything by pushing more commits to the same branch.
 5. **Squash and merge into `dev`** once CI is green. Title it like a conventional commit (`feat: …`, `fix: …`). Delete the branch.
-6. **Release:** Actions → **Promote dev to main** → Run workflow on `dev`. It re-runs CI on `dev`, fast-forwards `main` to `dev` and starts the deploy. Release as often as you like; everything merged into `dev` since the last release goes out together.
+6. **Release in batches:** merge everything that's ready into `dev` first, then Actions → **Promote dev to main** → Run workflow on `dev`, once. It re-runs CI on `dev`, fast-forwards `main` to `dev` and starts the deploy; everything merged since the last release goes out together.
 
 ## Rules
 
 - Never commit or push to `main` directly. Never squash or merge-commit `dev` into `main`; that would give `main` commits `dev` doesn't have and stop fast-forwards.
 - Never push to `dev` directly either; changes arrive by squashed PR.
 - Keep PRs small: one feature or fix each. Large moves (renames, refactors) get their own PR, separate from behaviour changes.
+- Workflows never commit to `dev` or `main`. Generated data (F1 snapshot, Spotify listening) is fetched at build time by `deploy.yml`, which runs hourly.
 - If `dev` moves while a PR is open: `git fetch && git rebase origin/dev`, then `git push --force-with-lease`.
 - Hotfix: same path (branch from `dev` → PR → squash → Promote). If `main` ever gets a commit `dev` lacks, Promote stops and says so; open a PR `main` → `dev` to bring it back.
 
