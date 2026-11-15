@@ -87,7 +87,7 @@ export default function LoopLab() {
             <label className="cl-check"><input type="checkbox" checked={p.useI} onChange={(e) => set('useI')(e.target.checked)} /> Integral action</label>
             <ParamSlider id="ti" label="τI, integral time" unit="s" value={p.tauI} min={0.5} max={100} log disabled={!p.useI} onChange={set('tauI')} />
             <ParamSlider id="td" label="τD, derivative time" unit="s" value={p.tauD} min={0} max={10} onChange={set('tauD')} />
-            <ParamSlider id="umax" label="Valve limit (max MV)" unit="-" value={p.uMax} min={0.5} max={10} onChange={set('uMax')} />
+            <ParamSlider id="umax" label="Valve limit (max MV)" unit="-" value={p.uMax} min={0.5} max={100} log onChange={set('uMax')} />
             <label className="cl-check"><input type="checkbox" checked={p.antiWindup} onChange={(e) => set('antiWindup')(e.target.checked)} /> Anti-windup</label>
 
             <h2>Process</h2>
@@ -95,7 +95,7 @@ export default function LoopLab() {
             <select id="model" className="cl-select" value={p.model} onChange={(e) => set('model')(e.target.value)}>
               {Object.entries(MODELS).map(([k, mdl]) => <option key={k} value={k}>{mdl.label}</option>)}
             </select>
-            <ParamSlider id="k" label="K, process gain" unit="-" value={p.K} min={0.2} max={5} onChange={set('K')} />
+            <ParamSlider id="k" label="K, process gain" unit="-" value={p.K} min={0.01} max={5} log onChange={set('K')} />
             <ParamSlider id="tau" label="τ, time constant" unit="s" value={p.tau} min={0.5} max={30} log onChange={set('tau')} />
             {p.model === 'second' && <ParamSlider id="zeta" label="ζ, damping ratio" unit="-" value={p.zeta} min={0.05} max={2} onChange={set('zeta')} />}
             <ParamSlider id="theta" label="θ, dead time" unit="s" value={p.deadTime} min={0} max={10} onChange={set('deadTime')} />
