@@ -30,6 +30,15 @@ const loadSvg = (markup) => new Promise((resolve, reject) => {
   img.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(markup)}`;
 });
 
+/** Box of an element's own text (not its children), so labels start after icons/swatches. */
+function textBox(el) {
+  const node = [...el.childNodes].find((n) => n.nodeType === 3 && n.textContent.trim());
+  if (!node) return null;
+  const range = document.createRange();
+  range.selectNodeContents(node);
+  return range.getBoundingClientRect();
+}
+
 const visible = (el) => {
   const r = el.getBoundingClientRect();
   return r.width > 0 && r.height > 0;
@@ -74,13 +83,29 @@ export async function renderToCanvas(root, title) {
     ctx.fill();
   });
 
-  root.querySelectorAll('.sd-chart__head span, .sd-map__legend span, .sd-axis').forEach((el) => {
-    if (!visible(el) || el.children.length > 1) return;
+  // Legend swatches (team-colour bars and the start/finish dot), drawn with their own shape.
+  root.querySelectorAll('.sd-map__legend i').forEach((el) => {
+    if (!visible(el)) return;
     const p = at(el);
     const cs = window.getComputedStyle(el);
+    ctx.fillStyle = cs.backgroundColor;
+    ctx.beginPath();
+    const r = Math.min(parseFloat(cs.borderTopLeftRadius) || 0, p.w / 2, p.h / 2);
+    if (ctx.roundRect) ctx.roundRect(p.x, p.y, p.w, p.h, r);
+    else ctx.rect(p.x, p.y, p.w, p.h);
+    ctx.fill();
+  });
+
+  root.querySelectorAll('.sd-chart__head span, .sd-map__legend span, .sd-axis').forEach((el) => {
+    if (!visible(el) || el.children.length > 1) return;
+    const cs = window.getComputedStyle(el);
+    const p = at(el);
+    // Start the label where its text actually sits (after a swatch, if any).
+    const tb = el.children.length ? textBox(el) : null;
+    const x = tb ? tb.left - box.left + PAD : p.x;
     ctx.fillStyle = cs.color;
     ctx.font = `${cs.fontWeight} ${cs.fontSize} ${font}`;
-    ctx.fillText(el.textContent, p.x, p.y + parseFloat(cs.fontSize));
+    ctx.fillText(el.textContent, x, p.y + parseFloat(cs.fontSize));
   });
 
   const svgs = [...root.querySelectorAll('svg')].filter(visible).filter((s) => !s.closest('button'));
