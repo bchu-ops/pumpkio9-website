@@ -3,16 +3,16 @@
     "31f181ec-d4f6-811b-8187-c3c28e765692": {
       "value": {
         "id": "31f181ec-d4f6-811b-8187-c3c28e765692",
-        "version": 53,
+        "version": 64,
         "type": "page",
         "properties": {
           "?rG}": [
             [
-              "https://github.com/bchu-ops/speeddemon",
+              "https://github.com/bchu-ops/pumpkio9-website/tree/main/products/speeddemon",
               [
                 [
                   "a",
-                  "https://github.com/bchu-ops/speeddemon"
+                  "https://github.com/bchu-ops/pumpkio9-website/tree/main/products/speeddemon"
                 ]
               ]
             ]
@@ -65,20 +65,10 @@
           "52311a7a-f681-45c4-b648-30daff82403d"
         ],
         "format": {
-          "page_icon": "\ud83d\udee0\ufe0f",
-          "last_edited_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          }
+          "page_icon": "\ud83d\udee0\ufe0f"
         },
         "created_time": 1773145360302,
-        "last_edited_time": 1793898233546,
+        "last_edited_time": 1794726915420,
         "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "parent_table": "collection",
         "alive": true,
