@@ -29,7 +29,7 @@ export const PRODUCTS = [
     code: `${CODE}/processlab`,
     icon: 'fas fa-flask',
     summary: 'Process control and thermodynamics you can change and watch respond.',
-    points: ['Tune a PID loop live and see overshoot, rise and settling time', 'Drag equipment into a process, pick fluids and materials, follow the energy balance'],
+    points: ['Tune a PID loop live and compare Cohen–Coon and SIMC tuning', 'Build heat and flow processes, size control valves, and control pH and runaway-prone reactors'],
   },
 ];
 

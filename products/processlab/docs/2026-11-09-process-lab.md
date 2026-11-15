@@ -1,8 +1,10 @@
 # Process Lab: control theory, thermodynamics and materials
 
-Status: v3 at `/process-lab` (Products → Process Lab). Written 2026-11-09, updated 2026-11-15.
+Status: v4 at `/process-lab` (Products → Process Lab). Written 2026-11-09, updated 2026-11-15.
 
 v2 adds: Thermo & Materials tab (block diagram with PID loop blocks, three fluids with phase change, wall and insulation materials, stream table, energy balance).
+
+v4 adds: tuning rules in Loop Lab (Cohen–Coon, SIMC), a Reactors tab (pH neutralization, exothermic reactor with runaway) and a Valves tab (sizing, choked flow, cavitation, installed characteristics).
 
 v3 adds: drawing-sheet restyle (IBM Plex, P&ID symbols) and drag-and-drop editing in Thermo & Materials (palette, reorder, drop on the palette to remove, drop a PID on the block it measures; arrow keys / Delete as keyboard fallback).
 
@@ -28,7 +30,12 @@ Every formula and constant in `web/lib/` was checked against primary sources (Å
   - Borosilicate glass k is 1.1 W/(m·K).
   - h values are cited to Incropera Table 1.1.
 - **Known limits, documented in code:** superheat isn't modelled, so the energy balance closes only up to x = 1. Dead time is rounded to whole time steps. Rise and settling times are measured against SP.
-- **Never implemented**, so nothing to verify yet: Cohen–Coon and SIMC tuning, valve sizing and cavitation, the pH and exothermic CSTR models.
+- **Added 2026-11-15 from cited sources:**
+  - Cohen–Coon PI/PID and SIMC PI tuning (NI/Dataforth tables; Skogestad 2003).
+  - Valves tab: ISA-75.01.01 / IEC 60534-2-1 sizing via Fisher Catalog 12, ISA-RP75.23 cavitation index, inherent and installed characteristics.
+  - Reactors tab: pH neutralization (Faanes & Skogestad 2004) and an exothermic reactor (Seborg et al. Example 2.5 parameters).
+  - Unit tests pin the published check cases and steady states.
+- **Left out because unverified:** Cohen–Coon P rule, IMC-PID with Padé, valve-specific cavitation thresholds.
 
 ## Original handoff (2026-11-09)
 
