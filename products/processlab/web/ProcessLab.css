@@ -219,3 +219,10 @@
 .vl-heading { font-size: 1.05rem; font-weight: 600; margin: 1.75rem 0 0.75rem; }
 .vl-heading:first-of-type { margin-top: 0.5rem; }
 .vl-reset { width: auto; padding: 0 20px; margin-top: 1.25rem; }
+
+/* Tuning rules (Loop Lab) */
+.tr-section { margin-top: 1.75rem; }
+.tr-heading { font-size: 1.05rem; font-weight: 600; margin: 0 0 0.5rem; }
+.tr-why { font-size: 0.78rem; color: var(--cl-muted); font-weight: 400; white-space: normal; }
+.tr-tauc { max-width: 360px; margin-top: 0.75rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
