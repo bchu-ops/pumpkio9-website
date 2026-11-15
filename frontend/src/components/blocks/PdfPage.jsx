@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import * as pdfjsLib from 'pdfjs-dist';
+import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf.mjs';
 
 // Start rendering a page a little before it scrolls into view.
 const PRELOAD_MARGIN = '800px 0px';
@@ -67,7 +67,8 @@ export default function PdfPage({ pdf, pageNumber, size, scale, rotation, rootRe
         await textTask.render();
         if (!cancelled) onRendered?.(pageNumber);
       } catch (err) {
-        if (err?.name !== 'RenderingCancelledException') {
+        // Zooming or scrolling cancels in-flight work; that isn't a failure.
+        if (err?.name !== 'RenderingCancelledException' && err?.name !== 'AbortException') {
           console.error(`Failed to render PDF page ${pageNumber}:`, err);
         }
       }
