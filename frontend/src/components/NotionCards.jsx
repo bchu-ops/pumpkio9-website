@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from 'react'
 import { Link } from 'react-router-dom'
 import './Cards.css'
 import { publicFile } from '../App'
+import { codeLink } from './codeLink'
 
 const FALLBACK_IMAGE = 'images/img-3.jpg';
 
@@ -168,8 +169,11 @@ function NotionCards() {
         {/* Gallery view */}
         {viewMode === 'gallery' && (
           <div className="notion-gallery-grid">
-            {rows.map((row) => (
-              <Link key={row.id} to={getPath(sectionKey, row)} className="notion-collection-card">
+            {rows.map((row) => {
+              const code = codeLink(row);
+              return (
+              <div key={row.id} className="notion-card-wrap">
+              <Link to={getPath(sectionKey, row)} className="notion-collection-card">
                 <div className="notion-collection-card-cover">
                   <img src={getImageSrc(row)} alt={row.title} style={{ objectFit: 'cover' }} loading="lazy" />
                 </div>
@@ -178,7 +182,14 @@ function NotionCards() {
                   <div className="notion-collection-card-property">{getCardText(sectionKey, row)}</div>
                 </div>
               </Link>
-            ))}
+              {code && (
+                <a className="notion-card-code" href={code} target="_blank" rel="noopener noreferrer" aria-label={`${row.title} code on GitHub`} title="Code on GitHub">
+                  <i className="fab fa-github" aria-hidden="true" />
+                </a>
+              )}
+              </div>
+              );
+            })}
           </div>
         )}
 

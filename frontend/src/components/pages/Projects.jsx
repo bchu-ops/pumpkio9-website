@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { publicFile } from '../../App';
+import { codeLink } from '../codeLink';
 import './Projects.css';
 
 const CODE = 'https://github.com/bchu-ops/pumpkio9-website/tree/main/products';
@@ -63,7 +64,7 @@ function WorkCard({ row, section }) {
   const image = imageOf(row);
   const year = yearOf(row);
   const tools = toolsOf(row).slice(0, 6);
-  const external = row.link && !row.link.includes('bchu-ops.github.io/pumpkio9-website') ? row.link : null;
+  const external = codeLink(row);
   return (
     <li className="pj-card">
       <Link to={`/${section}/${row.slug}`} className={`pj-card-link${image ? '' : ' pj-no-cover'}`}>

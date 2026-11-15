@@ -35,8 +35,9 @@ test('projects load newest first with tools, and papers drop the boilerplate pre
   const titles = within(projects).getAllByRole('heading', { level: 3 }).map((h) => h.textContent);
   expect(titles).toEqual(['Newer Project', 'Older Project']);
   expect(within(projects).getByText('Java')).toBeInTheDocument();
-  // External code link only for links that leave this site
-  expect(within(projects).getAllByRole('link', { name: 'Code on GitHub' })).toHaveLength(1);
+  // A link to this site itself points at the site's repo
+  const code = within(projects).getAllByRole('link', { name: 'Code on GitHub' });
+  expect(code.map((a) => a.getAttribute('href'))).toContain('https://github.com/bchu-ops/pumpkio9-website');
   const papers = screen.getByRole('region', { name: 'Papers & presentations' });
   expect(within(papers).getByText('Reactor design')).toBeInTheDocument();
   expect(within(papers).getByRole('link', { name: /A Paper/ })).toHaveAttribute('href', '/papers/a-paper');

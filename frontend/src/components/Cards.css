@@ -185,6 +185,34 @@
     rgba(15, 15, 15, 0.15) 0 6px 16px;
 }
 
+/* Card wrapper: holds the card link plus an optional GitHub link (links can't nest). */
+.notion-collection-section .notion-card-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.notion-collection-section .notion-card-wrap > .notion-collection-card { flex: 1; }
+
+.notion-collection-section .notion-card-code {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: rgb(55, 53, 47);
+  font-size: 16px;
+  text-decoration: none;
+  box-shadow: rgba(15, 15, 15, 0.15) 0 1px 3px;
+  transition: transform 0.2s ease, background 100ms ease-out;
+}
+.notion-collection-section .notion-card-wrap:hover .notion-card-code { transform: translateY(-4px); }
+.notion-collection-section .notion-card-code:hover { background: #fff; color: #000; }
+.notion-collection-section .notion-card-code:focus-visible { outline: 2px solid rgb(35, 131, 226); outline-offset: 2px; }
+
 /* Card cover image */
 .notion-collection-section .notion-collection-card-cover {
   position: relative;
