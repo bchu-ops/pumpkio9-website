@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import LoopLab from './LoopLab';
 import ThermoBuilder from './ThermoBuilder';
+import Valves from './Valves';
 import useFonts from '../../shared/useFonts';
 import './ProcessLab.css';
 
@@ -9,6 +10,7 @@ const FONTS = 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;5
 const TABS = [
   { id: 'loop', label: 'Loop Lab', Body: LoopLab },
   { id: 'builder', label: 'Thermo & Materials', Body: ThermoBuilder },
+  { id: 'valves', label: 'Valves', Body: Valves },
 ];
 
 /** Process Lab: header plus tabs. Each tab is an independent tool. */
