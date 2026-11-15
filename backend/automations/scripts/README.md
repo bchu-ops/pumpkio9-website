@@ -31,7 +31,7 @@ uv run python scripts/sync_notion.py
 ```
 
 **Requires:**
-- `NOTION_PAGE_ID` in `.env` — the parent Notion page ID
+- `NOTION_PAGE_ID` in the repo-root `.env` — the parent Notion page ID
 - The Notion page must be **published to web** (Share > Publish)
 
 **Output:**
@@ -76,8 +76,8 @@ uv run python -m pdf_to_notion ../../../frontend/public/resume/Brian_Chu_Resume.
 ```
 
 **Requires:**
-- `NOTION_TOKEN` in `.env` — integration token from [notion.so/my-integrations](https://www.notion.so/my-integrations)
-- `NOTION_EXPERIENCES_DB_ID`, `NOTION_PROJECTS_DB_ID`, `NOTION_PAPERS_DB_ID` in `.env`
+- `NOTION_TOKEN` in the repo-root `.env` — integration token from [notion.so/my-integrations](https://www.notion.so/my-integrations)
+- `NOTION_EXPERIENCES_DB_ID`, `NOTION_PROJECTS_DB_ID`, `NOTION_PAPERS_DB_ID` in the repo-root `.env`
 - The integration must be **connected** to the Portfolio page (page > ... > Connections > add your integration)
 
 **Target databases and schemas:**
@@ -168,7 +168,7 @@ uv run python scripts/sync_notion.py
 
 ## Environment Variables
 
-Copy `.env.example` to `.env` and fill in:
+Copy the repo-root `.env.example` to `.env` (repo root, see docs/secrets.md) and fill in:
 
 ```env
 NOTION_PAGE_ID=abc123...                    # Parent Notion page (for sync_notion.py)

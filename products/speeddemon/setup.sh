@@ -216,20 +216,20 @@ setup_kubernetes() {
 # ENVIRONMENT FILES SETUP
 # ============================================================================
 
-# Create root .env file
+# Create the repo-root .env (the repo keeps a single .env, two levels up)
 create_root_env_file() {
-    log_info "Creating root .env file..."
+    log_info "Checking repo-root .env..."
     
-    if [ ! -f .env ]; then
-        if [ -f .env.example ]; then
-            log_info "Creating .env from .env.example..."
-            cp .env.example .env
-            log_success ".env created. Update it with your real API keys!"
+    if [ ! -f ../../.env ]; then
+        if [ -f ../../.env.example ]; then
+            log_info "Creating ../../.env from ../../.env.example..."
+            cp ../../.env.example ../../.env
+            log_success ".env created at the repo root. Add your real keys (OPENAI_API_KEY etc.)."
         else
-            log_warning ".env.example not found, skipping root .env creation"
+            log_warning "../../.env.example not found, skipping .env creation"
         fi
     else
-        log_info ".env already exists, skipping..."
+        log_info "Repo-root .env already exists, skipping..."
     fi
 }
 
@@ -348,7 +348,7 @@ main() {
     echo "======================================"
     echo ""
     echo "Next steps:"
-    echo "1. Review and customize the .env file (add OPENAI_API_KEY)"
+    echo "1. Review and customize the repo-root .env file (add OPENAI_API_KEY)"
     echo "2. Run 'make build' to build all Docker images"
     echo "3. Run 'make up' to start all services"
     echo "4. Access the application:"

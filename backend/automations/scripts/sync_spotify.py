@@ -182,13 +182,13 @@ def write_if_changed(listening: Listening, path: Path) -> bool:
 def require_env(name: str) -> str:
     value = os.getenv(name, "").strip()
     if not value:
-        raise SystemExit(f"Missing {name}. Set it in backend/automations/.env or Actions secrets.")
+        raise SystemExit(f"Missing {name}. Set it in the repo-root .env or Actions secrets.")
     return value
 
 
 def main() -> int:
     logging.basicConfig(level=logging.INFO, format="%(message)s")
-    load_dotenv()
+    load_dotenv(Path(__file__).resolve().parents[3] / ".env")  # repo-root .env
     client_id = require_env("SPOTIFY_CLIENT_ID")
     client_secret = require_env("SPOTIFY_CLIENT_SECRET")
     refresh_token = require_env("SPOTIFY_REFRESH_TOKEN")

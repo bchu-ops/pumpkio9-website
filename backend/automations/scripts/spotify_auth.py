@@ -18,6 +18,7 @@ import os
 import secrets
 import webbrowser
 from http.server import BaseHTTPRequestHandler, HTTPServer
+from pathlib import Path
 from urllib.parse import parse_qs, urlencode, urlparse
 
 import httpx
@@ -56,7 +57,7 @@ def wait_for_code(expected_state: str) -> str:
 
 
 def main() -> None:
-    load_dotenv()
+    load_dotenv(Path(__file__).resolve().parents[3] / ".env")  # repo-root .env
     client_id = os.environ["SPOTIFY_CLIENT_ID"]
     client_secret = os.environ["SPOTIFY_CLIENT_SECRET"]
     state = secrets.token_urlsafe(16)

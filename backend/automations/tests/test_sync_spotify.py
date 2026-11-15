@@ -115,7 +115,7 @@ def test_main_keeps_old_json_when_spotify_fails(tmp_path, monkeypatch):
     out = tmp_path / "listening.json"
     out.write_text("OLD")
     monkeypatch.setattr(s, "OUTPUT_PATH", out)
-    monkeypatch.setattr(s, "load_dotenv", lambda: None)
+    monkeypatch.setattr(s, "load_dotenv", lambda *a, **k: None)
     for name in ("SPOTIFY_CLIENT_ID", "SPOTIFY_CLIENT_SECRET", "SPOTIFY_REFRESH_TOKEN"):
         monkeypatch.setenv(name, "x")
     real_client = httpx.Client

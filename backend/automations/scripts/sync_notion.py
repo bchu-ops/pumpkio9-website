@@ -26,7 +26,7 @@ from pathlib import Path
 import httpx
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(Path(__file__).resolve().parents[3] / ".env")  # repo-root .env
 
 NOTION_PAGE_ID = os.getenv("NOTION_PAGE_ID", "").replace("-", "")
 NOTION_API_URL = "https://www.notion.so/api/v3"

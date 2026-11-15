@@ -123,7 +123,7 @@ add: ## Add a package manually: make add PKG=pandas
 k8s-sync-secrets: ## Sync local .env keys to Kubernetes
 	@echo "🔐 Syncing .env to Kubernetes Secrets [$(K8S_NAME)]..."
 	@kubectl create secret generic $(K8S_NAME) \
-		--from-env-file=$(ROOT_DIR)/.env \
+		--from-env-file=$(ROOT_DIR)/../../.env \
 		--dry-run=client -o yaml | kubectl apply -f -
 
 k8s-deploy: k8s-sync-secrets ## Deploy everything to Kubernetes (Secrets + App + Service)
