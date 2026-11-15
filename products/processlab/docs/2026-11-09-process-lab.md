@@ -1,19 +1,23 @@
 # Process Lab: control theory, thermodynamics and materials
 
-Status: v2 at `/process-lab` (Products → Process Lab). Written 2026-11-09, updated 2026-11-13.
+Status: v3 at `/process-lab` (Products → Process Lab). Written 2026-11-09, updated 2026-11-15.
 
 v2 adds: Thermo & Materials tab (block diagram with PID loop blocks, three fluids with phase change, wall and insulation materials, stream table, energy balance).
+
+v3 adds: drawing-sheet restyle (IBM Plex, P&ID symbols) and drag-and-drop editing in Thermo & Materials (palette, reorder, drop on the palette to remove, drop a PID on the block it measures; arrow keys / Delete as keyboard fallback).
 
 ## What it does
 
 - **Loop Lab tab:** PID control theory sandbox. First-order, second-order and integrating processes with dead time; sliders paired with number inputs; plot of PV/SP/MV; overshoot, rise, settling and IAE readouts; presets for overshoot, tuning, P-only offset, dead time, windup and underdamped processes.
-- **Thermo & Materials tab:** build a process as a block diagram (Source → Valve / Heater / Heat exchanger / Pipe / Tank → Sink) with PID loop blocks. Choose fluids and wall/insulation materials; see stream temperatures and vapor fractions on the diagram, a stream table and a closed energy balance.
+- **Thermo & Materials tab:** build a process by dragging equipment (Valve / Heater / Heat exchanger / Pipe / Tank) between Source and Sink, and drop PID loops on the block they measure. Choose fluids and wall/insulation materials; see stream temperatures and vapor fractions on the diagram, a stream table and a closed energy balance.
 
 ## Code
 
 `products/processlab/web/`: `ProcessLab.jsx` (page + tabs), `LoopLab.jsx`, `ThermoBuilder.jsx` and their components at the top; all models, data and presets in `lib/` with unit tests next to them.
 
 ## Original handoff (2026-11-09)
+
+_Kept as written on 2026-11-09; file names and the CRA setup it mentions have since changed (see Code above)._
 
 Owner: Brian. Written 2026-11-09.
 

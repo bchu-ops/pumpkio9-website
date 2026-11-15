@@ -132,7 +132,7 @@ pdf_to_notion/
 
 ### Step 2: Update Google Drive links (if re-uploaded)
 
-Google Drive links are in `frontend/src/components/Footer.js`:
+Google Drive links are in `frontend/src/components/Footer.jsx`:
 - **ChemE Drive link:** line ~67 — `https://drive.google.com/file/d/<FILE_ID>/view?usp=drive_link`
 - **SWE Drive link:** line ~84 — `https://drive.google.com/file/d/<FILE_ID>/view?usp=drive_link`
 
@@ -164,7 +164,7 @@ uv run python scripts/sync_notion.py
 ### Step 6: Update frontend (if needed)
 
 - Update card components if new entries were added or removed
-- Update `NotionCards.js` resume button filenames if PDF names changed
+- Update `NotionCards.jsx` resume button filenames if PDF names changed
 
 ## Environment Variables
 

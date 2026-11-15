@@ -4,7 +4,7 @@ Deployed on https://bchu-ops.github.io/pumpkio9-website/
 
 ```
 frontend/            the website (Vite + React): home, navbar, footer, Notion pages
-backend/automations/ scheduled scripts: Notion sync, resume → Notion, Spotify sync, F1 snapshot
+backend/automations/ scripts: Notion sync, resume → Notion (run locally); Spotify + F1 snapshots (run by the hourly deploy)
 products/<name>/     everything for one product
   web/               its page on the site, imported by frontend as @products/<name>/web/...
   docs/              its write-ups and research
