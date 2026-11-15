@@ -64,7 +64,7 @@ jobs:
 
       # Spotify: build-time snapshot into frontend/public/spotify (not committed,
       # so nothing ever commits to main outside the dev -> main flow).
-      # Never fails the deploy: without secrets, the committed file is kept.
+      # Never fails the deploy: without secrets the page shows its empty state.
       - name: Set up uv
         uses: astral-sh/setup-uv@v6
 
@@ -77,7 +77,7 @@ jobs:
           SPOTIFY_REFRESH_TOKEN: ${{ secrets.SPOTIFY_REFRESH_TOKEN }}
         run: |
           if [ -z "$SPOTIFY_REFRESH_TOKEN" ]; then
-            echo "::notice::Spotify secrets not set; keeping the committed listening.json"
+            echo "::notice::Spotify secrets not set; skipping (Spotify page shows its empty state)"
             exit 0
           fi
           uv run python scripts/sync_spotify.py
