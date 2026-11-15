@@ -30,7 +30,7 @@ function useBrianListening() {
   return state;
 }
 
-// Runs once, the first time the "Yours" tab opens. The login code in the URL
+// Runs once, the first time the "Invited" tab opens. The login code in the URL
 // is single-use, so the ref keeps it from being exchanged twice.
 function useVisitorListening(active, search, clearUrl) {
   const [state, setState] = useState({ status: 'idle' });
@@ -86,12 +86,13 @@ function VisitorTab({ state, setState }) {
         {state.status === 'error' && (
           <p className="sp-error" role="alert">
             {state.message}
-            {state.forbidden && ' Spotify only lets small hobby apps like this one work for a few invited accounts. Ask Brian to add yours.'}
+            {state.forbidden && ' This Spotify account isn\'t on the invite list. Spotify limits hobby apps like this one to 5 accounts that Brian adds by hand.'}
           </p>
         )}
         <p>
-          See your own recently played tracks and favorites. Your data stays in this browser tab and is
-          never sent to my site. Spotify only allows a few invited accounts for hobby apps, so ask me first.
+          Invite only. Spotify limits hobby apps like this one to 5 accounts, and I add each one by hand.
+          If I&apos;ve added yours, log in to see your recently played tracks and favorites. Your data stays
+          in this browser tab and is never sent to my site.
         </p>
         <button type="button" className="sp-button" onClick={login}>Log in with Spotify</button>
       </div>
@@ -125,7 +126,7 @@ export default function SpotifyPage() {
 
         <div className="sp-segmented sp-tabs" role="group" aria-label="Whose listening">
           <button type="button" aria-pressed={tab === 'brian'} onClick={() => setTab('brian')}>Mine</button>
-          <button type="button" aria-pressed={tab === 'you'} onClick={() => setTab('you')}>Yours</button>
+          <button type="button" aria-pressed={tab === 'you'} onClick={() => setTab('you')}>Invited</button>
         </div>
 
         {tab === 'brian' ? <BrianTab /> : <VisitorTab state={visitor} setState={setVisitor} />}
