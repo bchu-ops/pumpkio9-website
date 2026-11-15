@@ -37,6 +37,14 @@ Every formula and constant in `web/lib/` was checked against primary sources (Å
   - Unit tests pin the published check cases and steady states.
 - **Left out because unverified:** Cohen–Coon P rule, IMC-PID with Padé, valve-specific cavitation thresholds.
 
+## pH paper presets (2026-11-15)
+
+From `frontend/public/projects/papers/pHControlSystems.pdf`, §5.1 and §5.4:
+- **FOPDT fit from ramp tests:** K = 0.03 ± 0.02 ΔpH per % controller output, τ = 4.6 ± 0.3 s, θ = 4 ± 3 s.
+- **PD settings:** Kc = 28 ± 3, τD = 4.6 ± 0.3 s. Section 5.4 calls these theoretical (Dahlin/FOPDT) and reports the best experimental PD as Kc = 6.27, τD = 0.05 s. The abstract calls 28 and 4.6 "optimal", so the paper is inconsistent on this point.
+- **"My pH paper: as fitted":** that FOPDT model with PD 28/4.6 stalls near half the step (no integral action, no integrator).
+- **"My pH paper: integrating":** the same numbers as an integrator (rate K/τ) reach setpoint with rise ≈ 12 s and settle ≈ 26 s. The lab measured 15 s and 30 s, which supports the paper's finding that the tank was self-integrating.
+
 ## Original handoff (2026-11-09)
 
 _Kept as written on 2026-11-09; file names and the CRA setup it mentions have since changed (see Code above)._
