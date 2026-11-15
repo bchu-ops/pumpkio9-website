@@ -47,7 +47,8 @@ export default function PdfViewer({ fileUrl }) {
 
     const load = async () => {
       try {
-        task = pdfjsLib.getDocument(resolvedUrl);
+        // isEvalSupported: false mitigates GHSA-wgrm-67xf-hhpq (code execution via a crafted PDF) on pdfjs-dist 2.x.
+        task = pdfjsLib.getDocument({ url: resolvedUrl, isEvalSupported: false });
         const doc = await task.promise;
         const pageSizes = await readPageSizes(doc);
         if (cancelled) return;
