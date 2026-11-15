@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { renderToCanvas, shareCanvas } from './lib/shareImage';
 
 const LABEL = {
-  idle: '📸 Copy as image',
+  idle: 'Copy as image',
   busy: 'Making image…',
   copied: '✓ Copied to clipboard',
   downloaded: '✓ Image downloaded',

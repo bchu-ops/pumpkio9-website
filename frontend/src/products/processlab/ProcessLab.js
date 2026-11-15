@@ -1,7 +1,10 @@
 import React, { useState } from 'react';
 import LoopLab from './LoopLab';
 import ThermoBuilder from './ThermoBuilder';
+import useFonts from '../useFonts';
 import './ProcessLab.css';
+
+const FONTS = 'https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap';
 
 const TABS = [
   { id: 'loop', label: 'Loop Lab', Body: LoopLab },
@@ -10,6 +13,7 @@ const TABS = [
 
 /** Process Lab: header plus tabs. Each tab is an independent tool. */
 export default function ProcessLab() {
+  useFonts(FONTS);
   const [tab, setTab] = useState(TABS[0].id);
   const { Body } = TABS.find((t) => t.id === tab);
   return (
@@ -35,7 +39,7 @@ export default function ProcessLab() {
             </button>
           ))}
         </div>
-        <div role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`}>
+        <div className="cl-sheet" role="tabpanel" id={`panel-${tab}`} aria-labelledby={`tab-${tab}`}>
           <Body />
         </div>
       </main>

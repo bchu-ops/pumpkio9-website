@@ -31,19 +31,29 @@ function drawPanel(ctx, { x0, y0, w, h, t, series, title, colors, xTicks }) {
   const X = (v) => x0 + (v / tMax) * w;
   const Y = (v) => y0 + h - ((Math.max(-LIMIT, Math.min(LIMIT, v)) - lo) / (hi - lo)) * h;
 
-  ctx.font = '11px -apple-system, Segoe UI, sans-serif';
+  // Graph-paper grid: faint minor lines (5 per division), firmer major lines.
   ctx.lineWidth = 1;
+  ctx.strokeStyle = colors.minor;
+  const xs = niceStep(tMax, 6);
+  for (let v = 0; v <= tMax + 1e-9; v += xs / 5) {
+    ctx.beginPath(); ctx.moveTo(Math.round(X(v)) + 0.5, y0); ctx.lineTo(Math.round(X(v)) + 0.5, y0 + h); ctx.stroke();
+  }
+  for (let v = lo; v <= hi + step / 2; v += step / 5) {
+    ctx.beginPath(); ctx.moveTo(x0, Math.round(Y(v)) + 0.5); ctx.lineTo(x0 + w, Math.round(Y(v)) + 0.5); ctx.stroke();
+  }
+  ctx.font = `11px ${colors.mono}`;
   ctx.textBaseline = 'middle';
   for (let v = lo; v <= hi + step / 2; v += step) {
     const y = Y(v);
     ctx.strokeStyle = colors.grid;
-    ctx.beginPath(); ctx.moveTo(x0, y); ctx.lineTo(x0 + w, y); ctx.stroke();
+    ctx.beginPath(); ctx.moveTo(x0, Math.round(y) + 0.5); ctx.lineTo(x0 + w, Math.round(y) + 0.5); ctx.stroke();
     ctx.fillStyle = colors.muted;
     ctx.textAlign = 'right';
     ctx.fillText(label(v, step), x0 - 6, y);
   }
+  ctx.strokeStyle = colors.grid;
+  ctx.strokeRect(x0 + 0.5, y0 + 0.5, w, h);
   if (xTicks) {
-    const xs = niceStep(tMax, 6);
     ctx.textAlign = 'center';
     ctx.textBaseline = 'top';
     for (let v = 0; v <= tMax + 1e-9; v += xs) ctx.fillText(label(v, xs), X(v), y0 + h + 6);
@@ -51,12 +61,12 @@ function drawPanel(ctx, { x0, y0, w, h, t, series, title, colors, xTicks }) {
   ctx.textAlign = 'left';
   ctx.textBaseline = 'bottom';
   ctx.fillStyle = colors.text;
-  ctx.font = '600 12px -apple-system, Segoe UI, sans-serif';
+  ctx.font = `600 12px ${colors.sans}`;
   ctx.fillText(title, x0, y0 - 6);
 
-  series.forEach(({ data, color, dash }) => {
+  series.forEach(({ data, color, dash, width = 1.75 }) => {
     ctx.strokeStyle = color;
-    ctx.lineWidth = 2;
+    ctx.lineWidth = width;
     ctx.setLineDash(dash || []);
     ctx.beginPath();
     data.forEach((v, i) => (i ? ctx.lineTo(X(t[i]), Y(v)) : ctx.moveTo(X(t[i]), Y(v))));
@@ -73,6 +83,14 @@ export default function LoopPlot({ t, panels, summary }) {
   const wrapRef = useRef(null);
   const canvasRef = useRef(null);
   const [width, setWidth] = useState(0);
+  const [fontsReady, setFontsReady] = useState(false);
+
+  // Redraw once web fonts arrive; canvas text doesn't re-render by itself.
+  useEffect(() => {
+    let live = true;
+    document.fonts?.ready.then(() => live && setFontsReady(true));
+    return () => { live = false; };
+  }, []);
 
   useEffect(() => {
     const el = wrapRef.current;
@@ -94,7 +112,7 @@ export default function LoopPlot({ t, panels, summary }) {
 
     const css = getComputedStyle(canvas);
     const v = (name) => css.getPropertyValue(name).trim();
-    const colors = { grid: v('--cl-grid'), muted: v('--cl-muted'), text: v('--cl-text') };
+    const colors = { grid: v('--cl-grid'), minor: v('--cl-grid-minor'), muted: v('--cl-muted'), text: v('--cl-text'), mono: v('--cl-mono'), sans: v('--cl-sans') };
     const left = 44;
     const w = width - left - 12;
     const head = 22;
@@ -113,11 +131,11 @@ export default function LoopPlot({ t, panels, summary }) {
       y += h + head;
     });
     ctx.fillStyle = colors.muted;
-    ctx.font = '11px -apple-system, Segoe UI, sans-serif';
+    ctx.font = `11px ${colors.mono}`;
     ctx.textAlign = 'right';
     ctx.textBaseline = 'bottom';
     ctx.fillText('time [s]', width - 12, height - 2);
-  }, [t, panels, width]);
+  }, [t, panels, width, fontsReady]);
 
   return (
     <div ref={wrapRef} className="cl-plot">
