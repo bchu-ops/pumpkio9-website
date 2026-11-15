@@ -24,8 +24,8 @@ def main() -> None:
         print(f"Error: File not found: {pdf_path}")
         sys.exit(1)
 
-    # Load .env from the automations directory (two levels up from this package)
-    env_path = Path(__file__).resolve().parent.parent.parent / ".env"
+    # The repo keeps one .env, at its root.
+    env_path = Path(__file__).resolve().parents[4] / ".env"
     load_dotenv(env_path)
 
     try:

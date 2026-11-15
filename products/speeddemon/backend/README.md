@@ -206,7 +206,7 @@ When FastAPI is implemented, the backend will expose:
 
 ## Environment Variables
 
-Configure the backend using environment variables in `.env`:
+Configure the backend using environment variables in the repo-root `.env`:
 
 ```env
 OPENAI_API_KEY=your_api_key_here

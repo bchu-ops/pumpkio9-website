@@ -24,7 +24,7 @@ This script will:
 
 Next, add your OpenAI API key:
 
-In `.env`, add:
+In the repo-root `.env` (`cp ../../.env.example ../../.env`), add:
 
 ```env
 OPENAI_API_KEY=your_api_key_here
@@ -266,7 +266,7 @@ This project is for educational and research purposes.
 ### Common Issues
 - **Docker not running:** Start Docker Desktop
 - **Port conflicts:** Check if ports 8000 and 8888 are available
-- **Environment variables:** Ensure `.env` file is properly configured with `OPENAI_API_KEY`
+- **Environment variables:** Ensure the repo-root `.env` is properly configured with `OPENAI_API_KEY`
 - **Dependencies:** Run `./setup.sh` to ensure all dependencies are installed
 
 ### Getting Help

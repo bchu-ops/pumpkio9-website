@@ -9,6 +9,8 @@ const repo = path.resolve(here, '..');
 export default defineConfig({
   // GitHub Pages serves the site at /pumpkio9-website/.
   base: '/pumpkio9-website/',
+  // The repo keeps one .env at its root. Vite only exposes VITE_* values to the site.
+  envDir: repo,
   plugins: [react()],
   resolve: {
     // Product pages live in ../products/<name>/web and are imported as @products/<name>/web/...
