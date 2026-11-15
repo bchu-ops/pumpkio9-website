@@ -24,3 +24,6 @@ yarn-error.log*
 
 # Speed Demon snapshot, built at deploy time (backend/automations/scripts/prefetch-f1.mjs)
 /public/f1
+
+# Spotify listening snapshot, built at deploy time (backend/automations/scripts/sync_spotify.py)
+/public/spotify
