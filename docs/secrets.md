@@ -16,7 +16,7 @@ For CI, the same names go in GitHub → Settings → Secrets and variables → A
 | `NOTION_PAGE_ID`, `NOTION_*_DB_ID`, `NOTION_*_COLLECTION_ID` | no (IDs) | — | `sync_notion.py`, `pdf_to_notion` |
 | `SPOTIFY_CLIENT_SECRET` | **yes** | secret `SPOTIFY_CLIENT_SECRET` | `sync_spotify.py` in `deploy.yml` |
 | `SPOTIFY_REFRESH_TOKEN` | **yes** | secret `SPOTIFY_REFRESH_TOKEN` | `sync_spotify.py` in `deploy.yml` |
-| `SPOTIFY_CLIENT_ID` | no (public) | secret `SPOTIFY_CLIENT_ID` **and** variable `SPOTIFY_CLIENT_ID` | secret: `sync_spotify.py`; variable: site build as `VITE_SPOTIFY_CLIENT_ID` |
+| `SPOTIFY_CLIENT_ID` | no (public) | variable `SPOTIFY_CLIENT_ID` | `sync_spotify.py` in `deploy.yml`, and the site build as `VITE_SPOTIFY_CLIENT_ID` |
 | `VITE_SPOTIFY_CLIENT_ID` | no (public, built into the site) | (from variable `SPOTIFY_CLIENT_ID`) | Spotify page "Yours" tab |
 | `OPENAI_API_KEY`, `PDF_SERVICE_TOKEN` | **yes** | — | Speed Demon backend (Docker, local only) |
 
