@@ -1,8 +1,8 @@
 [project]
 name = "automations"
 version = "0.1.0"
-description = "Add your description here"
-readme = "README.md"
+description = "Notion, Spotify and F1 data automations for the pumpkio9 portfolio site"
+readme = "scripts/README.md"
 requires-python = ">=3.10"
 dependencies = [
     "httpx>=0.28.1",
