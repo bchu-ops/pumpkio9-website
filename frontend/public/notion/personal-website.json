@@ -3,7 +3,7 @@
     "31f181ec-d4f6-8199-93e3-d3190b20f412": {
       "value": {
         "id": "31f181ec-d4f6-8199-93e3-d3190b20f412",
-        "version": 69,
+        "version": 74,
         "type": "page",
         "properties": {
           "?rG}": [
@@ -19,11 +19,11 @@
           ],
           "LEI=": [
             [
-              "personal-website.png",
+              "personal-website.jpg",
               [
                 [
                   "a",
-                  "attachment:c2af08f4-f994-4607-abd2-23804e68e8aa:personal-website.png"
+                  "attachment:3eee7d17-2a75-47db-959c-b21b308856b7:personal-website.jpg"
                 ]
               ]
             ]
@@ -81,7 +81,7 @@
           }
         },
         "created_time": 1773145360302,
-        "last_edited_time": 1794983824558,
+        "last_edited_time": 1794988775767,
         "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "parent_table": "collection",
         "alive": true,
@@ -89,7 +89,8 @@
           "2cbe02c1-a0b6-4f60-83c8-329b1fb876e3",
           "2a643d8a-c3cf-4a84-b5b0-e516991725cb",
           "ad81da9a-b92e-4489-b808-c718f03045f9",
-          "c2af08f4-f994-4607-abd2-23804e68e8aa"
+          "c2af08f4-f994-4607-abd2-23804e68e8aa",
+          "3eee7d17-2a75-47db-959c-b21b308856b7"
         ],
         "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
         "crdt_format_version": 1,
