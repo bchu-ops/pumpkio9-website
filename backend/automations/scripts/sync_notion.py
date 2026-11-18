@@ -21,6 +21,7 @@ import os
 import re
 import shutil
 import sys
+import tempfile
 from pathlib import Path
 
 import httpx
@@ -31,6 +32,16 @@ load_dotenv(Path(__file__).resolve().parents[3] / ".env")  # repo-root .env
 NOTION_PAGE_ID = os.getenv("NOTION_PAGE_ID", "").replace("-", "")
 NOTION_API_URL = "https://www.notion.so/api/v3"
 OUTPUT_DIR = Path(__file__).resolve().parent.parent.parent.parent / "frontend" / "public" / "notion"
+
+# Notion's queryCollection returns at most this many rows per collection; the site's
+# galleries are far smaller, so no pagination is implemented.
+QUERY_LIMIT = 50
+# loadPageChunk size; one chunk comfortably covers a single portfolio/detail page.
+PAGE_CHUNK_LIMIT = 100
+# Seconds before an HTTP call to Notion is abandoned (the unofficial API can be slow).
+HTTP_TIMEOUT = 30
+# Sent as userTimeZone to queryCollection; affects how Notion renders date properties.
+USER_TIMEZONE = "America/Los_Angeles"
 
 HEADERS = {
     "Content-Type": "application/json",
@@ -63,7 +74,7 @@ def fetch_page(client: httpx.Client, page_id: str) -> dict:
         f"{NOTION_API_URL}/loadPageChunk",
         json={
             "page": {"id": formatted_id},
-            "limit": 100,
+            "limit": PAGE_CHUNK_LIMIT,
             "cursor": {"stack": []},
             "chunkNumber": 0,
             "verticalColumns": False,
@@ -105,11 +116,11 @@ def query_collection(client: httpx.Client, collection_id: str, view_id: str) -> 
                 "reducers": {
                     "collection_group_results": {
                         "type": "results",
-                        "limit": 50,
+                        "limit": QUERY_LIMIT,
                     }
                 },
                 "searchQuery": "",
-                "userTimeZone": "America/Los_Angeles",
+                "userTimeZone": USER_TIMEZONE,
             },
         },
         headers=HEADERS,
@@ -289,7 +300,7 @@ def process_collection(
             rewrite_pdf_sources(detail_map, block_id)
 
         # Save full recordMap for react-notion-x detail page rendering
-        with open(output_dir / f"{slug}.json", "w") as f:
+        with open(output_dir / f"{slug}.json", "w", encoding="utf-8") as f:
             json.dump(detail_map, f, indent=2)
 
         manifest[slug] = {
@@ -331,36 +342,64 @@ def clean_output_dir(output_dir: Path) -> None:
         f.unlink()
 
 
-def main():
-    if not NOTION_PAGE_ID:
-        print("Error: NOTION_PAGE_ID not set in .env")
-        sys.exit(1)
+def sort_rows(section: str, rows: list[dict]) -> list[dict]:
+    """Sort rows in place for display and return them.
 
-    print(f"Fetching parent page: {NOTION_PAGE_ID}")
+    experiences: most recent first by end date, current jobs ("Present") first.
+    projects: newest first by start date (the unofficial query API ignores view sorts).
+    Both sorts are stable, so ties keep the Notion gallery order; other sections are untouched.
+    """
+    if section == "experiences":
+        def recency(r):
+            end = (r.get("duration") or {}).get("end") or ""
+            return "9999" if end == "Present" else end
+        rows.sort(key=recency, reverse=True)
+    elif section == "projects":
+        rows.sort(
+            key=lambda r: (r.get("date") or {}).get("start") or "",
+            reverse=True,
+        )
+    return rows
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
-    # Clean old output to prevent stale/duplicate data
-    clean_output_dir(OUTPUT_DIR)
+def publish_output(staging_dir: Path, output_dir: Path) -> None:
+    """Replace the old *.json files in output_dir with the freshly built ones.
 
-    with httpx.Client(timeout=30) as client:
-        # Fetch parent page
+    Only called once every fetch succeeded, so a failed sync never deletes site data.
+    """
+    output_dir.mkdir(parents=True, exist_ok=True)
+    clean_output_dir(output_dir)
+    for f in staging_dir.glob("*.json"):
+        shutil.move(str(f), str(output_dir / f.name))
+
+
+def run_sync(client: httpx.Client, page_id: str, output_dir: Path) -> int:
+    """Fetch everything into a staging dir, then swap it into output_dir.
+
+    Returns a process exit code. On any failure (parent page or any collection)
+    output_dir is left exactly as it was and a non-zero code is returned.
+    """
+    output_dir.parent.mkdir(parents=True, exist_ok=True)
+    with tempfile.TemporaryDirectory(prefix=".notion-staging-", dir=output_dir.parent) as tmp:
+        staging = Path(tmp)
+
         try:
-            parent_record_map = fetch_page(client, NOTION_PAGE_ID)
+            parent_record_map = fetch_page(client, page_id)
         except httpx.HTTPStatusError as e:
             print(f"Failed to fetch parent page: {e.response.status_code}")
-            sys.exit(1)
+            return 1
 
-        with open(OUTPUT_DIR / "index.json", "w") as f:
+        with open(staging / "index.json", "w", encoding="utf-8") as f:
             json.dump(parent_record_map, f, indent=2)
 
         # Extract collection metadata from parent page (no extra API calls)
         collection_info = extract_collections_meta(parent_record_map)
         all_collections = {}
         manifest = {}
+        failures = []
 
         if collection_info:
-            print(f"\nFound {len(collection_info)} collections:")
+            print(f"\nFound{len(collection_info)} collections:")
 
             for col in collection_info:
                 col_name = col["name"]
@@ -369,22 +408,9 @@ def main():
 
                 try:
                     rows = process_collection(
-                        client, col, section, OUTPUT_DIR, manifest,
+                        client, col, section, staging, manifest,
                     )
-                    if section == "experiences":
-                        # Most recent first by end date (current jobs first).
-                        # Ties keep the Notion gallery order (stable sort).
-                        def recency(r):
-                            end = (r.get("duration") or {}).get("end") or ""
-                            return "9999" if end == "Present" else end
-                        rows.sort(key=recency, reverse=True)
-                    elif section == "projects":
-                        # Newest first by start date, matching the Notion gallery
-                        # sort (the unofficial query API ignores view sorts).
-                        rows.sort(
-                            key=lambda r: (r.get("date") or {}).get("start") or "",
-                            reverse=True,
-                        )
+                    sort_rows(section, rows)
                     print(f"    {len(rows)} rows:")
                     for r in rows:
                         print(f"      - {r['title']}")
@@ -392,18 +418,40 @@ def main():
                     all_collections[section] = rows
                 except httpx.HTTPStatusError as e:
                     print(f"    Failed to query: {e.response.status_code}")
+                    failures.append(col_name)
                 except Exception as e:
                     print(f"    Error: {e}")
+                    failures.append(col_name)
+
+        if failures:
+            print(f"\nSync failed for: {', '.join(failures)}. Existing {output_dir} left untouched.")
+            return 1
 
         # Save collections and manifest
-        with open(OUTPUT_DIR / "collections.json", "w") as f:
+        with open(staging / "collections.json", "w", encoding="utf-8") as f:
             json.dump(all_collections, f, indent=2)
-        with open(OUTPUT_DIR / "pages.json", "w") as f:
+        with open(staging / "pages.json", "w", encoding="utf-8") as f:
             json.dump(manifest, f, indent=2)
 
-        print(f"\nSaved to {OUTPUT_DIR}")
+        publish_output(staging, output_dir)
+
+        print(f"\nSaved to {output_dir}")
         print(f"API calls: 1 (parent) + {len(collection_info)} (queries) + {len(manifest)} (detail pages) = {1 + len(collection_info) + len(manifest)} total")
         print("Sync complete!")
+        return 0
+
+
+def main():
+    if not NOTION_PAGE_ID:
+        print("Error: NOTION_PAGE_ID not set in .env")
+        sys.exit(1)
+
+    print(f"Fetching parent page: {NOTION_PAGE_ID}")
+
+    with httpx.Client(timeout=HTTP_TIMEOUT) as client:
+        code = run_sync(client, NOTION_PAGE_ID, OUTPUT_DIR)
+    if code:
+        sys.exit(code)
 
 
 if __name__ == "__main__":
