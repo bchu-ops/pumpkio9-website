@@ -1,4 +1,4 @@
-﻿# Speed Demon roadmap
+# Speed Demon roadmap
 
 Only work that is still open. What is already built (snapshot prefetch, lap picker, race pace, corner notes, share image, teammate button) is described in [2026-11-09-speed-demon.md](2026-11-09-speed-demon.md).
 
