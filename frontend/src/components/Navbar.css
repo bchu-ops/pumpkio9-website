@@ -165,7 +165,7 @@
   .nav-menu.active {
     background: #242222;
     left: 0;
-    opacity: 0.9;
+    opacity: 1; /* solid, so the page behind doesn't bleed through the links */
     transition: all 0.5s ease;
     z-index: 1;
   }
