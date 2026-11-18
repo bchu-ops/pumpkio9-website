@@ -1,3 +1,9 @@
+/* Site accent: the cyan used by the logo icon. Define once, reuse via var(). */
+:root {
+  --accent-cyan-rgb: 0, 217, 255;
+  --accent-cyan: rgba(var(--accent-cyan-rgb), 0.8);
+}
+
 .navbar {
   background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
   height: 80px;
@@ -101,16 +107,26 @@
   height: 100%;
 }
 
+/* "Links" pill: translucent cyan fill, cyan text and border. Vertically
+   centred with the independent `translate` property so the hover lift
+   (`transform`) never shifts layout; the <li> keeps its 80px height. */
 .nav-links-outline {
-  color: #fff;
-  display: flex;
+  color: var(--accent-cyan);
+  display: inline-flex;
   align-items: center;
   text-decoration: none;
   padding: 0.5rem 1rem;
-  height: 100%;
-  background-color: transparent;
-  border: 1px solid var(--primary);
-  transition: all 0.3s ease-out;
+  position: relative;
+  top: 50%;
+  translate: 0 -50%;
+  background-color: rgba(var(--accent-cyan-rgb), 0.12);
+  border: 1px solid var(--accent-cyan);
+  border-radius: 999px;
+  transition:
+    background-color 0.25s ease,
+    box-shadow 0.25s ease,
+    transform 0.25s ease,
+    color 0.25s ease;
 }
 
 .nav-links:hover {
@@ -119,8 +135,15 @@
 }
 
 .nav-links-outline:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
+  color: #fff;
+  background-color: rgba(var(--accent-cyan-rgb), 0.28);
+  box-shadow: 0 0 0.75rem rgba(var(--accent-cyan-rgb), 0.45);
+  transform: translateY(-0.125rem);
+}
+
+.nav-links-outline:focus-visible {
+  outline: 2px solid var(--accent-cyan);
+  outline-offset: 3px;
 }
 
 .fa-bars {
@@ -177,11 +200,29 @@
     display: table;
   }
 
-  .nav-links:hover, .nav-links-outline:hover {
+  .nav-links:hover {
     background-color: #fff;
     color: #242424;
     border-radius: 0;
     opacity: 1;
+  }
+
+  /* Links row: stretch the item to the full menu width, keeping the cyan accent */
+  .nav-item:has(> .nav-links-outline) {
+    width: 100%;
+  }
+
+  .nav-links-outline {
+    top: auto;
+    translate: none;
+    border-radius: 0;
+    border-width: 1px 0;
+  }
+
+  .nav-links-outline:hover {
+    transform: none;
+    box-shadow: none;
+    border-radius: 0;
   }
 
   .navbar-logo {

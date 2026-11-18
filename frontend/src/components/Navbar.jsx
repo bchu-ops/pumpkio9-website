@@ -74,7 +74,7 @@ function Navbar({ topRef, bottomRef }) {
               <i
                 className="fa-brands fa-spotify fa-beat"
                 aria-hidden="true"
-                style={{ color: 'rgba(0, 217, 255, 0.8)', fontSize: 48 }}
+                style={{ color: 'var(--accent-cyan)', fontSize: 48 }}
               ></i>
               Brian Chu
             </div>
