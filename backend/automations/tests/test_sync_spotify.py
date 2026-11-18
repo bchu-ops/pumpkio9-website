@@ -1,13 +1,9 @@
 import json
-import sys
-from pathlib import Path
 
 import httpx
 import pytest
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-
-import sync_spotify as s  # noqa: E402
+import sync_spotify as s
 
 
 def raw_track(track_id: str = "t1") -> dict:
