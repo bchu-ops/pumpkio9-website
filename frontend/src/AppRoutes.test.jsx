@@ -64,10 +64,10 @@ test('redirect preserves search and hash', async () => {
   expect(screen.getByTestId('where').textContent).toBe('/projects?x=1&y=2#papers');
 });
 
-test('Spotify OAuth callback at the registered /Spotify URI keeps code and state', async () => {
-  renderAt('/Spotify?code=abc&state=xyz');
+test('old /Spotify link keeps its query string', async () => {
+  renderAt('/Spotify?x=1&y=2');
   expect(await screen.findByText('spotify page')).toBeInTheDocument();
-  expect(screen.getByTestId('where').textContent).toBe('/spotify?code=abc&state=xyz');
+  expect(screen.getByTestId('where').textContent).toBe('/spotify?x=1&y=2');
 });
 
 test('/:type/:id detail routes still work and are not rewritten', async () => {

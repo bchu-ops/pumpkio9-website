@@ -91,10 +91,6 @@ jobs:
       # 5. Build frontend (Vite; imports product pages from ../products)
       - name: Build frontend
         working-directory: ./frontend
-        env:
-          # Public by design (PKCE login needs no secret). Set under
-          # Settings > Secrets and variables > Actions > Variables.
-          VITE_SPOTIFY_CLIENT_ID: ${{ vars.SPOTIFY_CLIENT_ID }}
         run: npm run build
 
       # 6. Upload build output as artifact
