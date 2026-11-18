@@ -110,6 +110,34 @@
   ],
   "projects": [
     {
+      "id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+      "title": "My Spotify",
+      "slug": "my-spotify",
+      "section": "projects",
+      "link": "https://github.com/bchu-ops/pumpkio9-website/tree/main/products/spotify",
+      "image": "spotify.jpg",
+      "tools": "React, Python, Spotify Web API, OAuth, GitHub Actions, pytest, Vitest",
+      "date": {
+        "start": "2026-11-14",
+        "end": ""
+      },
+      "description": "Live listening history synced hourly from the Spotify Web API with Python and GitHub Actions"
+    },
+    {
+      "id": "41c181ec-d4f6-815a-a7ed-eba31210d607",
+      "title": "Process Lab",
+      "slug": "process-lab",
+      "section": "projects",
+      "link": "https://github.com/bchu-ops/pumpkio9-website/tree/main/products/processlab",
+      "image": "processlab.jpg",
+      "tools": "React, JavaScript, SVG, RK4 numerical integration, PID control, Vitest",
+      "date": {
+        "start": "2026-11-09",
+        "end": ""
+      },
+      "description": "Interactive PID tuning, thermodynamics and valve sizing sandbox built with React"
+    },
+    {
       "id": "31f181ec-d4f6-811b-8187-c3c28e765692",
       "title": "F1 AI Racing \u2014 Speed Demon",
       "slug": "f1-ai-racing-speed-demon",
@@ -129,7 +157,7 @@
       "slug": "personal-website",
       "section": "projects",
       "link": "https://bchu-ops.github.io/pumpkio9-website/",
-      "image": "personal-website.png",
+      "image": "personal-website.jpg",
       "tools": "React, JavaScript, CSS, Notion API, Spotify API, Google Maps API",
       "date": {
         "start": "2025-07-01",
