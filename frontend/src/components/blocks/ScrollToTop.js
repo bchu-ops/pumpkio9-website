@@ -44,6 +44,9 @@ const retryUntil = (attempt) => {
 export default function ScrollToTop() {
   const location = useLocation();
   const navigationType = useNavigationType();
+  // location.key is "default" for every page opened by a fresh load, so the path
+  // must be part of the key or one page would restore another page's position.
+  const storageKey = `${location.pathname}${location.search}|${location.key}`;
 
   useEffect(() => {
     if ('scrollRestoration' in window.history) {
@@ -53,14 +56,14 @@ export default function ScrollToTop() {
 
   // Remember the current page's position while the visitor scrolls.
   useEffect(() => {
-    const onScroll = () => savePosition(location.key, window.scrollY);
+    const onScroll = () => savePosition(storageKey, window.scrollY);
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, [location.key]);
+  }, [storageKey]);
 
   useLayoutEffect(() => {
-    const { key, hash } = location;
-    const saved = readPositions()[key];
+    const { hash } = location;
+    const saved = readPositions()[storageKey];
 
     if (navigationType === 'POP' && typeof saved === 'number') {
       return retryUntil(() => {
@@ -81,7 +84,7 @@ export default function ScrollToTop() {
 
     window.scrollTo(0, 0);
     return undefined;
-  }, [location, navigationType]);
+  }, [location, navigationType, storageKey]);
 
   return null;
 }
