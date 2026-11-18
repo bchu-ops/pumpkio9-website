@@ -3,25 +3,8 @@ name = "speeddemon-backend"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = [
-    "fastapi",
-    "uvicorn",
-    "boto3",           # For AWS S3 ELT
-    "pandas",          # For Data Transformation
-    "scikit-learn",    # For ML (imported as sklearn)
-    "mlflow",          # For MLOps (Model Tracking)
-    "jupyter",         # For Notebook research
     "fastf1>=3.7.0",
-    "joblib>=1.5.3",
+    "jupyter",
     "matplotlib>=3.10.8",
     "numpy>=2.2.6",
-    "moto>=5.1.20",
-    "pytest>=9.0.2",
-]
-
-[dependency-groups]
-dev = [
-    "pytest>=9.0.2",
-    "moto>=5.1.20",    # AWS mocking for tests
-    "ruff",
-    "deptry",
 ]
