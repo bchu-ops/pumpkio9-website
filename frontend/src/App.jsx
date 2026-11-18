@@ -9,10 +9,8 @@ import ScrollToTop from './components/blocks/ScrollToTop';
 const Home = lazy(() => import('./components/pages/Home'));
 const Spotify = lazy(() => import('./components/pages/Spotify'));
 const Interests = lazy(() => import('./components/pages/Interests'));
-const Product1 = lazy(() => import('./components/pages/Product1'));
 const SpeedDemon = lazy(() => import('@products/speeddemon/web/SpeedDemon'));
 const ProcessLab = lazy(() => import('@products/processlab/web/ProcessLab'));
-const Product3 = lazy(() => import('./components/pages/Product3'));
 const Projects = lazy(() => import('./components/pages/Projects'));
 const NotFound = lazy(() => import('./components/pages/NotFound'));
 
@@ -26,7 +24,7 @@ function App() {
       <Router basename="/pumpkio9-website">
         <ScrollToTop />
         <div className="app-container">
-          <div ref={topRef} /> {/* Attach ref at the top */}
+          <div ref={topRef} />
           <Navbar topRef={topRef} bottomRef={bottomRef}/>
           <div className="main-content">
             <Suspense fallback={<h1>Loading...</h1>}>
@@ -37,10 +35,8 @@ function App() {
                 <Route path="/Projects" element={<Projects />} />
                 <Route path="/speed-demon" element={<SpeedDemon />} />
                 <Route path="/process-lab" element={<ProcessLab />} />
-                <Route path="/Product1" element={<Product1 />} />
                 {/* Old placeholder; the navbar slot is now My Spotify */}
                 <Route path="/Product2" element={<Navigate to="/Spotify" replace />} />
-                <Route path="/Product3" element={<Product3 />} />
 
                 {/* Dynamic route for all types (papers, projects, tutorials, etc) */}
                 <Route path="/:type/:id" element={<PageRoutes />} />
