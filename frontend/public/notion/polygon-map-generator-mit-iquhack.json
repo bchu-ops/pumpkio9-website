@@ -2720,6 +2720,115 @@
       },
       "role": "reader"
     },
+    "41c181ec-d4f6-8105-ae94-dc6e2df46577": {
+      "value": {
+        "id": "41c181ec-d4f6-8105-ae94-dc6e2df46577",
+        "version": 6,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "[January 2022]",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794983826867,
+        "last_edited_time": 1794983826867,
+        "parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+        "crdt_data": {
+          "title": {
+            "r": "F42Xl9ZG7OT7Lp9CIWt6tg,\"start\",\"end\"",
+            "n": {
+              "F42Xl9ZG7OT7Lp9CIWt6tg,\"start\",\"end\"": {
+                "s": {
+                  "x": "F42Xl9ZG7OT7Lp9CIWt6tg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "ZXMfq6A-drWO",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 14,
+                      "c": "[January 2022]",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "F42Xl9ZG7OT7Lp9CIWt6tg",
+                          "l": "",
+                          "i": [
+                            "ZXMfq6A-drWO",
+                            15
+                          ],
+                          "s": {
+                            "i": [
+                              "ZXMfq6A-drWO",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "e",
+                      "b": []
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
     "8ff106bc-febd-4f53-9967-a8df3cc93cef": {
       "value": {
         "id": "8ff106bc-febd-4f53-9967-a8df3cc93cef",
@@ -4067,115 +4176,6 @@
                     },
                     {
                       "t": "e"
-                    }
-                  ],
-                  "l": ""
-                },
-                "c": []
-              }
-            }
-          }
-        }
-      },
-      "role": "reader"
-    },
-    "41c181ec-d4f6-8105-ae94-dc6e2df46577": {
-      "value": {
-        "id": "41c181ec-d4f6-8105-ae94-dc6e2df46577",
-        "version": 6,
-        "type": "text",
-        "properties": {
-          "title": [
-            [
-              "[January 2022]",
-              [
-                [
-                  "b"
-                ]
-              ]
-            ]
-          ]
-        },
-        "format": {
-          "created_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          },
-          "last_edited_attribution": {
-            "source": {
-              "kind": "mcp",
-              "mcpClientType": "claude"
-            },
-            "triggeredBy": {
-              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
-              "table": "notion_user"
-            }
-          }
-        },
-        "created_time": 1794983826867,
-        "last_edited_time": 1794983826867,
-        "parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
-        "parent_table": "block",
-        "alive": true,
-        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
-        "crdt_format_version": 1,
-        "nav_parent_table": "block",
-        "nav_parent_id": "31f181ec-d4f6-81d6-b418-daed7728387e",
-        "crdt_data": {
-          "title": {
-            "r": "F42Xl9ZG7OT7Lp9CIWt6tg,\"start\",\"end\"",
-            "n": {
-              "F42Xl9ZG7OT7Lp9CIWt6tg,\"start\",\"end\"": {
-                "s": {
-                  "x": "F42Xl9ZG7OT7Lp9CIWt6tg",
-                  "i": [
-                    {
-                      "t": "s"
-                    },
-                    {
-                      "t": "t",
-                      "i": [
-                        "ZXMfq6A-drWO",
-                        1
-                      ],
-                      "o": "start",
-                      "l": 14,
-                      "c": "[January 2022]",
-                      "b": [
-                        {
-                          "t": "a",
-                          "x": "F42Xl9ZG7OT7Lp9CIWt6tg",
-                          "l": "",
-                          "i": [
-                            "ZXMfq6A-drWO",
-                            15
-                          ],
-                          "s": {
-                            "i": [
-                              "ZXMfq6A-drWO",
-                              1
-                            ],
-                            "a": "b"
-                          },
-                          "e": {
-                            "i": "end",
-                            "a": "b"
-                          },
-                          "a": [
-                            "b"
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "t": "e",
-                      "b": []
                     }
                   ],
                   "l": ""
