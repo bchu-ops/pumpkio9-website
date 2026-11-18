@@ -48,7 +48,7 @@ docs/                site-wide notes
 - `ci.yml`: lint, tests and build for the site and product pages, plus pytest for the automations. Runs on PRs into `dev` or `main` and on pushes to `dev`.
 - `promote.yml`: manual "Promote dev to main". Runs CI on `dev`, fast-forwards `main` to `dev`, then triggers the deploy.
 - `deploy.yml`: builds the site and publishes it to GitHub Pages. Runs on pushes to `main`, manually, and hourly (the hourly build refreshes the Spotify and F1 snapshots).
-- `sync-notion.yml`: manual "Sync Notion". Pulls the public Notion page into `frontend/public/notion/` and opens a PR into `dev` if anything changed. It never merges or deploys.
+- `sync-notion.yml`: manual "Sync Notion". Pulls the public Notion page into `frontend/public/notion/` and opens a PR into `dev` if anything changed. It never merges or deploys. One-time setup: enable Settings > Actions > General > "Allow GitHub Actions to create and approve pull requests", otherwise the PR step fails (the sync branch is still pushed).
 
 ## Branch flow
 
