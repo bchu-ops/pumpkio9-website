@@ -207,3 +207,17 @@
   .sp-page { width: 100%; padding: 2rem 16px 3rem; }
   .sp-columns { grid-template-columns: 1fr; }
 }
+
+/* Touch devices: 44px minimum hit areas */
+@media (pointer: coarse) {
+  .sp-segmented button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .sp-link-button {
+    min-height: 44px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+}

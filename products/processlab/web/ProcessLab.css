@@ -226,3 +226,15 @@
 .tr-why { font-size: 0.78rem; color: var(--cl-muted); font-weight: 400; white-space: normal; }
 .tr-tauc { max-width: 360px; margin-top: 0.75rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+
+/* Touch devices: 44px minimum hit areas for controls that are smaller on desktop */
+@media (pointer: coarse) {
+  .cl-chip,
+  .cl-reset,
+  .cl-check,
+  .cl-select,
+  .cl-param-row input[type="range"],
+  .cl-param-row input[type="number"] {
+    min-height: 44px;
+  }
+}
