@@ -284,7 +284,7 @@
 /* Corner by corner */
 .sd-corners { margin-top: 16px; background: var(--sd-panel); border-radius: 3px; padding: 12px 14px; }
 .sd-corners__summary { color: var(--sd-muted); font-size: 0.9rem; margin: 0 0 8px; }
-.sd-corners__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 6px; }
+.sd-corners__list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr)); gap: 6px; }
 .sd-corners__item {
   width: 100%;
   text-align: left;
