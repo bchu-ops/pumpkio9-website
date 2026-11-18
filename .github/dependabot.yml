@@ -1,0 +1,20 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+
+  - package-ecosystem: npm
+    directory: /frontend
+    schedule:
+      interval: weekly
+    groups:
+      npm-dependencies:
+        patterns: ["*"]
+
+  # uv (not pip): the project is pyproject.toml + uv.lock with dependency groups.
+  - package-ecosystem: uv
+    directory: /backend/automations
+    schedule:
+      interval: monthly

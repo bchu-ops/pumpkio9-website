@@ -6,9 +6,9 @@ name: Promote dev to main
 on:
   workflow_dispatch:
 
+# Job-level grants below; the ci job only needs read.
 permissions:
-  contents: write
-  actions: write
+  contents: read
 
 concurrency:
   group: promote
@@ -22,6 +22,10 @@ jobs:
   promote:
     needs: ci
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write  # push main
+      actions: write   # dispatch deploy.yml
     steps:
       - uses: actions/checkout@v4
         with:

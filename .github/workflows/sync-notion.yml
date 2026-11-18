@@ -10,9 +10,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
-  actions: write
+  contents: read
 
 concurrency:
   group: sync-notion
@@ -22,6 +20,11 @@ jobs:
   sync:
     name: Sync Notion and open PR
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: write       # push the sync branch
+      pull-requests: write  # open the PR
+      actions: write        # dispatch ci.yml on it
     env:
       # Public portfolio page id (also visible in the synced site data), not a secret.
       NOTION_PAGE_ID: 31f181ecd4f680f4b71df7b0d1d87d60

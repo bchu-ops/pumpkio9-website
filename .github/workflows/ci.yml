@@ -1,7 +1,7 @@
 name: CI
 
-# Runs on every PR into dev (feature branches) and on each push to dev.
-# promote.yml also calls it before fast-forwarding main. Merge only when green.
+# Runs on PRs into dev or main and on each push to dev. promote.yml also
+# calls it (workflow_call) before fast-forwarding main. Merge only when green.
 on:
   pull_request:
     branches: [dev, main]
@@ -9,6 +9,9 @@ on:
     branches: [dev]
   workflow_call:
   workflow_dispatch:
+
+permissions:
+  contents: read
 
 concurrency:
   group: ci-${{ github.ref }}
@@ -18,6 +21,7 @@ jobs:
   web:
     name: Site + product pages (lint, test, build)
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: ./frontend
@@ -36,6 +40,7 @@ jobs:
   automations:
     name: Automations (pytest)
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     defaults:
       run:
         working-directory: ./backend/automations
