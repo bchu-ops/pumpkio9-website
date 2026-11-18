@@ -22,7 +22,7 @@ Only work that is still open. What is already built (snapshot prefetch, lap pick
 
 ## Backend and deploy
 
-- `backend/` is only a placeholder uv workspace member and its dependencies (FastAPI, boto3, mlflow, moto and others) are unused. Add real code, or drop the package, the compose `backend` service and `deploy/Dockerfile.backend` together.
+- `backend/` is only a placeholder uv workspace member and its dependencies are trimmed to what the notebook needs (fastf1, matplotlib, numpy, Jupyter); the API, S3 and ML stack (FastAPI, boto3, mlflow, scikit-learn) is not declared until real code needs it. Add real code, or drop the package, the compose `backend` service and `deploy/Dockerfile.backend` together.
 - `deploy/k8s-*.yml` is a template. Replace the placeholder image (`your-dockerhub-user/speeddemon`) and add a workflow that applies it once a backend exists; no workflow deploys to Kubernetes today.
 - Add pytest and mypy to the backend once there is backend code to test.
 - Turn `notebooks/track_visualization_transformations.py` (FastF1 and matplotlib track plots) into proper notebooks once EDA resumes, following `docs/naming_conventions.md`.
