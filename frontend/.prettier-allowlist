@@ -1,0 +1,7 @@
+# Files Prettier formats and checks. Grow this list one file at a time.
+# Paths are relative to frontend/. Blank lines and # comments are ignored.
+src/components/Navbar.jsx
+src/components/Footer.jsx
+src/components/HeroSection.jsx
+src/components/blocks/Button.jsx
+src/components/pages/Home.jsx
