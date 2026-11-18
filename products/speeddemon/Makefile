@@ -13,7 +13,7 @@ NOTEBOOK_NAME := speeddemon_notebook
 # --- Docker Variable ---
 COMPOSE = docker compose -f $(DEPLOY_DIR)/docker-compose.yml
 
-.PHONY: help build up down restart logs clean dev dev-up dev-down dev-logs dev-backend dev-notebook backend-build backend-up backend-down status health sync add test lint shell notebook-url
+.PHONY: help build up down restart logs clean dev dev-up dev-down dev-logs dev-backend dev-notebook backend-build backend-up backend-down status health sync add lint shell notebook-url
 # --- Help ---
 help: ## Show all available commands
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-20s\033[0m %s\n", $$1, $$2}'
@@ -88,14 +88,8 @@ health: ## Check health of all services
 logs: ## View logs from all services
 	$(COMPOSE) logs -f
 
-dev-logs: ## View development logs (Backend specifically)
-	$(COMPOSE) logs -f $(BACKEND_NAME)
-
-test: ## Run tests inside the backend container
-	$(COMPOSE) run --rm backend pytest
-
-test-cov: ## Run tests and generate a coverage report (HTML)
-	$(COMPOSE) run --rm backend pytest --cov=backend/src --cov-report=html
+dev-logs: ## View logs of the backend service
+	$(COMPOSE) logs -f backend
 
 lint: ## Check for code style issues locally
 	@cd $(ROOT_DIR) && uv run ruff check .

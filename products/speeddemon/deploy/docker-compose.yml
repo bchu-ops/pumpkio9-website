@@ -3,7 +3,7 @@ services:
   backend:
     build:
       # Context '..' is vital because this file is inside /deploy
-      context: .. 
+      context: ..
       dockerfile: deploy/Dockerfile.backend
     container_name: speeddemon_backend
     ports:
@@ -11,14 +11,14 @@ services:
     # Mount local source code for instant updates without rebuilding
     volumes:
       - ../backend:/app/backend
-    # Pulls your local secrets (OPENAI_API_KEY, etc.) into the container
+    # Pulls the repo-root .env into the container
     env_file:
       - ../../../.env  # repo-root .env
     environment:
       - ENV=development
       - DEBUG=True
     # Bind mounts provide instant file syncing, no watch mode needed
-  
+
   # ML Notebook: Research lab using the backend environment
   notebook:
     build:

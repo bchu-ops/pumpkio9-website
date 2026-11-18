@@ -1,1 +1,0 @@
-### Architectural Decisions for Machine Learning Approach

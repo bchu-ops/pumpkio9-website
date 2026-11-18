@@ -1,9 +1,11 @@
+# PLACEHOLDER template: there is no backend service yet (see docs/roadmap.md),
+# and no workflow deploys this. The image below is not a real image.
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: speeddemon-deployment # Must match deploy.yml 'set image' command
+  name: speeddemon-deployment
   labels:
-    app: speeddemon-app       # Unique ID for this project
+    app: speeddemon-app       # Must match the selector in k8s-service.yml
 spec:
   replicas: 3
   selector:
@@ -16,15 +18,15 @@ spec:
     spec:
       containers:
       - name: backend
-        # Update with your DockerHub ID and 'speeddemon' name
-        image: your-dockerhub-user/speeddemon:latest 
+        # PLACEHOLDER: replace with a real registry path
+        image: your-dockerhub-user/speeddemon:latest
         ports:
         - containerPort: 8000
-        
+
         envFrom:
           - secretRef:
               name: app-secrets
-        
+
         resources:
           requests:
             memory: "256Mi"
