@@ -314,3 +314,25 @@
 .notion-asset-wrapper-pdf .chrome-pdf-viewer {
   height: min(85vh, 900px);
 }
+
+/* Touch devices: 44px toolbar controls */
+@media (pointer: coarse) {
+  .chrome-pdf-toolbar {
+    height: 48px;
+    min-height: 48px;
+  }
+
+  .chrome-pdf-btn {
+    width: 44px;
+    height: 44px;
+  }
+
+  .chrome-pdf-zoom-level,
+  .chrome-pdf-page-input {
+    min-height: 44px;
+  }
+
+  .chrome-pdf-page-input {
+    min-width: 44px;
+  }
+}

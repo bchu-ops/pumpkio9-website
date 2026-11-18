@@ -41,3 +41,21 @@
   color: #242424;
   transition: 250ms;
 }
+
+/* Touch devices: at least a 44px tall hit area, without changing the button's look or layout */
+@media (pointer: coarse) {
+  .btn {
+    position: relative;
+  }
+
+  .btn::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    height: 100%;
+    min-height: 44px;
+    transform: translateY(-50%);
+  }
+}

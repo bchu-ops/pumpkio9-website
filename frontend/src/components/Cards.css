@@ -191,6 +191,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 .notion-collection-section .notion-card-wrap > .notion-collection-card { flex: 1; }
 
@@ -443,5 +444,14 @@
   }
   .notion-collection-section .notion-table-cell-text {
     color: rgba(235, 235, 232, 0.8);
+  }
+}
+
+/* Touch devices: grow the GitHub icon's hit area to 44px without changing its 28px look */
+@media (pointer: coarse) {
+  .notion-collection-section .notion-card-code::after {
+    content: '';
+    position: absolute;
+    inset: -8px;
   }
 }

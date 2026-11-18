@@ -10,6 +10,7 @@ video {
   /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
   position: relative; /* allows the video to be positioned inside */
   height: 100vh;
+  height: 100svh; /* same as vh without a dynamic toolbar; avoids overflow behind mobile browser chrome */
   width: 100%;
   display: flex;
   flex-direction: column;
