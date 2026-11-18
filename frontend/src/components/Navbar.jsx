@@ -75,14 +75,21 @@ function Navbar({ topRef, bottomRef }) {
 				<div style={{ display: 'flex', gap: '20px' }}>
 				<i
 				 className="fa-brands fa-spotify fa-beat"
+				 aria-hidden="true"
 				 style={{ color: 'rgba(0, 217, 255, 0.8)', fontSize: 48 }}
 				></i>
 				Brian Chu
 				</div>
 			</Link>
-			<div className="menu-icon" onClick={handleClick}>
-				<i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>
-			</div>
+			<button
+				type="button"
+				className="menu-icon"
+				aria-label="Toggle menu"
+				aria-expanded={click}
+				onClick={handleClick}
+			>
+				<i className={click ? 'fas fa-times' : 'fas fa-bars'} aria-hidden="true"></i>
+			</button>
 			<ul className={click ? 'nav-menu active' : 'nav-menu'}>
 				<li className="nav-item">
 					<Link 
@@ -109,6 +116,8 @@ function Navbar({ topRef, bottomRef }) {
 					<li key={menuGroup.label} className="nav-item menu-item">
 					<button
 						className="nav-links dropdown-toggle"
+						aria-haspopup="true"
+						aria-expanded={openDropdownIndex === index}
 						onClick={() => handleDropdownButtonClick(index)}
 					>
 						{menuGroup.label} ▾
