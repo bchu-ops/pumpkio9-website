@@ -110,48 +110,6 @@
   ],
   "projects": [
     {
-      "id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
-      "title": "Providences Enterprise System",
-      "slug": "providences-enterprise-system",
-      "section": "projects",
-      "link": "",
-      "image": "providence.png",
-      "tools": "MySQL, HTML, CSS, Design Patterns",
-      "date": {
-        "start": "2024-03-01",
-        "end": "2024-03-31"
-      },
-      "description": "Client-server system with MySQL, design patterns, and dynamic game states \u2014 March 2024"
-    },
-    {
-      "id": "31f181ec-d4f6-81d6-b418-daed7728387e",
-      "title": "Polygon Map Generator (MIT iQuHack)",
-      "slug": "polygon-map-generator-mit-iquhack",
-      "section": "projects",
-      "link": "https://github.com/bchu-ops/QCSD-iQuHACK-2022",
-      "image": "mit.png",
-      "tools": "Python, Q#, QuTiP, Voronoi diagrams",
-      "date": {
-        "start": "2022-01-01",
-        "end": "2022-01-31"
-      },
-      "description": "Polygon map generator using quantum randomness to seed procedural terrain \u2014 January 2022"
-    },
-    {
-      "id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
-      "title": "Hearts Cards Game",
-      "slug": "hearts-cards-game",
-      "section": "projects",
-      "link": "",
-      "image": "cards.png",
-      "tools": "Java, Spring Boot, Multithreading, RMI, Servlets",
-      "date": {
-        "start": "2023-05-01",
-        "end": "2023-05-31"
-      },
-      "description": "Online card game with Java Spring Boot, multithreading, and AI strategies \u2014 May 2023"
-    },
-    {
       "id": "31f181ec-d4f6-811b-8187-c3c28e765692",
       "title": "F1 AI Racing \u2014 Speed Demon",
       "slug": "f1-ai-racing-speed-demon",
@@ -164,6 +122,20 @@
         "end": ""
       },
       "description": "Real-time telemetry with LangChain, GraphRAG, and FSAE go-kart chassis design"
+    },
+    {
+      "id": "31f181ec-d4f6-8199-93e3-d3190b20f412",
+      "title": "Personal Website",
+      "slug": "personal-website",
+      "section": "projects",
+      "link": "https://bchu-ops.github.io/pumpkio9-website/",
+      "image": "personal-website.png",
+      "tools": "React, JavaScript, CSS, Notion API, Spotify API, Google Maps API",
+      "date": {
+        "start": "2025-07-01",
+        "end": ""
+      },
+      "description": "React-based interactive website with animated graphics, responsive design, and dynamic data-driven components"
     },
     {
       "id": "31f181ec-d4f6-8167-90d5-eceb30a7d10c",
@@ -180,18 +152,46 @@
       "description": "Knowledge Graph Neural Network predicting combined drug effects with 82% accuracy using TensorFlow and Neo4j"
     },
     {
-      "id": "31f181ec-d4f6-8199-93e3-d3190b20f412",
-      "title": "Personal Website",
-      "slug": "personal-website",
+      "id": "31f181ec-d4f6-810c-9216-d58c6faf43d5",
+      "title": "Providences Enterprise System",
+      "slug": "providences-enterprise-system",
       "section": "projects",
-      "link": "https://bchu-ops.github.io/pumpkio9-website/",
-      "image": "personal-website.png",
-      "tools": "React, JavaScript, CSS, Notion API, Spotify API, Google Maps API",
+      "link": "",
+      "image": "providence.png",
+      "tools": "MySQL, HTML, CSS, Design Patterns",
       "date": {
-        "start": "2025-07-01",
-        "end": ""
+        "start": "2024-03-01",
+        "end": "2024-03-31"
       },
-      "description": "React-based interactive website with animated graphics, responsive design, and dynamic data-driven components"
+      "description": "Client-server system with MySQL, design patterns, and dynamic game states \u2014 March 2024"
+    },
+    {
+      "id": "31f181ec-d4f6-81fe-8f53-e94ce7a9991e",
+      "title": "Hearts Cards Game",
+      "slug": "hearts-cards-game",
+      "section": "projects",
+      "link": "",
+      "image": "cards.png",
+      "tools": "Java, Spring Boot, Multithreading, RMI, Servlets",
+      "date": {
+        "start": "2023-05-01",
+        "end": "2023-05-31"
+      },
+      "description": "Online card game with Java Spring Boot, multithreading, and AI strategies \u2014 May 2023"
+    },
+    {
+      "id": "31f181ec-d4f6-81d6-b418-daed7728387e",
+      "title": "Polygon Map Generator (MIT iQuHack)",
+      "slug": "polygon-map-generator-mit-iquhack",
+      "section": "projects",
+      "link": "https://github.com/bchu-ops/QCSD-iQuHACK-2022",
+      "image": "mit.png",
+      "tools": "Python, Q#, QuTiP, Voronoi diagrams",
+      "date": {
+        "start": "2022-01-01",
+        "end": "2022-01-31"
+      },
+      "description": "Polygon map generator using quantum randomness to seed procedural terrain \u2014 January 2022"
     }
   ],
   "papers": [

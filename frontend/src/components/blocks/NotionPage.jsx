@@ -11,6 +11,7 @@ function NotionPage() {
   const [recordMap, setRecordMap] = useState(null);
   const [pageTitle, setPageTitle] = useState('');
   const [error, setError] = useState(null);
+  const [logo, setLogo] = useState(null);
   const [darkMode, setDarkMode] = useState(
     () => window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
   );
@@ -22,6 +23,23 @@ function NotionPage() {
     media.addEventListener('change', onChange);
     return () => media.removeEventListener('change', onChange);
   }, []);
+
+  // Experience pages show the same logo as their home-page card
+  useEffect(() => {
+    setLogo(null);
+    if (type !== 'experiences') return undefined;
+    let cancelled = false;
+    fetch(publicFile('notion/collections.json'))
+      .then((r) => (r.ok ? r.json() : null))
+      .then((cols) => {
+        const row = cols?.experiences?.find((r) => r.slug === id);
+        if (!cancelled && row?.image && !row.image.startsWith('http')) {
+          setLogo(publicFile(`images/covers/experiences/${row.image}`));
+        }
+      })
+      .catch(() => {});
+    return () => { cancelled = true; };
+  }, [type, id]);
 
   useEffect(() => {
     setRecordMap(null);
@@ -85,6 +103,15 @@ function NotionPage() {
         <span className="notion-page-breadcrumb-sep">/</span>
         <span>{pageTitle || id.replace(/-/g, ' ')}</span>
       </div>
+      {logo && (
+        <img
+          className="notion-page-logo"
+          src={logo}
+          alt={`${pageTitle || id.replace(/-/g, ' ')} logo`}
+          width="1200"
+          height="630"
+        />
+      )}
       {pageTitle && <h1 className="notion-page-title">{pageTitle}</h1>}
       <NotionRenderer
         recordMap={recordMap}

@@ -378,6 +378,13 @@ def main():
                             end = (r.get("duration") or {}).get("end") or ""
                             return "9999" if end == "Present" else end
                         rows.sort(key=recency, reverse=True)
+                    elif section == "projects":
+                        # Newest first by start date, matching the Notion gallery
+                        # sort (the unofficial query API ignores view sorts).
+                        rows.sort(
+                            key=lambda r: (r.get("date") or {}).get("start") or "",
+                            reverse=True,
+                        )
                     print(f"    {len(rows)} rows:")
                     for r in rows:
                         print(f"      - {r['title']}")
