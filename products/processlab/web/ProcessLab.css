@@ -217,9 +217,10 @@
 @media (max-width: 760px) {
   .cl-sheet { padding: 20px 14px 24px; outline-offset: -6px; }
   .cl-tab { padding: 6px 12px; }
-  .cl-tabs { overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; }
+  /* Tabs shrink first; below ~340px they scroll sideways instead of widening the page.
+     The padding/margin pair keeps the tabs' 1.5px overlap onto the sheet inside the scroll box. */
+  .cl-tabs { overflow-x: auto; overscroll-behavior-x: contain; scrollbar-width: none; padding-bottom: 1.5px; margin-bottom: -1.5px; }
   .cl-tabs::-webkit-scrollbar { display: none; }
-  .cl-tab { flex: none; white-space: nowrap; }
   .cl-grid { grid-template-columns: minmax(0, 1fr); }
   .cl-figure { top: 56px; z-index: 1; background: var(--cl-bg); padding-bottom: 8px; }
   .cl-plot canvas { height: 280px; }
