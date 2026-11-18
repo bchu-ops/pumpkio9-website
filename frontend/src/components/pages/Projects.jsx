@@ -10,7 +10,7 @@ const CODE = 'https://github.com/bchu-ops/pumpkio9-website/tree/main/products';
 export const PRODUCTS = [
   {
     name: 'My Spotify',
-    path: '/Spotify',
+    path: '/spotify',
     code: `${CODE}/spotify`,
     icon: 'fab fa-spotify',
     summary: "What I've been listening to on Spotify, refreshed every hour.",

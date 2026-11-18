@@ -12,6 +12,9 @@ const TOKENS_KEY = 'spotify.tokens';
 const CHARSET = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 const EXPIRY_MARGIN_MS = 60_000;
 
+// Must stay exactly `<base>Spotify` (capital S): it is the redirect URI registered in
+// the Spotify dashboard, which matches exactly. The site's route is lowercase
+// (/spotify) and the app rewrites /Spotify?code=... to it, keeping the query.
 export function redirectUri(origin = window.location.origin) {
   return `${origin}${import.meta.env.BASE_URL}Spotify`;
 }

@@ -1,19 +1,11 @@
-import React, { useRef, Suspense, lazy } from 'react';
+import React, { useRef } from 'react';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './App.css';
-import PageRoutes from './components/blocks/PageRoutes';
+import AppRoutes from './AppRoutes';
+import LegacyPathRedirect from './components/blocks/LegacyPathRedirect';
 import ScrollToTop from './components/blocks/ScrollToTop';
-
-const Home = lazy(() => import('./components/pages/Home'));
-const Spotify = lazy(() => import('./components/pages/Spotify'));
-const Interests = lazy(() => import('./components/pages/Interests'));
-const SpeedDemon = lazy(() => import('@products/speeddemon/web/SpeedDemon'));
-const ProcessLab = lazy(() => import('@products/processlab/web/ProcessLab'));
-const Projects = lazy(() => import('./components/pages/Projects'));
-const NotFound = lazy(() => import('./components/pages/NotFound'));
-
 
 function App() {
   const topRef = useRef(null);
@@ -23,27 +15,12 @@ function App() {
     <>
       <Router basename="/pumpkio9-website">
         <ScrollToTop />
+        <LegacyPathRedirect />
         <div className="app-container">
           <div ref={topRef} />
           <Navbar topRef={topRef} bottomRef={bottomRef}/>
           <div className="main-content">
-            <Suspense fallback={<h1>Loading...</h1>}>
-              <Routes>
-                <Route path='/' element={<Home />}/>
-                <Route path='/Interests' element={<Interests />}/>
-                <Route path='/Spotify' element={<Spotify />}/>
-                <Route path="/Projects" element={<Projects />} />
-                <Route path="/speed-demon" element={<SpeedDemon />} />
-                <Route path="/process-lab" element={<ProcessLab />} />
-                {/* Old placeholder; the navbar slot is now My Spotify */}
-                <Route path="/Product2" element={<Navigate to="/Spotify" replace />} />
-
-                {/* Dynamic route for all types (papers, projects, tutorials, etc) */}
-                <Route path="/:type/:id" element={<PageRoutes />} />
-
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </Suspense>
+            <AppRoutes />
             <div ref={bottomRef} />
           </div>
           <Footer />
