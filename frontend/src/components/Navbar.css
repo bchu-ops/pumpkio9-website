@@ -133,6 +133,14 @@
 
 .menu-icon {
   display: none;
+  /* reset native <button> chrome so it looks like the old div */
+  background: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
 }
 
 @media screen and (max-width: 960px) {

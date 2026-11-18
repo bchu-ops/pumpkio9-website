@@ -6,7 +6,7 @@ import LazyVideo from './LazyVideo';
 
 function Footer() {
   return (
-	<div className='footer-container'>
+	<footer className='footer-container'>
 		<section className='footer-troll'>
 			<p className='footer-troll-heading'>
 			Hi there! You found the secret section!
@@ -43,11 +43,13 @@ function Footer() {
 			target='_blank'
             rel='noopener noreferrer' 
 			href="https://github.com/bchu-ops"
-			>Github</a><a 
+			>Github</a>
+			<a 
 			target='_blank'
             rel='noopener noreferrer' 
 			href="mailto:brian.chu1030@gmail.com"
-			>Gmail</a><a 
+			>Gmail</a>
+			<a 
 			target='_blank'
             rel='noopener noreferrer' 
 			href="https://www.notion.so/31f181ecd4f680f4b71df7b0d1d87d60"
@@ -78,7 +80,7 @@ function Footer() {
 					aria-label="Chemical Engineering Google Drive"
 					className='inline-icon'
 				>
-					<i className="fa-brands fa-google-drive" />
+					<i className="fa-brands fa-google-drive" aria-hidden="true" />
 				</a>
 			</div>
 			<div className="inline-resume-link">
@@ -95,7 +97,7 @@ function Footer() {
 					aria-label='Software Engineering Google Drive'
 					className='inline-icon'
 				>
-				<i className='fa-brands fa-google-drive' />
+				<i className='fa-brands fa-google-drive' aria-hidden='true' />
 				</a>
 			</div>
           </div>
@@ -109,6 +111,7 @@ function Footer() {
 				<div className="footer-logo">
 					<Link to="/" className="social-logo" style={{ display: 'flex', gap: '12px' }}>
 						Brian <i
+						aria-hidden="true"
 						className="fa-brands fa-spotify fa-beat"
 						style={{ color: 'rgba(0, 217, 255, 0.8)', fontSize: 48 }}
 						></i>
@@ -123,7 +126,7 @@ function Footer() {
 						rel="noopener noreferrer"
 						aria-label='LinkedIn'
 					>
-						<i className='fab fa-linkedin' />
+						<i className='fab fa-linkedin' aria-hidden='true' />
 					</Link>
 					<Link
 						className='social-icon-link github'
@@ -132,7 +135,7 @@ function Footer() {
 						rel="noopener noreferrer"
 						aria-label='Github'
 					>
-						<i className='fab fa-github' />
+						<i className='fab fa-github' aria-hidden='true' />
 					</Link>
 					<Link
 						className='social-icon-link email'
@@ -141,7 +144,7 @@ function Footer() {
 						rel="noopener noreferrer"
 						aria-label='Email'
 					>
-						<i className="fa fa-envelope"/>
+						<i className="fa fa-envelope" aria-hidden="true"/>
 					</Link>
 					<Link
 						className='social-icon-link notion-icon'
@@ -168,7 +171,7 @@ function Footer() {
 				</div>
 			</div>
 		</section>
-	</div>
+	</footer>
   )
 }
 
