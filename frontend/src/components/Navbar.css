@@ -92,9 +92,11 @@
   font-size: 1.2rem;
 }
 
-.dropdown-item:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
+@media (hover: hover) {
+  .dropdown-item:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+  }
 }
 
 
@@ -129,16 +131,19 @@
     color 0.25s ease;
 }
 
-.nav-links:hover {
-  border-bottom: 4px solid #fff;
-  transition: all 0.2s ease-out;
-}
+/* Hover styling is gated on a real pointer so it does not stick after a tap */
+@media (hover: hover) {
+  .nav-links:hover {
+    border-bottom: 4px solid #fff;
+    transition: all 0.2s ease-out;
+  }
 
-.nav-links-outline:hover {
-  color: #fff;
-  background-color: rgba(var(--accent-cyan-rgb), 0.28);
-  box-shadow: 0 0 0.75rem rgba(var(--accent-cyan-rgb), 0.45);
-  transform: translateY(-0.125rem);
+  .nav-links-outline:hover {
+    color: #fff;
+    background-color: rgba(var(--accent-cyan-rgb), 0.28);
+    box-shadow: 0 0 0.75rem rgba(var(--accent-cyan-rgb), 0.45);
+    transform: translateY(-0.125rem);
+  }
 }
 
 .nav-links-outline:focus-visible {
@@ -174,7 +179,9 @@
   .nav-menu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* centred with auto margins (below) rather than justify-content: center, which
+       pushes the first links out of reach when the menu is taller than the screen */
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
     height: calc(100vh - 80px);
@@ -185,6 +192,14 @@
     left: -100%;
     opacity: 1;
     transition: all 0.5s ease;
+  }
+
+  .nav-menu > :first-child {
+    margin-top: auto;
+  }
+
+  .nav-menu > :last-child {
+    margin-bottom: auto;
   }
 
   .nav-menu.active {
@@ -202,11 +217,27 @@
     display: table;
   }
 
-  .nav-links:hover {
-    background-color: #fff;
-    color: #242424;
-    border-radius: 0;
-    opacity: 1;
+  @media (hover: hover) {
+    .nav-links:hover {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+      opacity: 1;
+    }
+  }
+
+  /* Touch: brief pressed state instead of a hover that sticks after the tap */
+  @media (hover: none) {
+    .nav-links:active {
+      background-color: #fff;
+      color: #242424;
+      border-radius: 0;
+    }
+
+    .nav-links-outline:active {
+      color: #fff;
+      background-color: rgba(var(--accent-cyan-rgb), 0.28);
+    }
   }
 
   /* Links row: stretch the item to the full menu width, keeping the cyan accent */
@@ -221,10 +252,12 @@
     border-width: 1px 0;
   }
 
-  .nav-links-outline:hover {
-    transform: none;
-    box-shadow: none;
-    border-radius: 0;
+  @media (hover: hover) {
+    .nav-links-outline:hover {
+      transform: none;
+      box-shadow: none;
+      border-radius: 0;
+    }
   }
 
   .navbar-logo {
@@ -264,10 +297,19 @@
     transition: all 0.3s ease-out;
   }
 
-  .nav-links-mobile:hover {
-    background: #fff;
-    color: #242424;
-    transition: 250ms;
+  @media (hover: hover) {
+    .nav-links-mobile:hover {
+      background: #fff;
+      color: #242424;
+      transition: 250ms;
+    }
+  }
+
+  @media (hover: none) {
+    .nav-links-mobile:active {
+      background: #fff;
+      color: #242424;
+    }
   }
 }
 

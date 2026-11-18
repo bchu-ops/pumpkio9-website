@@ -63,7 +63,9 @@
   cursor: pointer;
   transition: border-color 120ms ease;
 }
-.sd-chip:hover:not(:disabled) { border-color: var(--sd-accent); }
+@media (hover: hover) {
+  .sd-chip:hover:not(:disabled) { border-color: var(--sd-accent); }
+}
 .sd-chip:focus-visible { outline: 2px solid var(--sd-accent); outline-offset: 2px; }
 .sd-chip:disabled { opacity: 0.5; cursor: default; }
 .sd-board-head { display: flex; justify-content: flex-end; margin-bottom: 8px; }
@@ -93,7 +95,9 @@
   cursor: pointer;
   transition: border-color 120ms ease, box-shadow 120ms ease, background 120ms ease;
 }
-.sd-dd__button:hover:not(:disabled) { border-color: rgba(127, 127, 127, 0.45); }
+@media (hover: hover) {
+  .sd-dd__button:hover:not(:disabled) { border-color: rgba(127, 127, 127, 0.45); }
+}
 .sd-dd__button:focus-visible,
 .sd-dd.is-open .sd-dd__button { outline: none; border-color: var(--sd-accent); box-shadow: inset 0 -2px 0 var(--sd-text); }
 .sd-dd__button:disabled { opacity: 0.55; cursor: default; }
@@ -294,7 +298,10 @@
   padding: 8px 10px;
   cursor: pointer;
 }
-.sd-corners__item:hover, .sd-corners__item:focus-visible { outline: 2px solid var(--sd-accent); outline-offset: 0; }
+.sd-corners__item:focus-visible { outline: 2px solid var(--sd-accent); outline-offset: 0; }
+@media (hover: hover) {
+  .sd-corners__item:hover { outline: 2px solid var(--sd-accent); outline-offset: 0; }
+}
 .sd-map__corner circle { fill: var(--sd-text); }
 .sd-map__corner text { fill: var(--sd-muted); font-size: 14px; font-weight: 600; }
 
@@ -343,4 +350,17 @@
   .sd { padding: 24px 16px 48px; }
   .sd-controls { grid-template-columns: 1fr 1fr; }
   .sd-summary, .sd-summary--three, .sd-skeleton__row { grid-template-columns: 1fr; }
+}
+
+/* Touch devices: 44px minimum hit areas (desktop layout unchanged) */
+@media (pointer: coarse) {
+  .sd-chip,
+  .sd-dd__button,
+  .sd-corners__item,
+  .sd-tabs__tab {
+    min-height: 44px;
+  }
+  .sd-tabs__tab { min-width: 44px; }
+  .sd-corners__list { gap: 8px; }
+  .sd-chip:active { border-color: var(--sd-accent); }
 }

@@ -24,8 +24,10 @@
   text-transform: capitalize;
 }
 
-.notion-page-breadcrumb a:hover {
-  color: rgb(55, 53, 47);
+@media (hover: hover) {
+  .notion-page-breadcrumb a:hover {
+    color: rgb(55, 53, 47);
+  }
 }
 
 .notion-page-breadcrumb-sep {
@@ -84,8 +86,10 @@
   font-size: 0.875rem;
 }
 
-.notion-page-back:hover {
-  text-decoration: underline;
+@media (hover: hover) {
+  .notion-page-back:hover {
+    text-decoration: underline;
+  }
 }
 
 /* Loading */
@@ -124,5 +128,16 @@
 @media (prefers-color-scheme: dark) {
   body {
     background: #191919;
+  }
+}
+
+/* Touch devices: 44px hit areas for the breadcrumb and back links */
+@media (pointer: coarse) {
+  .notion-page-breadcrumb a,
+  .notion-page-back {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    min-width: 44px;
   }
 }

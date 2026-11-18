@@ -34,12 +34,14 @@
   font-size: 1.25rem;
 }
 
-.btn--large:hover,
-.btn--medium:hover {
-  transition: all 0.3s ease-out;
-  background: #fff;
-  color: #242424;
-  transition: 250ms;
+@media (hover: hover) {
+  .btn--large:hover,
+  .btn--medium:hover {
+    transition: all 0.3s ease-out;
+    background: #fff;
+    color: #242424;
+    transition: 250ms;
+  }
 }
 
 /* Touch devices: at least a 44px tall hit area, without changing the button's look or layout */
