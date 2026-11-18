@@ -48,7 +48,7 @@ jobs:
 
       - name: Restore F1 snapshot
         id: f1cache
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: frontend/public/f1
           key: f1-snapshot-${{ steps.f1date.outputs.day }}
