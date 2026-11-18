@@ -154,7 +154,8 @@
 .notion-collection-section .notion-gallery-grid {
   display: grid;
   position: relative;
-  grid-template-columns: repeat(3, 1fr);
+  /* minmax(0, 1fr): a plain 1fr track can't shrink below its non-wrapping text */
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
   border-top: 1px solid rgba(55, 53, 47, 0.16);
   padding-top: 16px;
@@ -321,7 +322,7 @@
 
 @media only screen and (max-width: 1024px) {
   .notion-collection-section .notion-gallery-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -356,12 +357,23 @@
   }
 
   .notion-collection-section .notion-gallery-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 10px;
   }
 
   .notion-collection-section .notion-collection-card-cover {
     height: 124px;
+  }
+
+  /* Phones: let titles wrap and show two lines of description instead of one cut-off line */
+  .notion-collection-section .notion-collection-card-property {
+    white-space: normal;
+  }
+
+  .notion-collection-section .notion-collection-card-property:not(:first-child) {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
   }
 
   .notion-collection-section .notion-table-view {

@@ -130,4 +130,9 @@ video {
   .btn {
     width: 100%;
   }
+
+  /* the buttons carry a 6px margin each side; without this they overflow by 12px */
+  .hero-btns .btn {
+    width: calc(100% - 12px);
+  }
 }
