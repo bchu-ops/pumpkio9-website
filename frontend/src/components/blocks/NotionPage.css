@@ -14,7 +14,7 @@
   align-items: center;
   gap: 6px;
   margin-bottom: 1rem;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgba(55, 53, 47, 0.5);
 }
 
@@ -81,7 +81,7 @@
 .notion-page-back {
   color: #2383e2;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .notion-page-back:hover {

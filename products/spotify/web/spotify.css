@@ -43,11 +43,11 @@
 .sp-status {
   text-align: center;
   color: var(--sp-muted);
-  font-size: 15px;
+  font-size: 0.9375rem;
 }
 
 .sp-subtitle { margin-bottom: 1.5rem; }
-.sp-asof { margin: 0 0 1.5rem; font-size: 14px; }
+.sp-asof { margin: 0 0 1.5rem; font-size: 0.875rem; }
 .sp-status { min-height: 40vh; padding-top: 2rem; }
 
 .sp-segmented {
@@ -65,7 +65,7 @@
   border-radius: 4px;
   padding: 6px 14px;
   font: inherit;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--sp-muted);
   background: transparent;
   cursor: pointer;
@@ -97,7 +97,7 @@
 .sp-day { margin-bottom: 1rem; }
 
 .sp-day-label {
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
@@ -156,7 +156,7 @@
 
 .sp-row-sub,
 .sp-row-meta {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: var(--sp-muted);
 }
 
@@ -184,7 +184,7 @@
   padding: 4px 10px;
   border-radius: 999px;
   border: 1px solid var(--sp-border);
-  font-size: 14px;
+  font-size: 0.875rem;
 }
 
 .sp-chip a { color: var(--sp-text); text-decoration: none; }
@@ -196,7 +196,7 @@
   background: none;
   padding: 4px 0;
   font: inherit;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: var(--sp-link);
   cursor: pointer;
 }
