@@ -1,0 +1,57 @@
+name: Sync Notion
+
+# Manual only. Pulls the public Notion portfolio into frontend/public/notion/
+# and opens a PR into dev if anything changed. Never merges or deploys: review
+# the PR, merge it when CI is green, then run Promote as usual.
+#
+# One-time repo setting: Settings > Actions > General > Workflow permissions >
+# "Allow GitHub Actions to create and approve pull requests".
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  actions: write
+
+concurrency:
+  group: sync-notion
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    name: Sync Notion and open PR
+    runs-on: ubuntu-latest
+    env:
+      # Public portfolio page id (also visible in the synced site data), not a secret.
+      NOTION_PAGE_ID: 31f181ecd4f680f4b71df7b0d1d87d60
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: dev
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Run Notion sync
+        working-directory: ./backend/automations
+        run: uv run python scripts/sync_notion.py
+
+      - name: Open PR if anything changed
+        run: |
+          if [ -z "$(git status --porcelain -- frontend/public/notion)" ]; then
+            echo "Notion and the site are already in sync. No PR needed."
+            exit 0
+          fi
+          branch="sync/notion-$(date -u +%Y%m%d-%H%M)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$branch"
+          git add frontend/public/notion
+          git commit -m "chore: sync Notion content"
+          git push origin "$branch"
+          gh pr create --base dev --head "$branch" \
+            --title "chore: sync Notion content" \
+            --body "Automated Notion sync (manual run). Only frontend/public/notion/ changed. Review the diff, then squash merge when CI is green."
+          # PRs opened with the default token do not trigger CI on their own;
+          # dispatch it on the branch so the required checks report on this PR.
+          gh workflow run ci.yml --ref "$branch"

@@ -4,7 +4,7 @@ import './Navbar.css'
 
 function Navbar({ topRef, bottomRef }) {
 	const [click, setClick] = useState(false);
-	const [button, setButton] = useState(true);
+	const [, setButton] = useState(true);
 	const [openDropdownIndex, setOpenDropdownIndex] = useState(null); // track which dropdown is open
 
 	const handleClick = () => setClick(!click);
@@ -31,8 +31,12 @@ function Navbar({ topRef, bottomRef }) {
 			topRef.current.scrollIntoView({ behavior: "smooth" });
 		}
 	};
-	const scrollToBottom = () => {
-		if (bottomRef && bottomRef.current) {
+	// Scroll to the footer's Social Media / Resume links on any page
+	const scrollToFooterLinks = () => {
+		const el = document.getElementById("footer-links");
+		if (el) {
+			el.scrollIntoView({ behavior: "smooth", block: "center" });
+		} else if (bottomRef && bottomRef.current) {
 			bottomRef.current.scrollIntoView({ behavior: "smooth" });
 		}
 	};
@@ -154,15 +158,17 @@ function Navbar({ topRef, bottomRef }) {
 					</li>
 				))}
 				<li className="nav-item">
-					{<Link 
-						className="nav-links-outline" 
-						onClick={() => {
+					<a
+						href="#footer-links"
+						className="nav-links-outline"
+						onClick={(e) => {
+							e.preventDefault();
 							closeMobileMenu();
-							scrollToBottom();
+							scrollToFooterLinks();
 						}}
 						>
 						Links
-					</Link> || button}
+					</a>
 				</li>
 			</ul>
 		</div>

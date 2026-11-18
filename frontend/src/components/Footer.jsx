@@ -30,7 +30,7 @@ function Footer() {
 			</div>
 		</section>
 
-		<div className='footer-links'>
+		<div className='footer-links' id='footer-links'>
         <div className='footer-link-wrapper'>
           <div className='footer-link-items'>
             <h2>Social Media</h2>
