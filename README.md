@@ -40,7 +40,7 @@ frontend/            the site (Vite + React): home, navbar, footer, Notion pages
 products/<name>/     one folder per product: web/ (its page on the site), docs/, optional backend
 backend/automations/ scripts: Notion sync, resume PDF to Notion, Spotify and F1 snapshots
 docs/                site-wide notes
-.github/             workflows and Dependabot config
+.github/             workflows
 ```
 
 ## CI/CD
