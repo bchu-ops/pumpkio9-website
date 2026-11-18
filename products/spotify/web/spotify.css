@@ -119,7 +119,9 @@
   border-radius: 4px;
 }
 
-.sp-row:hover { background: var(--sp-hover); }
+@media (hover: hover) {
+  .sp-row:hover { background: var(--sp-hover); }
+}
 
 .sp-cover {
   flex: none;
@@ -152,7 +154,9 @@
   text-decoration: none;
 }
 
-.sp-row-title:hover { text-decoration: underline; }
+@media (hover: hover) {
+  .sp-row-title:hover { text-decoration: underline; }
+}
 
 .sp-row-sub,
 .sp-row-meta {
@@ -188,7 +192,9 @@
 }
 
 .sp-chip a { color: var(--sp-text); text-decoration: none; }
-.sp-chip a:hover { text-decoration: underline; }
+@media (hover: hover) {
+  .sp-chip a:hover { text-decoration: underline; }
+}
 .sp-chip-count { color: var(--sp-muted); }
 
 .sp-link-button {

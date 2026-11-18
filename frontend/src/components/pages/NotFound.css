@@ -84,9 +84,11 @@
   transition: background 120ms ease, transform 120ms ease;
 }
 
-.notfound-btn:hover {
-  background: rgba(55, 53, 47, 0.12);
-  transform: translateY(-1px);
+@media (hover: hover) {
+  .notfound-btn:hover {
+    background: rgba(55, 53, 47, 0.12);
+    transform: translateY(-1px);
+  }
 }
 
 .notfound-btn:focus-visible {
@@ -100,8 +102,10 @@
   box-shadow: none;
 }
 
-.notfound-btn--primary:hover {
-  background: rgb(26, 112, 199);
+@media (hover: hover) {
+  .notfound-btn--primary:hover {
+    background: rgb(26, 112, 199);
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -131,8 +135,10 @@
     background: rgba(255, 255, 255, 0.06);
     box-shadow: rgba(255, 255, 255, 0.12) 0 0 0 1px inset;
   }
-  .notfound-btn:hover {
-    background: rgba(255, 255, 255, 0.12);
+  @media (hover: hover) {
+    .notfound-btn:hover {
+      background: rgba(255, 255, 255, 0.12);
+    }
   }
   .notfound-btn--primary {
     color: #fff;
