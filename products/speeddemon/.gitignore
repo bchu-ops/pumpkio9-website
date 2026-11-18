@@ -11,7 +11,6 @@ __pycache__/
 
 # Project Specific
 data/
-/docs/.to_do.md
 
 # Tools
 .uv/

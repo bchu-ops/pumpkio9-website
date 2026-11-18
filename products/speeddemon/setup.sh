@@ -224,7 +224,7 @@ create_root_env_file() {
         if [ -f ../../.env.example ]; then
             log_info "Creating ../../.env from ../../.env.example..."
             cp ../../.env.example ../../.env
-            log_success ".env created at the repo root. Add your real keys (OPENAI_API_KEY etc.)."
+            log_success ".env created at the repo root. Add real keys here if a service needs them."
         else
             log_warning "../../.env.example not found, skipping .env creation"
         fi
@@ -287,15 +287,7 @@ validate_setup() {
     done
     
     # Check if backend structure exists
-    if [ ! -d "backend/src" ]; then
-        log_warning "Backend src directory missing: backend/src"
-    fi
-    
-    if [ ! -f "backend/src/main.py" ]; then
-        log_warning "Backend entry point missing: backend/src/main.py"
-    fi
-    
-    if [ ! -f "backend/pyproject.toml" ]; then
+        if [ ! -f "backend/pyproject.toml" ]; then
         log_warning "Backend pyproject.toml missing"
     fi
     
@@ -348,12 +340,10 @@ main() {
     echo "======================================"
     echo ""
     echo "Next steps:"
-    echo "1. Review and customize the repo-root .env file (add OPENAI_API_KEY)"
-    echo "2. Run 'make build' to build all Docker images"
-    echo "3. Run 'make up' to start all services"
-    echo "4. Access the application:"
-    echo "   - Backend:  http://localhost:8000"
-    echo "   - Notebook: http://localhost:8888"
+    echo "1. Review and customize the repo-root .env file (if needed)"
+    echo "2. Run 'make build' to build the Docker images"
+    echo "3. Run 'make up' to start the services (the backend is a placeholder and exits immediately)"
+    echo "4. Jupyter notebook: http://localhost:8888 (get the login URL with 'make notebook-url')"
     echo ""
     echo "For more information, see:"
     echo "- README.md"

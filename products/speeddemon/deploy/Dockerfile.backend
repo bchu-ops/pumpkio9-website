@@ -1,4 +1,4 @@
-# Stage 1: Build dependencies & optimize for uv
+﻿# Stage 1: Build dependencies & optimize for uv
 FROM python:3.12-slim AS builder
 ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy
 WORKDIR /app
@@ -26,6 +26,5 @@ ENV PATH="/app/.venv/bin:$PATH"
 COPY . .
 # Expose the FastAPI/Backend port
 EXPOSE 8000
-# Start app (IF backend/src/main.py runs the app. If not, adjust accordingly.)
-CMD ["python", "backend/src/main.py"]
-
+# Placeholder: there is no backend service yet (see docs/roadmap.md). Replace this CMD when one exists.
+CMD ["python", "-c", "raise SystemExit('No backend service implemented yet')"]

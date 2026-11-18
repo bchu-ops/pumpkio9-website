@@ -1,27 +1,22 @@
-# CI/CD Workflow Documentation
+# CI/CD workflows
 
-## ci.yml (Continuous Integration Pipeline)
+Speed Demon has no workflows of its own. It is built, tested and deployed by the repo-root workflows in `.github/workflows/`, together with the rest of the site. Nothing in this folder builds container images or deploys to Kubernetes.
 
-Runs automated quality checks and verification on every push and pull request. This workflow installs the uv package manager, runs ruff linting on the backend code, syncs dependencies, and verifies that both backend and frontend Docker images build successfully. The pipeline ensures code quality and build integrity before changes are merged, catching issues early in the development cycle.
+## ci.yml
 
-**Key Steps:**
-- Installs uv package manager
-- Runs ruff linter on backend code
-- Syncs Python dependencies
-- Verifies backend Docker image builds
-- Verifies frontend Docker image builds
+Runs on pull requests into `dev` and `main`, on pushes to `dev`, manually, and when called by `promote.yml`. Two jobs:
 
----
+- **web** (`frontend/`): `npm ci`, `npm run lint`, `npm test`, `npm run build`. The tests include the Speed Demon unit tests in `products/speeddemon/web/lib/`, and the build includes the page.
+- **automations** (`backend/automations/`): `uv run --group dev pytest -q`.
 
-## deploy.yml (Deployment Pipeline)
+## promote.yml
 
-Manually triggered deployment workflow that builds, pushes, and deploys the SpeedDemon application to production. The pipeline authenticates with Docker Hub, builds both backend and frontend Docker images with version tags, pushes them to the registry, then deploys to a Kubernetes cluster using the manifests in the deploy directory. It performs a rolling update of the deployment and verifies successful pod startup, ensuring zero-downtime deployments with proper secret injection.
+Manual release button, run on `dev`. Runs `ci.yml`, fast-forwards `main` to `dev` (it fails if `main` has commits `dev` lacks), then starts `deploy.yml` on `main`.
 
-**Key Steps:**
-- Authenticates with Docker Hub
-- Builds and pushes backend image (latest + SHA tag)
-- Builds and pushes frontend image (latest + SHA tag)
-- Sets Kubernetes context from secrets
-- Applies Kubernetes deployment and service manifests
-- Performs rolling update with new image tags
-- Verifies deployment rollout status
+## deploy.yml
+
+Builds and publishes the site to GitHub Pages. Runs on pushes to `main`, manually, and hourly. For Speed Demon it restores or creates the F1 snapshot: `actions/cache` keyed by date, and on a miss `node scripts/prefetch-f1.mjs --meetings 2` in `backend/automations` (the latest two race weekends, written to `frontend/public/f1`, not committed). The prefetch never fails the deploy; the page falls back to the live OpenF1 API for anything not cached. It then runs lint, tests and the Vite build, and deploys the result.
+
+## sync-notion.yml
+
+Manual. Pulls the public Notion portfolio into `frontend/public/notion/` and opens a PR into `dev` if anything changed. Not related to Speed Demon.

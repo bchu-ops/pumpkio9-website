@@ -1,6 +1,6 @@
-### Naming Conventions for Data, Models, Notebooks, and Reports
+# SpeedDemon naming conventions
 
-### 📂 SpeedDemon Naming Conventions
+Planned conventions for data, models, notebooks and reports. None of the data layers, models or reports exist yet; see roadmap.md.
 
 | Category | Format / Convention | Examples |
 | :--- | :--- | :--- |
