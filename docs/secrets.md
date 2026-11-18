@@ -20,11 +20,8 @@ For CI, the same names go in GitHub → Settings → Secrets and variables → A
 | `NOTION_*_COLLECTION_ID` | no (IDs) | — | not read by any script today |
 | `SPOTIFY_CLIENT_SECRET` | **yes** | secret `SPOTIFY_CLIENT_SECRET` | `sync_spotify.py` in `deploy.yml` |
 | `SPOTIFY_REFRESH_TOKEN` | **yes** | secret `SPOTIFY_REFRESH_TOKEN` | `sync_spotify.py` in `deploy.yml` |
-| `SPOTIFY_CLIENT_ID` | no (public) | variable `SPOTIFY_CLIENT_ID` | `sync_spotify.py` in `deploy.yml`, and the site build as `VITE_SPOTIFY_CLIENT_ID` |
-| `VITE_SPOTIFY_CLIENT_ID` | no (public, built into the site) | (from variable `SPOTIFY_CLIENT_ID`) | Spotify page "Invited" tab, shown only via the private /spotify?invited link (max 5 accounts) |
+| `SPOTIFY_CLIENT_ID` | no (public) | variable `SPOTIFY_CLIENT_ID` | `sync_spotify.py` in `deploy.yml` |
 | `OPENAI_API_KEY`, `PDF_SERVICE_TOKEN` | **yes** | — | Speed Demon backend (Docker, local only) |
-
-The Spotify OAuth redirect URI is built in `products/spotify/web/lib/pkce.js` as `<site>/pumpkio9-website/Spotify` (capital S) and must match the dashboard entry exactly. The site route itself is lowercase (`/spotify`); the app rewrites `/Spotify?code=...` to it, keeping the query. Do not change the redirect URI without updating the Spotify dashboard.
 
 ## Rules
 

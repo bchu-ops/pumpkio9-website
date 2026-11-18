@@ -5,8 +5,6 @@
   --sp-border: rgba(55, 53, 47, 0.12);
   --sp-hover: rgba(55, 53, 47, 0.06);
   --sp-surface: #fff;
-  --sp-accent: #1db954;
-  --sp-accent-text: #0b3d1e;
   --sp-link: #0b62c4;
 
   background: var(--sp-bg);
@@ -80,14 +78,11 @@
 }
 
 .sp-segmented button:focus-visible,
-.sp-button:focus-visible,
 .sp-link-button:focus-visible,
 .sp-page a:focus-visible {
   outline: 2px solid var(--sp-link);
   outline-offset: 2px;
 }
-
-.sp-tabs { margin-bottom: 2rem; }
 
 .sp-section { margin-bottom: 2.5rem; }
 
@@ -204,36 +199,6 @@
   font-size: 14px;
   color: var(--sp-link);
   cursor: pointer;
-}
-
-.sp-logout { display: block; margin: -1rem auto 1rem; }
-
-.sp-login {
-  max-width: 480px;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 1.5;
-}
-
-.sp-button {
-  margin-top: 0.5rem;
-  border: 0;
-  border-radius: 999px;
-  padding: 10px 22px;
-  font: inherit;
-  font-weight: 600;
-  color: var(--sp-accent-text);
-  background: var(--sp-accent);
-  cursor: pointer;
-}
-
-.sp-button:hover { filter: brightness(1.08); }
-
-.sp-error {
-  padding: 10px 12px;
-  border-radius: 4px;
-  background: rgba(235, 87, 87, 0.12);
-  text-align: left;
 }
 
 .sp-empty { color: var(--sp-muted); }

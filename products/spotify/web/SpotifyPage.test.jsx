@@ -1,6 +1,6 @@
 import React from 'react';
-import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import { MemoryRouter, Route, Routes, useLocation } from 'react-router-dom';
+import { render, screen, fireEvent } from '@testing-library/react';
+import { MemoryRouter } from 'react-router-dom';
 import SpotifyPage from './SpotifyPage';
 
 vi.mock('../../shared/publicFile', () => ({ publicFile: (p) => `/${p}` }));
@@ -24,46 +24,20 @@ const DATA = {
   top_artists: { short_term: [{ id: 'a', name: 'Top Artist', url: null, image: null }], medium_term: [], long_term: [] },
 };
 
-let lastLocation;
-function LocationSpy() {
-  lastLocation = useLocation();
-  return null;
-}
-
-function loadPage(clientId) {
-  vi.stubEnv('VITE_SPOTIFY_CLIENT_ID', clientId);
-  return SpotifyPage;
-}
-
-function renderAt(Page, url) {
+function renderPage() {
   return render(
-    <MemoryRouter initialEntries={[url]}>
-      <Routes>
-        <Route path="/spotify" element={<><Page /><LocationSpy /></>} />
-      </Routes>
+    <MemoryRouter initialEntries={['/spotify']}>
+      <SpotifyPage />
     </MemoryRouter>,
   );
 }
 
 beforeEach(() => {
-  window.sessionStorage.clear();
   global.fetch = vi.fn(async () => ({ ok: true, status: 200, json: async () => DATA }));
 });
 
-afterEach(() => {
-  vi.unstubAllEnvs();
-});
-
-test('public page does not offer a visitor login', async () => {
-  renderAt(loadPage('cid'), '/spotify');
-  expect(await screen.findByText(/Last song played/)).toBeInTheDocument();
-  expect(screen.queryByRole('button', { name: 'Invited' })).not.toBeInTheDocument();
-  expect(screen.queryByRole('button', { name: 'Log in with Spotify' })).not.toBeInTheDocument();
-  expect(screen.queryByText(/log in/i)).not.toBeInTheDocument();
-});
-
-test('Mine tab shows synced plays, last-played time and favorites', async () => {
-  renderAt(loadPage(''), '/spotify');
+test('shows synced plays, last-played time and favorites', async () => {
+  renderPage();
   expect(await screen.findByText('Song One')).toBeInTheDocument();
   expect(screen.getByText('Song Two')).toBeInTheDocument();
   expect(screen.getByText(/Last song played/)).toHaveTextContent('5 min ago');
@@ -72,52 +46,29 @@ test('Mine tab shows synced plays, last-played time and favorites', async () => 
   expect(global.fetch).toHaveBeenCalledWith('/spotify/listening.json');
 });
 
-test('Mine tab shows a friendly message when the JSON is missing', async () => {
+test('has no login or account tabs', async () => {
+  renderPage();
+  await screen.findByText('Song One');
+  expect(screen.queryByRole('button', { name: 'Invited' })).not.toBeInTheDocument();
+  expect(screen.queryByRole('button', { name: /log in/i })).not.toBeInTheDocument();
+});
+
+test('shows a loading message before the data arrives', () => {
+  global.fetch = vi.fn(() => new Promise(() => {}));
+  renderPage();
+  expect(screen.getByRole('status')).toHaveTextContent('Loading');
+});
+
+test('shows a friendly message when the JSON is missing', async () => {
   global.fetch = vi.fn(async () => ({ ok: false, status: 404 }));
-  renderAt(loadPage(''), '/spotify');
+  renderPage();
   expect(await screen.findByText(/isn't available right now/)).toBeInTheDocument();
 });
 
 test('time range switch changes favorites', async () => {
-  renderAt(loadPage(''), '/spotify');
+  renderPage();
   await screen.findByText('Top Song');
   fireEvent.click(screen.getByRole('button', { name: 'All time' }));
   expect(screen.queryByText('Top Song')).not.toBeInTheDocument();
   expect(screen.getByRole('button', { name: 'All time' })).toHaveAttribute('aria-pressed', 'true');
-});
-
-test('Invited tab explains when login is not configured', async () => {
-  renderAt(loadPage(''), '/spotify?invited');
-  fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
-  expect(screen.getByText(/isn't set up on this site yet/)).toBeInTheDocument();
-});
-
-test('Invited tab offers login and does not call Spotify until opened', async () => {
-  renderAt(loadPage('cid'), '/spotify?invited');
-  await screen.findByText('Song One');
-  expect(global.fetch).toHaveBeenCalledTimes(1);
-  fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
-  expect(await screen.findByRole('button', { name: 'Log in with Spotify' })).toBeInTheDocument();
-});
-
-test('bad login callback shows error and clears code from URL', async () => {
-  renderAt(loadPage('cid'), '/spotify?code=abc&state=nope');
-  expect(screen.getByRole('button', { name: 'Invited' })).toHaveAttribute('aria-pressed', 'true');
-  expect(await screen.findByRole('alert')).toHaveTextContent(/did not match/);
-  await waitFor(() => expect(lastLocation.search).toBe(''));
-});
-
-test('logged-in account not on the invite list sees invite-only message', async () => {
-  window.sessionStorage.setItem(
-    'spotify.tokens',
-    JSON.stringify({ accessToken: 'AT', refreshToken: 'RT', expiresAt: NOW + 3_600_000 }),
-  );
-  global.fetch = vi.fn(async (url) =>
-    url.startsWith('https://api.spotify.com')
-      ? { ok: false, status: 403, json: async () => ({}) }
-      : { ok: true, status: 200, json: async () => DATA },
-  );
-  renderAt(loadPage('cid'), '/spotify?invited');
-  fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
-  expect(await screen.findByRole('alert')).toHaveTextContent(/isn't on the invite list/);
 });
