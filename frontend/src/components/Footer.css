@@ -25,12 +25,12 @@
 
 .footer-troll-heading {
   margin-bottom: 24px;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .footer-troll-text {
   margin-bottom: 24px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .footer-input {
@@ -39,7 +39,7 @@
   margin-right: 10px;
   outline: none;
   border: 1px solid #fff;
-  font-size: 18px;
+  font-size: 1.125rem;
   margin-bottom: 16px;
 }
 
@@ -124,7 +124,7 @@
 
 /* Social Icons */
 .social-icon-link {
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
 .social-media {

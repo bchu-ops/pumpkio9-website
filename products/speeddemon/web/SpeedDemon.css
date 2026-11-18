@@ -32,7 +32,7 @@
 .sd-hero { max-width: 760px; margin-bottom: 28px; }
 .sd-hero h1 {
   font-family: var(--sd-display);
-  font-size: clamp(36px, 5.5vw, 60px);
+  font-size: clamp(2.25rem, 5.5vw, 3.75rem);
   font-weight: 700;
   font-style: italic;
   text-transform: uppercase;

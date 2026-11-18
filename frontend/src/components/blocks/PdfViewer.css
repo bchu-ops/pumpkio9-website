@@ -85,7 +85,7 @@
   border-radius: 4px;
   color: #e8eaed;
   text-align: center;
-  font-size: 12px;
+  font-size: 0.75rem;
   font-family: inherit;
   padding: 0;
   outline: none;
@@ -97,7 +97,7 @@
 
 .chrome-pdf-page-total {
   color: #9aa0a6;
-  font-size: 12px;
+  font-size: 0.75rem;
   white-space: nowrap;
 }
 
@@ -107,7 +107,7 @@
   background: transparent;
   font-family: inherit;
   color: #e8eaed;
-  font-size: 12px;
+  font-size: 0.75rem;
   min-width: 40px;
   text-align: center;
   cursor: pointer;
@@ -270,12 +270,12 @@
 }
 
 .chrome-pdf-error p:first-child {
-  font-size: 16px;
+  font-size: 1rem;
   margin-bottom: 4px;
 }
 
 .chrome-pdf-error-detail {
-  font-size: 13px;
+  font-size: 0.8125rem;
   color: #9aa0a6;
 }
 

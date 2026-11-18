@@ -79,7 +79,7 @@
   background: transparent;
   display: inline-flex;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgba(55, 53, 47, 0.82);
   user-select: none;
 }
@@ -133,7 +133,7 @@
   align-items: center;
   width: 100%;
   padding: 10px 14px;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.4;
   color: rgb(55, 53, 47);
   cursor: pointer;
@@ -244,12 +244,12 @@
   word-break: break-word;
   overflow: hidden;
   text-overflow: ellipsis;
-  font-size: 12px;
+  font-size: 0.75rem;
   color: rgba(55, 53, 47, 0.82);
 }
 
 .notion-collection-section .notion-collection-card-property:first-child {
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 500;
   color: rgb(55, 53, 47);
 }
@@ -263,14 +263,14 @@
 .notion-collection-section .notion-table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 14px;
+  font-size: 0.875rem;
   table-layout: auto;
 }
 
 .notion-collection-section .notion-table-th {
   text-align: left;
   padding: 7px 8px;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   color: rgba(55, 53, 47, 0.82);
   border-top: 1px solid rgba(55, 53, 47, 0.16);
@@ -290,7 +290,7 @@
 
 .notion-collection-section .notion-table-cell {
   padding: 7px 8px;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5;
   color: rgb(55, 53, 47);
   white-space: normal;
@@ -340,7 +340,7 @@
   display: flex;
   align-items: center;
   padding: 6px 8px;
-  font-size: 14px;
+  font-size: 0.875rem;
   color: rgb(55, 53, 47);
   text-decoration: none;
   border-radius: 3px;
