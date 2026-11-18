@@ -117,7 +117,7 @@ function Footer() {
               <i
                 aria-hidden="true"
                 className="fa-brands fa-spotify fa-beat"
-                style={{ color: 'rgba(0, 217, 255, 0.8)', fontSize: 48 }}
+                style={{ color: 'var(--accent-cyan)', fontSize: 48 }}
               ></i>
             </Link>
           </div>
