@@ -3,7 +3,7 @@
     "41c181ec-d4f6-815a-a7ed-eba31210d607": {
       "value": {
         "id": "41c181ec-d4f6-815a-a7ed-eba31210d607",
-        "version": 24,
+        "version": 27,
         "type": "page",
         "properties": {
           "?rG}": [
@@ -87,7 +87,7 @@
           }
         },
         "created_time": 1794988655131,
-        "last_edited_time": 1794988800973,
+        "last_edited_time": 1794991353360,
         "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
         "parent_table": "collection",
         "alive": true,
@@ -834,12 +834,12 @@
     "41c181ec-d4f6-8156-843b-d7cba34d7319": {
       "value": {
         "id": "41c181ec-d4f6-8156-843b-d7cba34d7319",
-        "version": 4,
+        "version": 9,
         "type": "bulleted_list",
         "properties": {
           "title": [
             [
-              "Added a Reactors tool (pH neutralization and an exothermic reactor with runaway) and a Valves tool (ISA-75.01.01 sizing, choked flow, cavitation and installed characteristics)"
+              "Added a Reactors tool that models pH neutralization, where a 1% base-flow error moves pH from 7 to about 9.7, and an exothermic reactor with runaway, where PI control holds the unstable 350 K operating point, plus a Valves tool (ISA-75.01.01 sizing, choked flow, cavitation and installed characteristics)"
             ]
           ]
         },
@@ -866,7 +866,7 @@
           }
         },
         "created_time": 1794988655148,
-        "last_edited_time": 1794988655148,
+        "last_edited_time": 1794991353360,
         "parent_id": "41c181ec-d4f6-815a-a7ed-eba31210d607",
         "parent_table": "block",
         "alive": true,
@@ -892,8 +892,200 @@
                         1
                       ],
                       "o": "start",
-                      "l": 175,
-                      "c": "Added a Reactors tool (pH neutralization and an exothermic reactor with runaway) and a Valves tool (ISA-75.01.01 sizing, choked flow, cavitation and installed characteristics)"
+                      "l": 22,
+                      "c": "Added a Reactors tool "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "LcMFcCYvwkiT",
+                        176
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        22
+                      ],
+                      "l": 12,
+                      "c": "that models "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jYIVtJUay_6l",
+                        23
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        22
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jYIVtJUay_6l",
+                        24
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        23
+                      ],
+                      "l": 17,
+                      "c": "pH neutralization"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "LcMFcCYvwkiT",
+                        188
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        40
+                      ],
+                      "l": 58,
+                      "c": ", where a 1% base-flow error moves pH from 7 to about 9.7,"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jYIVtJUay_6l",
+                        41
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        40
+                      ],
+                      "l": 39,
+                      "c": " and an exothermic reactor with runaway"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "LcMFcCYvwkiT",
+                        246
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        79
+                      ],
+                      "l": 43,
+                      "c": ", where PI control holds the unstable 350 K"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jYIVtJUay_6l",
+                        80
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        79
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jYIVtJUay_6l",
+                        81
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        80
+                      ],
+                      "l": 1,
+                      "c": " "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "LcMFcCYvwkiT",
+                        289
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        81
+                      ],
+                      "l": 4,
+                      "c": "oper"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jYIVtJUay_6l",
+                        82
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        81
+                      ],
+                      "l": 1,
+                      "c": "a"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "LcMFcCYvwkiT",
+                        293
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        82
+                      ],
+                      "l": 2,
+                      "c": "ti"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jYIVtJUay_6l",
+                        83
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        82
+                      ],
+                      "l": 1,
+                      "c": "n"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "LcMFcCYvwkiT",
+                        295
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        83
+                      ],
+                      "l": 13,
+                      "c": "g point, plus"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jYIVtJUay_6l",
+                        84
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        83
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jYIVtJUay_6l",
+                        85
+                      ],
+                      "o": [
+                        "jYIVtJUay_6l",
+                        84
+                      ],
+                      "l": 91,
+                      "c": " a Valves tool (ISA-75.01.01 sizing, choked flow, cavitation and installed characteristics)"
                     },
                     {
                       "t": "e"
