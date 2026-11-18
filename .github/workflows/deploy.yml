@@ -3,8 +3,8 @@ name: Deploy Frontend to GitHub Pages
 on:
   push:
     branches:
-      - main  # or master
-  workflow_dispatch:   # 👈 Allows manual trigger from Actions tab
+      - main
+  workflow_dispatch:  # manual trigger from the Actions tab
   schedule:
     # Hourly rebuild: fresh Spotify listening data each run; the F1 snapshot
     # cache is keyed by date, so OpenF1 is only fetched once a day.
@@ -23,15 +23,16 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
 
     steps:
       # 1. Checkout the repo
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       # 2. Setup Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: '22'  # Vite 8 needs Node 20.19+ / 22.12+
 
@@ -107,20 +108,9 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
-
-      # # 5. Deploy build folder to GitHub Pages
-      # - name: Deploy to GitHub Pages
-      #   uses: peaceiris/actions-gh-pages@v3
-      #   with:
-      #     github_token: ${{ secrets.GITHUB_TOKEN }}  # Provided automatically
-      #     publish_dir: ./frontend/build
-      #     publish_branch: gh-pages        # Explicitly push to gh-pages branch
-      #     # Optional:
-      #     # user_name: "Brian Chu"
-      #     # user_email: "brian.chu1030@gmail.com"
-      #     # commit_message: "Auto deploy via GitHub Actions"
