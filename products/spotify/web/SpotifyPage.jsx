@@ -111,13 +111,13 @@ export default function SpotifyPage() {
   const navigate = useNavigate();
   const returningFromLogin = /[?&](code|error)=/.test(location.search);
   // Spotify only lets invited accounts log in (dev mode, max 5), so the login
-  // tab is not shown publicly: only via the private /Spotify?invited link or
+  // tab is not shown publicly: only via the private /spotify?invited link or
   // when Spotify sends someone back after logging in.
   const [inviteMode] = useState(() => returningFromLogin || /[?&]invited\b/.test(location.search));
   const [tab, setTab] = useState(returningFromLogin ? 'you' : 'brian');
   // Drop ?code&state from the address bar and history once handled.
   const clearUrl = useRef(() => {
-    if (returningFromLogin) navigate('/Spotify', { replace: true });
+    if (returningFromLogin) navigate('/spotify', { replace: true });
   }).current;
   const [visitor, setVisitor] = useVisitorListening(tab === 'you', location.search, clearUrl);
 

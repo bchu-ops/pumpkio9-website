@@ -39,7 +39,7 @@ function renderAt(Page, url) {
   return render(
     <MemoryRouter initialEntries={[url]}>
       <Routes>
-        <Route path="/Spotify" element={<><Page /><LocationSpy /></>} />
+        <Route path="/spotify" element={<><Page /><LocationSpy /></>} />
       </Routes>
     </MemoryRouter>,
   );
@@ -55,7 +55,7 @@ afterEach(() => {
 });
 
 test('public page does not offer a visitor login', async () => {
-  renderAt(loadPage('cid'), '/Spotify');
+  renderAt(loadPage('cid'), '/spotify');
   expect(await screen.findByText(/Last song played/)).toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'Invited' })).not.toBeInTheDocument();
   expect(screen.queryByRole('button', { name: 'Log in with Spotify' })).not.toBeInTheDocument();
@@ -63,7 +63,7 @@ test('public page does not offer a visitor login', async () => {
 });
 
 test('Mine tab shows synced plays, last-played time and favorites', async () => {
-  renderAt(loadPage(''), '/Spotify');
+  renderAt(loadPage(''), '/spotify');
   expect(await screen.findByText('Song One')).toBeInTheDocument();
   expect(screen.getByText('Song Two')).toBeInTheDocument();
   expect(screen.getByText(/Last song played/)).toHaveTextContent('5 min ago');
@@ -74,12 +74,12 @@ test('Mine tab shows synced plays, last-played time and favorites', async () => 
 
 test('Mine tab shows a friendly message when the JSON is missing', async () => {
   global.fetch = vi.fn(async () => ({ ok: false, status: 404 }));
-  renderAt(loadPage(''), '/Spotify');
+  renderAt(loadPage(''), '/spotify');
   expect(await screen.findByText(/isn't available right now/)).toBeInTheDocument();
 });
 
 test('time range switch changes favorites', async () => {
-  renderAt(loadPage(''), '/Spotify');
+  renderAt(loadPage(''), '/spotify');
   await screen.findByText('Top Song');
   fireEvent.click(screen.getByRole('button', { name: 'All time' }));
   expect(screen.queryByText('Top Song')).not.toBeInTheDocument();
@@ -87,13 +87,13 @@ test('time range switch changes favorites', async () => {
 });
 
 test('Invited tab explains when login is not configured', async () => {
-  renderAt(loadPage(''), '/Spotify?invited');
+  renderAt(loadPage(''), '/spotify?invited');
   fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
   expect(screen.getByText(/isn't set up on this site yet/)).toBeInTheDocument();
 });
 
 test('Invited tab offers login and does not call Spotify until opened', async () => {
-  renderAt(loadPage('cid'), '/Spotify?invited');
+  renderAt(loadPage('cid'), '/spotify?invited');
   await screen.findByText('Song One');
   expect(global.fetch).toHaveBeenCalledTimes(1);
   fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
@@ -101,7 +101,7 @@ test('Invited tab offers login and does not call Spotify until opened', async ()
 });
 
 test('bad login callback shows error and clears code from URL', async () => {
-  renderAt(loadPage('cid'), '/Spotify?code=abc&state=nope');
+  renderAt(loadPage('cid'), '/spotify?code=abc&state=nope');
   expect(screen.getByRole('button', { name: 'Invited' })).toHaveAttribute('aria-pressed', 'true');
   expect(await screen.findByRole('alert')).toHaveTextContent(/did not match/);
   await waitFor(() => expect(lastLocation.search).toBe(''));
@@ -117,7 +117,7 @@ test('logged-in account not on the invite list sees invite-only message', async 
       ? { ok: false, status: 403, json: async () => ({}) }
       : { ok: true, status: 200, json: async () => DATA },
   );
-  renderAt(loadPage('cid'), '/Spotify?invited');
+  renderAt(loadPage('cid'), '/spotify?invited');
   fireEvent.click(screen.getByRole('button', { name: 'Invited' }));
   expect(await screen.findByRole('alert')).toHaveTextContent(/isn't on the invite list/);
 });

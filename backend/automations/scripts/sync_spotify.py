@@ -2,7 +2,7 @@
 sync_spotify.py
 
 Pulls Brian's Spotify listening data and saves it as static JSON for the
-/Spotify page. Same shape as sync_notion.py: a scheduled job writes JSON,
+/spotify page. Same shape as sync_notion.py: a scheduled job writes JSON,
 React reads it, and no token ever reaches the browser.
 
 Usage: uv run python scripts/sync_spotify.py

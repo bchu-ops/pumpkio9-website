@@ -15,7 +15,7 @@ function Navbar({ topRef, bottomRef }) {
 	const handleDropdownButtonClick = (index) => {
 		if (openDropdownIndex === index) {
 			// Dropdown is already open → navigate & close dropdown menu
-			navigate('/Projects');
+			navigate('/projects');
 			setOpenDropdownIndex(null);
 		} else {
 			// Dropdown is closed → open it
@@ -44,7 +44,7 @@ function Navbar({ topRef, bottomRef }) {
 		{
 			label: "Products",
 			items: [
-				{ name: "My Spotify", path: "/Spotify" },
+				{ name: "My Spotify", path: "/spotify" },
 				{ name: "Speed Demon", path: "/speed-demon" },
 				{ name: "Process Lab", path: "/process-lab" }
 			],
@@ -105,7 +105,7 @@ function Navbar({ topRef, bottomRef }) {
 				</li>
 				<li className="nav-item">
 					<Link 
-						to="/Interests" 
+						to="/interests" 
 						className="nav-links" 
 						onClick={closeMobileMenu}
 						>

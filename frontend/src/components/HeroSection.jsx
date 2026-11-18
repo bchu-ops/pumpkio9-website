@@ -75,7 +75,7 @@ function HeroSection() {
 			className='btns'
 			buttonStyle='btn--outline'
 			buttonSize='btn--large'
-			onClick={() => routeChange('/Spotify')}
+			onClick={() => routeChange('/spotify')}
 		>
 		  Recent Songs <i className='far fa-play-circle' />
 		</Button>

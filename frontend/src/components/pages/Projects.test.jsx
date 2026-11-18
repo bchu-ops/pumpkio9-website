@@ -25,7 +25,7 @@ test('live products are listed in menu order with open and code links', () => {
   const live = screen.getByRole('region', { name: 'On this site' });
   const names = within(live).getAllByRole('heading', { level: 3 }).map((h) => h.textContent);
   expect(names).toEqual(['My Spotify', 'Speed Demon', 'Process Lab']);
-  expect(within(live).getByRole('link', { name: 'Open My Spotify' })).toHaveAttribute('href', '/Spotify');
+  expect(within(live).getByRole('link', { name: 'Open My Spotify' })).toHaveAttribute('href', '/spotify');
   expect(within(live).getAllByRole('link', { name: 'Code' })[1]).toHaveAttribute('href', expect.stringContaining('/products/speeddemon'));
 });
 

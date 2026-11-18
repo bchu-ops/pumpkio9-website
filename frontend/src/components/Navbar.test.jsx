@@ -13,7 +13,7 @@ beforeEach(() => {
 test('renders the top-level nav links', () => {
   renderNavbar();
   expect(screen.getByRole('link', { name: 'Home' })).toHaveAttribute('href', '/');
-  expect(screen.getByRole('link', { name: 'Interests' })).toHaveAttribute('href', '/Interests');
+  expect(screen.getByRole('link', { name: 'Interests' })).toHaveAttribute('href', '/interests');
   expect(screen.getByRole('button', { name: /Products/ })).toBeInTheDocument();
   expect(screen.getByRole('link', { name: 'Links' })).toBeInTheDocument();
 });
@@ -61,7 +61,7 @@ test('Products dropdown opens, exposes aria state, and closes on outside click',
   expect(screen.queryByRole('link', { name: 'Speed Demon' })).not.toBeInTheDocument();
   fireEvent.click(toggle);
   expect(toggle).toHaveAttribute('aria-expanded', 'true');
-  expect(screen.getByRole('link', { name: 'My Spotify' })).toHaveAttribute('href', '/Spotify');
+  expect(screen.getByRole('link', { name: 'My Spotify' })).toHaveAttribute('href', '/spotify');
   expect(screen.getByRole('link', { name: 'Speed Demon' })).toHaveAttribute('href', '/speed-demon');
   expect(screen.getByRole('link', { name: 'Process Lab' })).toHaveAttribute('href', '/process-lab');
   fireEvent.mouseDown(document.body);
