@@ -67,7 +67,7 @@ jobs:
       # so nothing ever commits to main outside the dev -> main flow).
       # Never fails the deploy: without secrets the page shows its empty state.
       - name: Set up uv
-        uses: astral-sh/setup-uv@v6
+        uses: astral-sh/setup-uv@v7
 
       - name: Fetch Spotify listening data
         working-directory: ./backend/automations
