@@ -1,0 +1,1603 @@
+{
+  "block": {
+    "41c181ec-d4f6-8141-a8d4-cf28601b32d9": {
+      "value": {
+        "id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "version": 24,
+        "type": "page",
+        "properties": {
+          "?rG}": [
+            [
+              "https://github.com/bchu-ops/pumpkio9-website/tree/main/products/spotify"
+            ]
+          ],
+          "LEI=": [
+            [
+              "spotify.jpg",
+              [
+                [
+                  "a",
+                  "attachment:0bd88bc5-cba9-4329-a943-97841a9e4bc1:spotify.jpg"
+                ]
+              ]
+            ]
+          ],
+          "Z_|q": [
+            [
+              "React, Python, Spotify Web API, OAuth, GitHub Actions, pytest, Vitest"
+            ]
+          ],
+          "eNYj": [
+            [
+              "\u2023",
+              [
+                [
+                  "d",
+                  {
+                    "type": "date",
+                    "start_date": "2026-11-14"
+                  }
+                ]
+              ]
+            ]
+          ],
+          "n:yL": [
+            [
+              "Live listening history synced hourly from the Spotify Web API with Python and GitHub Actions"
+            ]
+          ],
+          "title": [
+            [
+              "My Spotify"
+            ]
+          ]
+        },
+        "content": [
+          "41c181ec-d4f6-815f-b5e0-ca95d1e87055",
+          "41c181ec-d4f6-81bb-a38f-cc813b23a03b",
+          "41c181ec-d4f6-810e-9106-c39236a953b1",
+          "41c181ec-d4f6-81c1-8294-e69f55f53671",
+          "41c181ec-d4f6-8159-aca9-f172a205e072",
+          "41c181ec-d4f6-815d-a57c-f5452ae00e41",
+          "41c181ec-d4f6-8197-b46b-d2ca8748e752",
+          "41c181ec-d4f6-8177-992a-fb57ad406b69",
+          "41c181ec-d4f6-8187-af28-da3790c33314"
+        ],
+        "format": {
+          "page_icon": "\ud83d\udee0\ufe0f",
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988655131,
+        "last_edited_time": 1794988801557,
+        "parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
+        "parent_table": "collection",
+        "alive": true,
+        "file_ids": [
+          "0bd88bc5-cba9-4329-a943-97841a9e4bc1"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "collection",
+        "nav_parent_id": "18a165b6-70e3-4321-9940-52fee01938e2",
+        "crdt_data": {
+          "title": {
+            "r": "Bjstnb2KofDvVGojjxDTZw,\"start\",\"end\"",
+            "n": {
+              "Bjstnb2KofDvVGojjxDTZw,\"start\",\"end\"": {
+                "s": {
+                  "x": "Bjstnb2KofDvVGojjxDTZw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "owyrYIRHadzd",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 10,
+                      "c": "My Spotify"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "3d09c63d-e3c2-46ce-a68f-223d409eb532": {
+      "value": {
+        "id": "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+        "version": 25,
+        "type": "collection_view",
+        "properties": {
+          "title": [
+            [
+              "Projects"
+            ]
+          ]
+        },
+        "view_ids": [
+          "993b7af0-b276-4af7-8064-711f396f531f",
+          "31f181ec-d4f6-80c8-b941-000ca8305822"
+        ],
+        "collection_id": "18a165b6-70e3-4321-9940-52fee01938e2",
+        "format": {
+          "collection_pointer": {
+            "id": "18a165b6-70e3-4321-9940-52fee01938e2",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          }
+        },
+        "created_time": 1773144038215,
+        "last_edited_time": 1773154732253,
+        "parent_id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "crdt_data": {
+          "title": {
+            "r": "WGxPoJUtKCS6HDznNQbe4w,\"start\",\"end\"",
+            "n": {
+              "WGxPoJUtKCS6HDznNQbe4w,\"start\",\"end\"": {
+                "s": {
+                  "x": "WGxPoJUtKCS6HDznNQbe4w",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "dRpYGY0nr7Ko",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 8,
+                      "c": "Projects"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60": {
+      "value": {
+        "id": "31f181ec-d4f6-80f4-b71d-f7b0d1d87d60",
+        "version": 320,
+        "type": "page",
+        "properties": {
+          "title": [
+            [
+              "Brian\u2019s Portfolio"
+            ]
+          ]
+        },
+        "content": [
+          "861b745c-0cdb-4d4b-8b87-70ebe849da9d",
+          "6d6ab2a2-c8d8-4e4a-ade5-acfc7ce7f20b",
+          "fef0f191-c193-465f-bca6-44e5cab932a7",
+          "6a83e54d-6563-4444-b5f5-e9177926917a",
+          "e3d04709-fc3e-44ba-8e8b-d38f4b38884e",
+          "d29488e8-e56e-4aea-aadb-46cb3b9c4b22",
+          "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+          "6854cd5a-ed72-4cbd-b8de-48cc52166116",
+          "3ea3adf4-6275-46e5-8c8f-90c5994480ba",
+          "d4e6cf70-95e7-48ec-9e58-a61d45029917",
+          "0748870d-7024-4eee-ac3d-e00d98e4dd08",
+          "2fdec1f2-b38c-4a02-bdd6-257fc1243b15",
+          "79cac193-c76d-4c60-8b75-8c2b2a68b76e",
+          "f40de7a1-fdfb-42df-be05-27e2ab126f62",
+          "d214cede-f8b1-45f3-9834-92ccf6da9b21",
+          "8441a1c4-71b4-4bdd-bb1b-e8b44a900136",
+          "9c711b50-59b0-4eff-8cd1-08e6c80c1b5a",
+          "38678f4a-7abe-4554-8535-f1cf9d495854",
+          "d1c070a3-4073-415b-b012-b2013b9f84aa",
+          "796e82c2-bd04-4db9-a28e-118eecee1fc2",
+          "b18a50c8-0812-4cb2-a9ae-bd8bd9c52d69",
+          "734e9d55-bcea-4ca4-8282-85e4f87c1551",
+          "5624b648-3139-47b8-bdcf-63002991b542",
+          "f94c96dc-7bbd-4503-9d50-5c2ecb5b056b",
+          "edc5721b-e656-41d8-8309-3cfb19d0157b",
+          "e6559921-92aa-4785-b679-5e385d5d1f96",
+          "cdbee9d0-3b67-461e-bcf2-cd724d7b9d9b",
+          "330c4ccd-e7b8-47ca-81be-3ebb93a94063",
+          "9da9c9ed-1c09-4d08-99a5-8be8fc463111",
+          "9e2dbffd-eb9d-4078-a54c-935f19792ff3",
+          "82734aee-b7df-46e4-ae01-8bccfd3a836e",
+          "16aa2e9c-b2bb-4280-9922-ed6b1fb0d2b9",
+          "733a3432-ddbe-473a-977b-5810f959ca5f",
+          "f15d54a9-c59d-4b33-8d2f-b92fd5dd2580",
+          "31f181ec-d4f6-80e1-968c-f53cb804d75b"
+        ],
+        "format": {
+          "site_id": "31f181ec-d4f6-80b0-9100-00790f0b53de",
+          "page_cover": "attachment:37a2bdff-e54d-4514-811a-0cedf450d601:image.png",
+          "page_cover_position": 0.8909,
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "social_media_image_preview_url": "attachment:b478773e-0567-44d2-8f19-b22b707786af:SocialMediaPreviewImage.png"
+        },
+        "permissions": [
+          {
+            "role": "reader",
+            "type": "public_permission",
+            "is_site": true,
+            "added_timestamp": 1773152043547
+          }
+        ],
+        "created_time": 1773143151480,
+        "last_edited_time": 1794203527654,
+        "parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "parent_table": "space",
+        "alive": true,
+        "file_ids": [
+          "309d92fa-9e28-481b-94ea-7db16ae6ed22",
+          "43763043-51d8-40de-af0e-07fbe47b8c9e",
+          "37a2bdff-e54d-4514-811a-0cedf450d601",
+          "e3258caa-35df-4e27-836c-cfbc063959cf",
+          "b478773e-0567-44d2-8f19-b22b707786af"
+        ],
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "space",
+        "nav_parent_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_data": {
+          "title": {
+            "r": "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"",
+            "n": {
+              "_wIDyDrI9jEsMA8IfUUeGA,\"start\",\"end\"": {
+                "s": {
+                  "x": "_wIDyDrI9jEsMA8IfUUeGA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        10
+                      ],
+                      "o": "start",
+                      "l": 5,
+                      "c": "Brian"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        16
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": 3,
+                      "c": "\u2019s "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "XIldzLMk1IGZ",
+                        15
+                      ],
+                      "o": [
+                        "XIldzLMk1IGZ",
+                        14
+                      ],
+                      "l": -1
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "KeBV5LHOlawW",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 9,
+                      "c": "Portfolio"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "41c181ec-d4f6-815f-b5e0-ca95d1e87055": {
+      "value": {
+        "id": "41c181ec-d4f6-815f-b5e0-ca95d1e87055",
+        "version": 4,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "A live page of what I have been listening to on Spotify: recent plays, on-repeat tracks and favorites over three time ranges, refreshed every hour with no server or database."
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988655150,
+        "last_edited_time": 1794988655150,
+        "parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "crdt_data": {
+          "title": {
+            "r": "uGlT2yI1Xu7xiZ0zHDAttw,\"start\",\"end\"",
+            "n": {
+              "uGlT2yI1Xu7xiZ0zHDAttw,\"start\",\"end\"": {
+                "s": {
+                  "x": "uGlT2yI1Xu7xiZ0zHDAttw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "JTwSvE5PVzRe",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 174,
+                      "c": "A live page of what I have been listening to on Spotify: recent plays, on-repeat tracks and favorites over three time ranges, refreshed every hour with no server or database."
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "41c181ec-d4f6-81bb-a38f-cc813b23a03b": {
+      "value": {
+        "id": "41c181ec-d4f6-81bb-a38f-cc813b23a03b",
+        "version": 5,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "[November 2026 \u2192 Present]",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988655151,
+        "last_edited_time": 1794988655151,
+        "parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "crdt_data": {
+          "title": {
+            "r": "FW0D2f_iOFU96v08uTBPmA,\"start\",\"end\"",
+            "n": {
+              "FW0D2f_iOFU96v08uTBPmA,\"start\",\"end\"": {
+                "s": {
+                  "x": "FW0D2f_iOFU96v08uTBPmA",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "jSL81Ae8x_YA",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 25,
+                      "c": "[November 2026 \u2192 Present]",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "FW0D2f_iOFU96v08uTBPmA",
+                          "l": "",
+                          "i": [
+                            "jSL81Ae8x_YA",
+                            26
+                          ],
+                          "s": {
+                            "i": [
+                              "jSL81Ae8x_YA",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": "end",
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "e",
+                      "b": []
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "41c181ec-d4f6-810e-9106-c39236a953b1": {
+      "value": {
+        "id": "41c181ec-d4f6-810e-9106-c39236a953b1",
+        "version": 6,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "See it live: "
+            ],
+            [
+              "Recent Songs",
+              [
+                [
+                  "a",
+                  "https://bchu-ops.github.io/pumpkio9-website/spotify"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988675751,
+        "last_edited_time": 1794988675751,
+        "parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "crdt_data": {
+          "title": {
+            "r": "n_sIYRN6MKw1jB18LWotxQ,\"start\",\"end\"",
+            "n": {
+              "n_sIYRN6MKw1jB18LWotxQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "n_sIYRN6MKw1jB18LWotxQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "JmLnvxNm05Qd",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 13,
+                      "c": "See it live: "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "JmLnvxNm05Qd",
+                        14
+                      ],
+                      "o": [
+                        "JmLnvxNm05Qd",
+                        13
+                      ],
+                      "l": 12,
+                      "c": "Recent Songs",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "n_sIYRN6MKw1jB18LWotxQ",
+                          "l": "",
+                          "i": [
+                            "JmLnvxNm05Qd",
+                            26
+                          ],
+                          "s": {
+                            "i": [
+                              "JmLnvxNm05Qd",
+                              14
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "JmLnvxNm05Qd",
+                              25
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://bchu-ops.github.io/pumpkio9-website/spotify"
+                          ]
+                        }
+                      ],
+                      "a": []
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "41c181ec-d4f6-81c1-8294-e69f55f53671": {
+      "value": {
+        "id": "41c181ec-d4f6-81c1-8294-e69f55f53671",
+        "version": 4,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Built a Python sync job that exchanges a refresh token for recent plays and top tracks and artists from the Spotify Web API and writes a static JSON snapshot during each GitHub Actions deploy, so no secrets ever reach the browser"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988655151,
+        "last_edited_time": 1794988655151,
+        "parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "crdt_data": {
+          "title": {
+            "r": "_eDlmgUCMD0cuv6LLj3f6g,\"start\",\"end\"",
+            "n": {
+              "_eDlmgUCMD0cuv6LLj3f6g,\"start\",\"end\"": {
+                "s": {
+                  "x": "_eDlmgUCMD0cuv6LLj3f6g",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "bM8iTJ9hvYET",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 229,
+                      "c": "Built a Python sync job that exchanges a refresh token for recent plays and top tracks and artists from the Spotify Web API and writes a static JSON snapshot during each GitHub Actions deploy, so no secrets ever reach the browser"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "41c181ec-d4f6-8159-aca9-f172a205e072": {
+      "value": {
+        "id": "41c181ec-d4f6-8159-aca9-f172a205e072",
+        "version": 4,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Rebuilt hourly by a scheduled GitHub Actions workflow, keeping the page current without a backend"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988655151,
+        "last_edited_time": 1794988655151,
+        "parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "crdt_data": {
+          "title": {
+            "r": "vF2cJC7hzqQmvz9d9ttb9w,\"start\",\"end\"",
+            "n": {
+              "vF2cJC7hzqQmvz9d9ttb9w,\"start\",\"end\"": {
+                "s": {
+                  "x": "vF2cJC7hzqQmvz9d9ttb9w",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "mi6Z4aGeHslp",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 97,
+                      "c": "Rebuilt hourly by a scheduled GitHub Actions workflow, keeping the page current without a backend"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "41c181ec-d4f6-815d-a57c-f5452ae00e41": {
+      "value": {
+        "id": "41c181ec-d4f6-815d-a57c-f5452ae00e41",
+        "version": 4,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Built the React page with recent plays grouped by day, an on-repeat list, and top tracks and artists for the last 4 weeks, 6 months and all time"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988655151,
+        "last_edited_time": 1794988655151,
+        "parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "crdt_data": {
+          "title": {
+            "r": "WEQFFw4QwYGy5bwyfy45vQ,\"start\",\"end\"",
+            "n": {
+              "WEQFFw4QwYGy5bwyfy45vQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "WEQFFw4QwYGy5bwyfy45vQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "sNYWyi3MnSZh",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 144,
+                      "c": "Built the React page with recent plays grouped by day, an on-repeat list, and top tracks and artists for the last 4 weeks, 6 months and all time"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "41c181ec-d4f6-8197-b46b-d2ca8748e752": {
+      "value": {
+        "id": "41c181ec-d4f6-8197-b46b-d2ca8748e752",
+        "version": 4,
+        "type": "bulleted_list",
+        "properties": {
+          "title": [
+            [
+              "Covered the sync job and the page with pytest and Vitest tests"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988655151,
+        "last_edited_time": 1794988655151,
+        "parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "crdt_data": {
+          "title": {
+            "r": "CFk_Eak4p3VXL8JDlMm7gg,\"start\",\"end\"",
+            "n": {
+              "CFk_Eak4p3VXL8JDlMm7gg,\"start\",\"end\"": {
+                "s": {
+                  "x": "CFk_Eak4p3VXL8JDlMm7gg",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "tWnVOz0OkJSe",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 62,
+                      "c": "Covered the sync job and the page with pytest and Vitest tests"
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "41c181ec-d4f6-8177-992a-fb57ad406b69": {
+      "value": {
+        "id": "41c181ec-d4f6-8177-992a-fb57ad406b69",
+        "version": 5,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Languages / Tools Used:",
+              [
+                [
+                  "b"
+                ]
+              ]
+            ],
+            [
+              " React, Python, Spotify Web API, OAuth, GitHub Actions, pytest, Vitest"
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988655151,
+        "last_edited_time": 1794988655151,
+        "parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "crdt_data": {
+          "title": {
+            "r": "Hbd2kzjt3A7dddhk-iIWyw,\"start\",\"end\"",
+            "n": {
+              "Hbd2kzjt3A7dddhk-iIWyw,\"start\",\"end\"": {
+                "s": {
+                  "x": "Hbd2kzjt3A7dddhk-iIWyw",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Fs7CMw-2M3x7",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 23,
+                      "c": "Languages / Tools Used:",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "Hbd2kzjt3A7dddhk-iIWyw",
+                          "l": "",
+                          "i": [
+                            "Fs7CMw-2M3x7",
+                            94
+                          ],
+                          "s": {
+                            "i": [
+                              "Fs7CMw-2M3x7",
+                              1
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "Fs7CMw-2M3x7",
+                              24
+                            ],
+                            "a": "b"
+                          },
+                          "a": [
+                            "b"
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "Fs7CMw-2M3x7",
+                        24
+                      ],
+                      "o": [
+                        "Fs7CMw-2M3x7",
+                        23
+                      ],
+                      "l": 70,
+                      "c": " React, Python, Spotify Web API, OAuth, GitHub Actions, pytest, Vitest",
+                      "b": []
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    },
+    "41c181ec-d4f6-8187-af28-da3790c33314": {
+      "value": {
+        "id": "41c181ec-d4f6-8187-af28-da3790c33314",
+        "version": 6,
+        "type": "text",
+        "properties": {
+          "title": [
+            [
+              "Cover photo: "
+            ],
+            [
+              "blocks",
+              [
+                [
+                  "a",
+                  "https://unsplash.com/@blocks"
+                ]
+              ]
+            ],
+            [
+              " on "
+            ],
+            [
+              "Unsplash",
+              [
+                [
+                  "a",
+                  "https://unsplash.com/photos/headphones-and-vintage-vinyl-records-T3mKJXfdims"
+                ]
+              ]
+            ]
+          ]
+        },
+        "format": {
+          "created_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          },
+          "last_edited_attribution": {
+            "source": {
+              "kind": "mcp",
+              "mcpClientType": "claude"
+            },
+            "triggeredBy": {
+              "id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+              "table": "notion_user"
+            }
+          }
+        },
+        "created_time": 1794988801557,
+        "last_edited_time": 1794988801557,
+        "parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "parent_table": "block",
+        "alive": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "crdt_format_version": 1,
+        "nav_parent_table": "block",
+        "nav_parent_id": "41c181ec-d4f6-8141-a8d4-cf28601b32d9",
+        "crdt_data": {
+          "title": {
+            "r": "jDXP9dmqFytrVR_tVTKmnQ,\"start\",\"end\"",
+            "n": {
+              "jDXP9dmqFytrVR_tVTKmnQ,\"start\",\"end\"": {
+                "s": {
+                  "x": "jDXP9dmqFytrVR_tVTKmnQ",
+                  "i": [
+                    {
+                      "t": "s"
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "g67EiwyNa1y_",
+                        1
+                      ],
+                      "o": "start",
+                      "l": 13,
+                      "c": "Cover photo: "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "g67EiwyNa1y_",
+                        14
+                      ],
+                      "o": [
+                        "g67EiwyNa1y_",
+                        13
+                      ],
+                      "l": 6,
+                      "c": "blocks",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "jDXP9dmqFytrVR_tVTKmnQ",
+                          "l": "",
+                          "i": [
+                            "g67EiwyNa1y_",
+                            32
+                          ],
+                          "s": {
+                            "i": [
+                              "g67EiwyNa1y_",
+                              14
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "g67EiwyNa1y_",
+                              19
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://unsplash.com/@blocks"
+                          ]
+                        }
+                      ],
+                      "a": []
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "g67EiwyNa1y_",
+                        20
+                      ],
+                      "o": [
+                        "g67EiwyNa1y_",
+                        19
+                      ],
+                      "l": 4,
+                      "c": " on "
+                    },
+                    {
+                      "t": "t",
+                      "i": [
+                        "g67EiwyNa1y_",
+                        24
+                      ],
+                      "o": [
+                        "g67EiwyNa1y_",
+                        23
+                      ],
+                      "l": 8,
+                      "c": "Unsplash",
+                      "b": [
+                        {
+                          "t": "a",
+                          "x": "jDXP9dmqFytrVR_tVTKmnQ",
+                          "l": "",
+                          "i": [
+                            "g67EiwyNa1y_",
+                            33
+                          ],
+                          "s": {
+                            "i": [
+                              "g67EiwyNa1y_",
+                              24
+                            ],
+                            "a": "b"
+                          },
+                          "e": {
+                            "i": [
+                              "g67EiwyNa1y_",
+                              31
+                            ],
+                            "a": "a"
+                          },
+                          "a": [
+                            "a",
+                            "https://unsplash.com/photos/headphones-and-vintage-vinyl-records-T3mKJXfdims"
+                          ]
+                        }
+                      ],
+                      "a": []
+                    },
+                    {
+                      "t": "e"
+                    }
+                  ],
+                  "l": ""
+                },
+                "c": []
+              }
+            }
+          }
+        }
+      },
+      "role": "reader"
+    }
+  },
+  "collection": {
+    "18a165b6-70e3-4321-9940-52fee01938e2": {
+      "value": {
+        "id": "18a165b6-70e3-4321-9940-52fee01938e2",
+        "version": 17,
+        "name": [
+          [
+            "Projects"
+          ]
+        ],
+        "schema": {
+          "?rG}": {
+            "name": "Link",
+            "type": "url"
+          },
+          "LEI=": {
+            "name": "Image",
+            "type": "file"
+          },
+          "Z_|q": {
+            "name": "Tools",
+            "type": "text"
+          },
+          "eNYj": {
+            "name": "Date",
+            "type": "date"
+          },
+          "n:yL": {
+            "name": "Description",
+            "type": "text"
+          },
+          "title": {
+            "name": "Project name",
+            "type": "title"
+          }
+        },
+        "format": {
+          "property_visibility": [
+            {
+              "property": "eNYj",
+              "visibility": "show"
+            },
+            {
+              "property": "n:yL",
+              "visibility": "show"
+            },
+            {
+              "property": "LEI=",
+              "visibility": "show"
+            },
+            {
+              "property": "Z_|q",
+              "visibility": "show"
+            },
+            {
+              "property": "?rG}",
+              "visibility": "hide_if_empty"
+            }
+          ],
+          "ai_suggested_properties": [
+            {
+              "name": "Project Status",
+              "type": "status"
+            },
+            {
+              "name": "Budget",
+              "type": "number"
+            },
+            {
+              "name": "Team Members",
+              "type": "multi_select",
+              "options": [
+                {
+                  "id": "vEad",
+                  "color": "brown",
+                  "value": "Developer"
+                },
+                {
+                  "id": "Aw[t",
+                  "color": "red",
+                  "value": "Designer"
+                },
+                {
+                  "id": "IqqB",
+                  "color": "blue",
+                  "value": "Project Manager"
+                },
+                {
+                  "id": "VrhV",
+                  "color": "pink",
+                  "value": "QA Tester"
+                }
+              ]
+            },
+            {
+              "name": "Client Email",
+              "type": "email"
+            }
+          ],
+          "collection_page_properties": [
+            {
+              "visible": false,
+              "property": "eNYj"
+            },
+            {
+              "visible": false,
+              "property": "n:yL"
+            },
+            {
+              "visible": false,
+              "property": "LEI="
+            },
+            {
+              "visible": false,
+              "property": "Z_|q"
+            },
+            {
+              "visible": false,
+              "property": "?rG}"
+            }
+          ]
+        },
+        "parent_id": "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+        "parent_table": "block",
+        "alive": true,
+        "migrated": true,
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144038215,
+        "last_edited_time": 1773150552032,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    }
+  },
+  "collection_view": {
+    "993b7af0-b276-4af7-8064-711f396f531f": {
+      "value": {
+        "id": "993b7af0-b276-4af7-8064-711f396f531f",
+        "version": 55,
+        "type": "gallery",
+        "name": "Gallery",
+        "format": {
+          "description": "",
+          "gallery_cover": {
+            "type": "property",
+            "property": "LEI="
+          },
+          "collection_pointer": {
+            "id": "18a165b6-70e3-4321-9940-52fee01938e2",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "gallery_properties": [
+            {
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "visible": true,
+              "property": "Z_|q"
+            },
+            {
+              "visible": false,
+              "property": "eNYj"
+            },
+            {
+              "visible": false,
+              "property": "n:yL"
+            },
+            {
+              "visible": false,
+              "property": "LEI="
+            }
+          ],
+          "timeline_preference": {
+            "zoomLevel": "month",
+            "centerTimestamp": 1773151473337
+          },
+          "collection_peek_mode": "full_page",
+          "subitem_filter_scope": "parents",
+          "inline_collection_first_load_limit": {
+            "type": "load_limit",
+            "limit": 25
+          }
+        },
+        "parent_id": "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+        "parent_table": "block",
+        "alive": true,
+        "query2": {
+          "sort": [
+            {
+              "property": "eNYj",
+              "direction": "descending"
+            }
+          ],
+          "timeline_by": "eNYj"
+        },
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773144038216,
+        "last_edited_time": 1773154732253,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5"
+      },
+      "role": "reader"
+    },
+    "31f181ec-d4f6-80c8-b941-000ca8305822": {
+      "value": {
+        "id": "31f181ec-d4f6-80c8-b941-000ca8305822",
+        "version": 9,
+        "type": "table",
+        "format": {
+          "table_wrap": false,
+          "table_properties": [
+            {
+              "wrap": false,
+              "width": 280,
+              "visible": true,
+              "property": "title"
+            },
+            {
+              "wrap": true,
+              "width": 200,
+              "visible": true,
+              "property": "eNYj"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "n:yL"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": false,
+              "property": "LEI="
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "?rG}"
+            },
+            {
+              "wrap": false,
+              "width": 200,
+              "visible": true,
+              "property": "Z_|q"
+            }
+          ],
+          "collection_pointer": {
+            "id": "18a165b6-70e3-4321-9940-52fee01938e2",
+            "table": "collection",
+            "spaceId": "31adc548-adac-4af3-a6eb-eb5711baf7f8"
+          },
+          "subitem_filter_scope": "parents_and_subitems",
+          "table_frozen_column_index": -1,
+          "table_subitem_toggle_column": "title"
+        },
+        "parent_id": "3d09c63d-e3c2-46ce-a68f-223d409eb532",
+        "parent_table": "block",
+        "alive": true,
+        "query2": {
+          "sort": [
+            {
+              "property": "eNYj",
+              "direction": "descending"
+            }
+          ]
+        },
+        "space_id": "31adc548-adac-4af3-a6eb-eb5711baf7f8",
+        "created_time": 1773153798314,
+        "last_edited_time": 1794983722084,
+        "created_by_table": "notion_user",
+        "created_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "last_edited_by_table": "notion_user",
+        "last_edited_by_id": "19ed872b-594c-81cc-aaec-0002b6509ee5",
+        "nav_parent_table": "block",
+        "nav_parent_id": "3d09c63d-e3c2-46ce-a68f-223d409eb532"
+      },
+      "role": "reader"
+    }
+  }
+}
