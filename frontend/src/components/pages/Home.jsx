@@ -6,13 +6,12 @@ import NotionCards from '../NotionCards';
 
 function Home() {
   return (
-	<>
-	  <HeroSection />
-	  <ProfileIntro />
-	  <NotionCards />
-	</>
+    <>
+      <HeroSection />
+      <ProfileIntro />
+      <NotionCards />
+    </>
   );
 }
-
 
 export default Home;

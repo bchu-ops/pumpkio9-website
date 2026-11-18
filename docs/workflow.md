@@ -34,6 +34,10 @@ Because `main` only fast-forwards to `dev`, both have the same commits: one per 
 
 To refresh Notion content: Actions → **Sync Notion** → Run workflow. If anything changed it opens a PR into `dev` (CI is dispatched on it); merge it, then Promote.
 
+## Formatting
+
+Prettier is adopted in parts. `frontend/.prettier-allowlist` lists the files it formats; `npm run format:check` (run in CI) checks only those, and `npm run format` rewrites them. To bring another file under Prettier, run it through `npm run format` and add its path to the allowlist in the same PR, so the list grows file by file.
+
 ## Rules
 
 - Never commit or push to `main` directly. Never squash or merge-commit `dev` into `main`; that would give `main` commits `dev` doesn't have and stop fast-forwards.
